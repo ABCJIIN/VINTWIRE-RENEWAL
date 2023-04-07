@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빈트와이어 | Story</title>
+    <!-- CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- 로컬 소스 -->
+    <link href="../../../assets/css/reset.css" rel="stylesheet">
+    <link href="../../../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../../../assets/css/sub.css" rel="stylesheet">
+    <script src="../../../assets/js/include.js"></script>
+    <script src="../../../assets/js/vcui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="story" class="wrap">
+        <header id="header"></header>
+        <div id="container">
+            <section id="intro" class="detail">
+                <div class="intro-bg">서브페이지 top bg입니다.</div>
+                <div class="intro-tit animate__animated animate__fadeIn">
+                    <span class="title">주말 아침 7시</span>
+                    <div class="content-info">
+                        <span class="date">2023-03-20</span> / <span class="writer">Anna</span> / <span class="team">UX 기획</span>
+                    </div>
+                </div>
+            </section>
+            <section id="categories" class="detail">
+                <div class="category-list-wrap">
+                    <div class="category-content-wrap animate__animated animate__fadeIn">
+                        <p>
+                            주말 아침 7시, 아이는 눈뜨자마자 오늘 하루는 얼마나 재밌을까 신이 난 눈빛이다. <br>
+                            아이에게 가을이라는 계절을 더 느끼게 해주고 싶어 아침부터 집을 나선다. <br>
+                            점심시간이면 방전되는 체력이지만, 평일에 오래 함께하지 못하는 미안함에 더 힘을 내본다. <br>
+                            가끔 힘들지만 일하는 평일이 있어 좋고, 아이와 하루종일 함께하는 주말이 있어 좋다. <br>
+                            아이와 함께하는 나의 하루하루는 꽉꽉 채워진다. <br>
+                        </p>
+                        <div class="img-wrap">
+                            <img src="../../../assets/images/sub/story/20230320_anna/20230320_anna_01.jpg">
+                        </div>
+                    </div>
+                    <button type="button" class="circle animate__animated animate__fadeIn" onclick="location.href='./story.html'">목록으로 돌아가기</button>
+                    <div class="more-story animate__animated animate__fadeInUp ani-delay01">
+                        <div></div>
+                        <span>더 많은 이야기들</span>
+                    </div>
+                    <ul class="category-list animate__animated animate__fadeInUp ani-delay01">
+                        <li>
+                            <a href="./story_20221011_jane.html">
+                                <div class="img-wrap d-pc">
+                                    <img src="../../../assets/images/sub/story/20221011_jane/20221011_jane_01.jpg" alt="썸네일">
+                                </div>
+                                <div class="txt-img-wrap">
+                                    <div class="txt-wrap">
+                                        <strong class="title">
+                                            처음 애플워치 차게 된 날
+                                        </strong>
+                                        <p class="content">
+                                            책상 6개로 시작할 때 현재 5층 빈트와이어 연구소는 운동장처럼 넓어 보였다.
+                                            (최근에는 하나 둘 사고 싶은 것 사다 놓고, 빈트족도 많아져 공간이 많이 협소해졌지만,,ㅎㅎ)
+                                        </p>
+                                    </div>
+                                    <div class="img-wrap d-mb">
+                                        <img src="../../../assets/images/sub/story/20221011_jane/20221011_jane_01.jpg" alt="썸네일">
+                                    </div>
+                                    <div class="flex-wrap d-pc">
+                                        <div class="members-wrap">
+                                            <span class="icon-member jane">J</span>
+                                            <span class="writer jane">Jane</span>
+                                        </div>
+                                        <div class="date">
+                                            2021-03-26
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-wrap d-mb">
+                                    <div class="members-wrap">
+                                        <span class="icon-member jane">J</span>
+                                        <span class="writer jane">Jane</span>
+                                    </div>
+                                    <div class="date">
+                                        2021-03-26
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer id="footer"></footer>
+    </div>
+
+    <script>
+        
+        var categoryList = $('.category-list > li').clone();
+        $('.category-list-wrap > button').on('click',function(){
+            $(this).siblings('ul').append(categoryList);
+        })
+
+        $(function(){
+            $('.animate__animated:not(.delay)').viewportChecker({
+                classToAdd: 'on',
+                offset: 100,
+            });
+
+            $('.animate__animated.delay').viewportChecker({
+                classToAdd: 'on',
+                offset: 125,
+            });
+        });
+    </script>
+    
+</body>
+</html>

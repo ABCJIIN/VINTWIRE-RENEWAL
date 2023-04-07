@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <!-- jquery -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <!-- scrolltiregger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- 로컬 소스 -->
+    <link href="../../../assets/css/reset.css" rel="stylesheet">
+    <link href="../../../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../../../assets/css/sub.css" rel="stylesheet">
+    <script src="../../../assets/js/include.js"></script>
+    <script src="../../../assets/js/vcui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw==" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="main" class="wrap">
+        <header id="header"></header>
+        <div id="container" class="project">
+            <section id="intro" class="animate__animated animate__fadeIn">
+                <div id="bg01" class="intro-bg active">서브페이지 top bg입니다.</div>
+                <div id="bg02" class="intro-bg">서브페이지 top bg입니다.</div>
+                <div id="bg03" class="intro-bg">서브페이지 top bg입니다.</div>
+                <div class="intro-tit">
+                    <h2>PROJECT</h2>
+                    <p>
+                        사용자를 위한 디지털 공간을 디자인합니다.
+                    </p>
+                </div>
+                <div class="slide-wrap">
+                    <div class="project-slide">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <!--해당 프로젝트 이미지 영역-->
+                                        <div class="img-wrap">
+                                            <img src="../../../assets/images/sub/project/project_slide/project_slide01.png" alt="썸네일">
+                                        
+                                        </div>
+                                        <!--해당 프로젝트 텍스트 영역-->
+                                        <div class="txt-wrap">
+                                            <strong>서비스로봇 마케팅 <br> 웹사이트 리뉴얼</strong>
+                                            <p>클라이언트 : 현대로보틱스</p>
+                                            <p>파트너사 : 도브투래빗</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <!--해당 프로젝트 이미지 영역-->
+                                        <div class="img-wrap">
+                                            <img src="../../../assets/images/sub/project/project_slide/project_slide02.png" alt="썸네일">
+                                        </div>
+                                        <!--해당 프로젝트 텍스트 영역-->
+                                        <div class="txt-wrap">
+                                            <strong>무역협회 웹사이트 <br> UIUX 컨설팅</strong>
+                                            <p>클라이언트 : 한국무역협회</p>
+                                            <p>파트너사 : 도브투래빗</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <!--해당 프로젝트 이미지 영역-->
+                                        <div class="img-wrap">
+                                            <img src="../../../assets/images/sub/project/project_slide/project_slide03.png" alt="썸네일">
+                                        </div>
+                                        <!--해당 프로젝트 텍스트 영역-->
+                                        <div class="txt-wrap">
+                                            <strong>항공우주사업본부 <br> 웹사이트 리뉴얼</strong>
+                                            <!-- <p>클라이언트 : NH농협생명수련원</p> -->
+                                            <p>파트너사 : 대한항공</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- <div class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="img-wrap">
+                                            <img src="../../../assets/images/sub/project/project_slide/project_slide04.png" alt="현대 로보틱스">
+                                        </div>
+                                        <div class="txt-wrap">
+                                            <strong>멀티클라우드 통합관리솔루션 <br> 관리자페이지</strong>
+                                            <p>클라이언트 : 현대카드</p>
+                                            <p>파트너사 : 나무기술</p>
+                                        </div>
+                                    </a>
+                                </div> -->
+                            </div>
+                            <div class="pagination-con">
+                                <!--페이지 넘버링 페이지네이션-->
+                                <div class="swiper-pagination2"></div>
+                                <!--불렛 페이지네이션-->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projectMain" class="animate__animated animate__fadeIn">
+                <div class="con-tit">
+                    <strong>모든 디지털 경험의 시작</strong>
+                    <h4>VINTWIRE</h4>
+                </div>
+                <div class="project-list-wrap">
+                    <ul>
+                        <li class="animate__animated animate__fadeInUp ani-delay03 ">
+                            <a href="javascript:void(0)">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/project_list/project_list_nh.png" alt="NH농협생명수련원">
+                                </div>
+                                <div class="txt-wrap">
+                                    <strong>수련원 예약 <br>웹사이트</strong>
+                                    <p>클라이언트 : NH농협생명수련원</p>
+                                    <p>파트너사 : 케이투웹테크</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay06">
+                            <a href="javascript:void(0)">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/project_list/project_list_army.png" alt="NH농협생명수련원">
+                                </div>
+                                <div class="txt-wrap">
+                                    <strong>블록체인 기반 전자지갑 <br>민원서비스 앱</strong>
+                                    <p>클라이언트 : 병무청</p>
+                                    <p>파트너사 : 라온 시큐어</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay09">
+                            <a href="javascript:void(0)">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/project_list/project_list_lotte.png" alt="NH농협생명수련원">
+                                </div>
+                                <div class="txt-wrap">
+                                    <strong>API포털 및 <br>마이데이터 서비스</strong>
+                                    <p>클라이언트 : 롯데카드</p>
+                                    <p>파트너사 : 프리커스</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay12">
+                            <a href="javascript:void(0)">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/project_list/project_list_gn.png" alt="NH농협생명수련원">
+                                </div>
+                                <div class="txt-wrap">
+                                    <strong>경상남도 <br>전자지갑 앱</strong>
+                                    <p>클라이언트 : 경남도청</p>
+                                    <p>파트너사 : 도브투래빗</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay15">
+                            <a href="javascript:void(0)">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/project_list/project_list_gnu.png" alt="NH농협생명수련원">
+                                </div>
+                                <div class="txt-wrap">
+                                    <strong>대학교 <br>웹사이트</strong>
+                                    <p>클라이언트 : 경남대학교</p>
+                                    <p>파트너사 : 케이투웹테크</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="projectEx" class="animate__animated animate__fadeIn">
+                <div class="con-tit">
+                    <strong>기술과 감성을 엮어 만든</strong>
+                    <h4>가치있는 경험</h4>
+                </div>
+                <!-- <marquee>VALUE IN TECH WIRE</marquee> -->
+                <div class="slide-wrap">
+                    <div class="swiper-container pc">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-inner">
+                                    <div class="slide-main">
+                                        <a href="javascript:void(0)">
+                                            <div class="img-wrap">
+                                                <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb01.png" alt="썸네일">
+                                            </div>
+                                            <div class="txt-wrap">
+                                                <strong>농협은행 웹사이트</strong>
+                                                <p>클라이언트 : 농협은행</p>
+                                                <p>파트너사 : 농협정보시스템</p>
+                                                <span class="date">2021.06</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="slide-sub">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb02.png" alt="썸네일">
+                                                    </div>
+                                                    <div class="txt-wrap">
+                                                        <strong>마케팅 스토리 콘텐츠</strong>
+                                                        <p>클라이언트 : LG전자</p>
+                                                        <p>파트너사 : 도브투래빗</p>
+                                                        <span class="date">2021.05</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb03.png" alt="썸네일">
+                                                    </div>
+                                                    <div class="txt-wrap">
+                                                        <strong>모바일 신분증 확인 서비스 앱</strong>
+                                                        <p>클라이언트 : 행정안전부</p>
+                                                        <p>파트너사 : LG CNS, 라온시큐어, 케이투웹테크</p>
+                                                        <span class="date">2020.08</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb04.png" alt="썸네일">
+                                                    </div>
+                                                    <div class="txt-wrap">
+                                                        <strong>칵테일 클라우드 솔루션</strong>
+                                                        <p>클라이언트 : 아콘소프트</p>
+                                                        <span class="date">2020.05</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-container m">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb01.png" alt="썸네일">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong>농협은행 웹사이트</strong>
+                                        <p>클라이언트 : 농협은행</p>
+                                        <p>파트너사 : 농협정보시스템</p>
+                                        <span class="date">2021.06</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb02.png" alt="썸네일">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong>마케팅 스토리 콘텐츠</strong>
+                                        <p>클라이언트 : LG전자</p>
+                                        <p>파트너사 : 도브투래빗</p>
+                                        <span class="date">2021.05</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb03.png" alt="썸네일">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong>모바일 신분증 확인 서비스 앱</strong>
+                                        <p>클라이언트 : 행정안전부</p>
+                                        <p>파트너사 : LG CNS, 라온시큐어, 케이투웹테크</p>
+                                        <span class="date">2020.08</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/project_ex_slide/project_ex_slide_thumb04.png" alt="썸네일">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong>칵테일 클라우드 솔루션</strong>
+                                        <p>클라이언트 : 아콘소프트</p>
+                                        <span class="date">2020.05</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="projectSolution" class="animate__animated animate__fadeIn">
+                <div class="con-tit">
+                    <strong>가치있는 결과물을 향한</strong>
+                    <h4>최적의 솔루션</h4>
+                </div>
+                <marquee>VALUE IN TECH WIRE</marquee>
+                <div class="solution-list">
+                    <ul>
+                        <li class="animate__animated animate__fadeInUp ani-delay03">
+                            <div class="txt-wrap">
+                                <strong>스마트 훈련병 관리체계 보완 <br>(스마트 워치 앱)</strong>
+                                <p>클라이언트 : 육군훈련소</p>
+                                <p>파트너사 : 케이투웹테크</p>
+                                <span class="date">2020.08 ~ 2020.09</span>
+                            </div>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay06">
+                            <div class="txt-wrap">
+                                <strong>마이데이터 UI 개발</strong>
+                                <p>클라이언트 : KB국민은행</p>
+                                <p>파트너사 : 누리어시스템</p>
+                                <span class="date">2021.05 ~ 2021.12</span>
+                            </div>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay09">
+                            <div class="txt-wrap">
+                                <strong>모바일신분증 관리자페이지</strong>
+                                <p>클라이언트 : 행정안전부</p>
+                                <p>파트너사 : 케이투웹테크</p>
+                                <span class="date">2020.10 ~ 2021.01</span>
+                            </div>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay12">
+                            <div class="txt-wrap">
+                                <strong>스마트 팩토리 소프트웨어 서비스 개발</strong>
+                                <p>클라이언트 : 현대오토에버</p>
+                                <p>파트너사 : OSC Korea</p>
+                                <span class="date">2021.03 ~ 2021.06</span>
+                            </div>
+                        </li>
+                        <li class="animate__animated animate__fadeInUp ani-delay15">
+                            <div class="txt-wrap">
+                                <strong>디지털 트랜스포메이션 전략 수립</strong>
+                                <p>클라이언트 : KOICA</p>
+                                <p>파트너사 : PWCC</p>
+                                <span class="date">2020.11 ~ 2021.03</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer id="footer"></footer>   
+    </div>
+    <script>
+
+        $(function(){
+            $('.animate__animated:not(.delay)').viewportChecker({
+                classToAdd: 'on',
+                offset: 100,
+            });
+
+            $('.animate__animated.delay').viewportChecker({
+                classToAdd: 'on',
+                offset: 125,
+            });
+        });
+
+        $(document).ready(function(){
+            
+            var $swiper = $("#intro .swiper-container");
+            var $bottomSlide = null;
+            var $bottomSlideContent = null;
+
+            /*project-slide*/
+            var projectSlide = new Swiper("#intro .swiper-container", {
+                spaceBetween: 10,
+                slidesPerView: 1.2,
+                debugger: true,
+                centeredSlides: true,
+                loop: true,
+                loopAdditionalSlides: 30,
+                breakpoints: {
+                    768: {
+                        spaceBetween: 20,
+                        slidesPerView: 2.2,
+                    },
+                    1280: {
+                        spaceBetween: 40,
+                        slidesPerView: 2.8,
+                    },
+                },
+                pagination: {
+                    el: "#intro .swiper-container .swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+            projectSlide.on('slideChange', function () {
+                console.log(projectSlide.realIndex)
+                $('.intro-bg').eq(projectSlide.realIndex).addClass('active').siblings().removeClass('active')
+            });
+
+            /*project-slide 페이지 번호*/
+            var fractionSwiper = new Swiper("#intro .swiper-container", {
+                spaceBetween: 10,
+                slidesPerView: 1.2,
+                debugger: true,
+                centeredSlides: true,
+                loop: true,
+                loopAdditionalSlides: 30,
+                breakpoints: {
+                    768: {
+                        spaceBetween: 20,
+                        slidesPerView: 2.2,
+                    },
+                    1280: {
+                        spaceBetween: 40,
+                        slidesPerView: 2.8,
+                    },
+                },
+                pagination: {
+                    el: "#intro .swiper-container .swiper-pagination2",
+                    type: "fraction",
+                },
+            });
+
+            projectSlide.controller.control = fractionSwiper;
+
+            /*projecEXt-slide*/
+            var projecExtSlidePc = new Swiper("#projectEx .swiper-container.pc", { 
+                spaceBetween: 20,
+                observer: true,
+                observeParents: true,
+                pagination: {
+                    el: "#projectEx .swiper-container.pc .swiper-pagination",
+                    clickable: true,
+                },
+            });
+            var projecExtSlideM = new Swiper("#projectEx .swiper-container.m", { 
+                slidesPerView: 1.15,
+                spaceBetween: 10,
+                observer: true,
+                observeParents: true,
+                pagination: {
+                    el: "#projectEx .swiper-container.m .swiper-pagination",
+                    clickable: true,
+                },
+            });
+            
+        });
+    </script>
+</body>
+</html>

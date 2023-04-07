@@ -1,0 +1,246 @@
+@import "common";
+@import "responsive";
+
+// 애니메이션
+@keyframes arr_ani{
+    from{right: 20rem;}
+    to{right: 15rem;}
+}
+
+// HEADER
+#header {
+        
+    width:100%;
+    // background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 76%);
+    background:#fff;
+    height:100rem;
+    position:fixed;
+    top:0;
+    z-index:100; 
+    @include pc() { height:120rem }
+
+    > .inner {
+        @include layout1640();
+        width:calc(100% - 60rem);
+        height:100%;
+        padding-top:62rem;
+        margin:0 auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:start;
+        position:relative;
+    
+        .logo {
+            color:#222;
+            font-size:20rem;
+            font-weight:700;
+            transition:0.3s;
+            font-family:$mont;
+            @include pc() {
+                font-size:24rem;
+            }  
+            &:hover { font-weight:800; color:$purple }
+        }
+
+        #gnb {
+            display:none;
+            gap:80rem;
+            @include pc() {
+                display:flex;
+            }
+            li {
+                cursor:pointer;
+
+            }
+            a {
+                display:inline-block;
+                width:100%;
+                height:100%;
+                font-family:$mont;
+                font-weight:700;
+                font-size:49rem;
+                letter-spacing:0;
+                position:relative;
+                transition:0.4s;
+                &:hover {
+                   line-height:0;
+                   color:$purple;
+                }
+                @include pc() {
+                    font-size:24rem;
+                    font-weight:700;
+                    line-height:1;
+                }
+                .arr-btn {
+                    position:absolute;
+                    bottom:-25rem;
+                    left:152rem;
+                    @include pc() { display:none; }
+                    img{
+                        width: 140rem;
+                        animation: arr_ani .5s alternate ease-in-out infinite;
+                    }
+                }
+
+            }
+
+        }
+
+        .btn-wrap {
+            @include pc() { display:none }
+            .close-btn {
+                display:none;
+            }
+        }
+        
+    }    
+    
+    @include mb() {
+        &.active {
+
+            a:hover { transition:0; line-height:1.2 !important; }
+            
+            height:100%;
+            max-width:375rem;
+            background:#fff;
+    
+            .inner {
+    
+                .logo {
+                    color:$black;
+                }
+    
+                .close-btn {
+                    display:block;
+                }
+                .ham-btn {
+                    display:none;
+                }
+    
+                #gnb {
+                    display:flex;
+                    flex-direction: column;
+                    gap:48rem;
+                    position: absolute;
+                    top: 151rem;
+                    left: 0;
+                }
+    
+            }
+    
+        }
+    }
+    
+}
+
+// CONTAINER
+#container {
+    // padding-bottom:80rem;
+    padding-top:80rem;
+}
+
+// FOOTER
+#footer {
+    margin-top: 120rem;
+    background:#fff;
+    border-top:solid 1rem #EDEDED;
+    .inner {
+
+        @include layout1640();
+        display:flex;
+        flex-direction: column;
+        gap:40rem;
+        padding-top:24rem;
+        @include pc() {
+            flex-direction:row;
+            flex-wrap:wrap;
+            padding-top:59rem;
+            row-gap:25rem;
+            column-gap:100rem;
+            .location { margin-bottom:25rem; }
+        }
+
+        .con-box {
+
+            .title {
+                
+                display:inline-block;
+                line-height:34rem;
+                height:34rem;
+                white-space:nowrap;
+                padding:0 16rem;
+                background:#222;
+                border:solid 1rem #222;
+                letter-spacing:-0.02em;
+                font-weight:700;
+                color:#fff;
+                border-radius:34rem;
+                margin-bottom:13rem;
+                @include pc(){
+                    height:36rem;
+                    line-height:36rem;
+                    margin-bottom:23rem;
+                    font-size:18rem;
+                }
+            }
+
+            .text {
+                font-size:14rem;
+                letter-spacing:-0.02em;
+                line-height:24rem;
+                a {
+                    font-size:14rem;
+                letter-spacing:-0.02em;
+                line-height:24rem;
+                }
+                @include pc() {
+                    font-size:16rem;
+                    line-height:26rem;
+                    a {
+                        font-size:16rem;
+                        line-height:26rem;
+                    }
+                }
+            }
+
+            .location-list {
+
+                display:flex;
+                flex-direction:column;
+                gap:21rem;
+                @include pc() {
+                    flex-direction: row;
+                }
+                .title {
+                    
+                    background:#fff;
+                    border:solid 1rem $purple;
+                    color:$purple;
+                    margin-bottom:5rem;
+                    @include pc() {
+                        font-size:16rem;
+                    }
+                }
+            }
+
+            &.contact {
+                
+                .title {
+                    margin-bottom:5rem;
+                }
+
+            }
+
+            &.copyright {
+                width:100%;
+                color:#BABABA;
+                font-size:14rem;
+                letter-spacing:-0.02em;
+                padding:0 0 40rem;
+
+            }
+        }
+
+    }
+
+}
