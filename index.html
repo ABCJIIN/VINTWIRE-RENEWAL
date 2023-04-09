@@ -38,6 +38,11 @@
     <div id="main" class="wrap">
         <header id="header">
         </header>
+        <div id="contact">
+            <a href="javascript:void(0)">
+                <img src="/vintwire2023/publishing/assets/images/main/contact-us.png" alt="contact-us 아이콘">
+            </a>
+        </div>
         <div id="container">
             <section id="intro">
                 <div class="bg">
@@ -304,11 +309,11 @@
                         <span class="icon-smile purple animate__animated ani-delay04">
                         </span>
                     </div>
-                    <div class="text animate__animated animate__fadeIn ani-delay03">
+                    <!-- <div class="text animate__animated animate__fadeIn ani-delay03">
                         빈트와이어는 디지털 기반의 산업, 기술, 문화, 
                         마케팅에 대한 <br class="d-pc"> 심도있는 지식과 통찰력을
                         갖추고 있습니다. 
-                    </div>
+                    </div> -->
                     <div class="text animate__animated animate__fadeIn ani-delay03">
                         디지털 공간 설계를 위해 
                         최신 IT기술과 트렌드를 결합하여 <br class="d-pc"> 
@@ -320,6 +325,22 @@
                     <a class="circle btn" href="./vintwire2023/publishing/assets/PDF/Vintwire_Brochure.pdf" type="button" title="Vintwire BROCHURE 버튼" target="_blank">
                         Vintwire BROCHURE
                     </a>
+                </div>
+                <div class="line-wrap d-pc animate__animated animate__fadeIn ani-delay02">
+                    <div class="line purple">
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                        <p>VALUE IN TECH WIRE</p>
+                    </div>
                 </div>
             </section>
             <section id="inform">
@@ -732,6 +753,70 @@
                 }
             }
         });
+    </script>
+    <script>
+        $(function(){
+            $('.animate__animated:not(.delay)').viewportChecker({
+                classToAdd: 'on',
+                offset: 100,
+            });
+
+            $('.animate__animated.delay').viewportChecker({
+                classToAdd: 'on',
+                offset: 125,
+            });
+        });
+        
+        $(document).ready(function(){
+
+            const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
+
+
+            function aboutAni() {
+
+                gsap.set('.intro-icon-wrap .icon',{ scale:0 })
+                gsap.to('.intro-icon-wrap .icon:nth-child(1)',{ scale:1, duration:0.3, delay:0.7 })
+                gsap.to('.intro-icon-wrap .icon:nth-child(2)',{ scale:1, duration:0.2, delay:1 })
+                gsap.to('.intro-icon-wrap .icon:nth-child(3)',{ scale:1, duration:0.5, delay:1 })
+                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(1)',{ y:-40, repeat:-1, yoyo:true, delay:1, duration:1.2, ease:"Back.aseOut.config(1.71.7)" })
+                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(2)',{ y:-20, repeat:-1, yoyo:true, delay:1, duration:0.7, ease:"Back.aseOut.config(1.71.7)" })
+                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(3)',{ y:-30, repeat:-1, yoyo:true, delay:1, duration:1.1, ease:"Back.aseOut.config(1.71.7)" })
+
+                gsap.set(".line p", {
+                    x: (i) => i * 1320
+                });
+
+                gsap.to(".line.gray p", {
+                duration: 20,
+                ease: "none",
+                x: "+=1320", //move each box 500px to right
+                modifiers: {
+                    x: gsap.utils.unitize(x => parseFloat(x) % 1320) //force x value to be between 0 and 500 using modulus
+                },
+                repeat: -1
+                });
+
+                gsap.to(".line.purple p", {
+                duration: 20,
+                ease: "none",
+                direction:'reverse',
+                x: "-=1320", //move each box 500px to right
+                modifiers: {
+                    x: gsap.utils.unitize(x => parseFloat(x) % 1320) //force x value to be between 0 and 500 using modulus
+                },
+                repeat: -1
+                });
+
+
+
+            }
+        
+            if(isTouchDevice ) {
+                $('.line-wrap').empty()
+            } else {
+                aboutAni()
+            }
+        })
     </script>
 
 </body>
