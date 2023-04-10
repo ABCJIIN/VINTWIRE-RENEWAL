@@ -49,6 +49,14 @@ $noah : #B284D3; //노아
     background-position: #{$x} #{$y};
 }
 
+html {font-size: 10px;}
+body{
+    font-size: 1.6rem;
+    letter-spacing: -0.02rem;
+    color: $black;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 /*애니메이션 효과*/
 .ani-stop { visibility:hidden; -webkit-animation-name:none !important; animation-name:none !important } 
 .ani-delay01 { -webkit-animation-delay:.1s !important; animation-delay:.1s !important } 
