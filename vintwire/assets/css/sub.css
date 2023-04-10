@@ -253,6 +253,9 @@ html {
 
 body {
   font-size: 1.6rem;
+  letter-spacing: -0.02rem;
+  color: #222;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /*애니메이션 효과*/
@@ -511,18 +514,52 @@ h2 {
 }
 #header > .inner {
   position: relative;
-  width: calc(100% - 60rem);
+  width: calc(100% - 6rem);
   margin: 0 auto;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 5.8rem;
 }
-#header > .inner .logo {
+#header > .inner h1 .logo {
+  text-decoration: none;
   color: #222;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  transition: 0.3s;
+}
+#header > .inner h1 .logo:hover {
+  font-weight: 800;
+  color: #6A6AE6;
+}
+#header > .inner #gnb {
+  display: flex;
+  gap: 8rem;
+}
+#header > .inner #gnb li {
+  cursor: pointer;
+}
+#header > .inner #gnb li a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #222;
+  text-decoration: none;
+  transition: 0.4s;
+  line-height: 1;
+}
+#header > .inner #gnb li a:hover {
+  color: #6A6AE6;
+  line-height: 0;
+}
+#header > .inner #gnb li a .arr-btn {
+  display: none;
+}
+#header > .inner .btn-wrap {
+  display: none;
 }
 
 /* 노트북 */
