@@ -3,8 +3,5 @@ $(document).ready( function() {
     
     $("#header").load("/vintwire/html/include/header.html"); // 헤더 INCLUDE  
     $("#footer").load("/vintwire/html/include/footer.html"); // 푸터 INCLUDE
-    //$("#quickMenu").load("../../../html/include/quick-menu.html"); // 퀵메뉴 INCLUDE
-    //$("#pagination").load("../../../html/include/pagination.html"); // 페이지네이션 INCLUDE
-
 });
   
