@@ -527,6 +527,7 @@ h2 {
   color: #222;
   font-size: 2.4rem;
   font-weight: 700;
+  font-family: "Panchang-Bold";
 }
 #header > .inner h1 .logo:hover {
   font-weight: 800;
