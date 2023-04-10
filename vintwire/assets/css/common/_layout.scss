@@ -20,7 +20,12 @@ h2{color: #222;}
     top: 0;
     z-index: 100;
     @include tablet {
-        height: 9.6rem;
+        // height: 9.6rem;
+        &.active {
+            height: 100%;
+            max-width: 37.5rem;
+            background: $white;
+        }
     }
     > .inner {
         position: relative;
@@ -47,7 +52,9 @@ h2{color: #222;}
                     font-size: 1.6rem;
                 }
                 @include tablet {
-                    color: $black;
+                    &.active {
+                        color:$black;
+                    }
                 }
             }
         }
@@ -61,11 +68,15 @@ h2{color: #222;}
                 gap: 3rem;
             }
             @include tablet {
-                flex-direction: column;
-                gap: 4.8rem;
-                position: absolute;
-                top: 15.1rem;
-                left: 0;
+                display: none;
+                &.active {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4.8rem;
+                    position: absolute;
+                    top: 15.1rem;
+                    left: 0;
+                }
             }
             li {
                 cursor: pointer;
@@ -88,7 +99,7 @@ h2{color: #222;}
                     .arr-btn {
                         display: none;
                         @include tablet {
-                            display: inline-block;
+                            // display: block;
                             position: absolute;
                             bottom: -25rem;
                             left: 15.2rem;
@@ -108,17 +119,24 @@ h2{color: #222;}
             }
         }
         .btn-wrap {
-            display: none;
+            // display: none;
+            @include tablet {
+            }
             .ham-btn {
-                @include tablet {
-                    display: none;
-                }
+                // @include tablet {
+                //     &.active {
+                //         display: none;
+                //     }
+                // }
             }
             .close-btn {
-                display: none;
-                @include tablet {
-                    display: block;
-                }
+                // display: block;
+                // @include tablet {
+                //     display: none;
+                //     &.active {
+                //         display: block;
+                //     }
+                // }
             }
         }
     }
