@@ -5,6 +5,12 @@
     }
 }
 
+@mixin tablet_junction{
+    @media (max-width: 1055px){
+        @content;
+    }
+}
+
 /* 테블릿 */
 @mixin tablet{
     @media (max-width: 768px){
