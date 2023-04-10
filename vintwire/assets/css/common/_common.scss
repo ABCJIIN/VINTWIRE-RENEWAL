@@ -22,6 +22,10 @@ $jason : #83D8A6; //제이슨
 $milky : #EA95AB; //밀키
 $noah : #B284D3; //노아
 
+/* font */
+$pretendard: 'Pretendard';
+$panchang: 'Panchang';
+
 @mixin flexbox($direction, $justfy, $align){
 	display:flex;
     flex-direction: $direction;
@@ -44,17 +48,22 @@ $noah : #B284D3; //노아
 }
 
 @mixin background ($folder: folder_name, $img: file, $type: png, $repeat:no-repeat, $x:0, $y:0) {
-    background-image: url(/assets/images/#{$folder}/#{$img}.#{$type});
+    background-image: url(/vintwire/assets/images/#{$folder}/#{$img}.#{$type});
     background-repeat: #{$repeat};
     background-position: #{$x} #{$y};
 }
 
+*{box-sizing: border-box;}
 html {font-size: 10px;}
 body{
     font-size: 1.6rem;
+    line-height: 1;
     letter-spacing: -0.02rem;
     color: $black;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: $panchang;
+    width: 100%;
+    overflow-x: hidden;
+    // font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /*애니메이션 효과*/

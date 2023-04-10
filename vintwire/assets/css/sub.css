@@ -2,15 +2,23 @@
 /* 노트북 */
 /* 테블릿 */
 /* 모바일 */
+/* font */
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
   font-size: 1.6rem;
+  line-height: 1;
   letter-spacing: -0.02rem;
   color: #222;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Panchang";
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*애니메이션 효과*/
@@ -247,15 +255,23 @@ body {
 /* 20230410 test */ /* 노트북 */
 /* 테블릿 */
 /* 모바일 */
+/* font */
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
   font-size: 1.6rem;
+  line-height: 1;
   letter-spacing: -0.02rem;
   color: #222;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Panchang";
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*애니메이션 효과*/
@@ -559,10 +575,70 @@ h2 {
 #header > .inner #gnb li a .arr-btn {
   display: none;
 }
-#header > .inner .btn-wrap {
+
+.con-box {
+  width: calc(100% - 60rem);
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.wrap #container section {
+  position: relative;
+}
+.wrap #container section#intro {
+  padding: 12rem 0 9rem;
+  width: 100%;
+}
+.wrap #container section#intro .intro-bg {
+  background-image: url(/vintwire/assets/images/sub/top_bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-indent: -9999em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+}
+.wrap #container section#intro .intro-tit {
+  text-align: center;
+  letter-spacing: 0;
+}
+.wrap #container section#intro .intro-tit * {
+  color: #fff;
+}
+.wrap #container section#intro .intro-tit > h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 7.2rem;
+  display: block;
+  margin-bottom: 4.6rem;
+  text-transform: uppercase;
+}
+.wrap #container section#intro .intro-tit > p {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.wrap #container .btn-wrap {
   display: none;
 }
 
 /* 노트북 */
 /* 테블릿 */
 /* 모바일 */
+#project #intro::after {
+  content: "VINTWIRE PROJECT";
+  display: block;
+  font-size: 12rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgba(34, 34, 34, 0.2);
+  color: transparent;
+  white-space: nowrap;
+  position: absolute;
+  bottom: -8rem;
+  left: 5%;
+}

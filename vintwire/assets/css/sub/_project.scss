@@ -1,0 +1,16 @@
+#project{
+    #intro{
+        &::after{
+            content: 'VINTWIRE PROJECT';
+            display: block;
+            font-size: 12rem;
+            font-weight: bold;
+            -webkit-text-stroke: 1px rgba($black, 0.2);
+            color: transparent;
+            white-space: nowrap;
+            position: absolute;
+            bottom: -8rem;
+            left: 5%;
+        }
+    }
+}

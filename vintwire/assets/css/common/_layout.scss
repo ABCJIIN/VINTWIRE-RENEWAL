@@ -67,139 +67,57 @@ h2{color: #222;}
                 }
             }
         }
+    }
+}
+
+.con-box{
+    width: calc(100% - 60rem);
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+.wrap{
+    #container{
+        section{
+            position: relative;
+            // 서브페이지 인트로
+            &#intro{
+                padding: 12rem 0 9rem;
+                width: 100%;
+                .intro-bg{
+                    @include background(sub, top_bg, png, no-repeat, center, bottom);
+                    text-indent: -9999em;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    filter: blur(10px);
+                }
+                .intro-tit{
+                    text-align: center;
+                    letter-spacing: 0;
+                    *{color: $white;}
+                    > h2{
+                        font-size: 6rem;
+                        font-weight: bold;
+                        line-height: 7.2rem;
+                        display: block;
+                        margin-bottom: 4.6rem;
+                        text-transform: uppercase;
+                    }
+                    > p{
+                        font-family: $pretendard;
+                        font-size: 2rem;
+                        font-weight: 500;
+                        line-height: 3rem;
+                    }
+                }
+            }
+        }
         .btn-wrap {
             display: none;
         }
     }
 }
-
-// #header {
-        
-//     width:100%;
-//     // background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 76%);
-//     background:#fff;
-//     height:100rem;
-//     position:fixed;
-//     top:0;
-//     z-index:100; 
-//     @include pc() { height:120rem }
-
-//     > .inner {
-//         @include layout1640();
-//         width:calc(100% - 60rem);
-//         height:100%;
-//         padding-top:62rem;
-//         margin:0 auto;
-//         display:flex;
-//         justify-content:space-between;
-//         align-items:start;
-//         position:relative;
-    
-//         .logo {
-//             color:#222;
-//             font-size:20rem;
-//             font-weight:700;
-//             transition:0.3s;
-//             font-family:$mont;
-//             @include pc() {
-//                 font-size:24rem;
-//             }  
-//             &:hover { font-weight:800; color:$purple }
-//         }
-
-//         #gnb {
-//             display:none;
-//             gap:80rem;
-//             @include pc() {
-//                 display:flex;
-//             }
-//             li {
-//                 cursor:pointer;
-
-//             }
-//             a {
-//                 display:inline-block;
-//                 width:100%;
-//                 height:100%;
-//                 font-family:$mont;
-//                 font-weight:700;
-//                 font-size:49rem;
-//                 letter-spacing:0;
-//                 position:relative;
-//                 transition:0.4s;
-//                 &:hover {
-//                    line-height:0;
-//                    color:$purple;
-//                 }
-//                 @include pc() {
-//                     font-size:24rem;
-//                     font-weight:700;
-//                     line-height:1;
-//                 }
-//                 .arr-btn {
-//                     position:absolute;
-//                     bottom:-25rem;
-//                     left:152rem;
-//                     @include pc() { display:none; }
-//                     img{
-//                         width: 140rem;
-//                         animation: arr_ani .5s alternate ease-in-out infinite;
-//                     }
-//                 }
-
-//             }
-
-//         }
-
-//         .btn-wrap {
-//             @include pc() { display:none }
-//             .close-btn {
-//                 display:none;
-//             }
-//         }
-        
-//     }    
-    
-//     @include mb() {
-//         &.active {
-
-//             a:hover { transition:0; line-height:1.2 !important; }
-            
-//             height:100%;
-//             max-width:375rem;
-//             background:#fff;
-    
-//             .inner {
-    
-//                 .logo {
-//                     color:$black;
-//                 }
-    
-//                 .close-btn {
-//                     display:block;
-//                 }
-//                 .ham-btn {
-//                     display:none;
-//                 }
-    
-//                 #gnb {
-//                     display:flex;
-//                     flex-direction: column;
-//                     gap:48rem;
-//                     position: absolute;
-//                     top: 151rem;
-//                     left: 0;
-//                 }
-    
-//             }
-    
-//         }
-//     }
-    
-// }
-
-// // CONTAINER
-// #container {
-//     // padding-bottom:80rem;
-//     padding-top:80rem;
-// }
