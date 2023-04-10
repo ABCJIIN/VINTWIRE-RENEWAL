@@ -22,6 +22,10 @@ $jason : #83D8A6; //제이슨
 $milky : #EA95AB; //밀키
 $noah : #B284D3; //노아
 
+/* font */
+$pretendard: 'Pretendard';
+$panchang: 'Panchang';
+
 @mixin flexbox($direction, $justfy, $align){
 	display:flex;
     flex-direction: $direction;
@@ -49,12 +53,14 @@ $noah : #B284D3; //노아
     background-position: #{$x} #{$y};
 }
 
+*{box-sizing: border-box;}
 html {font-size: 10px;}
 body{
     font-size: 1.6rem;
     letter-spacing: -0.02rem;
     color: $black;
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: $panchang;
+    // font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /*애니메이션 효과*/
