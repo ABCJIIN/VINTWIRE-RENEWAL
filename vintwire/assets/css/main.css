@@ -543,7 +543,7 @@ h2 {
   color: #222;
   font-size: 2.4rem;
   font-weight: 700;
-  font-family: "Panchang-Bold";
+  font-family: "Panchang";
 }
 #header > .inner h1 .logo:hover {
   font-weight: 800;
@@ -573,6 +573,9 @@ h2 {
   line-height: 0;
 }
 #header > .inner #gnb li a .arr-btn {
+  display: none;
+}
+#header > .inner .btn-wrap {
   display: none;
 }
 
@@ -622,9 +625,6 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 3rem;
-}
-.wrap #container .btn-wrap {
-  display: none;
 }
 
 #main {
