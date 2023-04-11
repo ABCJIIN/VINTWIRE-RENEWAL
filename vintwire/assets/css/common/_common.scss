@@ -1,5 +1,5 @@
 @import "responsive";
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 /* font */
 $pretendard: 'Pretendard';
@@ -63,13 +63,14 @@ $jinny: #FFAF02; //지니
         font-weight: 800;
         font-size: 2.4rem;
         border-radius: 50%;
-        // font-family: $montserrat;
+        font-family: $montserrat;
         @include flexbox(row, center, center);
     
         &.jane {background:$jane;}
+        &.anna {background:$anna;}
         &.jasmine {background:$jasmine;}
         &.steven {background:$steven;}
-        &.anna {background:$anna;}
+        // $woody:
         &.summer {background:$summer;}
         &.felix {background:$felix;}
         &.sophia {background:$sophia;}
@@ -77,10 +78,23 @@ $jinny: #FFAF02; //지니
         &.jason {background:$jason;}
         &.milky {background:$milky;}
         &.noah {background:$noah;}
+
+//         $jane : #48BCBE; //제인
+// $anna: #93D2F8; //애나
+// $jasmine : #F5D4DD; //자스민
+// $steven : #F4B893; //스티븐
+// $woody: #50C681; //우디
+// $summer : #FDED85; //썸머
+// $felix : #5385F8; //펠릭스
+// $sophia : #F2AAE3; //소피아
+// $nia : #FDD885; //니아
+// $jason : #83D8A6; //제이슨
+// $milky : #EA95AB; //밀키
+// $noah : #B284D3; //노아
+// $jinny: #FFAF02; //지니
     }
     .writer{
         font-size: 2rem;
-        font-family: $pretendard;
         font-weight: 600;
         line-height: 2.6rem;
         color: $black;
@@ -115,6 +129,8 @@ body{
     .d-pc{display: none;}
     .d-mb{display: block;}
 }
+
+.flex-wrap{@include flexbox(row, flex-start, flex-start);}
 
 /*애니메이션 효과*/
 .ani-stop { visibility:hidden; -webkit-animation-name:none !important; animation-name:none !important } 
@@ -235,7 +251,6 @@ body{
     color: $purple;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     font-weight: 500;
-    font-family: $pretendard;
     font-size: 2rem;
 }
 
@@ -251,7 +266,6 @@ body{
 button{
     width: 100%;
     max-width: 36rem;
-    font-family: $pretendard;
     font-size: 1.8rem;
     font-weight: 600;   
     border: 1px solid $purple;
