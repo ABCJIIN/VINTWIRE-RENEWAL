@@ -44,4 +44,6 @@ table {
 }
 a{
 	text-decoration: none;
+	white-space: normal; 
+	display: inline-block;
 }
