@@ -875,6 +875,7 @@ h2 {
   }
   #header.active > .inner .logo {
     color: #222;
+    font-size: 2rem;
   }
   #header.active > .inner .btn-wrap .close-btn {
     display: block;
@@ -894,6 +895,9 @@ h2 {
     position: absolute;
     top: 15.1rem;
     left: 0;
+  }
+  #header.active > .inner #gnb li a {
+    font-size: 4.9rem;
   }
 }
 #header > .inner {
@@ -986,11 +990,10 @@ h2 {
   #header > .inner #gnb li a .arr-btn {
     display: block;
     position: absolute;
-    bottom: -2.5rem;
-    left: 15.2rem;
+    bottom: -3.5rem;
+    left: 18rem;
     z-index: 1;
-    width: 10.2rem;
-    overflow: hidden;
+    width: 14rem;
   }
   #header > .inner #gnb li a .arr-btn .inner {
     position: relative;
@@ -1013,6 +1016,7 @@ h2 {
     height: 2.4rem;
     position: absolute;
     right: 2rem;
+    animation: arr_ani 0.5s alternate ease-in-out infinite;
     width: 14rem;
     -webkit-animation: arr_ani 0.5s alternate ease-in-out infinite;
             animation: arr_ani 0.5s alternate ease-in-out infinite;

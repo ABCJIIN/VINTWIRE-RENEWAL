@@ -32,6 +32,7 @@ h2{color: #222;}
     
                 .logo {
                     color:$black;
+                    font-size: 2rem;
                 }
                 .btn-wrap {
                     .close-btn {
@@ -49,6 +50,11 @@ h2{color: #222;}
                     position: absolute;
                     top: 15.1rem;
                     left: 0;
+                    li {
+                        a {
+                            font-size: 4.9rem;
+                        }
+                    }
                 }
     
             }
@@ -76,6 +82,9 @@ h2{color: #222;}
                 @include tablet_junction {
                     font-size: 1.6rem;
                 }
+                // @include tablet {
+                //     font-size: 2rem;
+                // }
             }
         }
         #gnb {
@@ -115,11 +124,11 @@ h2{color: #222;}
                         @include tablet {
                             display: block;
                             position: absolute;
-                            bottom: -2.5rem;
-                            left: 15.2rem;
+                            bottom: -3.5rem;
+                            left: 18rem;
                             z-index:1;
-                            width:10.2rem;
-                            overflow:hidden;
+                            width:14rem;
+                            // overflow:hidden;
                             .inner {
                                 position:relative;
                                 @include flexbox (row, flex-end, center);
@@ -128,7 +137,6 @@ h2{color: #222;}
                                     height:2.4rem;
                                     position:absolute;
                                     right:2rem;
-                                    width: 14rem;
                                     animation: arr_ani .5s alternate ease-in-out infinite;
                                 }
                                 .icon-circle {
@@ -171,6 +179,10 @@ h2{color: #222;}
         }
     }
 }
+
+// FOOTER
+
+
 
 .con-box{
     width: calc(100% - 6rem);
