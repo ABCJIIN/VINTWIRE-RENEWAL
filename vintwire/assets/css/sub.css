@@ -1642,9 +1642,7 @@ h2 {
   background: #FFAF02;
 }
 #story #container #intro.datail .tag-list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #story #container #intro.datail .intro-tit > h2 {
   font-family: "Montserrat";
@@ -1686,19 +1684,10 @@ h2 {
 }
 #story #container #categories .category-list-wrap .category-content-wrap .img-wrap {
   margin: 6rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   #story #container #categories .category-list-wrap .category-content-wrap .img-wrap {
@@ -1733,8 +1722,7 @@ h2 {
   position: absolute;
   top: -3.2rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 @media (max-width: 768px) {
   #story #container #categories .category-list-wrap .more-story > strong::after {
@@ -1799,10 +1787,6 @@ h2 {
   }
 }
 #story .category-list > li > a .preview-img .preview-info .tag-list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-#story #storyList .story-list > li > a .preview-img .preview-info .tag-list {
   flex-wrap: wrap;
 }
 #story .category-list > li > a .preview-img .preview-info .tag-list .tag-item {
@@ -1819,16 +1803,6 @@ h2 {
   }
 }
 #story .category-list > li > a .preview-img + .flex-wrap {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-#story #storyList .story-list > li > a .preview-img + .flex-wrap {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
