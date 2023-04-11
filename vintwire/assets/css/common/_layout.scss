@@ -6,9 +6,9 @@
 h2{color: #222;}
 
 // 애니메이션
-@keyframes arr_ani{
-    from{right: 20rem;}
-    to{right: 15rem;}
+@keyframes arr_ani {
+    from{right: 2rem;}
+    to{right: 1.5rem;}
 }
 
 // HEADER
@@ -19,14 +19,46 @@ h2{color: #222;}
     position: fixed;
     top: 0;
     z-index: 100;
+    @include tablet {
+        height: 9.6rem;
+        &.active {
+            height:100%;
+            max-width:37.5rem;
+            background:#fff;
+
+            a:hover { transition:0; line-height:1.2 !important; }
+    
+            > .inner {
+    
+                .logo {
+                    color:$black;
+                }
+                .btn-wrap {
+                    .close-btn {
+                        display:block;
+                    }
+                    .ham-btn {
+                        display:none;
+                    }
+                }
+    
+                #gnb {
+                    display:flex;
+                    flex-direction: column;
+                    gap:4.8rem;
+                    position: absolute;
+                    top: 15.1rem;
+                    left: 0;
+                }
+    
+            }
+    
+        }
+    }
     > .inner {
         position: relative;
-        width: calc(100% - 6rem);
-        margin: 0 auto;
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        @include flexbox (row, space-between, flex-start);
         padding-top: 5.8rem;
         h1 {
             .logo {
@@ -38,11 +70,26 @@ h2{color: #222;}
                 &:hover {
                     font-weight: 800; color: $purple;
                 }
+                @include notebook {
+                    font-size: 2rem;
+                }
+                @include tablet_junction {
+                    font-size: 1.6rem;
+                }
             }
         }
         #gnb {
             display: flex;
             gap: 8rem;
+            @include notebook {
+                gap: 5rem;
+            }
+            @include tablet_junction {
+                gap: 3rem;
+            }
+            @include tablet {
+                display: none;
+            }
             li {
                 cursor: pointer;
                 a {
@@ -50,25 +97,77 @@ h2{color: #222;}
                     display: inline-block;
                     width: 100%;
                     height: 100%;
-                    // font-family: ;
+                    font-family: $panchang;
                     font-weight: 700;
                     font-size: 2.4rem;
                     color: $black;
                     text-decoration: none;
                     transition: 0.4s;
                     line-height: 1;
-                    &:hover {
-                        color: $purple;
-                        line-height: 0;
+                    @include tablet {
+                        &:hover {
+                            line-height: 0;
+                            color: $purple;
+                        }
                     }
                     .arr-btn {
                         display: none;
+                        @include tablet {
+                            display: block;
+                            position: absolute;
+                            bottom: -2.5rem;
+                            left: 15.2rem;
+                            z-index:1;
+                            width:10.2rem;
+                            overflow:hidden;
+                            .inner {
+                                position:relative;
+                                @include flexbox (row, flex-end, center);
+                                height:4.8rem;
+                                img {
+                                    height:2.4rem;
+                                    position:absolute;
+                                    right:2rem;
+                                    width: 14rem;
+                                    animation: arr_ani .5s alternate ease-in-out infinite;
+                                }
+                                .icon-circle {
+                                    position:absolute;
+                                    top:0;
+                                    right:0;
+                                    flex-shrink:0;
+                                    z-index:-1;
+                                    display: inline-block;
+                                    width: 4.8rem;
+                                    height: 4.8rem;
+                                    border-radius: 50%;
+                                    background: #FFE75C;
+                                }
+                            }
+                            // &.w162 {
+                            //     width:162rem;
+                            // }
+                        }
+                    }
+                    @include notebook {
+                        font-size: 2rem;
+                    }
+                    @include tablet_junction {
+                        font-size: 1.6rem;
                     }
                 }
             }
         }
         .btn-wrap {
             display: none;
+            @include tablet {
+                display: block;
+            }
+            .close-btn {
+                @include tablet {
+                    display: none;
+                }
+            }
         }
     }
 }
