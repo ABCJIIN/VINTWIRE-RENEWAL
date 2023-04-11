@@ -21,8 +21,6 @@
   font-size: 2.4rem;
   border-radius: 50%;
   font-family: "Montserrat";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -158,19 +156,10 @@ body {
   }
 }
 .flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 /*애니메이션 효과*/
@@ -406,19 +395,10 @@ body {
 }
 /* 공통 아이템 */
 .tag-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 0.8rem;
 }
 
@@ -427,8 +407,7 @@ body {
   padding: 1rem 2.4rem;
   border-radius: 5rem;
   color: #6A6AE6;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-weight: 500;
   font-size: 2rem;
 }
@@ -439,8 +418,7 @@ body {
 }
 
 .purple-box {
-  -webkit-box-shadow: 0 0 10rem rgba(106, 106, 230, 0.2);
-          box-shadow: 0 0 10rem rgba(106, 106, 230, 0.2);
+  box-shadow: 0 0 10rem rgba(106, 106, 230, 0.2);
   border: solid 1px rgba(106, 106, 230, 0.2);
   border-radius: 1rem;
   background: #fff;
@@ -494,8 +472,6 @@ button:disabled {
   font-size: 2.4rem;
   border-radius: 50%;
   font-family: "Montserrat";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -631,19 +607,10 @@ body {
   }
 }
 .flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 /*애니메이션 효과*/
@@ -879,19 +846,10 @@ body {
 }
 /* 공통 아이템 */
 .tag-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 0.8rem;
 }
 
@@ -900,8 +858,7 @@ body {
   padding: 1rem 2.4rem;
   border-radius: 5rem;
   color: #6A6AE6;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-weight: 500;
   font-size: 2rem;
 }
@@ -912,8 +869,7 @@ body {
 }
 
 .purple-box {
-  -webkit-box-shadow: 0 0 10rem rgba(106, 106, 230, 0.2);
-          box-shadow: 0 0 10rem rgba(106, 106, 230, 0.2);
+  box-shadow: 0 0 10rem rgba(106, 106, 230, 0.2);
   border: solid 1px rgba(106, 106, 230, 0.2);
   border-radius: 1rem;
   background: #fff;
@@ -1159,6 +1115,7 @@ h2 {
   }
 }
 #footer .inner .stroke-title {
+  font-family: "Panchang";
   font-size: 6.45vw;
   font-weight: 700;
   color: transparent;
@@ -1167,13 +1124,8 @@ h2 {
 }
 @media (max-width: 768px) {
   #footer .inner .stroke-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     font-size: 9.5vw;
   }
   #footer .inner .stroke-title span:nth-of-type(1) {
@@ -1213,16 +1165,6 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   width: 60%;
 }
 @media (max-width: 1280px) {
@@ -1233,19 +1175,10 @@ h2 {
 @media (max-width: 768px) {
   #footer .inner .text-container address {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 2.8rem;
   }
 }
@@ -1259,19 +1192,10 @@ h2 {
 @media (max-width: 768px) {
   #footer .inner .text-container address .location {
     gap: 2.3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 #footer .inner .text-container address .location > span {
@@ -1316,19 +1240,10 @@ h2 {
 @media (max-width: 768px) {
   #footer .inner .text-container address .contact {
     gap: 1.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 #footer .inner .text-container address .contact > span {
@@ -1605,10 +1520,6 @@ h2 {
   background-position: left bottom -120px;
 }
 #story #storyList .story-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem 1.6rem;
@@ -1640,14 +1551,8 @@ h2 {
   padding: 1.6rem;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid red;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1686,13 +1591,8 @@ h2 {
   }
 }
 #story #storyList .story-list > li > a .preview-img + .flex-wrap {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 1.6rem;
 }
