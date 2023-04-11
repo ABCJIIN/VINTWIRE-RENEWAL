@@ -61,7 +61,7 @@ $(document).ready(function(){
 
         var width = $(window).width()
 
-        if (window.matchMedia("(min-width: 750px)").matches) {
+        if (window.matchMedia("(min-width: 768px)").matches) {
             introFixed()
         } else {
             intro.off('mouseWheel')
