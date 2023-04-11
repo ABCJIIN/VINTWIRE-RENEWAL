@@ -1,30 +1,29 @@
 @import "responsive";
-
-// 변수 선언
-$black : #222; //검정색
-$white : #fff; //하얀색
-$purple : #6A6AE6; //보라색
-$yellow : #FFE75C; //노란색
-$harry : #DEB2FA; //해리
-$jane : #48BCBE; //제인
-$jasmine : #F5D4DD; //자스민
-$steven : #F4B893; //스티븐
-$anna : #93D2F8; //애나
-$peter: #B284D3; //피터
-$summer : #FDED85; //썸머
-$felix : #5385F8; //펠릭스
-$sophia : #F2AAE3; //소피아
-$nia : #FDD885; //니아
-$cindy : #50C681; //신디
-//$gill : #222; //길 블랙 개간지
-$gill : #53B3F0; //길
-$jason : #83D8A6; //제이슨
-$milky : #EA95AB; //밀키
-$noah : #B284D3; //노아
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 /* font */
 $pretendard: 'Pretendard';
 $panchang: 'Panchang';
+$montserrat : 'Montserrat';
+
+// 변수 선언
+$black : #222; //검정색
+$white : #fff; //하얀색 
+$purple : #6A6AE6; //보라색
+$yellow : #FFE75C; //노란색
+$jane : #48BCBE; //제인
+$anna: #93D2F8; //애나
+$jasmine : #F5D4DD; //자스민
+$steven : #F4B893; //스티븐
+$woody: #50C681; //우디
+$summer : #FDED85; //썸머
+$felix : #5385F8; //펠릭스
+$sophia : #F2AAE3; //소피아
+$nia : #FDD885; //니아
+$jason : #83D8A6; //제이슨
+$milky : #EA95AB; //밀키
+$noah : #B284D3; //노아
+$jinny: #FFAF02; //지니
 
 @mixin flexbox($direction, $justfy, $align){
 	display:flex;
@@ -51,6 +50,41 @@ $panchang: 'Panchang';
     background-image: url(/vintwire/assets/images/#{$folder}/#{$img}.#{$type});
     background-repeat: #{$repeat};
     background-position: #{$x} #{$y};
+} 
+
+.members-wrap{
+    @include flexbox(row, flex-start, center);
+    gap: 1rem;
+    .icon-member {
+        width: 3.4rem;
+        height: 3.4rem;
+        background: $black;
+        color: $white;
+        font-weight: 800;
+        font-size: 2.4rem;
+        border-radius: 50%;
+        // font-family: $montserrat;
+        @include flexbox(row, center, center);
+    
+        &.jane {background:$jane;}
+        &.jasmine {background:$jasmine;}
+        &.steven {background:$steven;}
+        &.anna {background:$anna;}
+        &.summer {background:$summer;}
+        &.felix {background:$felix;}
+        &.sophia {background:$sophia;}
+        &.nia {background:$nia;}
+        &.jason {background:$jason;}
+        &.milky {background:$milky;}
+        &.noah {background:$noah;}
+    }
+    .writer{
+        font-size: 2rem;
+        font-family: $pretendard;
+        font-weight: 600;
+        line-height: 2.6rem;
+        color: $black;
+    }
 }
 
 *{box-sizing: border-box;}
@@ -60,7 +94,7 @@ body{
     line-height: 1;
     letter-spacing: -0.02rem;
     color: $black;
-    font-family: $panchang;
+    font-family: $pretendard;
     width: 100%;
     overflow-x: hidden;
     // font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
