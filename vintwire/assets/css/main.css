@@ -1098,6 +1098,12 @@ h2 {
   line-height: 3rem;
 }
 
+.con-box {
+  width: calc(100% - 6rem);
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
 #main {
   position: relative;
   width: 100%;
@@ -1106,9 +1112,8 @@ h2 {
 }
 #main #container #intro {
   position: relative;
-  max-width: 1635px;
   width: calc(100% - 6rem);
-  margin: 0 auto;
+  padding-top: 27rem;
   height: 100vh;
 }
 #main #container #intro::after {
@@ -1139,7 +1144,6 @@ h2 {
 }
 #main #container #intro .text-wrap {
   position: relative;
-  padding-top: 36.6rem;
   width: 100%;
 }
 #main #container #intro .text-wrap .text {
@@ -1152,6 +1156,7 @@ h2 {
   color: #fff;
   line-height: 3.6rem;
   text-align: center;
+  padding-bottom: 4.5rem;
 }
 #main #container #intro .text-wrap .text br {
   display: none;
@@ -1171,6 +1176,8 @@ h2 {
   animation: upScale 1s ease-in-out;
 }
 #main #container #intro .text-wrap .title {
+  position: absolute;
+  text-align: center;
   line-height: 1;
 }
 #main #container #intro .text-wrap .title .inner {
@@ -1182,10 +1189,10 @@ h2 {
 #main #container #intro .text-wrap .title .inner p {
   overflow: hidden;
   font-size: 12rem;
+  line-height: 0.9;
 }
 #main #container #intro .text-wrap .title .inner p span {
-  font-size: 12rem;
-  font-weight: 800;
+  font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   transition: 0.9s;
@@ -1196,12 +1203,12 @@ h2 {
   -webkit-text-stroke: 0;
 }
 #main #container #intro .text-wrap .title .inner p:first-child::before {
+  display: none;
   animation: rotate_image 30s linear infinite reverse;
   content: "";
-  display: none;
   width: 24rem;
   height: 24rem;
-  background: url(../../assets/images/main/intro_small_star.svg) no-repeat center;
+  background: url(/vintwire/assets/images/main/intro_small_star.svg) no-repeat center;
   position: absolute;
   top: -8rem;
   right: -15rem;
@@ -1223,4 +1230,7 @@ h2 {
   position: relative;
   width: calc(100% - 6rem);
   margin: 0 auto;
+}
+#main #container #value {
+  width: 100%;
 }
