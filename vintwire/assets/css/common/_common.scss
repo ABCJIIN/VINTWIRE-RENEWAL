@@ -66,6 +66,22 @@ body{
     // font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+.hide {
+    position: absolute;
+    width: 1px!important;
+    height: 1px!important;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.d-pc{display: block;}
+.d-mb{display: none;}
+@include tablet{
+    .d-pc{display: none;}
+    .d-mb{display: block;}
+}
+
 /*애니메이션 효과*/
 .ani-stop { visibility:hidden; -webkit-animation-name:none !important; animation-name:none !important } 
 .ani-delay01 { -webkit-animation-delay:.1s !important; animation-delay:.1s !important } 
