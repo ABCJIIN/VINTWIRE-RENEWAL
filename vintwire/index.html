@@ -104,7 +104,7 @@
                         <button>Vintwire BROCHURE</button>
                     </div>
                 </div>
-                <div class="line-wrap d-pc animate__animated animate__fadeIn ani-delay02">
+                <div class="line-wrap d-pc">
                     <div class="purple-line">
                         <p>VALUE IN TECH WIRE</p>
                         <p>VALUE IN TECH WIRE</p>
@@ -112,13 +112,98 @@
                         <p>VALUE IN TECH WIRE</p>
                         <p>VALUE IN TECH WIRE</p>
                         <p>VALUE IN TECH WIRE</p>
-                        <p>VALUE IN TECH WIRE</p>
-                        <p>VALUE IN TECH WIRE</p>
-                        <p>VALUE IN TECH WIRE</p>
-                        <p>VALUE IN TECH WIRE</p>
-                        <p>VALUE IN TECH WIRE</p>
-                        <p>VALUE IN TECH WIRE</p>
                     </div>
+                </div>
+            </section>
+            <section id="project">
+                <div class="project-inner con-box">
+                    <strong>PROJECTS</strong>
+                    <p>기술과 가치를 잇는 빈트와이어의 프로젝트를 소개합니다.</p>
+                    <ul class="project-contents">
+                        <li>
+                            <div class="img-wrap"></div>
+                            <diV class="project-explain">
+                                <p class="page-num"><span>1</span><span>/5</span></p>
+                                <span class="stroke-text">KITA.NET</span>
+                                <div class="btn-wrap">
+                                    <button>PC</button>
+                                    <button>MOBILE</button>
+                                </div>
+                                <strong>한국무역협회</strong>
+                                <ul>
+                                    <li>클라이언트:병무청</li>
+                                    <li>파트너사:라온시큐어</li>
+                                </ul>
+                            </diV>
+                        </li>
+                        <li>
+                            <diV class="project-explain">
+                                <p class="page-num"><span>2</span><span>/5</span></p>
+                                <span class="stroke-text">KOREAN AIR AEROSPACE</span>
+                                <div class="btn-wrap">
+                                    <button>PC</button>
+                                    <button>MOBILE</button>
+                                </div>
+                                <strong>대한항공<br>항공우주사업본부</strong>
+                                <ul>
+                                    <li>클라이언트:병무청</li>
+                                    <li>파트너사:라온시큐어</li>
+                                </ul>
+                            </diV>
+                            <div class="img-wrap"></div>
+                        </li>
+                        <li>
+                            <div class="img-wrap"></div>
+                            <diV class="project-explain">
+                                <p class="page-num"><span>3</span><span>/5</span></p>
+                                <span class="stroke-text">LG ELECTRONICS</span>
+                                <div class="btn-wrap">
+                                    <button>PC</button>
+                                    <button>MOBILE</button>
+                                </div>
+                                <strong>LG전자 스토리콘텐츠</strong>
+                                <ul>
+                                    <li>클라이언트:병무청</li>
+                                    <li>파트너사:라온시큐어</li>
+                                </ul>
+                            </diV>
+                        </li>
+                        <li>
+                            <diV class="project-explain">
+                                <p class="page-num"><span>4</span><span>/5</span></p>
+                                <span class="stroke-text">HYUNDAI ROBOTICS</span>
+                                <div class="btn-wrap">
+                                    <button>PC</button>
+                                    <button>MOBILE</button>
+                                </div>
+                                <strong>현대로보틱스</strong>
+                                <ul>
+                                    <li>클라이언트:병무청</li>
+                                    <li>파트너사:라온시큐어</li>
+                                </ul>
+                            </diV>
+                            <div class="img-wrap"></div>
+                        </li>
+                        <li>
+                            <div class="img-wrap"></div>
+                            <diV class="project-explain">
+                                <p class="page-num"><span>5</span><span>/5</span></p>
+                                <span class="stroke-text">NONGHYUP LIFE INSURANCE TRAINING CENTER</span>
+                                <div class="btn-wrap">
+                                    <button>PC</button>
+                                    <button>MOBILE</button>
+                                </div>
+                                <strong>농협생명수련원</strong>
+                                <ul>
+                                    <li>클라이언트:병무청</li>
+                                    <li>파트너사:라온시큐어</li>
+                                </ul>
+                            </diV>
+                        </li>
+                    </ul>
+                    <btn-wrap>
+                        <button>더 많은 프로젝트 둘러보기</button>
+                    </btn-wrap>
                 </div>
             </section>
         </div>
@@ -155,16 +240,16 @@
                 gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(3)',{ y:-30, repeat:-1, yoyo:true, delay:1, duration:1.1, ease:"Back.aseOut.config(1.71.7)" })
 
                 gsap.set(".purple-line p", {
-                    x: (i) => i * 1320
+                    x: (i) => i * 1200
                 });
 
                 gsap.to(".purple-line p", {
                 duration: 20,
                 ease: "none",
                 direction:'reverse',
-                x: "-=1320", //move each box 500px to right
+                x: "-=1200", //move each box 500px to right
                 modifiers: {
-                    x: gsap.utils.unitize(x => parseFloat(x) % 1320) //force x value to be between 0 and 500 using modulus
+                    x: gsap.utils.unitize(x => parseFloat(x) % 1200) //force x value to be between 0 and 500 using modulus
                 },
                 repeat: -1
                 });
