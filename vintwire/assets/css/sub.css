@@ -869,7 +869,14 @@ h2 {
 #footer .inner {
   width: 100%;
   height: 100%;
-  padding-bottom: 4.3rem;
+  padding-bottom: 10rem;
+}
+@media (max-width: 768px) {
+  #footer .inner {
+    padding-top: 4.2rem;
+    padding-bottom: 5rem;
+    border-top: 1px solid #EDEDED;
+  }
 }
 #footer .inner .stroke-title {
   font-size: 6.45vw;
@@ -878,12 +885,31 @@ h2 {
   -webkit-text-stroke: 1px #C4C4EB;
   white-space: nowrap;
 }
+@media (max-width: 768px) {
+  #footer .inner .stroke-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 9.5vw;
+  }
+  #footer .inner .stroke-title span:nth-of-type(1) {
+    text-align: left;
+    padding-bottom: 2.6rem;
+  }
+  #footer .inner .stroke-title span:nth-of-type(2) {
+    text-align: right;
+  }
+}
 #footer .inner .text-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 10rem;
+}
+@media (max-width: 768px) {
+  #footer .inner .text-container {
+    padding-top: 4.5rem;
+  }
 }
 #footer .inner .text-container .e-explain {
   font-size: 1.8rem;
@@ -906,7 +932,17 @@ h2 {
 }
 @media (max-width: 1280px) {
   #footer .inner .text-container address {
-    width: 80%;
+    width: 88.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #footer .inner .text-container address {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.8rem;
   }
 }
 #footer .inner .text-container address .location {
@@ -915,6 +951,15 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 4rem;
+}
+@media (max-width: 768px) {
+  #footer .inner .text-container address .location {
+    gap: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 #footer .inner .text-container address .location > span {
   font-family: "Pretendard";
@@ -928,6 +973,11 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 4rem;
+}
+@media (max-width: 768px) {
+  #footer .inner .text-container address .location ul {
+    gap: 2.6rem;
+  }
 }
 #footer .inner .text-container address .location ul li span {
   font-family: "Pretendard";
@@ -949,6 +999,15 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 4rem;
+}
+@media (max-width: 768px) {
+  #footer .inner .text-container address .contact {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 #footer .inner .text-container address .contact > span {
   font-family: "Pretendard";
@@ -983,6 +1042,11 @@ h2 {
   font-weight: 400;
   color: #BABABA;
   padding-top: 4.4rem;
+}
+@media (max-width: 768px) {
+  #footer .inner .copyright {
+    padding-top: 4.7rem;
+  }
 }
 
 .con-box {
