@@ -1,62 +1,182 @@
 #story{
-    .date{
-        color: #aaa;
-        font-size: 2rem;
-        line-height: 2.6rem;
-    }
-    #intro{
-        .intro-bg{background-position: left bottom -120px;}
-    }
-    #storyList{
-        .story-list{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 4rem 1.6rem;
-            @media (max-width: 980px){grid-template-columns: repeat(2, 1fr);}
-            @include tablet{grid-template-columns: 1fr;}
-            > li{
-                > a{
+    #container{
+        .date{
+            color: #aaa;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            @include tablet{font-size: 1.4rem;}
+        }
+        #intro{
+            .intro-bg{
+                background-position: left bottom -120px;
+                @include tablet{
+                    background-position: left bottom;
+                }
+            }
+            &.datail{
+                background: $black;
+                @include notebook{padding: 15.6rem 0 0;}
+                &::after{
+                    content: '';
+                    width: 22.6rem;
+                    height: 28.8rem;
+                    display: block;
+                    position: absolute;
+                    right: 12%;
+                    bottom: 0;
+                    @include notebook{
+                        width: 12.4rem;
+                        height: 16rem;
+                        position: static;
+                        margin: 3.2rem auto 0;
+                    }
+                }
+                &.jane {
+                    background:$jane;
+                    &::after{
+                        @include background(common, character_jane, png, no-repeat, contain, center, bottom);
+                    }
+                }
+                &.anna {background:$anna;}
+                &.jasmine {background:$jasmine;}
+                &.steven {
+                    background:$steven;
+                    &::after{
+                        @include background(common, character_steven, png, no-repeat, contain, center, bottom);
+                    }
+                }
+                &.woody {background: $woody;}
+                &.summer {background:$summer;}
+                &.felix {background:$felix;}
+                &.sophia {background:$sophia;}
+                &.nia {background:$nia;}
+                &.jason {background:$jason;}
+                &.milky {background:$milky;}
+                &.noah {background:$noah;}
+                &.jinny {background: $jinny;}
+                .tag-list{justify-content: center;}
+                .intro-tit{
+                    > h2{
+                        font-family: $montserrat;
+                        margin-bottom: 6.2rem;
+                        @include tablet{
+                            font-size: 2rem;
+                            margin-bottom: 2.4rem;
+                        }
+                    }
+                    > p{@include tablet{font-size: 1.4rem;}}
+                }
+            }
+            &.datail + section{margin-top: 0;}
+        }
+        #categories{
+            .category-list-wrap{
+                .category-content-wrap{
                     width: 100%;
-                    height: 100%;
-                    .preview-img{
+                    max-width: 1088px;
+                    margin: 9rem auto 16.8rem;
+                    @include tablet{margin: 6rem auto 12.4rem;}
+                    p{
+                        font-size: 2rem;
+                        line-height: 3rem;
+                        @include tablet{
+                            font-size: 1.6rem;
+                            line-height: 2.6rem;
+                        }
+                    }
+                    .img-wrap{
+                        margin: 6rem 0;
+                        @include flexbox(row, center, center);
+                        // > img{width: 100%;}
+                        @include tablet{margin: 3.6rem 0;}
+                    }
+                    button{
+                        margin: 4rem auto 0;
+                        display: block;
+                    }
+                }
+                .more-story{
+                    > strong{
+                        color: $purple;
+                        font-size: 6rem;
+                        font-weight: bold;
+                        text-align: center;
+                        display: block;
                         position: relative;
-                        img{
-                            width: 100%;
+                        margin-bottom: 4rem;
+                        @include tablet{font-size: 1.8rem;}
+                        &::after{
+                            content: '';
                             display: block;
-                        }
-                        .preview-info{
-                            width: 70%;
-                            height: 100%;
-                            padding: 1.6rem;
+                            width: 7.4rem;
+                            height: 1.6rem;
+                            background: $purple;
+                            border-radius: 5rem;
                             position: absolute;
-                            top: 50%;
-                            left: 0;
-                            transform: translateY(-50%);
-                            @include flexbox(column, space-between, flex-start);
-                            @include tablet{padding: 0.8rem;}
-                            .story-tit{
-                                font-size: 1.6vw;
-                                font-weight: bold;
-                                line-height: 1.2;
-                                color: $black;
-                                @media (max-width: 980px){font-size: 2.4rem;}
-                            }
-                            .tag-list{
-                                flex-wrap: wrap;
-                                .tag-item{
-                                    font-size: 1vw;
-                                    @media (max-width: 980px){font-size: 2rem;}
-                                    @include tablet{font-size: 1.4rem;}
-                                }
+                            top: -3.2rem;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            @include tablet{
+                                width: 3.2rem;
+                                height: 0.8rem;
                             }
                         }
                     }
-                    .preview-img + .flex-wrap{
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        margin-top: 1.6rem;
+                }
+            }
+        }
+    }
+    .category-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4rem 1.6rem;
+        @media (max-width: 980px){grid-template-columns: repeat(2, 1fr);}
+        @include tablet{
+            grid-template-columns: 1fr;
+            gap: 2.4rem;
+        }
+        > li{
+            > a{
+                width: 100%;
+                height: 100%;
+                .preview-img{
+                    position: relative;
+                    img{
+                        width: 100%;
+                        display: block;
                     }
+                    .preview-info{
+                        width: 70%;
+                        height: 100%;
+                        padding: 1.6rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        @include flexbox(column, space-between, flex-start);
+                        @include tablet{padding: 0.8rem;}
+                        .story-tit{
+                            font-size: 1.6vw;
+                            font-weight: bold;
+                            line-height: 1.2;
+                            color: $black;
+                            @media (max-width: 980px){font-size: 2.4rem;}
+                        }
+                        .tag-list{
+                            flex-wrap: wrap;
+                            .tag-item{
+                                font-size: 1vw;
+                                @media (max-width: 980px){font-size: 2rem;}
+                                @include tablet{font-size: 1.4rem;}
+                            }
+                        }
+                    }
+                }
+                .preview-img + .flex-wrap{
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-top: 1.6rem;
                 }
             }
         }
