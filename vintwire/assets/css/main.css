@@ -44,6 +44,13 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 768px) {
+  .members-wrap .icon-member {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 2rem;
+  }
+}
 .members-wrap .icon-member.jane {
   background: #48BCBE;
 }
@@ -88,6 +95,11 @@
   font-weight: 600;
   line-height: 2.6rem;
   color: #222;
+}
+@media (max-width: 768px) {
+  .members-wrap .writer {
+    font-size: 1.4rem;
+  }
 }
 .members-wrap .writer.jane {
   color: #48BCBE;
@@ -621,6 +633,7 @@ button {
   color: #fff;
   border-radius: 5rem;
   padding: 2rem 1.6rem;
+  cursor: pointer;
 }
 button.white {
   color: #6A6AE6;
@@ -680,6 +693,13 @@ button:disabled {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 768px) {
+  .members-wrap .icon-member {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 2rem;
+  }
+}
 .members-wrap .icon-member.jane {
   background: #48BCBE;
 }
@@ -724,6 +744,11 @@ button:disabled {
   font-weight: 600;
   line-height: 2.6rem;
   color: #222;
+}
+@media (max-width: 768px) {
+  .members-wrap .writer {
+    font-size: 1.4rem;
+  }
 }
 .members-wrap .writer.jane {
   color: #48BCBE;
@@ -1233,6 +1258,7 @@ button {
   color: #fff;
   border-radius: 5rem;
   padding: 2rem 1.6rem;
+  cursor: pointer;
 }
 button.white {
   color: #6A6AE6;
@@ -1771,6 +1797,7 @@ h2 {
 .wrap #container section#intro .intro-bg {
   background-image: url(/vintwire/assets/images/sub/top_bg.png);
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center bottom;
   text-indent: -9999em;
   position: absolute;
@@ -1782,17 +1809,21 @@ h2 {
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
+@media (max-width: 768px) {
+  .wrap #container section#intro .intro-bg {
+    background-size: cover;
+    background-position: center;
+  }
+}
 .wrap #container section#intro .intro-tit {
   text-align: center;
   letter-spacing: 0;
-}
-.wrap #container section#intro .intro-tit * {
-  color: #fff;
 }
 .wrap #container section#intro .intro-tit > h2 {
   font-size: 6rem;
   font-weight: bold;
   line-height: 7.2rem;
+  color: #fff;
   display: block;
   margin-bottom: 4.6rem;
   text-transform: uppercase;
@@ -1801,6 +1832,7 @@ h2 {
 @media (max-width: 768px) {
   .wrap #container section#intro .intro-tit > h2 {
     font-size: 3.6rem;
+    line-height: 5.6rem;
     margin-bottom: 1.6rem;
   }
 }
@@ -1808,12 +1840,16 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 3rem;
+  color: #fff;
 }
 @media (max-width: 768px) {
   .wrap #container section#intro .intro-tit > p {
     font-size: 1.6rem;
     line-height: 2.8rem;
   }
+}
+.wrap #container #intro + section {
+  margin-top: -4rem;
 }
 
 .con-box {
