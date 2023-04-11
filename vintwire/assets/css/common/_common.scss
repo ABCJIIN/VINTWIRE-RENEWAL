@@ -187,3 +187,54 @@ body{
  0% { transform: translate(0, 0) scale(1); opacity: 1; filter: blur(0px); } 
  100% { transform: translate(-4.44vw, -90vw) scale(1.5); opacity: 0; filter: blur(5px); } 
  }
+
+/* 공통 아이템 */
+.tag-list{
+    @include flexbox(row, flex-start, flex-start);
+    gap: .8rem;
+}
+
+.tag-item{
+    background: $yellow;
+    padding: 1rem 2.4rem;
+    border-radius: 5rem;
+    color: $purple;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: 500;
+}
+
+.purple-box{
+    box-shadow: 0 0 10rem rgba(106, 106, 230, 0.2);
+    border: solid 1px rgba(106, 106, 230, 0.2);
+    border-radius: 1rem;
+    background: $white;
+    padding: 2.4rem;
+}
+
+/* 버튼타입 */
+button{
+    width: 100%;
+    max-width: 36rem;
+    font-family: $pretendard;
+    font-size: 1.8rem;
+    font-weight: 600;   
+    border: 1px solid $purple;
+    background: $purple;
+    color: $white;
+    border-radius: 5rem;
+    padding: 2rem 1.6rem;
+    &.white{
+        color: $purple;
+        background: $white;
+    }
+    &.black{
+        background: $black;
+        border-color: $black;
+        color: $white;
+    }
+    &:disabled{
+        background: #C2C2C2;
+        border-color: #C2C2C2;
+        color: #767676;
+    }
+}
