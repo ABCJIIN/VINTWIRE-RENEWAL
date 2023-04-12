@@ -121,6 +121,7 @@ body{
     font-family: $pretendard;
     width: 100%;
     overflow-x: hidden;
+    @include tablet{font-size: 1.4rem;}
     // font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -287,6 +288,12 @@ button{
     border-radius: 5rem;
     padding: 2rem 1.6rem;
     cursor: pointer;
+    @include tablet{
+        max-width: 100%;
+        width: 20rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
     &.white{
         color: $purple;
         background: $white;

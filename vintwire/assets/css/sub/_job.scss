@@ -1,0 +1,97 @@
+#job{
+    #container{
+        #vintTeam{
+            .con-box{width: 100%;}
+            #teamSwiper{
+                width: 100%;
+                height: 100%;
+                @include tablet{padding-bottom: 3rem;}
+                .swiper-slide{
+                    height: 100%;
+                    border: 1px solid #000;
+                    .character{
+                        max-width: 13rem;
+                        width: 28%;
+                        margin: 0 auto;
+                        border: 1px solid #000;
+                        @include tablet{max-width: 100%;}
+                        > img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    .team-info{
+                        text-align: center;
+                        padding: 3rem;
+                        height: 100%;
+                        @include tablet{
+                            height: 22.6rem;
+                            padding: 4.6rem 3rem;
+                            @include flexbox(column, center, center);
+                        }
+                        > strong{
+                            font-size: 2.4rem;
+                            font-weight: bold;
+                            display: block;
+                            margin-bottom: 1.6rem;
+                            @include tablet{font-size: 1.8rem;}
+                        }
+                        > p{
+                            font-size: 1.8rem;
+                            line-height: 3rem;
+                            @include tablet{
+                                font-size: 1.4rem;
+                                line-height: 2.6rem;
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    bottom: 0;
+                    &-bullet{
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        background: #ddd;
+                        opacity: 1;
+                        &-active{background: $purple;}
+                    }
+                }
+            }
+        }
+        #benefit{
+            &-list{
+                > li{
+                    &::after{
+                        content: '';
+                        width: 9.6rem;
+                        height: 9.6rem;
+                        display: block;
+                        border: 1px solid #000;
+                    }
+                    @for $i from 1 through 13{
+                        &::after{
+                            background: url(/vintwire/assets/images/);
+                        }
+                    }
+                    > strong{
+                        font-size: 2.4rem;
+                        line-height: 3.6rem;
+                        font-weight: bold;
+                        display: block;
+                        margin-bottom: 1.6rem;
+                        &::after{
+                            content: '';
+                            width: 4.8rem;
+                            height: 4.8rem;
+                            border-radius: 50%;
+                            background: rgba($yellow, 0.3);
+                        }
+                    }
+                    > p{
+                        line-height: 2.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

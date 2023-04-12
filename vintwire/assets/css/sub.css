@@ -159,6 +159,11 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
 
 .hide {
   position: absolute;
@@ -635,6 +640,14 @@ button {
   padding: 2rem 1.6rem;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  button {
+    max-width: 100%;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+}
 button.white {
   color: #6A6AE6;
   background: #fff;
@@ -807,6 +820,11 @@ body {
   font-family: "Pretendard";
   width: 100%;
   overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
 
 .hide {
@@ -1259,6 +1277,14 @@ button {
   border-radius: 5rem;
   padding: 2rem 1.6rem;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  button {
+    max-width: 100%;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
 }
 button.white {
   color: #6A6AE6;
@@ -1791,6 +1817,37 @@ h2 {
 .wrap #container section {
   position: relative;
 }
+.wrap #container section .sec-tit {
+  width: 100%;
+  text-align: center;
+}
+.wrap #container section .sec-tit > h2 {
+  font-family: "Panchang";
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 7.2rem;
+  color: #6A6AE6;
+  display: block;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0;
+}
+@media (max-width: 768px) {
+  .wrap #container section .sec-tit > h2 {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 1.6rem;
+  }
+}
+.wrap #container section .sec-tit > p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+@media (max-width: 768px) {
+  .wrap #container section .sec-tit > p {
+    font-size: 1.6rem;
+  }
+}
 .wrap #container section#intro {
   padding: 21.4rem 0 9rem;
   width: 100%;
@@ -1807,8 +1864,8 @@ h2 {
   z-index: -1;
   width: 100%;
   height: 100%;
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
 }
 @media (max-width: 768px) {
   .wrap #container section#intro .intro-bg {
@@ -1943,6 +2000,11 @@ h2 {
       flex-wrap: wrap;
   margin-top: 1.6rem;
 }
+@media (max-width: 768px) {
+  .wrap #container section .category-list > li > a .preview-img + .flex-wrap {
+    margin-top: 0.8rem;
+  }
+}
 .wrap #container #intro + section {
   margin-top: -4rem;
 }
@@ -1950,6 +2012,158 @@ h2 {
 /* 노트북 */
 /* 테블릿 */
 /* 모바일 */
+#job #container #vintTeam .con-box {
+  width: 100%;
+}
+#job #container #vintTeam #teamSwiper {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  #job #container #vintTeam #teamSwiper {
+    padding-bottom: 3rem;
+  }
+}
+#job #container #vintTeam #teamSwiper .swiper-slide {
+  height: 100%;
+  border: 1px solid #000;
+}
+#job #container #vintTeam #teamSwiper .swiper-slide .character {
+  max-width: 13rem;
+  width: 28%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+@media (max-width: 768px) {
+  #job #container #vintTeam #teamSwiper .swiper-slide .character {
+    max-width: 100%;
+  }
+}
+#job #container #vintTeam #teamSwiper .swiper-slide .character > img {
+  width: 100%;
+  display: block;
+}
+#job #container #vintTeam #teamSwiper .swiper-slide .team-info {
+  text-align: center;
+  padding: 3rem;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  #job #container #vintTeam #teamSwiper .swiper-slide .team-info {
+    height: 22.6rem;
+    padding: 4.6rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+#job #container #vintTeam #teamSwiper .swiper-slide .team-info > strong {
+  font-size: 2.4rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 768px) {
+  #job #container #vintTeam #teamSwiper .swiper-slide .team-info > strong {
+    font-size: 1.8rem;
+  }
+}
+#job #container #vintTeam #teamSwiper .swiper-slide .team-info > p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+@media (max-width: 768px) {
+  #job #container #vintTeam #teamSwiper .swiper-slide .team-info > p {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+}
+#job #container #vintTeam #teamSwiper .swiper-pagination {
+  bottom: 0;
+}
+#job #container #vintTeam #teamSwiper .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #ddd;
+  opacity: 1;
+}
+#job #container #vintTeam #teamSwiper .swiper-pagination-bullet-active {
+  background: #6A6AE6;
+}
+#job #container #benefit-list > li::after {
+  content: "";
+  width: 9.6rem;
+  height: 9.6rem;
+  display: block;
+  border: 1px solid #000;
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li::after {
+  background: url(/vintwire/assets/images/);
+}
+#job #container #benefit-list > li > strong {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+#job #container #benefit-list > li > strong::after {
+  content: "";
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background: rgba(255, 231, 92, 0.3);
+}
+#job #container #benefit-list > li > p {
+  line-height: 2.6rem;
+}
+
 #project #intro::after {
   content: "VINTWIRE PROJECT";
   display: block;
@@ -2169,17 +2383,17 @@ h2 {
     padding: 15.6rem 0 0;
   }
 }
-#story #container #intro.datail::after {
-  content: "";
+#story #container #intro.datail .character {
   width: 22.6rem;
   height: 28.8rem;
   display: block;
   position: absolute;
   right: 12%;
   bottom: 0;
+  text-indent: -9999em;
 }
 @media (max-width: 1280px) {
-  #story #container #intro.datail::after {
+  #story #container #intro.datail .character {
     width: 12.4rem;
     height: 16rem;
     position: static;
@@ -2189,7 +2403,7 @@ h2 {
 #story #container #intro.datail.jane {
   background: #48BCBE;
 }
-#story #container #intro.datail.jane::after {
+#story #container #intro.datail.jane .character {
   background-image: url(/vintwire/assets/images/common/character_jane.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2204,7 +2418,7 @@ h2 {
 #story #container #intro.datail.steven {
   background: #F4B893;
 }
-#story #container #intro.datail.steven::after {
+#story #container #intro.datail.steven .character {
   background-image: url(/vintwire/assets/images/common/character_steven.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2249,7 +2463,8 @@ h2 {
 @media (max-width: 768px) {
   #story #container #intro.datail .intro-tit > h2 {
     font-size: 2rem;
-    margin-bottom: 2.4rem;
+    line-height: 3.2rem;
+    margin: 1rem 0 2.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -2301,6 +2516,9 @@ h2 {
     margin: 3.6rem 0;
   }
 }
+#story #container #categories .category-list-wrap .category-content-wrap .img-wrap > img {
+  max-width: 100%;
+}
 #story #container #categories .category-list-wrap .category-content-wrap button {
   margin: 4rem auto 0;
   display: block;
@@ -2336,5 +2554,6 @@ h2 {
   #story #container #categories .category-list-wrap .more-story > strong::after {
     width: 3.2rem;
     height: 0.8rem;
+    top: -1.6rem;
   }
 }
