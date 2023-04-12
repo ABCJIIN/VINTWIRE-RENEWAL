@@ -480,6 +480,29 @@ button:disabled {
 button.btn-type2 {
   max-width: 24rem;
 }
+button.more-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+button.more-btn::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  background-image: url(/vintwire/assets/images/icon/more_icon01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+button.more-btn.on::before {
+  background-image: url(/vintwire/assets/images/icon/more_icon02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
 
 /* circle item */
 .icon-circle {
@@ -490,6 +513,36 @@ button.btn-type2 {
 }
 .icon-circle.purple {
   background: #6A6AE6;
+}
+
+/* 화살표 아이콘 */
+.arr-btn {
+  z-index: 1;
+  width: 10.2rem;
+  overflow: hidden;
+}
+.arr-btn .inner {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 48rem;
+}
+.arr-btn .inner img {
+  width: auto;
+  height: 24rem;
+  position: absolute;
+  right: 20rem;
+}
+.arr-btn .inner .icon-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-shrink: 0;
+  z-index: -1;
+}
+.arr-btn.w162 {
+  width: 16.2rem;
 }
 
 /* 20230410 test */ /* 노트북 */
@@ -971,6 +1024,29 @@ button:disabled {
 button.btn-type2 {
   max-width: 24rem;
 }
+button.more-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+button.more-btn::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  background-image: url(/vintwire/assets/images/icon/more_icon01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+button.more-btn.on::before {
+  background-image: url(/vintwire/assets/images/icon/more_icon02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
 
 /* circle item */
 .icon-circle {
@@ -981,6 +1057,36 @@ button.btn-type2 {
 }
 .icon-circle.purple {
   background: #6A6AE6;
+}
+
+/* 화살표 아이콘 */
+.arr-btn {
+  z-index: 1;
+  width: 10.2rem;
+  overflow: hidden;
+}
+.arr-btn .inner {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 48rem;
+}
+.arr-btn .inner img {
+  width: auto;
+  height: 24rem;
+  position: absolute;
+  right: 20rem;
+}
+.arr-btn .inner .icon-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-shrink: 0;
+  z-index: -1;
+}
+.arr-btn.w162 {
+  width: 16.2rem;
 }
 
 /* 노트북 */
@@ -1568,13 +1674,11 @@ h2 {
 }
 #job #container #vintTeam #teamSwiper .swiper-slide {
   height: 100%;
-  border: 1px solid #000;
 }
 #job #container #vintTeam #teamSwiper .swiper-slide .character {
   max-width: 13rem;
   width: 28%;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 @media (max-width: 768px) {
   #job #container #vintTeam #teamSwiper .swiper-slide .character {
@@ -1637,31 +1741,34 @@ h2 {
   margin-top: 4rem;
   padding: 8rem 0;
 }
-#job #container #benefit::after {
+#job #container #benefit.on::before {
+  display: none;
+}
+#job #container #benefit.on .benefit-wrap {
+  height: auto;
+  overflow: auto;
+}
+#job #container #benefit::after, #job #container #benefit::before {
   content: "";
   width: calc(100% - 4rem);
   max-width: 1840px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#job #container #benefit::after {
   height: 100%;
   background: #F8F8F8;
   border-radius: 5rem;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
   z-index: -1;
+  top: 0;
 }
 #job #container #benefit::before {
-  content: "";
-  width: calc(100% - 4rem);
-  max-width: 1840px;
   height: 50%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5) 10%, rgba(106, 106, 230, 0.5) 80%);
-  border-radius: 5rem;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5) 10%, rgba(106, 106, 230, 0.2) 80%);
+  border-radius: 0 0 5rem 5rem;
   z-index: 1;
+  bottom: 0;
 }
 #job #container #benefit .benefit-wrap {
   display: grid;
@@ -1671,20 +1778,89 @@ h2 {
   height: 45.6rem;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  #job #container #benefit .benefit-wrap {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+}
 #job #container #benefit .benefit-wrap .benefit-list {
+  gap: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1.6rem;
 }
 #job #container #benefit .benefit-wrap .benefit-list.mt40 {
   margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  #job #container #benefit .benefit-wrap .benefit-list {
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list:not(:first-child) {
+    display: none;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list.mt40 {
+    margin-top: 0;
+  }
 }
 #job #container #benefit .benefit-wrap .benefit-list > li {
   min-height: 20rem;
   width: 100%;
   position: relative;
+}
+@media (max-width: 768px) {
+  #job #container #benefit .benefit-wrap .benefit-list > li {
+    width: calc(50% - 0.5rem);
+    min-height: 21rem;
+    padding: 2.2rem 1.4rem;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(1) {
+    order: 1;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(2) {
+    order: 5;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(3) {
+    order: 9;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(4) {
+    order: 13;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(5) {
+    order: 2;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(6) {
+    order: 6;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(7) {
+    order: 10;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(8) {
+    order: 14;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(9) {
+    order: 3;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(10) {
+    order: 7;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(11) {
+    order: 11;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(12) {
+    order: 4;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(13) {
+    order: 8;
+  }
+  #job #container #benefit .benefit-wrap .benefit-list > li:nth-child(14) {
+    order: 12;
+  }
 }
 #job #container #benefit .benefit-wrap .benefit-list > li .img-wrap {
   width: 9.6rem;
@@ -1701,6 +1877,12 @@ h2 {
 #job #container #benefit .benefit-wrap .benefit-list > li .img-wrap > img {
   max-width: 100%;
 }
+@media (max-width: 1200px) {
+  #job #container #benefit .benefit-wrap .benefit-list > li .img-wrap {
+    width: 4rem;
+    height: 4.6rem;
+  }
+}
 #job #container #benefit .benefit-wrap .benefit-list > li .benefit-info > strong {
   font-size: 2.4rem;
   line-height: 3.6rem;
@@ -1710,6 +1892,12 @@ h2 {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  #job #container #benefit .benefit-wrap .benefit-list > li .benefit-info > strong {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
 #job #container #benefit .benefit-wrap .benefit-list > li .benefit-info .icon-circle {
   position: absolute;
   top: 1.6rem;
@@ -1717,14 +1905,142 @@ h2 {
   z-index: 0;
   background: rgba(255, 231, 92, 0.3);
 }
+@media (max-width: 768px) {
+  #job #container #benefit .benefit-wrap .benefit-list > li .benefit-info .icon-circle {
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 1.4rem;
+    left: 1.4rem;
+  }
+}
 #job #container #benefit .benefit-wrap .benefit-list > li .benefit-info > p {
   line-height: 2.6rem;
+}
+@media (max-width: 768px) {
+  #job #container #benefit .benefit-wrap .benefit-list > li .benefit-info > p {
+    line-height: 2rem;
+  }
 }
 #job #container #benefit button {
   position: relative;
   z-index: 2;
-  display: block;
   margin: 6rem auto 0;
+}
+#job #container #faq {
+  margin-top: 4rem;
+  padding: 8rem 0;
+}
+#job #container #faq::after {
+  content: "";
+  width: calc(100% - 4rem);
+  height: 100%;
+  border: 1px solid #000;
+  max-width: 1840px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+  background: #6A6AE6;
+  border-radius: 5rem;
+}
+#job #container #faq .sec-tit * {
+  color: #fff;
+}
+#job #container #faq .faq-list {
+  margin-top: 4rem;
+}
+#job #container #faq .faq-list > li:not(:first-child) {
+  margin-top: 2.4rem;
+}
+#job #container #faq .faq-list > li.on .faq-list-tit::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+#job #container #faq .faq-list-tit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 3rem 3.6rem;
+  border-radius: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#job #container #faq .faq-list-tit .qa-num {
+  -webkit-text-stroke: 1px #C4C4EB;
+  color: transparent;
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+#job #container #faq .faq-list-tit::after {
+  content: "";
+  width: 4.6rem;
+  height: 4.6rem;
+  box-shadow: 0 0 1rem rgba(106, 106, 230, 0.2);
+  border-radius: 50%;
+  background-image: url(/vintwire/assets/images/icon/arrow_icon.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 3.6rem;
+  transform: translateY(-50%);
+  border: 1px solid rgba(106, 106, 230, 0.2);
+  transition: all 0.35s;
+}
+#job #container #faq .faq-list-comment {
+  background: #E8E8FF;
+  border-radius: 1rem;
+  padding: 2.4rem 10.4rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+#job #container #recruitment {
+  margin-top: 8rem;
+}
+#job #container #recruitment .recruitment-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+#job #container #recruitment .recruitment-list > li {
+  position: relative;
+}
+#job #container #recruitment .recruitment-list > li:nth-child(1) .team-character {
+  background-image: url(/vintwire/assets/images/sub/job/recruitment_plan_img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+#job #container #recruitment .recruitment-list > li:nth-child(2) .team-character {
+  background-image: url(/vintwire/assets/images/sub/job/recruitment_design_img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+#job #container #recruitment .recruitment-list > li:nth-child(3) .team-character {
+  background-image: url(/vintwire/assets/images/sub/job/recruitment_dev_img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+#job #container #recruitment .recruitment-list > li .team-character {
+  width: 16rem;
+  height: 12.8rem;
+  margin-left: auto;
+  margin-right: 0;
+  border: 1px solid #000;
+}
+#job #container #recruitment .recruitment-list > li .team-character > img {
+  width: 100%;
+  display: block;
 }
 
 #project #intro::after {

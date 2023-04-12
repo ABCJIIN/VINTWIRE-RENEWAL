@@ -311,6 +311,22 @@ button{
     &.btn-type2{
         max-width: 24rem;
     }
+    &.more-btn{
+        @include flexbox(row, center, center);
+        gap: 1rem;
+        &::before{
+            content: '';
+            width: 1.6rem;
+            height: 1.6rem;
+            display: block;
+            @include background(icon, more_icon01, png, no-repeat, contain, center, center);
+        }
+        &.on{
+            &::before{
+                @include background(icon, more_icon02, png, no-repeat, contain, center, center);
+            }
+        }
+    }
 }
 
 /* circle item */
@@ -320,4 +336,32 @@ button{
     border-radius: 50%;
     background: $yellow;
     &.purple{background: $purple;}
+}
+
+/* 화살표 아이콘 */
+.arr-btn {
+    z-index: 1;
+    width: 10.2rem;
+    overflow: hidden;
+    .inner {
+        position:relative;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        height:48rem;
+        img {
+            width:auto;
+            height:24rem;
+            position:absolute;
+            right:20rem;
+        }
+        .icon-circle {
+            position:absolute;
+            top:0;
+            right:0;
+            flex-shrink:0;
+            z-index:-1;
+        }
+    }
+    &.w162 {width:16.2rem;}
 }

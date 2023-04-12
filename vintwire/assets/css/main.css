@@ -480,6 +480,38 @@ button:disabled {
 button.btn-type2 {
   max-width: 24rem;
 }
+button.more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+button.more-btn::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  background-image: url(/vintwire/assets/images/icon/more_icon01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+button.more-btn.on::before {
+  background-image: url(/vintwire/assets/images/icon/more_icon02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
 
 /* circle item */
 .icon-circle {
@@ -490,6 +522,43 @@ button.btn-type2 {
 }
 .icon-circle.purple {
   background: #6A6AE6;
+}
+
+/* 화살표 아이콘 */
+.arr-btn {
+  z-index: 1;
+  width: 10.2rem;
+  overflow: hidden;
+}
+.arr-btn .inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48rem;
+}
+.arr-btn .inner img {
+  width: auto;
+  height: 24rem;
+  position: absolute;
+  right: 20rem;
+}
+.arr-btn .inner .icon-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: -1;
+}
+.arr-btn.w162 {
+  width: 16.2rem;
 }
 
 /* 20230410 test */ /* 노트북 */
@@ -971,6 +1040,38 @@ button:disabled {
 button.btn-type2 {
   max-width: 24rem;
 }
+button.more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+button.more-btn::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  background-image: url(/vintwire/assets/images/icon/more_icon01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+button.more-btn.on::before {
+  background-image: url(/vintwire/assets/images/icon/more_icon02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
 
 /* circle item */
 .icon-circle {
@@ -981,6 +1082,43 @@ button.btn-type2 {
 }
 .icon-circle.purple {
   background: #6A6AE6;
+}
+
+/* 화살표 아이콘 */
+.arr-btn {
+  z-index: 1;
+  width: 10.2rem;
+  overflow: hidden;
+}
+.arr-btn .inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48rem;
+}
+.arr-btn .inner img {
+  width: auto;
+  height: 24rem;
+  position: absolute;
+  right: 20rem;
+}
+.arr-btn .inner .icon-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: -1;
+}
+.arr-btn.w162 {
+  width: 16.2rem;
 }
 
 /* 노트북 */
