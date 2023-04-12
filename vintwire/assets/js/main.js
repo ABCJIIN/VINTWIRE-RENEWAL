@@ -27,7 +27,7 @@ $(document).ready(function(){
             }
             else {
                 // console.log('Scroll down');
-                    gsap.to(window,{scrollTo:"#value",duration:1.5, onComplete:function() {$('body').removeClass('fixed')}})
+                    gsap.to(window,{scrollTo:"#value",duration:0.8, onComplete:function() {$('body').removeClass('fixed')}})
                 
             }
         
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
             if (e.originalEvent.wheelDelta >= 0 && $(window).scrollTop() < intro.height()) {
                 // console.log('Scroll up');
-                gsap.to(window,{scrollTo:"#intro",duration:1.5, onStart:function() {$('body').addClass('fixed')}})
+                gsap.to(window,{scrollTo:"#intro",duration:0.5, onStart:function() {$('body').addClass('fixed')}})
             }
         
         }))
@@ -52,7 +52,7 @@ $(document).ready(function(){
         gsap.to(introTitles.eq(0),{top:0, delay:0.5})
         gsap.to(introTitles.eq(1),{top:0, delay:0.7})
         gsap.to(introTitles.eq(2),{top:0, delay:0.9})
-        gsap.to(introSlide,{alpha:1, ease:Back.easeOut.config(0.3), duration:1.8, delay:2})
+        gsap.to(introSlide,{alpha:1, ease:Back.easeOut.config(0.3), duration:0.5, delay:2})
 
     }
     introMotion ()
