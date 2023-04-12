@@ -2180,14 +2180,11 @@ body.fixed {
 }
 #main #container #value {
   position: relative;
-  width: calc(100% - 6rem);
-  height: 100vh;
-  margin: 0 auto;
-}
-#main #container #value {
   width: 100%;
+  height: 100vh;
 }
 #main #container #value .value-inner {
+  max-width: 1840px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2497,4 +2494,220 @@ body.fixed {
 #main #container #project .project-inner .project-contents li:nth-of-type(5) .img-wrap {
   border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
   background: url(/vintwire/assets/images/main/nonghyup_life.png) no-repeat center/cover;
+}
+#main #container #find {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main #container #find .find-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1840px;
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+  background: #F8F8F8;
+  border-radius: 8rem;
+}
+#main #container #find .find-inner .find-title {
+  padding-bottom: 2.6rem;
+  font-family: "Pretendard";
+  font-size: 4.8rem;
+}
+#main #container #find .find-inner .find-title span:nth-of-type(1) {
+  color: #222;
+  font-weight: 500;
+}
+#main #container #find .find-inner .find-title span:nth-of-type(2) {
+  color: #6A6AE6;
+  font-weight: 800;
+}
+#main #container #find .find-inner .sub-title {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 400;
+  color: #222;
+}
+#main #container #find .find-inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 2rem 3.2rem 2rem;
+  width: 100%;
+  gap: 1.5rem;
+}
+#main #container #find .find-inner ul .introduce {
+  width: 100%;
+}
+#main #container #find .find-inner ul .introduce .introduce-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 0;
+}
+#main #container #find .find-inner ul .introduce .introduce-inner .tag-item {
+  font-family: "Pretendard";
+  font-size: 1.4rem;
+  border: none;
+}
+#main #container #find .find-inner ul .introduce .introduce-inner p {
+  font-family: "Pretendard";
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  padding-top: 3.4rem;
+  padding-bottom: 6.4rem;
+}
+#main #container #find .find-inner ul .introduce .introduce-inner .img-wrap {
+  width: 30rem;
+  height: 24rem;
+}
+#main #container #find .find-inner ul .introduce .introduce-inner .img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#main #container #find .find-inner .btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+  width: 100%;
+}
+#main #container #ourStory {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#main #container #ourStory .story-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1840px;
+  padding-top: 9.4rem;
+  padding-bottom: 8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E8E8FF), color-stop(50%, #E8E8FF), to(#fff));
+  background: linear-gradient(to bottom, #E8E8FF 0%, #E8E8FF 50%, #fff 100%);
+  border-radius: 8rem;
+}
+#main #container #ourStory .story-inner > strong {
+  font-family: "Panchang";
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #6A6AE6;
+}
+#main #container #ourStory .story-inner > p {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 500;
+  color: #222;
+  padding-top: 3.6rem;
+  padding-bottom: 6rem;
+}
+#main #container #ourStory .story-inner .icon-wrap .icon-big-star {
+  position: absolute;
+  top: -4rem;
+  left: 4rem;
+  z-index: 10;
+  -webkit-animation: rotate_image 30s linear infinite;
+          animation: rotate_image 30s linear infinite;
+}
+#main #container #ourStory .story-inner .icon-wrap .icon-double-circle {
+  position: absolute;
+  top: -6rem;
+  right: 12%;
+  z-index: 10;
+}
+#main #container #ourStory .story-inner .category-list {
+  max-width: 1640px;
+  padding: 0 2rem;
+}
+#main #container #ourStory .story-inner .category-list .date {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 400;
+  color: #AAAAAA;
+}
+#main #container #ourStory .story-inner .btn-wrap {
+  padding-top: 6rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
