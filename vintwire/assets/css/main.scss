@@ -157,6 +157,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             width: 100%;
             height: 100vh;
             .value-inner {
+                max-width: 1840px;
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
@@ -379,6 +380,138 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             background: url(/vintwire/assets/images/main/nonghyup_life.png) no-repeat center/cover;
                         }
                     }
+                }
+            }
+        }
+        #find {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            @include flexbox (row, center, center);
+            .find-inner {
+                @include flexbox (column, flex-start, center);
+                max-width: 1840px;
+                padding-top: 9rem;
+                padding-bottom: 8rem;
+                background: #F8F8F8;
+                border-radius: 8rem;
+                .find-title {
+                    // padding-top: 9rem;
+                    padding-bottom: 2.6rem;
+                    font-family: $pretendard;
+                    font-size: 4.8rem;
+                    span:nth-of-type(1) {
+                        color: $black;
+                        font-weight: 500;
+                    }
+                    span:nth-of-type(2) {
+                        color: $purple;
+                        font-weight: 800;
+                    }
+                }
+                .sub-title {
+                    font-family: $pretendard;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    color: $black;
+                }
+                ul {
+                    @include flexbox (row, center, center);
+                    padding: 6rem 2rem 3.2rem 2rem;
+                    width: 100%;
+                    gap: 1.5rem;
+                    .introduce {
+                        width: 100%;
+                        .introduce-inner {
+                            @include flexbox (column, flex-start, center);
+                            padding: 4rem 0;
+                            .tag-item {
+                                font-family: $pretendard;
+                                font-size: 1.4rem;
+                                border: none;
+                            }
+                            p {
+                                font-family: $pretendard;
+                                font-size: 2.4rem;
+                                font-weight: 700;
+                                color: $black;
+                                text-align: center;
+                                padding-top: 3.4rem;
+                                padding-bottom: 6.4rem;
+                            }
+                            .img-wrap {
+                                width: 30rem;
+                                height: 24rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-wrap {
+                    @include flexbox (row, center, center);
+                    gap: 2.4rem;
+                    width: 100%;
+                }
+            }
+        }
+        #ourStory {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            .story-inner {
+                @include flexbox (column, flex-start, center);
+                max-width: 1840px;
+                padding-top: 9.4rem;
+                padding-bottom: 8rem;
+                background: linear-gradient(to bottom, #E8E8FF 0%, #E8E8FF 50%, $white 100%);
+                border-radius: 8rem;
+                > strong {
+                    font-family: $panchang;
+                    font-size: 4.8rem;
+                    font-weight: 700;
+                    color: $purple;
+                }
+                > p {
+                    font-family: $pretendard;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: $black;
+                    padding-top: 3.6rem;
+                    padding-bottom: 6rem;
+                }
+                .icon-wrap {
+                    .icon-big-star {
+                        position:absolute;
+                        top:-4rem;
+                        left:4rem;
+                        z-index:10;
+                        animation:rotate_image 30s linear infinite;
+                    }
+                    .icon-double-circle {
+                        position:absolute;
+                        top:-6rem;
+                        right:12%;
+                        z-index:10;
+                    }
+                }
+                .category-list {
+                    max-width: 1640px;
+                    padding: 0 2rem;
+                    .date {
+                        font-family: $pretendard;
+                        font-size: 2rem;
+                        font-weight: 400;
+                        color: #AAAAAA;
+                    }
+                }
+                .btn-wrap {
+                    padding-top: 6rem;
+                    width: 100%;
+                    @include flexbox (row, center, center);
                 }
             }
         }
