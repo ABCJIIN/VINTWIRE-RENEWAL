@@ -59,38 +59,114 @@
             }
         }
         #benefit{
-            &-list{
-                > li{
-                    &::after{
-                        content: '';
-                        width: 9.6rem;
-                        height: 9.6rem;
-                        display: block;
-                        border: 1px solid #000;
-                    }
-                    @for $i from 1 through 13{
-                        &::after{
-                            background: url(/vintwire/assets/images/);
+            margin-top: 4rem;
+            padding: 8rem 0;
+            &::after{
+                content: '';
+                width: calc(100% - 4rem);
+                max-width: 1840px;
+                height: 100%;
+                background: #F8F8F8;
+                border-radius: 5rem;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+            &::before{
+                content: '';
+                width: calc(100% - 4rem);
+                max-width: 1840px;
+                height: 50%;
+                background: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.5) 10%, rgba($purple, 0.5) 80%);
+                border-radius: 5rem;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+            .benefit-wrap{
+                display: grid;
+                gap: 1.6rem;
+                grid-template-columns: repeat(4, 1fr);
+                margin-top: 6rem;
+                height: 45.6rem;
+                overflow: hidden;
+                .benefit-list{
+                    // display: grid;
+                    // grid-template-columns: repeat(4, 1fr);
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    // gap: 1.6rem;
+                    // margin-top: 6rem;
+                    @include flexbox(column, flex-start, flex-start);
+                    gap: 1.6rem;
+                    &.mt40{margin-top: 4rem;}
+                    > li{
+                        // float: left;
+                        min-height: 20rem;
+                        width: 100%;
+                        position: relative;
+                        // margin-top: 1.6rem;
+                        // &.mt40{margin-top: 4rem;}
+                        // &::after{
+                        //     content: '';
+                        //     width: 9.6rem;
+                        //     height: 9.6rem;
+                        //     display: block;
+                        //     position: absolute;
+                        //     right: 1.6rem;
+                        //     bottom: 1.6rem;
+                        //     border: 1px solid #000;
+                        // }
+                        // @for $i from 1 through 15{
+                        //     &:nth-child(#{$i}){
+                        //         &::after{
+                        //             background: url(/vintwire/assets/images/sub/job/benefit#{$i}.png) no-repeat center bottom/ contain;
+                        //         }
+                        //     }
+                        // }
+                        .img-wrap{
+                            width: 9.6rem;
+                            height: 9.6rem;
+                            display: block;
+                            position: absolute;
+                            right: 1.6rem;
+                            bottom: 1.6rem;
+                            @include flexbox(row, center, center);
+                            > img{max-width: 100%;}
                         }
-                    }
-                    > strong{
-                        font-size: 2.4rem;
-                        line-height: 3.6rem;
-                        font-weight: bold;
-                        display: block;
-                        margin-bottom: 1.6rem;
-                        &::after{
-                            content: '';
-                            width: 4.8rem;
-                            height: 4.8rem;
-                            border-radius: 50%;
-                            background: rgba($yellow, 0.3);
+                        .benefit-info{
+                            > strong{
+                                font-size: 2.4rem;
+                                line-height: 3.6rem;
+                                font-weight: bold;
+                                display: block;
+                                margin-bottom: 1.6rem;
+                                position: relative;
+                                z-index: 1;
+                            }
+                            .icon-circle{
+                                position: absolute;
+                                top: 1.6rem;
+                                left: 1.6rem;
+                                z-index: 0;
+                                background: rgba($yellow, 0.3);
+                            }
+                            > p{
+                                line-height: 2.6rem;
+                            }
                         }
-                    }
-                    > p{
-                        line-height: 2.6rem;
                     }
                 }
+            }
+            button{
+                position: relative;
+                z-index: 2;
+                display: block;
+                margin: 6rem auto 0;
             }
         }
     }
