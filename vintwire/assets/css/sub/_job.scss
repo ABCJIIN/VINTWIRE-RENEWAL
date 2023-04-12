@@ -8,12 +8,10 @@
                 @include tablet{padding-bottom: 3rem;}
                 .swiper-slide{
                     height: 100%;
-                    border: 1px solid #000;
                     .character{
                         max-width: 13rem;
                         width: 28%;
                         margin: 0 auto;
-                        border: 1px solid #000;
                         @include tablet{max-width: 100%;}
                         > img{
                             width: 100%;
@@ -61,31 +59,34 @@
         #benefit{
             margin-top: 4rem;
             padding: 8rem 0;
-            &::after{
+            &.on{
+                &::before{display: none;}
+                .benefit-wrap{
+                    height: auto;
+                    overflow: auto;
+                }
+            }
+            &::after, &::before{
                 content: '';
                 width: calc(100% - 4rem);
                 max-width: 1840px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &::after{
                 height: 100%;
                 background: #F8F8F8;
                 border-radius: 5rem;
-                position: absolute;
-                left: 50%;
-                top: 0;
-                transform: translateX(-50%);
                 z-index: -1;
+                top: 0;
             }
             &::before{
-                content: '';
-                width: calc(100% - 4rem);
-                max-width: 1840px;
                 height: 50%;
-                background: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.5) 10%, rgba($purple, 0.5) 80%);
-                border-radius: 5rem;
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                transform: translateX(-50%);
+                background: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.5) 10%, rgba($purple, 0.2) 80%);
+                border-radius: 0 0 5rem 5rem;
                 z-index: 1;
+                bottom: 0;
             }
             .benefit-wrap{
                 display: grid;
@@ -94,40 +95,46 @@
                 margin-top: 6rem;
                 height: 45.6rem;
                 overflow: hidden;
+                @include tablet{
+                    grid-template-columns: 1fr;
+                    margin-top: 4rem;
+                }
                 .benefit-list{
-                    // display: grid;
-                    // grid-template-columns: repeat(4, 1fr);
-                    // display: flex;
-                    // flex-wrap: wrap;
-                    // gap: 1.6rem;
-                    // margin-top: 6rem;
-                    @include flexbox(column, flex-start, flex-start);
                     gap: 1.6rem;
                     &.mt40{margin-top: 4rem;}
+                    @include flexbox(column, flex-start, flex-start);
+                    @include tablet{
+                        &:not(:first-child){display: none;}
+                        gap: 1rem;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        &.mt40{margin-top: 0;}
+                    }
                     > li{
                         // float: left;
                         min-height: 20rem;
                         width: 100%;
                         position: relative;
-                        // margin-top: 1.6rem;
-                        // &.mt40{margin-top: 4rem;}
-                        // &::after{
-                        //     content: '';
-                        //     width: 9.6rem;
-                        //     height: 9.6rem;
-                        //     display: block;
-                        //     position: absolute;
-                        //     right: 1.6rem;
-                        //     bottom: 1.6rem;
-                        //     border: 1px solid #000;
-                        // }
-                        // @for $i from 1 through 15{
-                        //     &:nth-child(#{$i}){
-                        //         &::after{
-                        //             background: url(/vintwire/assets/images/sub/job/benefit#{$i}.png) no-repeat center bottom/ contain;
-                        //         }
-                        //     }
-                        // }
+                        @include tablet{
+                            width: calc(100% / 2 - 0.5rem);
+                            min-height: 21rem;
+                            padding: 2.2rem 1.4rem;
+                            &:nth-child(1){order: 1;}
+                            &:nth-child(2){order: 5;}
+                            &:nth-child(3){order: 9;}
+                            &:nth-child(4){order: 13;}
+                            &:nth-child(5){order: 2;}
+                            &:nth-child(6){order: 6;}
+                            &:nth-child(7){order: 10;}
+                            &:nth-child(8){order: 14;}
+                            &:nth-child(9){order: 3;}
+                            &:nth-child(10){order: 7;}
+                            &:nth-child(11){order: 11;}
+                            &:nth-child(12){order: 4;}
+                            &:nth-child(13){order: 8;}
+                            &:nth-child(14){order: 12;}
+                        }
                         .img-wrap{
                             width: 9.6rem;
                             height: 9.6rem;
@@ -137,6 +144,10 @@
                             bottom: 1.6rem;
                             @include flexbox(row, center, center);
                             > img{max-width: 100%;}
+                            @media (max-width: 1200px) {
+                                width: 4rem;
+                                height: 4.6rem;                          
+                            }
                         }
                         .benefit-info{
                             > strong{
@@ -147,6 +158,10 @@
                                 margin-bottom: 1.6rem;
                                 position: relative;
                                 z-index: 1;
+                                @include tablet{
+                                    font-size: 1.8rem;
+                                    margin-bottom: 1rem;
+                                }
                             }
                             .icon-circle{
                                 position: absolute;
@@ -154,9 +169,16 @@
                                 left: 1.6rem;
                                 z-index: 0;
                                 background: rgba($yellow, 0.3);
+                                @include tablet{
+                                    width: 2.4rem;
+                                    height: 2.4rem;
+                                    top: 1.4rem;
+                                    left: 1.4rem;
+                                }
                             }
                             > p{
                                 line-height: 2.6rem;
+                                @include tablet{line-height: 2rem;}
                             }
                         }
                     }
@@ -165,8 +187,108 @@
             button{
                 position: relative;
                 z-index: 2;
-                display: block;
                 margin: 6rem auto 0;
+            }
+        }
+        #faq{
+            margin-top: 4rem;
+            padding: 8rem 0;
+            &::after{
+                content: '';
+                width: calc(100% - 4rem);
+                height: 100%;
+                border: 1px solid #000;
+                max-width: 1840px;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                z-index: -1;
+                background: $purple;
+                border-radius: 5rem;
+            }
+            .sec-tit{*{color: $white;}}
+            .faq-list{
+                margin-top: 4rem;
+                > li{
+                    &:not(:first-child){margin-top: 2.4rem;}
+                    &.on{
+                        .faq-list-tit{
+                            &::after{transform: translateY(-50%) rotate(180deg);}
+                        }
+                    }
+                }
+                &-tit{
+                    @include flexbox(row, flex-start, center);
+                    gap: 2rem;
+                    background: $white;
+                    padding: 3rem 3.6rem;
+                    border-radius: 1rem;
+                    font-size: 2.4rem;
+                    font-weight: bold;
+                    line-height: 3.6rem;
+                    position: relative;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    .qa-num{
+                        -webkit-text-stroke: 1px #C4C4EB;
+                        color: transparent;
+                        font-size: 3.6rem;
+                        font-weight: 800;
+                    }
+                    &::after{
+                        content: '';
+                        width: 4.6rem;
+                        height: 4.6rem;
+                        box-shadow: 0 0 1rem rgba(106, 106, 230, 0.2);
+                        border-radius: 50%;
+                        @include background(icon, arrow_icon, png, no-repeat, 50%, center, center);
+                        background-color: $white;
+                        position: absolute;
+                        top: 50%;
+                        right: 3.6rem;
+                        transform: translateY(-50%);
+                        border: 1px solid rgba($purple, 0.2);
+                        transition: all .35s;
+                    }
+                }
+                &-comment{
+                    background: #E8E8FF;
+                    border-radius: 1rem;
+                    padding: 2.4rem 10.4rem;
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                }
+            }
+        }
+        #recruitment{
+            margin-top: 8rem;
+            .recruitment-list{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.6rem;
+                > li{
+                    position: relative;
+                    &:nth-child(1){
+                        .team-character{@include background(sub/job, recruitment_plan_img, png, no-repeat, contain, center, bottom);}
+                    }
+                    &:nth-child(2){
+                        .team-character{@include background(sub/job, recruitment_design_img, png, no-repeat, contain, center, bottom);}
+                    }
+                    &:nth-child(3){
+                        .team-character{@include background(sub/job, recruitment_dev_img, png, no-repeat, contain, center, bottom);}
+                    }
+                    .team-character{
+                        width: 16rem;
+                        height: 12.8rem;
+                        margin-left: auto;
+                        margin-right: 0;
+                        border: 1px solid #000;
+                        > img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
             }
         }
     }

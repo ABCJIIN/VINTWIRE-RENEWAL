@@ -36,4 +36,32 @@ $(document).ready(function(){
         },
     });
 
+    // job benefit
+    $('#benefit .more-btn').on('click', function(){
+        if($(this).hasClass('on')){
+            $(this).removeClass('on');
+            $(this).html('더보기');
+            $(this).parents('#benefit').removeClass('on');
+        }else{
+            $(this).addClass('on');
+            $(this).html('접기');
+            $(this).parents('#benefit').addClass('on');
+        }
+    });
+
+    // job faq
+    $('.faq-list-comment').slideUp();
+    $('.faq-list-tit').on('click', function() {
+        function slideDown(target) {
+          slideUp();
+          $(target).parent('li').addClass('on').find('.faq-list-comment').slideDown();
+        }
+
+        function slideUp() {
+          $('.faq-list li').removeClass('on').find('.faq-list-comment').slideUp();
+        }
+
+        $(this).hasClass('on') ? slideUp() : slideDown(this);
+    });
+
 });
