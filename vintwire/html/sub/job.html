@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UI,UX,웹디자인,APP">
+    <meta name="description" content="(주)빈트와이어는 UI/UX 분야에 오랜 기간 동안 종사한 전문가 그룹입니다. 온/오프라인 디지털 기반의 산업, 기술, 문화, 마케팅에 대한 다양한 지식과 통찰력을 갖추고 있습니다. 디지털 커뮤니케이션을 위한 웹, 모바일 사이트 및 어플리케이션(APP)의 전략수립과 디자인, 개발까지 그리고 온 오프라인 마케팅 &amp; 프로모션까지 디지털서비스의 모든 경험을 구현하는 Digital Media기반 Consulting 기업입니다.">
+    <meta property="og:url" content="http://www.vintwire.com/"/> <!--공유링크-->
+    <meta property="og:title" content="디지털 서비스의 모든 경험을 구현하는 빈트와이어" /><!--타이틀-->
+    <meta property="og:description" content=" "/> <!--설명문구-->
+    <meta property="og:image" content="./img/thumbnail.jpg"/> <!--썸네일-->
+    <title>빈트와이어</title>
+    <link rel="icon" href="/vintwire/assets/images/favicon-16x16.png" sizes="16x16"> 
+    <link rel="icon" href="/vintwire/assets/images/favicon-32x32.png" sizes="32x32"> 
+    <link rel="icon" href="/vintwire/assets/images/favicon-48x48.png" sizes="48x48"> 
+    <!-- CDN -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 로컬 소스 -->
+    <link href="/vintwire/assets/css/animate.min.css" rel="stylesheet">
+    <link href="/vintwire/assets/css/reset.css" rel="stylesheet">
+    <link href="/vintwire/assets/css/font.css" rel="stylesheet">
+    <link href="/vintwire/assets/css/sub.css" rel="stylesheet">
+    <script src="/vintwire/assets/js/include.js"></script>
+    <!-- <script src="/vintwire/assets/js/main.js"></script> -->
+    <script src="/vintwire/assets/js/sub.js"></script>
+</head>
+<body>
+    <div id="job" class="wrap">
+        <header id="header"></header>
+        <div id="container">
+            <section id="intro">
+                <div class="intro-bg">서브페이지 bg입니다</div>
+                <div class="intro-tit con-box animate__animated animate__fadeIn">
+                    <h2>job</h2>
+                    <p>
+                        빈트와이어의 구성원이 되어 함께 성장하며 <br>내일의 변화를 만들어 갈 빈트족을 기다립니다
+                    </p>
+                </div>
+            </section>
+            <section id="vintTeam">
+                <div class="con-box">
+                    <div class="swiper" id="teamSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="character">
+                                    <img src="/vintwire/assets/images/common/character_jane.png" alt="캐릭터">
+                                </div>
+                                <div class="team-info purple-box">
+                                    <strong>UX PLAN</strong>
+                                    <p>
+                                        지속적으로 사용자 경험을 연구하고,<br>
+                                        디지털 서비스 경험의 가치를 알고 있는 분과 <br class="d-mb">함께 하고 싶어요. 
+                                        팀원과 자유롭게 의견을 <br class="d-mb">나누며 소통하는 기획자를 찾습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character">
+                                    <img src="/vintwire/assets/images/common/character_jane.png" alt="캐릭터">
+                                </div>
+                                <div class="team-info purple-box">
+                                    <strong>UX DESIGN</strong>
+                                    <p>
+                                        타인의 의견을 적극적으로 수용할 수 있는 <br class="d-mb">넓은 마음을<br class="d-pc"> 
+                                        가진 디자이너를 찾아요. <br class="d-mb">자신의 작업물에 대해서는<br class="d-pc">
+                                        자신있고 설득력있게 <br class="d-mb">얘기할 수 있다면 언제든 환영입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="character">
+                                    <img src="/vintwire/assets/images/common/character_jane.png" alt="캐릭터">
+                                </div>
+                                <div class="team-info purple-box">
+                                    <strong>UX DEV.</strong>
+                                    <p>
+                                        컴퓨터가 아닌 사람이 이해하기 쉬운 코트를 <br class="d-pc">
+                                        짜는 <br class="d-mb">개발자가 필요해요. 웹 개발일을 사랑하신다면<br>
+                                        저희 빈트와이어와 함께 하세요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="benefit">
+                <div class="con-box">
+                    <div class="sec-tit">
+                        <h2>BENEFITS</h2>
+                        <p>빈트족의 일과 삶의 균형, 성장을 위한 복지를 만들어갑니다.</p>
+                    </div>
+                    <div class="benefit-wrap">
+                        <ul class="benefit-list">
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>막금Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>매월 마지막 주 금요일은 <br>오후 4시에 퇴근해요</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit1.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>맛집Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>매월 세번째 목요일 <br>점심 시간은 1시간 30분!</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit5.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>유익한Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>외부 전문가를 초청하여 <br>강의/세미나 진행</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit9.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>보상/수당/지원</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>스톡옵션, 퇴직금, 각종 경조금 지원, <br>인센티브제, 성과급</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit13.png" alt="복지">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="benefit-list mt40">
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>태어난Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>평일에 생일이 있다면 <br>오후 2시에 퇴근해요</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit2.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>든든한Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>매월 두번째 수요일은 <br>아침에 샌드위치를 제공해요</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit6.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>연금/보험</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>국민연금, 고용보험, <br>산재보험, 건강보험</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit10.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>교육/연수</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>사내 외국어 강좌 운영, <br>신입사원교육(OJT), <br>직무능력향상교육, 리더십강화교육</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit14.png" alt="복지">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="benefit-list">
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>독서한Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>만화책도 책이다! <br>필요한 도서를 지원해요</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit3.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>싱글Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>매월 첫번째 수요일 <br>5층 혼자 다 쓰면서 업무해요</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit6.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>휴무/휴가/행사</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>연차, 포상휴가, 산전 후 휴가, <br>워크샵/MT, 야유회</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit9.png" alt="복지">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="benefit-list mt40">
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>함께한Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>1년에 2회 팀원들과 <br>함께 친목쌓아요</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit4.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>웰컴Day</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>환영합니다! <br>입사 웰컴키트 제공</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit8.png" alt="복지">
+                                </div>
+                            </li>
+                            <li class="purple-box">
+                                <div class="benefit-info">
+                                    <strong>생활편의/여가</strong>
+                                    <span class="icon-circle"></span>
+                                    <p>사내동호회 운영, 건강검진</p>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/vintwire/assets/images/sub/job/benefit9.png" alt="복지">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn-type2">더보기</button>
+            </section>
+        </div>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>

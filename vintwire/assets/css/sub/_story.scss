@@ -16,14 +16,14 @@
             &.datail{
                 background: $black;
                 @include notebook{padding: 15.6rem 0 0;}
-                &::after{
-                    content: '';
+                .character{
                     width: 22.6rem;
                     height: 28.8rem;
                     display: block;
                     position: absolute;
                     right: 12%;
                     bottom: 0;
+                    text-indent: -9999em;
                     @include notebook{
                         width: 12.4rem;
                         height: 16rem;
@@ -33,17 +33,13 @@
                 }
                 &.jane {
                     background:$jane;
-                    &::after{
-                        @include background(common, character_jane, png, no-repeat, contain, center, bottom);
-                    }
+                    .character{@include background(common, character_jane, png, no-repeat, contain, center, bottom);}
                 }
                 &.anna {background:$anna;}
                 &.jasmine {background:$jasmine;}
                 &.steven {
-                    background:$steven;
-                    &::after{
-                        @include background(common, character_steven, png, no-repeat, contain, center, bottom);
-                    }
+                    background: $steven;
+                    .character{@include background(common, character_steven, png, no-repeat, contain, center, bottom);}
                 }
                 &.woody {background: $woody;}
                 &.summer {background:$summer;}
@@ -61,7 +57,8 @@
                         margin-bottom: 6.2rem;
                         @include tablet{
                             font-size: 2rem;
-                            margin-bottom: 2.4rem;
+                            line-height: 3.2rem;
+                            margin: 1rem 0 2.4rem;
                         }
                     }
                     > p{@include tablet{font-size: 1.4rem;}}
@@ -87,8 +84,8 @@
                     .img-wrap{
                         margin: 6rem 0;
                         @include flexbox(row, center, center);
-                        // > img{width: 100%;}
                         @include tablet{margin: 3.6rem 0;}
+                        > img{max-width: 100%;}
                     }
                     button{
                         margin: 4rem auto 0;
@@ -119,6 +116,7 @@
                             @include tablet{
                                 width: 3.2rem;
                                 height: 0.8rem;
+                                top: -1.6rem;
                             }
                         }
                     }

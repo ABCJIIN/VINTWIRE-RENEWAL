@@ -12,5 +12,28 @@ $(document).ready(function(){
             offset: 125,
         });
     }
-    init()
+    init();
+
+    /* job */
+    // job 상단 슬라이드
+    var swiper = new Swiper("#teamSwiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+        autoHeight : false,
+        centeredSlides: true,
+        pagination: {
+            el: "#teamSwiper .swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 16,
+              centeredSlides: false,
+              autoHeight : false,
+              resistance : false, 
+            },
+        },
+    });
+
 });
