@@ -333,7 +333,7 @@ h2{color: #222;}
     margin: 0 auto;
 }
 
-.wrap{
+.wrap:not(#main){
     #container{
         section{
             position: relative;
