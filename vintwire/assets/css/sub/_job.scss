@@ -80,6 +80,7 @@
                 border-radius: 5rem;
                 z-index: -1;
                 top: 0;
+                @include tablet{border-radius: 1rem;}
             }
             &::before{
                 height: 50%;
@@ -87,6 +88,7 @@
                 border-radius: 0 0 5rem 5rem;
                 z-index: 1;
                 bottom: 0;
+                @include tablet{border-radius: 0 0 1rem 1rem;}
             }
             .benefit-wrap{
                 display: grid;
@@ -188,6 +190,7 @@
                 position: relative;
                 z-index: 2;
                 margin: 6rem auto 0;
+                @include tablet{margin: 2.4rem auto 0;}
             }
         }
         #faq{
@@ -206,12 +209,16 @@
                 z-index: -1;
                 background: $purple;
                 border-radius: 5rem;
-            }
+                @include tablet{}
+            border-radius: 1rem;}
             .sec-tit{*{color: $white;}}
             .faq-list{
                 margin-top: 4rem;
                 > li{
-                    &:not(:first-child){margin-top: 2.4rem;}
+                    &:not(:first-child){
+                        margin-top: 2.4rem;
+                        @include tablet{margin-top: 1.6rem;}
+                    }
                     &.on{
                         .faq-list-tit{
                             &::after{transform: translateY(-50%) rotate(180deg);}
@@ -222,18 +229,25 @@
                     @include flexbox(row, flex-start, center);
                     gap: 2rem;
                     background: $white;
-                    padding: 3rem 3.6rem;
+                    padding: 3rem 7rem 3rem 3.6rem;
                     border-radius: 1rem;
                     font-size: 2.4rem;
                     font-weight: bold;
                     line-height: 3.6rem;
                     position: relative;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    @include tablet{
+                        font-size: 1.8rem;
+                        line-height: 2.8rem;
+                        padding: 1.8rem 7rem 1.8rem 1.4rem;
+                        align-items: flex-start;
+                    }
                     .qa-num{
                         -webkit-text-stroke: 1px #C4C4EB;
                         color: transparent;
                         font-size: 3.6rem;
                         font-weight: 800;
+                        @include tablet{font-size: 2.4rem;}
                     }
                     &::after{
                         content: '';
@@ -249,6 +263,7 @@
                         transform: translateY(-50%);
                         border: 1px solid rgba($purple, 0.2);
                         transition: all .35s;
+                        @include tablet{right: 1.4rem;}
                     }
                 }
                 &-comment{
@@ -257,6 +272,11 @@
                     padding: 2.4rem 10.4rem;
                     font-size: 1.8rem;
                     line-height: 3rem;
+                    @include tablet{
+                        padding: 1.8rem 1.4rem;
+                        font-size: 1.6rem;
+                        line-height: 2.8rem;
+                    }
                 }
             }
         }
@@ -266,6 +286,7 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 1.6rem;
+                @include tablet_junction{grid-template-columns: 1fr;}
                 > li{
                     position: relative;
                     &:nth-child(1){
@@ -282,10 +303,62 @@
                         height: 12.8rem;
                         margin-left: auto;
                         margin-right: 0;
-                        border: 1px solid #000;
+                        transform: translateY(0.5rem);
                         > img{
                             width: 100%;
                             display: block;
+                        }
+                        @include tablet_junction{
+                            width: 12rem;
+                            height: 9.8rem;
+                            position: absolute;
+                            top: 50%;
+                            right: 1.6rem;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                        }
+                    }
+                    .purple-box{
+                        position: relative;
+                        z-index: 0;
+                        @include flexbox(row, space-between, flex-end);
+                        @include tablet_junction{
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        > div{
+                            .tag-item{
+                                display: block;
+                                width: 6rem;
+                                padding: 1rem;
+                                font-size: 1.4rem;
+                                font-weight: 500;
+                                margin: 0 auto 2.6rem;
+                                @include tablet_junction{
+                                    width: 8.4rem;
+                                    margin: 0 0 1rem;
+                                }
+                            }
+                            > strong{
+                                font-size: 3.6rem;
+                                font-weight: bold;
+                            }
+                        }
+                        .team-support{
+                            @include flexbox(row, space-between, center);
+                            gap: 2.2rem;
+                            font-size: 1.6rem;
+                            font-weight: 600;
+                            color: $black;
+                            @include tablet_junction{
+                                margin-top: 1.6rem;
+                                gap: 1rem;
+                            }
+                            .arr-btn{
+                                img{
+                                    animation: arr_ani .5s infinite both alternate;
+                                }
+                            }
                         }
                     }
                 }
