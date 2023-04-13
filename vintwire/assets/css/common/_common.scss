@@ -371,5 +371,12 @@ button{
             z-index:-1;
         }
     }
-    &.w162 {width:16.2rem;}
+    &.w162 {
+        width:16.2rem;
+        .inner{
+            img{
+                width: 14rem;
+            }
+        }
+    }
 }
