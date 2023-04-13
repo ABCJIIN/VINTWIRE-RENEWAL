@@ -2190,13 +2190,13 @@ body.fixed {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
 }
 #main #container #intro {
   position: relative;
   width: calc(100% - 6rem);
   padding-top: 27rem;
   height: 100vh;
+  min-height: 81.5rem;
 }
 #main #container #intro::after {
   content: "";
@@ -2346,31 +2346,14 @@ body.fixed {
 #main #container #value {
   position: relative;
   width: 100%;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  min-height: 81.5rem;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#main #container #value::after {
-  content: "";
-  position: absolute;
-  top: 10rem;
-  bottom: 14rem;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  max-width: 1840px;
-  width: 100%;
-  background: #F8F8F8;
-  height: calc(100% - 24rem);
-  border-radius: 8rem;
-  z-index: -5;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 #main #container #value .value-inner {
   display: -webkit-box;
@@ -2386,6 +2369,19 @@ body.fixed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#main #container #value .value-inner::after {
+  content: "";
+  position: absolute;
+  top: 12rem;
+  bottom: 10rem;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 1840px;
+  width: 100%;
+  background: #F8F8F8;
+  border-radius: 8rem;
+  z-index: -5;
 }
 #main #container #value .value-inner .text-wrap > strong {
   font-family: "Panchang";
@@ -2410,6 +2406,7 @@ body.fixed {
   font-family: "Panchang";
   font-size: 4.8rem;
   font-weight: 700;
+  line-height: 6rem;
 }
 #main #container #value .value-inner .text-wrap .title .icon-smile {
   width: 5.3rem;
@@ -2503,23 +2500,36 @@ body.fixed {
 #main #container #project {
   position: relative;
   width: 100%;
+  height: 100%;
   background: #222;
 }
+#main #container #project::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 44rem;
+  background: url(/vintwire/assets/images/main/projects_bg.png) no-repeat center/cover;
+}
 #main #container #project .project-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  position: relative;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 12rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 20rem;
+  height: auto;
+  width: 100%;
+}
+#main #container #project .project-inner .sec-tit {
+  position: sticky;
+  top: 0;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  width: 100%;
+  z-index: 20;
+  background: #222;
 }
 #main #container #project .project-inner .sec-tit h2 {
   color: #fff;
@@ -2530,6 +2540,7 @@ body.fixed {
 #main #container #project .project-inner #projectSlide {
   position: relative;
   width: 100%;
+  padding-bottom: 6rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper {
   width: 100%;
@@ -2649,14 +2660,18 @@ body.fixed {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .page-num {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
+#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .explain-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .explain-wrap .page-num {
+  transform: rotate(-90deg);
+  transform-origin: right top;
   right: calc(50% + 5.2rem);
 }
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .stroke-text {
+#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .explain-wrap .stroke-text {
   top: 15rem;
   left: 0;
 }
@@ -2685,22 +2700,14 @@ body.fixed {
   white-space: nowrap;
   z-index: -5;
 }
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .project-btn-wrap {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
 }
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .btn-wrap button {
+#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .project-btn-wrap button {
   background: #FFE75C;
   font-family: "Pretendard";
   font-size: 1.4rem;
@@ -2719,6 +2726,8 @@ body.fixed {
   font-weight: 700;
   line-height: 7.9rem;
   color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .join {
   display: -webkit-box;
@@ -2741,6 +2750,11 @@ body.fixed {
   font-size: 1.8rem;
   font-weight: 400;
   color: #fff;
+}
+#main #container #project .project-inner .btn-wrap {
+  width: 100%;
+  text-align: center;
+  z-index: 5;
 }
 #main #container #find {
   position: relative;
@@ -2915,23 +2929,16 @@ body.fixed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 9.4rem;
-  padding-bottom: 8rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4.3rem;
+  padding-bottom: 11.7rem;
 }
 #main #container #ourStory .story-inner .icon-wrap .icon-big-star {
   position: absolute;
   top: -4rem;
-  left: 4rem;
+  left: -5%;
   z-index: 10;
   -webkit-animation: rotate_image 30s linear infinite;
           animation: rotate_image 30s linear infinite;
@@ -2942,20 +2949,17 @@ body.fixed {
   right: 12%;
   z-index: 10;
 }
-#main #container #ourStory .story-inner .btn-wrap {
+#main #container #ourStory .story-inner .category-list {
   padding-top: 6rem;
+  padding-bottom: 3.2rem;
+}
+#main #container #ourStory .story-inner .category-list .date {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 400;
+  color: #AAAAAA;
+}
+#main #container #ourStory .story-inner .btn-wrap {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
