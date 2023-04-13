@@ -306,6 +306,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     width: 100%;
                     .swiper-wrapper {
                         width: 100%;
+                        gap: 12rem;
                         @include flexbox (column, center, center);
                         .swiper-slide {
                             @include flexbox (row, flex-start, flex-end);
@@ -330,27 +331,27 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 // @include flexbox (row, flex-start, flex-start);
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/korean_air.png) no-repeat center/cover;
-                                    border-radius: 3.2rem 3.2rem 3.2rem 8rem;
+                                    border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
                                 }
                             }
                             &:nth-of-type(3) {
                                 // @include flexbox (row, flex-start, flex-start);
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/lg_electronics.png) no-repeat center/cover;
-                                    border-radius: 3.2rem 3.2rem 3.2rem 8rem;
+                                    border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
                                 }
                             }
                             &:nth-of-type(4) {
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/hyundai_robotics.png) no-repeat center/cover;
-                                    border-radius: 4rem 4rem 4rem 8rem;
+                                    border-radius: 4rem 4rem 4rem 0.8rem;
                                 }
                             }
                             &:nth-of-type(5) {
                                 // @include flexbox (row, flex-start, flex-start);
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/nonghyup_life.png) no-repeat center/cover;
-                                    border-radius: 3.2rem 3.2rem 3.2rem 8rem;
+                                    border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
                                 }
                             }
                             .img-wrap {
@@ -359,16 +360,20 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             }
                             .project-explain {
                                 width: 50%;
+                                padding: 0 1.6rem;
                                 &:nth-child(even) {
                                     @include flexbox (column, flex-start, flex-start);
-                                    .page-num {
-                                        transform: rotate(90deg);
-                                        transform-origin: left top;
-                                        left: calc(50% + 5.2rem);
-                                    }
-                                    .stroke-text {
-                                        left: 50%;
-                                        top: 15rem;
+                                    .explain-wrap {
+                                        @include flexbox (column, flex-start, flex-start);
+                                        .page-num {
+                                            transform: rotate(90deg);
+                                            transform-origin: left top;
+                                            left: calc(50% + 5.2rem);
+                                        }
+                                        .stroke-text {
+                                            left: 50%;
+                                            top: 15rem;
+                                        }
                                     }
                                 }
                                 &:nth-child(odd) {
@@ -379,68 +384,68 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                         right: calc(50% + 5.2rem);
                                     }
                                     .stroke-text {
-                                        width: 100vw;
                                         top: 15rem;
-                                        left: 50%;
-                                        transform: translate(-50%);
+                                        left: 0;
                                     }
                                 }
-                                .page-num {
-                                    position: absolute;
-                                    top: 0;
-                                    font-family: $pretendard;
-                                    font-size: 3.6rem;
-                                    font-weight: 900;
-                                    span:nth-of-type(1) {
-                                        color: $white;
+                                .explain-wrap {
+                                    .page-num {
+                                        position: absolute;
+                                        top: 0;
+                                        font-family: $pretendard;
+                                        font-size: 3.6rem;
+                                        font-weight: 900;
+                                        span:nth-of-type(1) {
+                                            color: $white;
+                                        }
+                                        span:nth-of-type(2) {
+                                            color: transparent;
+                                            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+                                        }
                                     }
-                                    span:nth-of-type(2) {
+                                    .stroke-text {
+                                        position: absolute;
+                                        font-family: $pretendard;
+                                        font-size: 9.6rem;
+                                        font-weight: 700;
+                                        line-height: 7.9rem;
                                         color: transparent;
                                         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+                                        white-space: nowrap;
+                                        z-index: -5;
                                     }
-                                }
-                                .stroke-text {
-                                    position: absolute;
-                                    font-family: $pretendard;
-                                    font-size: 9.6rem;
-                                    font-weight: 700;
-                                    line-height: 7.9rem;
-                                    color: transparent;
-                                    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-                                    white-space: nowrap;
-                                    z-index: -5;
-                                }
-                                .btn-wrap {
-                                    @include flexbox (row, center, center);
-                                    button {
-                                        background: #FFE75C;
-                                        font-family: $pretendard;
-                                        font-size: 1.4rem;
-                                        font-weight: 600;
-                                        color: #6A6AE6;
-                                        width: 8rem;
-                                        height: 2.4rem;
-                                        text-align: center;
-                                        border-radius: 0.4rem;
-                                        border: none;
-                                        padding: 0;
+                                    .btn-wrap {
+                                        @include flexbox (row, center, center);
+                                        button {
+                                            background: #FFE75C;
+                                            font-family: $pretendard;
+                                            font-size: 1.4rem;
+                                            font-weight: 600;
+                                            color: #6A6AE6;
+                                            width: 8rem;
+                                            height: 2.4rem;
+                                            text-align: center;
+                                            border-radius: 0.4rem;
+                                            border: none;
+                                            padding: 0;
+                                        }
                                     }
-                                }
-                                strong {
-                                    font-family: $pretendard;
-                                    font-size: 7.2rem;
-                                    font-weight: 700;
-                                    line-height: 7.9rem;
-                                    color: $white;
-                                }
-                                .join {
-                                    @include flexbox (column, flex-start, flex-start);
-                                    line-height: 2.8rem;
-                                    li {
+                                    strong {
                                         font-family: $pretendard;
-                                        font-size: 1.8rem;
-                                        font-weight: 400;
+                                        font-size: 7.2rem;
+                                        font-weight: 700;
+                                        line-height: 7.9rem;
                                         color: $white;
+                                    }
+                                    .join {
+                                        @include flexbox (column, flex-start, flex-start);
+                                        line-height: 2.8rem;
+                                        li {
+                                            font-family: $pretendard;
+                                            font-size: 1.8rem;
+                                            font-weight: 400;
+                                            color: $white;
+                                        }
                                     }
                                 }
                             }
