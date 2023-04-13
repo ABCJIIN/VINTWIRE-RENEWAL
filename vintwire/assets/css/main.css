@@ -2509,9 +2509,16 @@ body.fixed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 12rem;
 }
 #main #container #project .project-inner .sec-tit h2 {
@@ -2526,16 +2533,34 @@ body.fixed {
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
   position: relative;
 }
@@ -2567,14 +2592,25 @@ body.fixed {
   width: 50%;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(even) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(even) .page-num {
-  transform: rotate(90deg);
-  transform-origin: left top;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
   left: calc(50% + 5.2rem);
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(even) .stroke-text {
@@ -2582,21 +2618,33 @@ body.fixed {
   top: 15rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .page-num {
-  transform: rotate(-90deg);
-  transform-origin: right top;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
   right: calc(50% + 5.2rem);
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .stroke-text {
   width: 100vw;
   top: 15rem;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .page-num {
   position: absolute;
@@ -2624,10 +2672,19 @@ body.fixed {
   z-index: -5;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .btn-wrap button {
   background: #FFE75C;
@@ -2650,10 +2707,19 @@ body.fixed {
   color: #fff;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .join {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   line-height: 2.8rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .join li {

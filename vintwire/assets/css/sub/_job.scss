@@ -12,11 +12,8 @@
                     @include tablet{min-height: 31.4rem;}
                     .character{
                         width: 55%;
-                        height: 20rem;
-                        max-width: 29.8rem;
                         margin: 0 auto;
                         @include flexbox(row, center, center);
-                        @include tablet{height: auto;}
                         > img{
                             max-width: 100%;
                             display: block;
