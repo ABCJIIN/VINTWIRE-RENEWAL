@@ -149,6 +149,16 @@
 html {
   font-size: 10px;
 }
+@media (max-width: 1280px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
 
 body {
   font-size: 1.6rem;
@@ -584,6 +594,22 @@ body {
             filter: blur(5px);
   }
 }
+@-webkit-keyframes arr_ani {
+  from {
+    right: 2rem;
+  }
+  to {
+    right: 1.5rem;
+  }
+}
+@keyframes arr_ani {
+  from {
+    right: 2rem;
+  }
+  to {
+    right: 1.5rem;
+  }
+}
 /* 공통 아이템 */
 .tag-list {
   display: -webkit-box;
@@ -611,6 +637,7 @@ body {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-weight: 500;
   font-size: 2rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .tag-item {
@@ -625,6 +652,11 @@ body {
   border-radius: 1rem;
   background: #fff;
   padding: 2.4rem;
+}
+@media (max-width: 768px) {
+  .purple-box {
+    padding: 1.6rem;
+  }
 }
 
 /* 버튼타입 */
@@ -706,13 +738,13 @@ button.more-btn.on::before {
   background: #FFE75C;
 }
 .icon-circle.purple {
-  background: #6A6AE6;
+  background: rgba(106, 106, 230, 0.3);
 }
 
 /* 화살표 아이콘 */
 .arr-btn {
   z-index: 1;
-  width: 10.2rem;
+  width: 6.8rem;
   overflow: hidden;
 }
 .arr-btn .inner {
@@ -720,19 +752,22 @@ button.more-btn.on::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 48rem;
+  height: 4.8rem;
 }
 .arr-btn .inner img {
-  width: auto;
-  height: 24rem;
+  width: 4.8rem;
   position: absolute;
-  right: 20rem;
+  right: 2rem;
 }
 .arr-btn .inner .icon-circle {
   position: absolute;
@@ -893,6 +928,16 @@ button.more-btn.on::before {
 
 html {
   font-size: 10px;
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
 }
 
 body {
@@ -1305,6 +1350,14 @@ body {
             filter: blur(5px);
   }
 }
+@keyframes arr_ani {
+  from {
+    right: 2rem;
+  }
+  to {
+    right: 1.5rem;
+  }
+}
 /* 공통 아이템 */
 .tag-list {
   display: -webkit-box;
@@ -1332,6 +1385,7 @@ body {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-weight: 500;
   font-size: 2rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .tag-item {
@@ -1346,6 +1400,11 @@ body {
   border-radius: 1rem;
   background: #fff;
   padding: 2.4rem;
+}
+@media (max-width: 768px) {
+  .purple-box {
+    padding: 1.6rem;
+  }
 }
 
 /* 버튼타입 */
@@ -1427,13 +1486,13 @@ button.more-btn.on::before {
   background: #FFE75C;
 }
 .icon-circle.purple {
-  background: #6A6AE6;
+  background: rgba(106, 106, 230, 0.3);
 }
 
 /* 화살표 아이콘 */
 .arr-btn {
   z-index: 1;
-  width: 10.2rem;
+  width: 6.8rem;
   overflow: hidden;
 }
 .arr-btn .inner {
@@ -1441,19 +1500,22 @@ button.more-btn.on::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 48rem;
+  height: 4.8rem;
 }
 .arr-btn .inner img {
-  width: auto;
-  height: 24rem;
+  width: 4.8rem;
   position: absolute;
-  right: 20rem;
+  right: 2rem;
 }
 .arr-btn .inner .icon-circle {
   position: absolute;
@@ -1470,27 +1532,6 @@ button.more-btn.on::before {
 /* 노트북 */
 /* 테블릿 */
 /* 모바일 */
-h2 {
-  color: #222;
-}
-
-@-webkit-keyframes arr_ani {
-  from {
-    right: 2rem;
-  }
-  to {
-    right: 1.5rem;
-  }
-}
-
-@keyframes arr_ani {
-  from {
-    right: 2rem;
-  }
-  to {
-    right: 1.5rem;
-  }
-}
 #header {
   width: 100%;
   background: #fff;
@@ -1574,11 +1615,6 @@ h2 {
     font-size: 2rem;
   }
 }
-@media (max-width: 1055px) {
-  #header > .inner h1 .logo {
-    font-size: 1.6rem;
-  }
-}
 #header > .inner #gnb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1588,11 +1624,6 @@ h2 {
 @media (max-width: 1280px) {
   #header > .inner #gnb {
     gap: 5rem;
-  }
-}
-@media (max-width: 1055px) {
-  #header > .inner #gnb {
-    gap: 3rem;
   }
 }
 @media (max-width: 768px) {
@@ -1676,11 +1707,6 @@ h2 {
 @media (max-width: 1280px) {
   #header > .inner #gnb li a {
     font-size: 2rem;
-  }
-}
-@media (max-width: 1055px) {
-  #header > .inner #gnb li a {
-    font-size: 1.6rem;
   }
 }
 #header > .inner .btn-wrap {

@@ -3,14 +3,6 @@
 @import "common";
 @import "responsive";
 
-h2{color: #222;}
-
-// 애니메이션
-@keyframes arr_ani {
-    from{right: 2rem;}
-    to{right: 1.5rem;}
-}
-
 // HEADER
 #header {
     width: 100%;
@@ -79,9 +71,7 @@ h2{color: #222;}
                 @include notebook {
                     font-size: 2rem;
                 }
-                @include tablet_junction {
-                    font-size: 1.6rem;
-                }
+                // @include tablet_junction {font-size: 1.6rem;}
                 // @include tablet {
                 //     font-size: 2rem;
                 // }
@@ -93,9 +83,7 @@ h2{color: #222;}
             @include notebook {
                 gap: 5rem;
             }
-            @include tablet_junction {
-                gap: 3rem;
-            }
+            // @include tablet_junction {gap: 3rem;}
             @include tablet {
                 display: none;
             }
@@ -160,9 +148,7 @@ h2{color: #222;}
                     @include notebook {
                         font-size: 2rem;
                     }
-                    @include tablet_junction {
-                        font-size: 1.6rem;
-                    }
+                    // @include tablet_junction {font-size: 1.6rem;}
                 }
             }
         }

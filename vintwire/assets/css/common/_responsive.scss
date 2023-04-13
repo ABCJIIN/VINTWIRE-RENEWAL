@@ -6,7 +6,7 @@
 }
 
 @mixin tablet_junction{
-    @media (max-width: 1055px){
+    @media (max-width: 930px){
         @content;
     }
 }
