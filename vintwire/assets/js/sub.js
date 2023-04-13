@@ -58,10 +58,10 @@ $(document).ready(function(){
         }
 
         function slideUp() {
-          $('.faq-list li').removeClass('on').find('.faq-list-comment').slideUp();
+          $('.faq-list-tit').parent('li').removeClass('on').find('.faq-list-comment').slideUp();
         }
 
-        $(this).hasClass('on') ? slideUp() : slideDown(this);
+        $(this).parent('li').hasClass('on') ? slideUp() : slideDown(this);
     });
 
 });

@@ -286,6 +286,7 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 1.6rem;
+                @include tablet_junction{grid-template-columns: 1fr;}
                 > li{
                     position: relative;
                     &:nth-child(1){
@@ -302,10 +303,62 @@
                         height: 12.8rem;
                         margin-left: auto;
                         margin-right: 0;
-                        border: 1px solid #000;
+                        transform: translateY(0.5rem);
                         > img{
                             width: 100%;
                             display: block;
+                        }
+                        @include tablet_junction{
+                            width: 12rem;
+                            height: 9.8rem;
+                            position: absolute;
+                            top: 50%;
+                            right: 1.6rem;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                        }
+                    }
+                    .purple-box{
+                        position: relative;
+                        z-index: 0;
+                        @include flexbox(row, space-between, flex-end);
+                        @include tablet_junction{
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        > div{
+                            .tag-item{
+                                display: block;
+                                width: 6rem;
+                                padding: 1rem;
+                                font-size: 1.4rem;
+                                font-weight: 500;
+                                margin: 0 auto 2.6rem;
+                                @include tablet_junction{
+                                    width: 8.4rem;
+                                    margin: 0 0 1rem;
+                                }
+                            }
+                            > strong{
+                                font-size: 3.6rem;
+                                font-weight: bold;
+                            }
+                        }
+                        .team-support{
+                            @include flexbox(row, space-between, center);
+                            gap: 2.2rem;
+                            font-size: 1.6rem;
+                            font-weight: 600;
+                            color: $black;
+                            @include tablet_junction{
+                                margin-top: 1.6rem;
+                                gap: 1rem;
+                            }
+                            .arr-btn{
+                                img{
+                                    animation: arr_ani .5s infinite both alternate;
+                                }
+                            }
                         }
                     }
                 }

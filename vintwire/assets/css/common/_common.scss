@@ -112,7 +112,11 @@ $jinny: #FFAF02; //지니
 }
 
 *{box-sizing: border-box;}
-html {font-size: 10px;}
+html {
+    font-size: 10px;
+    @include notebook{font-size: 7.5px;}
+    @include tablet{font-size: 10px;}
+}
 body{
     font-size: 1.6rem;
     line-height: 1;
@@ -120,7 +124,7 @@ body{
     color: $black;
     font-family: $pretendard;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     @include tablet{font-size: 1.4rem;}
     // font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -239,15 +243,20 @@ body{
 @-moz-keyframes flyingOdd { 
  0% { transform: translate(5px, 15px) scale(1); opacity: 1; filter: blur(0px); } 
  100% { transform: translate(10px, -90vw) scale(1.5); opacity: 0; filter: blur(5px); } 
- }
+}
 @-webkit-keyframes flyingOdd { 
  0% { transform: translate(0, 0) scale(1); opacity: 1; filter: blur(0px); } 
  100% { transform: translate(-2.22vw, -90vw) scale(1.5); opacity: 0; filter: blur(5px); } 
- }
+}
 @keyframes flyingOdd { 
  0% { transform: translate(0, 0) scale(1); opacity: 1; filter: blur(0px); } 
  100% { transform: translate(-4.44vw, -90vw) scale(1.5); opacity: 0; filter: blur(5px); } 
- }
+}
+ // 애니메이션
+@keyframes arr_ani {
+    from{right: 2rem;}
+    to{right: 1.5rem;}
+}
 
 /* 공통 아이템 */
 .tag-list{
@@ -263,6 +272,7 @@ body{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     font-weight: 500;
     font-size: 2rem;
+    text-align: center;
     @include tablet{
         font-size: 1.4rem;
     }
@@ -274,6 +284,7 @@ body{
     border-radius: 1rem;
     background: $white;
     padding: 2.4rem;
+    @include tablet{padding: 1.6rem;}
 }
 
 /* 버튼타입 */
@@ -335,25 +346,22 @@ button{
     height: 4.8rem;
     border-radius: 50%;
     background: $yellow;
-    &.purple{background: $purple;}
+    &.purple{background: rgba($purple, .3);}
 }
 
 /* 화살표 아이콘 */
 .arr-btn {
     z-index: 1;
-    width: 10.2rem;
+    width: 6.8rem;
     overflow: hidden;
     .inner {
         position:relative;
-        display:flex;
-        justify-content: flex-end;
-        align-items:center;
-        height:48rem;
+        @include flexbox(row, flex-end, center);
+        height:4.8rem;
         img {
-            width:auto;
-            height:24rem;
-            position:absolute;
-            right:20rem;
+            width: 4.8rem;
+            position: absolute;
+            right: 2rem;
         }
         .icon-circle {
             position:absolute;
