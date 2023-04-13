@@ -119,10 +119,12 @@
             </section>
             <section id="project">
                 <div class="project-inner con-box">
-                    <strong>PROJECTS</strong>
-                    <p>기술과 가치를 잇는 빈트와이어의 프로젝트를 소개합니다.</p>
+                    <div class="sec-tit">
+                        <h2>PROJECTS</h2>
+                        <p>기술과 가치를 잇는 빈트와이어의 프로젝트를 소개합니다.</p>
+                    </div>
                     <div class="swiper-container" id="projectSlide">
-                        <ul class="project-contents swiper-wrapper">
+                        <ul class="swiper-wrapper">
                             <li class="swiper-slide">
                                 <div class="img-wrap"></div>
                                 <diV class="project-explain">
@@ -133,7 +135,7 @@
                                         <button type="button">MOBILE</button>
                                     </div>
                                     <strong>한국무역협회</strong>
-                                    <ul>
+                                    <ul class="join">
                                         <li>클라이언트:병무청</li>
                                         <li>파트너사:라온시큐어</li>
                                     </ul>
@@ -148,7 +150,7 @@
                                         <button type="button">MOBILE</button>
                                     </div>
                                     <strong>대한항공<br>항공우주사업본부</strong>
-                                    <ul>
+                                    <ul class="join">
                                         <li>클라이언트:병무청</li>
                                         <li>파트너사:라온시큐어</li>
                                     </ul>
@@ -165,7 +167,7 @@
                                         <button type="button">MOBILE</button>
                                     </div>
                                     <strong>LG전자 스토리콘텐츠</strong>
-                                    <ul>
+                                    <ul class="join">
                                         <li>클라이언트:병무청</li>
                                         <li>파트너사:라온시큐어</li>
                                     </ul>
@@ -180,7 +182,7 @@
                                         <button type="button">MOBILE</button>
                                     </div>
                                     <strong>현대로보틱스</strong>
-                                    <ul>
+                                    <ul class="join">
                                         <li>클라이언트:병무청</li>
                                         <li>파트너사:라온시큐어</li>
                                     </ul>
@@ -197,7 +199,7 @@
                                         <button type="button">MOBILE</button>
                                     </div>
                                     <strong>농협생명수련원</strong>
-                                    <ul>
+                                    <ul class="join">
                                         <li>클라이언트:병무청</li>
                                         <li>파트너사:라온시큐어</li>
                                     </ul>
@@ -422,7 +424,7 @@
 
         function initSwiper() {
 
-        if (ww < 1280 && mySwiper == undefined) {
+        if (ww < 768 && mySwiper == undefined) {
             mySwiper = new Swiper("#projectSlide", {
                 direction: "vertical",
                 grabCursor: true,
@@ -437,7 +439,7 @@
                     },
                 },
                 });
-        } else if (ww >= 1280 && mySwiper != undefined) {
+        } else if (ww >= 768 && mySwiper != undefined) {
             mySwiper.destroy();
             mySwiper = undefined;
         }
