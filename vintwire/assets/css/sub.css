@@ -1663,6 +1663,180 @@ button.more-btn.on::before {
 /* 노트북 */
 /* 테블릿 */
 /* 모바일 */
+#about #container #intro .intro-bg {
+  background: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, rgb(255, 255, 255)), color-stop(35%, rgb(173, 173, 241)), to(rgb(106, 106, 230)));
+  background: linear-gradient(0deg, rgb(255, 255, 255) 3%, rgb(173, 173, 241) 35%, rgb(106, 106, 230) 100%);
+}
+#about #container #intro .intro-tit > h2 {
+  text-transform: none;
+}
+#about #container #introCont .tag {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 42rem;
+  margin: 0 auto;
+  border: 1px solid #000;
+  position: relative;
+}
+#about #container #introCont .tag-info {
+  border: 1px solid #000;
+  width: 100%;
+  height: 16rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  padding: 2.6rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/vintwire/assets/images/sub/about/tag_info_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left center;
+}
+#about #container #introCont .tag-icon img {
+  width: 100%;
+  display: block;
+}
+#about #container #introCont .tag > div {
+  width: 33.3333333333%;
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+#about #container #introCont .tag > div:nth-child(1) {
+  left: 0;
+}
+#about #container #introCont .tag > div:nth-child(2) {
+  margin-top: 8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+#about #container #introCont .tag > div:nth-child(2) .tag-icon {
+  width: 110%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#about #container #introCont .tag > div:nth-child(3) {
+  margin-top: 1.6rem;
+  right: 0;
+}
+#about #container #introCont .line-cont {
+  border: 1px solid #000;
+}
+#about #container #introCont .line-cont .line-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 34rem;
+}
+#about #container #introCont .line-cont .line-wrap .line {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border: 1px solid #000;
+  -webkit-transform: translateY(-50%) rotate(-5deg);
+          transform: translateY(-50%) rotate(-5deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#about #container #introCont .line-cont .line-wrap .line.purple {
+  -webkit-transform: translateY(-50%) rotate(5deg);
+          transform: translateY(-50%) rotate(5deg);
+}
+#about #container #introCont .line-cont .line-wrap .line.purple p {
+  background: #6A6AE6;
+  color: #fff;
+}
+#about #container #introCont .line-cont .line-wrap .line.purple p::before {
+  -webkit-filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
+          filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
+}
+#about #container #introCont .line-cont .line-wrap .line p {
+  background: #F8F8F8;
+  width: 66rem;
+  font-family: "Montserrat";
+  font-size: 2.8rem;
+  white-space: nowrap;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#about #container #introCont .line-cont .line-wrap .line p::before {
+  content: "";
+  display: inline-block;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-image: url(/vintwire/assets/images/icon/intro_line_icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 0 0.6rem;
+}
+#about #container #group {
+  padding: 8rem 0;
+}
+#about #container #group::after {
+  content: "";
+  width: 100%;
+  max-width: 1840px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5rem;
+  background: #E8E8FF;
+}
+#about #container #group .sec-tit {
+  margin-bottom: 6rem;
+}
+#about #container #group .group-chart .img-wrap > img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
 #job #container #vintTeam .con-box {
   width: 100%;
 }
@@ -1685,18 +1859,11 @@ button.more-btn.on::before {
 }
 #job #container #vintTeam #teamSwiper .swiper-slide .character {
   width: 55%;
-  height: 20rem;
-  max-width: 29.8rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 768px) {
-  #job #container #vintTeam #teamSwiper .swiper-slide .character {
-    height: auto;
-  }
 }
 #job #container #vintTeam #teamSwiper .swiper-slide .character > img {
   max-width: 100%;
