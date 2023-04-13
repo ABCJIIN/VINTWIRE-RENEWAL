@@ -1545,6 +1545,10 @@ button.more-btn.on::before {
   margin: 0 auto;
 }
 
+.wrap {
+  width: 100%;
+  overflow-x: hidden;
+}
 .wrap #container section {
   position: relative;
 }
@@ -1920,10 +1924,19 @@ body.fixed {
   padding-bottom: 10rem;
   height: 100vh;
   min-height: 81.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 768px) {
   #main #container #value {
@@ -1944,7 +1957,8 @@ body.fixed {
   top: 12rem;
   bottom: 10rem;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   max-width: 1840px;
   width: 100%;
   background: #F8F8F8;
@@ -2139,10 +2153,19 @@ body.fixed {
 }
 #main #container #project .project-inner {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 2rem;
   padding-bottom: 20rem;
   height: auto;
@@ -2266,14 +2289,25 @@ body.fixed {
   align-items: flex-end;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .explain-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .explain-wrap .page-num {
-  transform: rotate(-90deg);
-  transform-origin: right top;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
   right: calc(50% + 5.2rem);
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .page-num {
@@ -2302,10 +2336,19 @@ body.fixed {
   z-index: -5;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .project-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.8rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .project-btn-wrap button {
@@ -2472,9 +2515,16 @@ body.fixed {
 }
 #main #container #ourStory .story-inner {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 4.3rem;
   padding-bottom: 11.7rem;
 }
