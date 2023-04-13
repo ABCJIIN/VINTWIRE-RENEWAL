@@ -610,6 +610,38 @@ body {
     right: 1.5rem;
   }
 }
+@keyframes projects_right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes projects_left {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes upScale {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes upScaleMb {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 /* 공통 아이템 */
 .tag-list {
   display: -webkit-box;
@@ -1359,6 +1391,38 @@ body {
   }
   to {
     right: 1.5rem;
+  }
+}
+@keyframes projects_right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes projects_left {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes upScale {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes upScaleMb {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }
 /* 공통 아이템 */
@@ -2183,7 +2247,6 @@ button.more-btn.on::before {
 /* 모바일 */
 #about #container #intro .intro-bg {
   background: rgb(255, 255, 255);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, rgb(255, 255, 255)), color-stop(35%, rgb(173, 173, 241)), to(rgb(106, 106, 230)));
   background: linear-gradient(0deg, rgb(255, 255, 255) 3%, rgb(173, 173, 241) 35%, rgb(106, 106, 230) 100%);
 }
 #about #container #intro .intro-tit > h2 {
@@ -2206,19 +2269,10 @@ button.more-btn.on::before {
   font-size: 2.4rem;
   line-height: 3.6rem;
   padding: 2.6rem 1.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-image: url(/vintwire/assets/images/sub/about/tag_info_bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2241,16 +2295,14 @@ button.more-btn.on::before {
 #about #container #introCont .tag > div:nth-child(2) {
   margin-top: 8rem;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 #about #container #introCont .tag > div:nth-child(2) .tag-icon {
   width: 110%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 #about #container #introCont .tag > div:nth-child(3) {
   margin-top: 1.6rem;
@@ -2269,33 +2321,21 @@ button.more-btn.on::before {
   position: absolute;
   top: 50%;
   border: 1px solid #000;
-  -webkit-transform: translateY(-50%) rotate(-5deg);
-          transform: translateY(-50%) rotate(-5deg);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateY(-50%) rotate(-5deg);
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 #about #container #introCont .line-cont .line-wrap .line.purple {
-  -webkit-transform: translateY(-50%) rotate(5deg);
-          transform: translateY(-50%) rotate(5deg);
+  transform: translateY(-50%) rotate(5deg);
 }
 #about #container #introCont .line-cont .line-wrap .line.purple p {
   background: #6A6AE6;
   color: #fff;
 }
 #about #container #introCont .line-cont .line-wrap .line.purple p::before {
-  -webkit-filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
-          filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
+  filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
 }
 #about #container #introCont .line-cont .line-wrap .line p {
   background: #F8F8F8;
@@ -2304,19 +2344,10 @@ button.more-btn.on::before {
   font-size: 2.8rem;
   white-space: nowrap;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 #about #container #introCont .line-cont .line-wrap .line p::before {
   content: "";
@@ -2341,8 +2372,7 @@ button.more-btn.on::before {
   left: 50%;
   top: 0;
   z-index: -1;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 5rem;
   background: #E8E8FF;
 }

@@ -13,7 +13,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
     position: relative;
     width: 100%;
     margin: 0 auto;
-    // overflow: hidden;
+    overflow: hidden;
     #container {
         #intro {
             position: relative;
@@ -21,6 +21,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             padding-top: 27rem;
             height: 100vh;
             min-height: 81.5rem;
+            @include tablet {
+                padding-top: 23.6rem;
+                height: 71.5rem;
+            }
             &::after {
                 content: "";
                 position: absolute;
@@ -29,8 +33,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 transform: translate(-50%);
                 width: 100vw;
                 height: 30rem;
-                background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0 ) 100%);
+                background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0 ) );
                 z-index: -5;
+                @include tablet {
+                    height: 18rem;
+                    top: calc(120% - 18rem);
+                }
             }
             .bg {
                 width: 100vw;
@@ -40,6 +48,9 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 top: 0;
                 transform: translate(-50%);
                 z-index: -10;
+                @include tablet {
+                    height: 120%;
+                }
                 video {
                     width: 100%;
                     height: 100%;
@@ -51,6 +62,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 position: relative;
                 // padding-top: 36.6rem;
                 width: 100%;
+                // display: flex;
+                // @include tablet {
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: flex-start;
+                // }
                 .text {
                     display:flex;
                     justify-content:flex-start;
@@ -64,22 +81,25 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     text-align:center;
                     padding-bottom: 4.5rem;
                     // margin-bottom:19.5rem;
-                    br {
-                        display: none;
+                    @include tablet {
+                        font-size: 2rem;
+                        flex-direction: column;
+                        gap: 0;
+                        padding-bottom: 5rem;
                     }
-                    @keyframes upScale {
-                        0% {
-                            transform:scaleX(0)
-                        }
-                        100% {
-                            transform:scaleX(1)
-                        }
-                    }
+                    // br {
+                    //     display: none;
+                    // }
                     .line {
                         width: 10.4rem;
                         height: 1px;
                         background: $white;
                         animation: upScale 1s ease-in-out;
+                        @include tablet {
+                            width: 1px;
+                            height: 4.8rem;
+                            animation: upScaleMb 1s ease-in-out;
+                        }
                     }
                 }
                 .title {
@@ -88,17 +108,26 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     // left:0;
                     text-align:center;
                     line-height:1;
+                    @include tablet {
+                        width: 100%;
+                    }
                     .inner {
                         position:relative;
                         display:flex;
                         flex-direction: column;
                         gap:1rem;
+                        @include tablet {
+                            gap: 2rem;
+                        }
                         p {
                             font-family: $panchang;
                             overflow: hidden;
                             font-size: 12rem;
                             // font-size: 6.2vw;
                             line-height: 0.9;
+                            @include tablet {
+                                font-size: 4rem;
+                            }
                             
                             span {
                                 position:relative;
@@ -141,9 +170,20 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     left:-18rem;
                     z-index:-1;
                     animation:rotate_image 30s linear infinite;
+                    @include tablet {
+                        top: 2rem;
+                        left: -8rem;
+                        z-index: 20;
+                    }
                 }
                 .icon-double-circle {
                     display: none;
+                    @include tablet {
+                        position: absolute;
+                        display: block;
+                        top: 5rem;
+                        right: -8rem;
+                    }
                 }
             }
         }
@@ -159,6 +199,11 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            @include tablet {
+                height: 48rem;
+                padding: 0;
+                min-height: 48rem;
+            }
             .value-inner {
                 @include flexbox (column, center, center);
                 &::after {
@@ -173,6 +218,13 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     background: #F8F8F8;
                     border-radius: 8rem;
                     z-index: -5;
+                    @include tablet {
+                        top: 3.3rem;
+                        bottom: 6rem;
+                        border-radius: 1.2rem;
+                        width: calc(100% - 2rem);
+                        margin: 0 auto;
+                    }
                 }
                 .text-wrap {
                     > strong {
@@ -199,6 +251,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         font-size: 4.8rem;
                         font-weight: 700;
                         line-height: 6rem;
+                        @include tablet {
+                            font-size: 2rem;
+                            line-height: 2.8rem;
+                        }
                         .icon-smile {
                             width:5.3rem;
                             height:5.3rem;
@@ -210,6 +266,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             bottom: 6.5rem;
                             left:-2rem;
                             z-index:-1;
+                            @include tablet {
+                                width: 4.2rem;
+                                height: 4.2rem;
+                                bottom: -16.5rem;
+                                left: 0;
+                            }
                             
                             &.purple {
                                 width:7.8rem;
@@ -219,6 +281,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 top:-11rem;
                                 left: 75rem;
                                 // bottom:auto;
+                                @include tablet {
+                                    width: 4.2rem;
+                                    height: 4.2rem;
+                                    top: 6.2rem;
+                                    left: 28rem;
+                                }
                             }
                             &.on {
                                 transform:scale(1);
@@ -232,6 +300,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         padding-top: 4.8rem;
                         padding-bottom: 6rem;
                         line-height: 3.2rem;
+                        @include tablet {
+                            font-size: 1.6rem;
+                            line-height: 2.8rem;
+                        }
                     }
                 }
                 .btn-wrap {
@@ -248,6 +320,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 // position:absolute;
                 // bottom: 8rem;
                 width:100%;
+                @include tablet {
+                    bottom: 0;
+                    // z-index: 222;
+                }
                 .purple-line {
                     // width: 200%;
                     position: absolute;
@@ -260,6 +336,11 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     justify-content: center;
                     background: $purple;
                     // gap: 20rem;
+                    @include tablet {
+                        height: 4rem;
+                        bottom: 0;
+                        z-index: 222;
+                    }
                     p { 
                         width:60rem;
                         display: flex;
@@ -272,6 +353,9 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         white-space:nowrap;
                         -webkit-text-stroke: 1px $white;
                         color: transparent !important;
+                        @include tablet {
+                            font-size: 1.6rem;
+                        }
 
                         &::before {
                             content:"";
@@ -281,6 +365,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             background:url(/vintwire/assets/images/common/icon_smile_yellow.svg) no-repeat center; 
                             background-size:contain;
                             margin:0 0.6rem;
+                            @include tablet {
+                                width: 2.4rem;
+                                height: 2.4rem;
+                            }
                         }
                     }
                 }
@@ -291,10 +379,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             width: 100%;
             height: 100%;
             background: $black;
-            // > .sec-tit{
-            //     position: sticky;
-            //     top: 0;
-            // }
             &::after {
                 position: absolute;
                 bottom: 0;
@@ -303,6 +387,22 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 height: 44rem;
                 background: url(/vintwire/assets/images/main/projects_bg.png) no-repeat center/cover;
             }
+            .sec-tit {
+                position: sticky;
+                top: 0;
+                padding-top: 10rem;
+                padding-bottom: 6rem;
+                // height: 22.4rem;
+                width: 100%;
+                z-index: 20;
+                background: $black;
+                h2 {
+                    color: $white;
+                }
+                p {
+                    color: $white;
+                }
+            }
             .project-inner {
                 position: relative;
                 @include flexbox (column, center, center);
@@ -310,22 +410,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 padding-bottom: 20rem;
                 height: auto;
                 width: 100%;
-                .sec-tit {
-                    position: sticky;
-                    top: 0;
-                    padding-top: 10rem;
-                    padding-bottom: 6rem;
-                    // height: 22.4rem;
-                    width: 100%;
-                    z-index: 20;
-                    background: $black;
-                    h2 {
-                        color: $white;
-                    }
-                    p {
-                        color: $white;
-                    }
-                }
                 #projectSlide {
                     // margin: 100px auto;
                     // width: 320px;
@@ -351,24 +435,54 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             // background: #6A6AE6;
                             // @include flexbox (row, center, center);
                             &:nth-of-type(1) {
-                                // @include flexbox (row, flex-start, flex-start);
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/kita_net.png) no-repeat center/cover;
                                     border-radius: 3.2rem 3.2rem 8rem 3.2rem;
                                 }
+                                .stroke-text {
+                                    left: 50%;
+                                    top: 15rem;
+                                    animation: projects_right 1.5s ease-in-out;
+                                    animation-play-state: paused;
+                                }
+                                &:hover {
+                                    .stroke-text {
+                                        animation-play-state: running;
+                                    }
+                                }
                             }
                             &:nth-of-type(2) {
-                                // @include flexbox (row, flex-start, flex-start);
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/korean_air.png) no-repeat center/cover;
                                     border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
                                 }
+                                .stroke-text {
+                                    top: 15rem;
+                                    left: 0;
+                                    animation: projects_left 1.5s ease-in-out;
+                                    animation-play-state: paused;
+                                }
+                                &:hover {
+                                    .stroke-text {
+                                        animation-play-state: running;
+                                    }
+                                }
                             }
                             &:nth-of-type(3) {
-                                // @include flexbox (row, flex-start, flex-start);
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/lg_electronics.png) no-repeat center/cover;
                                     border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
+                                }
+                                .stroke-text {
+                                    left: 50%;
+                                    top: 15rem;
+                                    animation: projects_right 1s ease-in-out;
+                                    animation-play-state: paused;
+                                }
+                                &:hover {
+                                    .stroke-text {
+                                        animation-play-state: running;
+                                    }
                                 }
                             }
                             &:nth-of-type(4) {
@@ -376,12 +490,33 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                     background: url(/vintwire/assets/images/main/hyundai_robotics.png) no-repeat center/cover;
                                     border-radius: 4rem 4rem 4rem 0.8rem;
                                 }
+                                .stroke-text {
+                                    top: 15rem;
+                                    left: 0;
+                                    animation: projects_left 1s ease-in-out;
+                                    animation-play-state: paused;
+                                }
+                                &:hover {
+                                    .stroke-text {
+                                        animation-play-state: running;
+                                    }
+                                }
                             }
                             &:nth-of-type(5) {
-                                // @include flexbox (row, flex-start, flex-start);
                                 .img-wrap {
                                     background: url(/vintwire/assets/images/main/nonghyup_life.png) no-repeat center/cover;
                                     border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
+                                }
+                                .stroke-text {
+                                    left: 50%;
+                                    top: 15rem;
+                                    animation: projects_right 1.5s ease-in-out;
+                                    animation-play-state: paused;
+                                }
+                                &:hover {
+                                    .stroke-text {
+                                        animation-play-state: running;
+                                    }
                                 }
                             }
                             .img-wrap {
@@ -400,10 +535,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                             transform-origin: left top;
                                             left: calc(50% + 5.2rem);
                                         }
-                                        .stroke-text {
-                                            left: 50%;
-                                            top: 15rem;
-                                        }
+                                        // .stroke-text {
+                                        //     left: 50%;
+                                        //     top: 15rem;
+                                        // }
 
                                     }
                                 }
@@ -416,10 +551,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                             transform-origin: right top;
                                             right: calc(50% + 5.2rem);
                                         }
-                                        .stroke-text {
-                                            top: 15rem;
-                                            left: 0;
-                                        }
+                                        // .stroke-text {
+                                        //     top: 15rem;
+                                        //     left: 0;
+                                        // }
                                     }
                                 }
                                 .explain-wrap {
@@ -546,7 +681,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         .introduce-inner {
                             position: relative;
                             @include flexbox (column, flex-start, center);
-                            padding: 4rem 0;
+                            padding: 4rem 2.4rem;
                             height: 100%;
                             .tag-item {
                                 font-family: $pretendard;

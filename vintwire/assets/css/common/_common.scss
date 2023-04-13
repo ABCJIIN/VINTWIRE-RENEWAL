@@ -273,6 +273,34 @@ body{
     to{right: 1.5rem;}
 }
 
+@keyframes projects_right {
+    from {left: 100%;}
+    to {left: 50%;}
+}
+
+@keyframes projects_left {
+    from {left: -50%;}
+    to {left: 0;}
+}
+
+@keyframes upScale {
+    0% {
+        transform:scaleX(0)
+    }
+    100% {
+        transform:scaleX(1)
+    }
+}
+
+@keyframes upScaleMb {
+    0% {
+        transform:scaleY(0)
+    }
+    100% {
+        transform:scaleY(1)
+    }
+}
+
 /* 공통 아이템 */
 .tag-list{
     @include flexbox(row, flex-start, flex-start);
