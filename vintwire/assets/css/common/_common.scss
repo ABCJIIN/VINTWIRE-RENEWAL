@@ -278,15 +278,10 @@ body{
     to{width: 100%;}
 }
 
-@keyframes projects_right {
-    from {left: 100%;}
-    to {left: 50%;}
-}
-
-@keyframes projects_left {
-    from {left: -50%;}
-    to {left: 0;}
-}
+// @keyframes projects_left {
+//     from {left: -50%;}
+//     to {left: 0;}
+// }
 
 @keyframes upScale {
     0% {

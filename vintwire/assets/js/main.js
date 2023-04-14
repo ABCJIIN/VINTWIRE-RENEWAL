@@ -82,3 +82,91 @@ $(document).ready(function(){
     resize()
 
 });
+
+// value 롤링
+
+$(function(){
+    $('.animate__animated:not(.delay)').viewportChecker({
+        classToAdd: 'on',
+        offset: 100,
+    });
+
+    $('.animate__animated.delay').viewportChecker({
+        classToAdd: 'on',
+        offset: 125,
+    });
+});
+
+$(document).ready(function(){
+
+    function valueAni() {
+
+        gsap.set('.intro-icon-wrap .icon',{ scale:0 })
+        gsap.to('.intro-icon-wrap .icon:nth-child(1)',{ scale:1, duration:0.3, delay:0.7 })
+        gsap.to('.intro-icon-wrap .icon:nth-child(2)',{ scale:1, duration:0.2, delay:1 })
+        gsap.to('.intro-icon-wrap .icon:nth-child(3)',{ scale:1, duration:0.5, delay:1 })
+        gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(1)',{ y:-40, repeat:-1, yoyo:true, delay:1, duration:1.2, ease:"Back.aseOut.config(1.71.7)" })
+        gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(2)',{ y:-20, repeat:-1, yoyo:true, delay:1, duration:0.7, ease:"Back.aseOut.config(1.71.7)" })
+        gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(3)',{ y:-30, repeat:-1, yoyo:true, delay:1, duration:1.1, ease:"Back.aseOut.config(1.71.7)" })
+
+        gsap.set(".purple-line p", {
+            x: (i) => i * 1200
+        });
+
+        gsap.to(".purple-line p", {
+        duration: 20,
+        ease: "none",
+        x: "-=1200", //move each box 500px to right
+        modifiers: {
+            x: gsap.utils.unitize(x => parseFloat(x) % 1200) //force x value to be between 0 and 500 using modulus
+        },
+        repeat: -1
+        });
+
+    }
+
+    const isTouchDevice = false; // 항상 false 값 할당
+
+    if (isTouchDevice) {
+    $('.line-wrap').empty();
+    } else {
+    valueAni();
+    }
+
+})
+
+// project 모바일 슬라이드
+
+var ww = $(window).width();
+var mySwiper = undefined;
+
+function initSwiper() {
+
+if (ww < 768 && mySwiper == undefined) {
+    mySwiper = new Swiper("#projectSlide", {
+        slidesPerView: 1,
+        direction: "vertical",
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+            shadow: true,
+            translate: [0, 0, 0],
+            },
+            next: {
+            translate: [0, "100%", 0],
+            },
+        },
+        });
+} else if (ww >= 768 && mySwiper != undefined) {
+    mySwiper.destroy();
+    mySwiper = undefined;
+}
+}
+
+initSwiper();
+
+$(window).on('resize', function () {
+ww = $(window).width();
+initSwiper();
+});
