@@ -383,6 +383,26 @@
         </footer>   
     </div>
     <script>
+        var swiper = new Swiper('#storySlide', {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    // breakpoints: {
+    //     '@0.75': {
+    //         slidesPerView: 2,
+    //         spaceBetween: 20,
+    //     },
+    //     '@1.00': {
+    //         slidesPerView: 3,
+    //         spaceBetween: 40,
+    //     },
+    //     '@1.50': {
+    //         slidesPerView: 4,
+    //         spaceBetween: 50,
+    //     },
+    // }
+});
+    </script>
+    <script>
         // project 모바일 슬라이드
 
 var ww = $(window).width();
@@ -425,33 +445,34 @@ initSwiper();
 
         var ww = $(window).width();
         var storySwiper = undefined;
+        
 
-        function initSwiper() {
+        // function initSwiper() {
 
-        if (ww < 768 && storySwiper == undefined) {
-            storySwiper = new Swiper("#storySlide", {
-                slidesPerView : 1,
-                loop: true,
-                // direction: "horizontal",
-                // loop: true,
-                // resistance : true, // 슬라이드 터치에 대한 저항 여부 설정
-                // allowTouchMove : true, // false시에 스와이핑이 되지 않으며 버튼으로만 슬라이드 조작이 가능
-                pagination: {
-                    el: '.swiper-pagination',
-                    },
-                });
-                    } else if (ww >= 768 && storySwiper != undefined) {
-                        storySwiper.destroy();
-                        storySwiper = undefined;
-                    }
-                    }
+        // if (ww < 768 && storySwiper == undefined) {
+        //     storySwiper = new Swiper("#storySlide", {
+        //         slidesPerView : 1,
+        //         loop: true,
+        //         // direction: "horizontal",
+        //         // loop: true,
+        //         // resistance : true, // 슬라이드 터치에 대한 저항 여부 설정
+        //         // allowTouchMove : true, // false시에 스와이핑이 되지 않으며 버튼으로만 슬라이드 조작이 가능
+        //         pagination: {
+        //             el: '.swiper-pagination',
+        //             },
+        //         });
+        //             } else if (ww >= 768 && storySwiper != undefined) {
+        //                 storySwiper.destroy();
+        //                 storySwiper = undefined;
+        //             }
+        //             }
 
-                    initSwiper();
+        //             initSwiper();
 
-                    $(window).on('resize', function () {
-                    ww = $(window).width();
-                    initSwiper();
-                    });
+        //             $(window).on('resize', function () {
+        //             ww = $(window).width();
+        //             initSwiper();
+        //             });
     </script>
 </body>
 </html>
