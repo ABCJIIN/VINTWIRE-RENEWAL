@@ -428,22 +428,6 @@ body {
     right: 1.5rem;
   }
 }
-@keyframes projects_right {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 50%;
-  }
-}
-@keyframes projects_left {
-  from {
-    left: -50%;
-  }
-  to {
-    left: 0;
-  }
-}
 @keyframes upScale {
   0% {
     transform: scaleX(0);
@@ -1029,22 +1013,6 @@ body {
   }
   to {
     right: 1.5rem;
-  }
-}
-@keyframes projects_right {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 50%;
-  }
-}
-@keyframes projects_left {
-  from {
-    left: -50%;
-  }
-  to {
-    left: 0;
   }
 }
 @keyframes upScale {
@@ -2005,19 +1973,10 @@ button.more-btn.on::before {
   text-align: center;
   font-weight: 500;
   line-height: 2.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory {
@@ -2026,9 +1985,7 @@ button.more-btn.on::before {
     left: 0;
     bottom: 0;
     z-index: 0;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
 #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p {
@@ -2078,16 +2035,11 @@ button.more-btn.on::before {
 #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p::after {
   bottom: 0;
   right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 #about #container #member .member-wrap .member-list > li > a .flex-wrap {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 1rem;
 }
 #about #container #member .member-wrap .member-list > li > a .flex-wrap .team-name {
@@ -2177,104 +2129,6 @@ button.more-btn.on::before {
 }
 #about #container #member .member-wrap .member-list > li.jinny .introductory > p::before, #about #container #member .member-wrap .member-list > li.jinny .introductory > p::after {
   filter: invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(98%) contrast(107%);
-}
-#about #container #member .member-wrap .member-list > li > a {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child {
-  position: relative;
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child .character {
-  width: 40%;
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  #about #container #member .member-wrap .member-list > li > a > div:first-child .character {
-    position: relative;
-    z-index: 1;
-    margin: 0;
-  }
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child .character > img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child .introductory {
-  width: 100%;
-  height: 8rem;
-  padding: 1rem;
-  background: #fff;
-  border: 1px solid #222;
-  border-radius: 1rem;
-  color: #222;
-  text-align: center;
-  font-weight: 500;
-  line-height: 2.6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory {
-    height: 9.6rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 0;
-    justify-content: flex-end;
-  }
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p {
-  position: relative;
-  padding: 0 3rem;
-}
-@media (max-width: 768px) {
-  #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p {
-    width: calc(62% - 1rem);
-    font-size: 1.4rem;
-    line-height: 2.6rem;
-    padding: 0 1.2rem;
-  }
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p::before, #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p::after {
-  content: "";
-  display: inline-block;
-  width: 2rem;
-  height: 1.6rem;
-  position: absolute;
-  z-index: 0;
-  background-image: url(/vintwire/assets/images/icon/icon_dobule_dot.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-@media (max-width: 768px) {
-  #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p::before, #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p::after {
-    width: 1.2rem;
-    height: 1rem;
-  }
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p::before {
-  top: 0;
-  left: 0;
-}
-#about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p::after {
-  bottom: 0;
-  right: 0;
-  transform: rotate(180deg);
-}
-#about #container #member .member-wrap .member-list > li > a .flex-wrap {
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-}
-#about #container #member .member-wrap .member-list > li > a .flex-wrap .team-name {
-  font-weight: 500;
-  color: #222;
 }
 
 #job #container #vintTeam .con-box {

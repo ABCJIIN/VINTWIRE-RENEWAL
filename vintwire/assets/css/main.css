@@ -428,22 +428,6 @@ body {
     right: 1.5rem;
   }
 }
-@keyframes projects_right {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 50%;
-  }
-}
-@keyframes projects_left {
-  from {
-    left: -50%;
-  }
-  to {
-    left: 0;
-  }
-}
 @keyframes upScale {
   0% {
     transform: scaleX(0);
@@ -1029,22 +1013,6 @@ body {
   }
   to {
     right: 1.5rem;
-  }
-}
-@keyframes projects_right {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 50%;
-  }
-}
-@keyframes projects_left {
-  from {
-    left: -50%;
-  }
-  to {
-    left: 0;
   }
 }
 @keyframes upScale {
@@ -2102,6 +2070,7 @@ body.fixed {
 @media (max-width: 768px) {
   #main #container #value .line-wrap .purple-line p {
     font-size: 1.6rem;
+    width: 30rem;
   }
 }
 #main #container #value .line-wrap .purple-line p::before {
@@ -2165,6 +2134,7 @@ body.fixed {
   width: 100%;
 }
 #main #container #project .project-inner #projectSlide {
+  overflow: hidden;
   position: relative;
   width: 100%;
   padding-bottom: 6rem;
@@ -2191,6 +2161,7 @@ body.fixed {
     gap: 0;
     width: 100%;
     height: 100%;
+    display: block;
   }
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide {
@@ -2199,80 +2170,58 @@ body.fixed {
   justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
-  position: relative;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide {
+    height: 100%;
+  }
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(1) .img-wrap {
   background: url(/vintwire/assets/images/main/kita_net.png) no-repeat center/cover;
   border-radius: 3.2rem 3.2rem 8rem 3.2rem;
-}
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(1) .stroke-text {
-  left: 50%;
-  top: 15rem;
-  animation: projects_right 1.5s ease-in-out;
-  animation-play-state: paused;
-}
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(1):hover .stroke-text {
-  animation-play-state: running;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(2) .img-wrap {
   background: url(/vintwire/assets/images/main/korean_air.png) no-repeat center/cover;
   border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(2) .stroke-text {
-  top: 15rem;
   left: 0;
-  animation: projects_left 1.5s ease-in-out;
-  animation-play-state: paused;
-}
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(2):hover .stroke-text {
-  animation-play-state: running;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(3) .img-wrap {
   background: url(/vintwire/assets/images/main/lg_electronics.png) no-repeat center/cover;
   border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
-}
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(3) .stroke-text {
-  left: 50%;
-  top: 15rem;
-  animation: projects_right 1s ease-in-out;
-  animation-play-state: paused;
-}
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(3):hover .stroke-text {
-  animation-play-state: running;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(4) .img-wrap {
   background: url(/vintwire/assets/images/main/hyundai_robotics.png) no-repeat center/cover;
   border-radius: 4rem 4rem 4rem 0.8rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(4) .stroke-text {
-  top: 15rem;
   left: 0;
-  animation: projects_left 1s ease-in-out;
-  animation-play-state: paused;
-}
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(4):hover .stroke-text {
-  animation-play-state: running;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(5) .img-wrap {
   background: url(/vintwire/assets/images/main/nonghyup_life.png) no-repeat center/cover;
   border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
 }
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(5) .stroke-text {
-  left: 50%;
-  top: 15rem;
-  animation: projects_right 1.5s ease-in-out;
-  animation-play-state: paused;
-}
-#main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide:nth-of-type(5):hover .stroke-text {
-  animation-play-state: running;
-}
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .img-wrap {
   width: 50%;
   height: 48rem;
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .img-wrap {
+    width: 100%;
+    height: 100%;
+  }
+}
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain {
   width: 50%;
   padding: 0 1.6rem;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(even) {
   display: flex;
@@ -2324,6 +2273,7 @@ body.fixed {
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .stroke-text {
   position: absolute;
+  top: 15rem;
   font-family: "Pretendard";
   font-size: 9.6rem;
   font-weight: 700;
@@ -2399,6 +2349,14 @@ body.fixed {
   border-radius: 8rem;
   z-index: -5;
 }
+@media (max-width: 768px) {
+  #main #container #find::after {
+    border-radius: 1.2rem;
+    width: calc(100% - 2.2rem);
+    min-width: 355px;
+    height: calc(100% - 4rem);
+  }
+}
 #main #container #find .find-inner {
   display: flex;
   flex-direction: column;
@@ -2407,10 +2365,25 @@ body.fixed {
   padding-top: 9rem;
   padding-bottom: 8rem;
 }
+@media (max-width: 768px) {
+  #main #container #find .find-inner {
+    padding-top: 8rem;
+    padding-bottom: 3.2rem;
+  }
+}
 #main #container #find .find-inner .find-title {
   padding-bottom: 2.6rem;
   font-family: "Pretendard";
   font-size: 4.8rem;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  #main #container #find .find-inner .find-title {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
 }
 #main #container #find .find-inner .find-title span:nth-of-type(1) {
   color: #222;
@@ -2425,6 +2398,14 @@ body.fixed {
   font-size: 2rem;
   font-weight: 400;
   color: #222;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  #main #container #find .find-inner .sub-title {
+    text-align: center;
+    line-height: 2.8rem;
+    font-size: 1.6rem;
+  }
 }
 #main #container #find .find-inner ul {
   display: flex;
@@ -2436,9 +2417,37 @@ body.fixed {
   width: calc(100% - 4rem);
   gap: 1.5rem;
 }
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 3.8rem 0 2.4rem 0;
+    gap: 1.2rem;
+  }
+}
 #main #container #find .find-inner ul .introduce {
   width: 33.3333333333%;
   height: 51.5rem;
+}
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul .introduce {
+    width: 100%;
+    min-width: 314px;
+    height: 24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) and (max-width: 420px) {
+  #main #container #find .find-inner ul .introduce {
+    height: 16rem;
+  }
 }
 #main #container #find .find-inner ul .introduce .introduce-inner {
   position: relative;
@@ -2449,12 +2458,42 @@ body.fixed {
   padding: 4rem 2.4rem;
   height: 100%;
 }
-#main #container #find .find-inner ul .introduce .introduce-inner .tag-item {
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul .introduce .introduce-inner {
+    padding: 0 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#main #container #find .find-inner ul .introduce .introduce-inner .text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul .introduce .introduce-inner .text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+#main #container #find .find-inner ul .introduce .introduce-inner .text-wrap .tag-item {
   font-family: "Pretendard";
   font-size: 1.4rem;
   border: none;
 }
-#main #container #find .find-inner ul .introduce .introduce-inner p {
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul .introduce .introduce-inner .text-wrap .tag-item {
+    padding: 0.8rem 0.9rem;
+  }
+}
+#main #container #find .find-inner ul .introduce .introduce-inner .text-wrap p {
   font-family: "Pretendard";
   font-size: 2.4rem;
   font-weight: 700;
@@ -2464,11 +2503,26 @@ body.fixed {
   line-height: 3.6rem;
   word-break: keep-all;
 }
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul .introduce .introduce-inner .text-wrap p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-align: left;
+    padding-top: 1rem;
+  }
+}
 #main #container #find .find-inner ul .introduce .introduce-inner .img-wrap {
   position: absolute;
   bottom: 4.3rem;
-  width: 30rem;
-  height: 24rem;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul .introduce .introduce-inner .img-wrap {
+    position: relative;
+    bottom: 0;
+    width: auto;
+    height: 65%;
+  }
 }
 #main #container #find .find-inner ul .introduce .introduce-inner .img-wrap img {
   width: 100%;
@@ -2483,6 +2537,15 @@ body.fixed {
   align-items: center;
   gap: 2.4rem;
   width: 100%;
+}
+@media (max-width: 768px) {
+  #main #container #find .find-inner .btn-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+  }
 }
 #main #container #ourStory {
   position: relative;
@@ -2500,7 +2563,12 @@ body.fixed {
   background: linear-gradient(to bottom, #E8E8FF 0%, #E8E8FF 50%, #fff 100%);
   height: 100%;
   border-radius: 8rem;
-  z-index: -5;
+  z-index: -999;
+}
+@media (max-width: 768px) {
+  #main #container #ourStory::after {
+    border-radius: 1.2rem;
+  }
 }
 #main #container #ourStory .story-inner {
   display: flex;
@@ -2510,32 +2578,29 @@ body.fixed {
   padding-top: 4.3rem;
   padding-bottom: 11.7rem;
 }
-#main #container #ourStory .story-inner .icon-wrap .icon-big-star {
-  position: absolute;
-  top: -4rem;
-  left: -5%;
-  z-index: 10;
-  animation: rotate_image 30s linear infinite;
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner {
+    padding-top: 8rem;
+  }
 }
 #main #container #ourStory .story-inner .icon-wrap .icon-double-circle {
   position: absolute;
-  top: -6rem;
-  right: 12%;
+  top: -1rem;
+  left: 0;
   z-index: 10;
 }
-#main #container #ourStory .story-inner .category-list {
+#main #container #ourStory .story-inner .swiper-wrapper {
   padding-top: 6rem;
   padding-bottom: 3.2rem;
 }
 @media (max-width: 768px) {
-  #main #container #ourStory .story-inner .category-list {
+  #main #container #ourStory .story-inner .swiper-wrapper {
     display: flex;
     gap: 0;
     width: 26rem;
-    height: 16rem;
   }
 }
-#main #container #ourStory .story-inner .category-list .date {
+#main #container #ourStory .story-inner .swiper-wrapper .date {
   font-family: "Pretendard";
   font-size: 2rem;
   font-weight: 400;
