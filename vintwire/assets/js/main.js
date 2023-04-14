@@ -170,33 +170,3 @@ $(window).on('resize', function () {
 ww = $(window).width();
 initSwiper();
 });
-
-//ourStory 모바일 슬라이드
-
-var ww = $(window).width();
-var storySwiper = undefined;
-
-function initSwiper() {
-
-if (ww < 768 && storySwiper == undefined) {
-    storySwiper = new Swiper(".category-list", {
-        slidesPerView : 1,
-        direction: "horizontal",
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            },
-        });
-} else if (ww >= 768 && storySwiper != undefined) {
-    storySwiper.destroy();
-    storySwiper = undefined;
-}
-}
-
-initSwiper();
-
-$(window).on('resize', function () {
-ww = $(window).width();
-initSwiper();
-});
-
