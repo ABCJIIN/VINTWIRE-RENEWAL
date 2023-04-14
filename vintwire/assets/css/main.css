@@ -2527,6 +2527,14 @@ body.fixed {
   padding-top: 6rem;
   padding-bottom: 3.2rem;
 }
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner .category-list {
+    display: flex;
+    gap: 0;
+    width: 26rem;
+    height: 16rem;
+  }
+}
 #main #container #ourStory .story-inner .category-list .date {
   font-family: "Pretendard";
   font-size: 2rem;
