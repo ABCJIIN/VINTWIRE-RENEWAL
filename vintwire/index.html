@@ -281,8 +281,8 @@
                             <img src="/vintwire/assets/images/main/strory_double_circle.svg" alt="다이어그램 아이콘">
                         </span>
                     </div>
-                    <ul class="category-list">
-                        <li>
+                    <ul class="category-list swiper-container">
+                        <li class="swiper-slide">
                             <a href="javascript:volid(0)">
                                 <div class="preview-img">
                                     <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
@@ -303,7 +303,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="javascript:volid(0)">
                                 <div class="preview-img">
                                     <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_steven.png" alt="sophia story">
@@ -324,7 +324,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="javascript:volid(0)">
                                 <div class="preview-img">
                                     <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_felix.png" alt="sophia story">
@@ -345,7 +345,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="javascript:volid(0)">
                                 <div class="preview-img">
                                     <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
@@ -367,6 +367,7 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="swiper-pagination"></div>
                     <div class="btn-wrap">
                         <button type="button">더 많은 이야기 둘러보기</button>
                     </div>
@@ -376,99 +377,5 @@
         <footer id="footer">
         </footer>   
     </div>
-
-    <script>
-        $(function(){
-            $('.animate__animated:not(.delay)').viewportChecker({
-                classToAdd: 'on',
-                offset: 100,
-            });
-
-            $('.animate__animated.delay').viewportChecker({
-                classToAdd: 'on',
-                offset: 125,
-            });
-        });
-        
-        $(document).ready(function(){
-
-            // const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
-
-
-            function valueAni() {
-
-                gsap.set('.intro-icon-wrap .icon',{ scale:0 })
-                gsap.to('.intro-icon-wrap .icon:nth-child(1)',{ scale:1, duration:0.3, delay:0.7 })
-                gsap.to('.intro-icon-wrap .icon:nth-child(2)',{ scale:1, duration:0.2, delay:1 })
-                gsap.to('.intro-icon-wrap .icon:nth-child(3)',{ scale:1, duration:0.5, delay:1 })
-                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(1)',{ y:-40, repeat:-1, yoyo:true, delay:1, duration:1.2, ease:"Back.aseOut.config(1.71.7)" })
-                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(2)',{ y:-20, repeat:-1, yoyo:true, delay:1, duration:0.7, ease:"Back.aseOut.config(1.71.7)" })
-                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(3)',{ y:-30, repeat:-1, yoyo:true, delay:1, duration:1.1, ease:"Back.aseOut.config(1.71.7)" })
-
-                gsap.set(".purple-line p", {
-                    x: (i) => i * 1200
-                });
-
-                gsap.to(".purple-line p", {
-                duration: 20,
-                ease: "none",
-                x: "-=1200", //move each box 500px to right
-                modifiers: {
-                    x: gsap.utils.unitize(x => parseFloat(x) % 1200) //force x value to be between 0 and 500 using modulus
-                },
-                repeat: -1
-                });
-
-            }
-
-            const isTouchDevice = false; // 항상 false 값 할당
-
-            if (isTouchDevice) {
-            $('.line-wrap').empty();
-            } else {
-            valueAni();
-            }
-        
-            // if(isTouchDevice ) {
-            //     $('.line-wrap').empty()
-            // } else {
-            //     valueAni()
-            // }
-        })
-    </script>
-    <script>
-        var ww = $(window).width();
-        var mySwiper = undefined;
-
-        function initSwiper() {
-
-        if (ww < 768 && mySwiper == undefined) {
-            mySwiper = new Swiper("#projectSlide", {
-                direction: "vertical",
-                grabCursor: true,
-                effect: "creative",
-                creativeEffect: {
-                    prev: {
-                    shadow: true,
-                    translate: [0, 0, 0],
-                    },
-                    next: {
-                    translate: [0, "100%", 0],
-                    },
-                },
-                });
-        } else if (ww >= 768 && mySwiper != undefined) {
-            mySwiper.destroy();
-            mySwiper = undefined;
-        }
-        }
-
-        initSwiper();
-
-        $(window).on('resize', function () {
-        ww = $(window).width();
-        initSwiper();
-        });
-    </script>
 </body>
 </html>
