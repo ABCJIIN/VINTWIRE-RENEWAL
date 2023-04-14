@@ -287,7 +287,7 @@
                     <div class="swiper" id="storySlide">
                         <ul class="category-list swiper-wrapper">
                             <li class="swiper-slide">
-                                <a href="javascript:volid(0)">
+                                <a href="javascript:void(0)">
                                     <div class="preview-img">
                                         <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
                                         <div class="preview-info">
@@ -308,7 +308,7 @@
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="javascript:volid(0)">
+                                <a href="javascript:void(0)">
                                     <div class="preview-img">
                                         <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_steven.png" alt="sophia story">
                                         <div class="preview-info">
@@ -329,7 +329,7 @@
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="javascript:volid(0)">
+                                <a href="javascript:void(0)">
                                     <div class="preview-img">
                                         <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_felix.png" alt="sophia story">
                                         <div class="preview-info">
@@ -350,7 +350,7 @@
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="javascript:volid(0)">
+                                <a href="javascript:void(0)">
                                     <div class="preview-img">
                                         <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
                                         <div class="preview-info">
@@ -382,69 +382,74 @@
         <footer id="footer">
         </footer>   
     </div>
-    <script>
+    <!-- <script>
         var swiper = new Swiper('#storySlide', {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    // breakpoints: {
-    //     '@0.75': {
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     },
-    //     '@1.00': {
-    //         slidesPerView: 3,
-    //         spaceBetween: 40,
-    //     },
-    //     '@1.50': {
-    //         slidesPerView: 4,
-    //         spaceBetween: 50,
-    //     },
-    // }
+        slidesPerView: 1,
+        breakpoints: {
+            768 : {
+                slidesPerView: 4,
+            }
+        }
+        // spaceBetween: 16,
+        // breakpoints: {
+        //     '@0.75': {
+        //         slidesPerView: 2,
+        //         spaceBetween: 20,
+        //     },
+        //     '@1.00': {
+        //         slidesPerView: 3,
+        //         spaceBetween: 40,
+        //     },
+        //     '@1.50': {
+        //         slidesPerView: 4,
+        //         spaceBetween: 50,
+        //     },
+        // }
 });
-    </script>
+    </script> -->
     <script>
         // project 모바일 슬라이드
 
-var ww = $(window).width();
-var mySwiper = undefined;
+        var ww = $(window).width();
+        var mySwiper = undefined;
 
-function initSwiper() {
+        function initSwiper() {
 
-if (ww < 768 && mySwiper == undefined) {
-    mySwiper = new Swiper("#projectSlide", {
-        slidesPerView: 1,
-        direction: "vertical",
-        grabCursor: true,
-        effect: "creative",
-        creativeEffect: {
-            prev: {
-            shadow: true,
-            translate: [0, 0, 0],
-            },
-            next: {
-            translate: [0, "100%", 0],
-            },
-        },
+        if (ww < 768 && mySwiper == undefined) {
+            mySwiper = new Swiper("#projectSlide", {
+                slidesPerView: 1,
+                direction: "vertical",
+                grabCursor: true,
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                    shadow: true,
+                    translate: [0, 0, 0],
+                    },
+                    next: {
+                    translate: [0, "100%", 0],
+                    },
+                },
+                });
+        } else if (ww >= 768 && mySwiper != undefined) {
+            mySwiper.destroy();
+            mySwiper = undefined;
+        }
+        }
+
+        initSwiper();
+
+        $(window).on('resize', function () {
+        ww = $(window).width();
+        initSwiper();
         });
-} else if (ww >= 768 && mySwiper != undefined) {
-    mySwiper.destroy();
-    mySwiper = undefined;
-}
-}
-
-initSwiper();
-
-$(window).on('resize', function () {
-ww = $(window).width();
-initSwiper();
-});
 
     </script>
     <script>
         //ourStory 모바일 슬라이드
 
-        var ww = $(window).width();
-        var storySwiper = undefined;
+        // var ww = $(window).width();
+        // var storySwiper = undefined;
         
 
         // function initSwiper() {
