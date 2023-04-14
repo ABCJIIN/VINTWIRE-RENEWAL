@@ -392,7 +392,7 @@
         
         $(document).ready(function(){
 
-            const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
+            // const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
 
 
             function valueAni() {
@@ -420,12 +420,20 @@
                 });
 
             }
-        
-            if(isTouchDevice ) {
-                $('.line-wrap').empty()
+
+            const isTouchDevice = false; // 항상 false 값 할당
+
+            if (isTouchDevice) {
+            $('.line-wrap').empty();
             } else {
-                valueAni()
+            valueAni();
             }
+        
+            // if(isTouchDevice ) {
+            //     $('.line-wrap').empty()
+            // } else {
+            //     valueAni()
+            // }
         })
     </script>
     <script>
@@ -462,35 +470,5 @@
         initSwiper();
         });
     </script>
-    <!-- <script>
-        $(document).ready(function() {
-            var zIndexValue = $('.swiper-slide').css('z-index'); // 선택한 요소의 z-index 값을 가져옵니다.
-            if (zIndexValue == 1) {
-                $('.swiper-slide').text('안녕하슈');
-            } else if (zIndexValue == 2) {
-                $('.swiper-slide').text('나는');
-            } else if (zIndexValue == 3) {
-                $('.swiper-slide').text('바보');
-            } else if (zIndexValue == 4) {
-                $('.swiper-slide').text('입니다');
-            } else if (zIndexValue == 5) {
-                $('.swiper-slide').text('흑흑흑');
-            } else {
-                $('.swiper-slide').text('다른 텍스트');
-            }
-            });
-    </script> -->
-    <!-- <script>
-        var mySwiper = new Swiper('.swiper-container', {
-        // Swiper 옵션 설정
-        });
-
-        mySwiper.on('slideChangeTransitionEnd', function () {
-        $('.swiper-slide').removeClass('on'); // 모든 슬라이드에서 on 클래스를 제거합니다.
-        $('.swiper-slide-active').addClass('on'); // 활성화된 슬라이드에 on 클래스를 추가합니다.
-        // $('.swiper-slide-active .stroke-text').addClass('on'); // 활성화된 슬라이드 안에 있는 .point 요소에 on 클래스를 추가합니다.
-        });
-    </script> -->
-
 </body>
 </html>
