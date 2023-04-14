@@ -1924,19 +1924,10 @@ body.fixed {
   padding-bottom: 10rem;
   height: 100vh;
   min-height: 81.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   #main #container #value {
@@ -1957,8 +1948,7 @@ body.fixed {
   top: 12rem;
   bottom: 10rem;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   max-width: 1840px;
   width: 100%;
   background: #F8F8F8;
@@ -1992,6 +1982,11 @@ body.fixed {
   text-align: center;
   color: #222;
 }
+@media (max-width: 768px) {
+  #main #container #value .value-inner .text-wrap .text {
+    padding-top: 0;
+  }
+}
 #main #container #value .value-inner .text-wrap .title {
   position: relative;
   font-family: "Panchang";
@@ -2021,7 +2016,7 @@ body.fixed {
   #main #container #value .value-inner .text-wrap .title .icon-smile {
     width: 4.2rem;
     height: 4.2rem;
-    bottom: -16.5rem;
+    bottom: -15rem;
     left: 0;
   }
 }
@@ -2037,7 +2032,7 @@ body.fixed {
   #main #container #value .value-inner .text-wrap .title .icon-smile.purple {
     width: 4.2rem;
     height: 4.2rem;
-    top: 6.2rem;
+    top: -2.8rem;
     left: 28rem;
   }
 }
@@ -2056,6 +2051,8 @@ body.fixed {
   #main #container #value .value-inner .text-wrap .explain {
     font-size: 1.6rem;
     line-height: 2.8rem;
+    padding-top: 2.4rem;
+    padding-bottom: 4rem;
   }
 }
 #main #container #value .value-inner .btn-wrap {
@@ -2145,6 +2142,11 @@ body.fixed {
   z-index: 20;
   background: #222;
 }
+@media (max-width: 768px) {
+  #main #container #project .sec-tit {
+    position: relative;
+  }
+}
 #main #container #project .sec-tit h2 {
   color: #fff;
 }
@@ -2153,19 +2155,10 @@ body.fixed {
 }
 #main #container #project .project-inner {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 2rem;
   padding-bottom: 20rem;
   height: auto;
@@ -2176,6 +2169,14 @@ body.fixed {
   width: 100%;
   padding-bottom: 6rem;
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner #projectSlide {
+    width: 315px;
+    height: 389px;
+    display: block;
+    padding: 0;
+  }
+}
 #main #container #project .project-inner #projectSlide .swiper-wrapper {
   width: 100%;
   gap: 12rem;
@@ -2183,6 +2184,14 @@ body.fixed {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner #projectSlide .swiper-wrapper {
+    position: relative;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide {
   display: flex;
@@ -2289,25 +2298,14 @@ body.fixed {
   align-items: flex-end;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .explain-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain:nth-child(odd) .explain-wrap .page-num {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
+  transform: rotate(-90deg);
+  transform-origin: right top;
   right: calc(50% + 5.2rem);
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .page-num {
@@ -2336,19 +2334,10 @@ body.fixed {
   z-index: -5;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .project-btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 0.8rem;
 }
 #main #container #project .project-inner #projectSlide .swiper-wrapper .swiper-slide .project-explain .explain-wrap .project-btn-wrap button {
@@ -2515,16 +2504,9 @@ body.fixed {
 }
 #main #container #ourStory .story-inner {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding-top: 4.3rem;
   padding-bottom: 11.7rem;
 }
