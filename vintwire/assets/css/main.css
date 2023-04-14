@@ -2568,6 +2568,8 @@ body.fixed {
 @media (max-width: 768px) {
   #main #container #ourStory::after {
     border-radius: 1.2rem;
+    width: calc(100% - 2.2rem);
+    min-width: 355px;
   }
 }
 #main #container #ourStory .story-inner {
@@ -2581,6 +2583,9 @@ body.fixed {
 @media (max-width: 768px) {
   #main #container #ourStory .story-inner {
     padding-top: 8rem;
+    padding-bottom: 3.2rem;
+    overflow: hidden;
+    width: calc(100% - 2.2rem);
   }
 }
 #main #container #ourStory .story-inner .icon-wrap .icon-double-circle {
@@ -2589,18 +2594,19 @@ body.fixed {
   left: 0;
   z-index: 10;
 }
-#main #container #ourStory .story-inner .swiper-wrapper {
+#main #container #ourStory .story-inner #storySlide .category-list {
   padding-top: 6rem;
   padding-bottom: 3.2rem;
 }
 @media (max-width: 768px) {
-  #main #container #ourStory .story-inner .swiper-wrapper {
+  #main #container #ourStory .story-inner #storySlide .category-list {
     display: flex;
     gap: 0;
-    width: 26rem;
+    width: 35rem;
+    gap: 1rem;
   }
 }
-#main #container #ourStory .story-inner .swiper-wrapper .date {
+#main #container #ourStory .story-inner #storySlide .category-list .date {
   font-family: "Pretendard";
   font-size: 2rem;
   font-weight: 400;
