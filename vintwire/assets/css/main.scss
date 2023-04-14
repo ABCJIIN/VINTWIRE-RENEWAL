@@ -385,17 +385,17 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             width: 100%;
             height: 100%;
             background: $black;
-            &::after {
-                position: absolute;
-                bottom: 0;
-                content: "";
-                width: 100%;
-                height: 44rem;
-                background: url(/vintwire/assets/images/main/projects_bg.png) no-repeat center/cover;
-            }
+            // &::after {
+            //     position: absolute;
+            //     bottom: 0;
+            //     content: "";
+            //     width: 100%;
+            //     height: 44rem;
+            //     background: url(/vintwire/assets/images/main/projects_bg.png) no-repeat center/cover;
+            // }
             .sec-tit {
-                position: sticky;
-                top: 0;
+                // position: sticky;
+                // top: 0;
                 padding-top: 10rem;
                 padding-bottom: 6rem;
                 // height: 22.4rem;
