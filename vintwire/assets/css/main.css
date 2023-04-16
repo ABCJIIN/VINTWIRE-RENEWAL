@@ -3161,7 +3161,6 @@ body.fixed {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    max-width: 600px;
     padding: 3.8rem 0 2.4rem 0;
     gap: 1.2rem;
   }
@@ -3175,8 +3174,6 @@ body.fixed {
     width: 100%;
     min-width: 314px;
     height: 24rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3188,11 +3185,6 @@ body.fixed {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-@media (max-width: 768px) and (max-width: 420px) {
-  #main #container #find .find-inner ul .introduce {
-    height: 16rem;
   }
 }
 #main #container #find .find-inner ul .introduce .introduce-inner {
@@ -3218,8 +3210,6 @@ body.fixed {
     padding: 0 1.5rem;
     width: 100%;
     max-width: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3399,24 +3389,31 @@ body.fixed {
     width: calc(100% - 2.2rem);
   }
 }
+#main #container #ourStory .story-inner .icon-wrap {
+  z-index: -10;
+}
 #main #container #ourStory .story-inner .icon-wrap .icon-double-circle {
   position: absolute;
   top: -1rem;
-  left: 0;
+  left: 5%;
   z-index: 10;
+}
+#main #container #ourStory .story-inner .icon-wrap .icon-double-circle img {
+  width: 30vw;
+}
+#main #container #ourStory .story-inner #storySlide {
+  width: 100%;
 }
 #main #container #ourStory .story-inner #storySlide .category-list {
   padding-top: 6rem;
   padding-bottom: 3.2rem;
+  gap: 0;
 }
 @media (max-width: 768px) {
   #main #container #ourStory .story-inner #storySlide .category-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0;
-    width: 35rem;
-    gap: 1rem;
   }
 }
 #main #container #ourStory .story-inner #storySlide .category-list .date {
@@ -3425,7 +3422,20 @@ body.fixed {
   font-weight: 400;
   color: #AAAAAA;
 }
+#main #container #ourStory .story-inner #storySlide .swiper-pagination {
+  bottom: 0;
+}
+#main #container #ourStory .story-inner #storySlide .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #ddd;
+  opacity: 1;
+}
+#main #container #ourStory .story-inner #storySlide .swiper-pagination-bullet-active {
+  background: #6A6AE6;
+}
 #main #container #ourStory .story-inner .btn-wrap {
+  padding-top: 2rem;
   width: 100%;
   text-align: center;
 }
