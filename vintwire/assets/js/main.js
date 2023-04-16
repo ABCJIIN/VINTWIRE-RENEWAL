@@ -134,39 +134,3 @@ $(document).ready(function(){
     }
 
 })
-
-// project 모바일 슬라이드
-
-// var ww = $(window).width();
-// var mySwiper = undefined;
-
-// function initSwiper() {
-
-// if (ww < 768 && mySwiper == undefined) {
-//     mySwiper = new Swiper("#projectSlide", {
-//         slidesPerView: 1,
-//         direction: "vertical",
-//         grabCursor: true,
-//         effect: "creative",
-//         creativeEffect: {
-//             prev: {
-//             shadow: true,
-//             translate: [0, 0, 0],
-//             },
-//             next: {
-//             translate: [0, "100%", 0],
-//             },
-//         },
-//         });
-// } else if (ww >= 768 && mySwiper != undefined) {
-//     mySwiper.destroy();
-//     mySwiper = undefined;
-// }
-// }
-
-// initSwiper();
-
-// $(window).on('resize', function () {
-// ww = $(window).width();
-// initSwiper();
-// });
