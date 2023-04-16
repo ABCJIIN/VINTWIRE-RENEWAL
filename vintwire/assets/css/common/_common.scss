@@ -273,10 +273,10 @@ body{
     to{right: 1.5rem;}
 }
 
-// @keyframes projects_right {
-//     from {left: 100%;}
-//     to {left: 50%;}
-// }
+@keyframes w100_ani {
+    from{width: 0%;}
+    to{width: 100%;}
+}
 
 // @keyframes projects_left {
 //     from {left: -50%;}
