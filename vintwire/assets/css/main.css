@@ -3173,7 +3173,9 @@ body.fixed {
   #main #container #find .find-inner ul .introduce {
     width: 100%;
     min-width: 314px;
-    height: 24rem;
+    height: 16rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3209,7 +3211,8 @@ body.fixed {
   #main #container #find .find-inner ul .introduce .introduce-inner {
     padding: 0 1.5rem;
     width: 100%;
-    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
