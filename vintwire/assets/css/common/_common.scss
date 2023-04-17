@@ -81,11 +81,6 @@ $f-jinny :invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(9
         border-radius: 50%;
         font-family: $montserrat;
         @include flexbox(row, center, center);
-        @include tablet{
-            width: 2.8rem;
-            height: 2.8rem;
-            font-size: 2rem;
-        }
     
         &.jane {background:$jane;}
         &.anna {background:$anna;}
@@ -106,9 +101,6 @@ $f-jinny :invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(9
         font-weight: 600;
         line-height: 2.6rem;
         color: $black;
-        @include tablet{
-            font-size: 1.4rem;
-        }
 
         &.jane {color:$jane;}
         &.anna {color:$anna;}
@@ -341,6 +333,7 @@ button{
     color: $white;
     border-radius: 5rem;
     padding: 1.6rem;
+    letter-spacing: -0.2rem;
     cursor: pointer;
     @include tablet{
         max-width: 100%;
