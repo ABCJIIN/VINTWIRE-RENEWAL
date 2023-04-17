@@ -686,7 +686,7 @@ body {
 
 .tag-item {
   background: #FFE75C;
-  padding: 1rem 2.4rem;
+  padding: 1.1rem 1.4rem;
   border-radius: 5rem;
   color: #6A6AE6;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1465,7 +1465,7 @@ body {
 
 .tag-item {
   background: #FFE75C;
-  padding: 1rem 2.4rem;
+  padding: 1.1rem 1.4rem;
   border-radius: 5rem;
   color: #6A6AE6;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -3217,10 +3217,10 @@ body.fixed {
 }
 @media (max-width: 768px) {
   #main #container #find .find-inner ul .introduce .introduce-inner .img-wrap {
-    position: relative;
-    bottom: 0;
-    width: auto;
-    height: 65%;
+    right: 0;
+    bottom: 1rem;
+    height: 10rem;
+    width: 35%;
   }
 }
 #main #container #find .find-inner ul .introduce .introduce-inner .img-wrap img {
@@ -3319,14 +3319,36 @@ body.fixed {
 #main #container #ourStory .story-inner .icon-wrap {
   z-index: -10;
 }
+#main #container #ourStory .story-inner .icon-wrap .icon-story-star {
+  position: absolute;
+  left: -3%;
+  top: -8%;
+  z-index: 10;
+  -webkit-animation: rotate_image 30s linear infinite;
+          animation: rotate_image 30s linear infinite;
+}
+#main #container #ourStory .story-inner .icon-wrap .icon-story-star img {
+  width: 15vw;
+}
 #main #container #ourStory .story-inner .icon-wrap .icon-double-circle {
   position: absolute;
-  top: -1rem;
-  left: 5%;
+  top: -10%;
+  right: 8%;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner .icon-wrap .icon-double-circle {
+    left: 5%;
+    top: -1%;
+  }
+}
 #main #container #ourStory .story-inner .icon-wrap .icon-double-circle img {
-  width: 30vw;
+  width: 17vw;
+}
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner .icon-wrap .icon-double-circle img {
+    width: 25vw;
+  }
 }
 #main #container #ourStory .story-inner #storySlide {
   width: 100%;
@@ -3334,13 +3356,46 @@ body.fixed {
 #main #container #ourStory .story-inner #storySlide .category-list {
   padding-top: 6rem;
   padding-bottom: 3.2rem;
-  gap: 0;
+  gap: 4rem 0;
+}
+@media (max-width: 980px) {
+  #main #container #ourStory .story-inner #storySlide .category-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media (max-width: 768px) {
   #main #container #ourStory .story-inner #storySlide .category-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 0;
+  }
+}
+#main #container #ourStory .story-inner #storySlide .category-list .swiper-slide {
+  min-width: 260px;
+}
+#main #container #ourStory .story-inner #storySlide .category-list .story-tit {
+  position: relative;
+  padding: 1.2rem 0.3rem;
+}
+@media (max-width: 980px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .story-tit {
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .story-tit {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 980px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .tag-item {
+    font-size: 1vw;
+  }
+}
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .tag-item {
+    font-size: 1.4rem;
   }
 }
 #main #container #ourStory .story-inner #storySlide .category-list .date {
@@ -3349,17 +3404,19 @@ body.fixed {
   font-weight: 400;
   color: #AAAAAA;
 }
-#main #container #ourStory .story-inner #storySlide .swiper-pagination {
-  bottom: 0;
-}
-#main #container #ourStory .story-inner #storySlide .swiper-pagination-bullet {
-  width: 1.2rem;
-  height: 1.2rem;
-  background: #ddd;
-  opacity: 1;
-}
-#main #container #ourStory .story-inner #storySlide .swiper-pagination-bullet-active {
-  background: #6A6AE6;
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner #storySlide .swiper-pagination {
+    bottom: 0;
+  }
+  #main #container #ourStory .story-inner #storySlide .swiper-pagination-bullet {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #ddd;
+    opacity: 1;
+  }
+  #main #container #ourStory .story-inner #storySlide .swiper-pagination-bullet-active {
+    background: #6A6AE6;
+  }
 }
 #main #container #ourStory .story-inner .btn-wrap {
   padding-top: 2rem;
