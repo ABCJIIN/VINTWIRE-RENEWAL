@@ -427,7 +427,88 @@
                 }
             }
         }
-        
+        .tit-emphasis{
+            position: relative;
+            padding: 0 3rem;
+            &::before, &::after{
+                content:"";
+                display:inline-block;
+                width: 2rem;
+                height: 1.6rem;
+                position:absolute;
+                z-index: 0;
+                @include background(icon, icon_dobule_dot, svg, no-repeat, contain, center, center);
+                @include tablet{
+                    width: 1.2rem;
+                    height: 1rem;
+                }
+            }
+            &::before{
+                top: 0;
+                left: 0;
+            }
+            &::after{
+                bottom: 0;
+                right: 0;
+                transform:rotate(180deg);
+            }
+        }
+        .jane{
+            .introductory{border-color: $jane;}
+            .tit-emphasis{&::before, &::after{filter: $f-jane;}}
+        }
+        .anna{
+            .introductory{border-color: $anna;}
+            .tit-emphasis{&::before, &::after{filter: $f-anna;}}
+        }
+        .jasmine{
+            .introductory{border-color: $jasmine;}
+            .tit-emphasis{&::before, &::after{filter: $f-jasmine;}}
+        }
+        .steven{
+            .introductory{border-color: $steven;}
+            .tit-emphasis{&::before, &::after{filter: $f-steven;}}
+        }
+        .woody{
+            .introductory{border-color: $woody;}
+            .tit-emphasis{&::before, &::after{filter: $f-woody;}}
+        }
+        .summer{
+            .introductory{border-color: $summer;}
+            .tit-emphasis{&::before, &::after{filter: $f-summer;}}
+        }
+        .felix{
+            .introductory{border-color: $felix;}
+            .tit-emphasis{&::before, &::after{filter: $f-felix;}}
+        }
+        .sophia{
+            .introductory{border-color: $sophia;}
+            .tit-emphasis{&::before, &::after{filter: $f-sophia;}}
+        }
+        .nia{
+            .introductory{border-color: $nia;}
+            .tit-emphasis{&::before, &::after{filter: $f-nia;}}
+        }
+        .jason{
+            .introductory{border-color: $nia;}
+            .tit-emphasis{&::before, &::after{filter: $f-nia;}}
+        }
+        .jason{
+            .introductory{border-color: $jason;}
+            .tit-emphasis{&::before, &::after{filter: $f-jason;}}
+        }
+        .milky{
+            .introductory{border-color: $milky;}
+            .tit-emphasis{&::before, &::after{filter: $f-milky;}}
+        }
+        .noah{
+            .introductory{border-color: $noah;}
+            .tit-emphasis{&::before, &::after{filter: $f-noah;}}
+        }
+        .jinny{
+            .introductory{border-color: $jinny;}
+            .tit-emphasisp{&::before, &::after{filter: $f-jinny;}}
+        }
     }
 }
 .wrap:not(#main){
