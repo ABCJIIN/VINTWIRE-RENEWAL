@@ -2668,7 +2668,7 @@ body.fixed {
   -webkit-text-stroke: 1px #222;
 }
 #main #container #value .value-inner .text-wrap .text {
-  padding-top: 9rem;
+  padding-top: 8rem;
   text-align: center;
   color: #222;
 }
