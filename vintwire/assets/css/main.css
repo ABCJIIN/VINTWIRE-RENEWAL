@@ -2914,40 +2914,29 @@ body.fixed {
     background: #eee;
   }
 }
-#main #container #project .project-inner .test {
+#main #container #project .project-inner .project {
   width: 100%;
-  height: 80%;
-  border: 1px solid #fff;
-  overflow-y: scroll;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  height: 100%;
+  overflow: hidden;
 }
-#main #container #project .project-inner .test::-webkit-scrollbar {
-  display: none;
-}
-#main #container #project .project-inner .test > div {
-  scroll-snap-align: start;
-}
-#main #container #project .project-inner .box {
+#main #container #project .project-inner .project-item {
   width: 100%;
   height: 100%;
 }
-#main #container #project .project-inner .box.red {
+#main #container #project .project-inner .project-item.section01 {
   background: red;
 }
-#main #container #project .project-inner .box.orange {
+#main #container #project .project-inner .project-item.section02 {
   background: orange;
 }
-#main #container #project .project-inner .box.green {
+#main #container #project .project-inner .project-item.section03 {
   background: green;
 }
-#main #container #project .project-inner .box.yellow {
-  background: yellow;
+#main #container #project .project-inner .project-item.section04 {
+  background: greenyellow;
 }
-#main #container #project .project-inner .box.blue {
-  background: blue;
+#main #container #project .project-inner .project-item.section05 {
+  background: yellow;
 }
 #main #container #project .project-inner .btn-wrap {
   width: 100%;
@@ -3434,4 +3423,34 @@ body.fixed {
   padding-top: 2rem;
   width: 100%;
   text-align: center;
+}
+#main #container #test {
+  padding: 8rem 0;
+  background: #222;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#main #container #test > .test-inner {
+  width: 100%;
+  height: 100%;
+}
+#main #container .box {
+  width: 100%;
+  height: 100%;
+}
+#main #container .box.red {
+  background: red;
+}
+#main #container .box.orange {
+  background: orange;
+}
+#main #container .box.green {
+  background: green;
+}
+#main #container .box.yellow {
+  background: yellow;
+}
+#main #container .box.blue {
+  background: blue;
 }
