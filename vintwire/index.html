@@ -280,6 +280,9 @@
                         <p>빈트와이어가 전하는 다양한 <br class="d-mb">소식과 이야기들을 만나보세요!</p>
                     </div>
                     <div class="icon-wrap">
+                        <span class="icon-story-star">
+                            <img class="d-pc" src="/vintwire/assets/images/main/story_star.svg" alt="별 아이콘">
+                        </span>
                         <span class="icon-double-circle">
                             <img src="/vintwire/assets/images/main/intro_double_circle_mb.svg" alt="다이어그램 아이콘">
                         </span>
@@ -295,7 +298,7 @@
                                                 <li class="tag-item">디자인</li>
                                                 <li class="tag-item">일상</li>
                                             </ul>
-                                            <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                            <strong class="story-tit"><span class="quote">"</span>타이틀이 두줄<br>까지 노출됩니다<span class="quote">"</span></strong>
                                         </div>
                                     </div>
                                     <div class="flex-wrap">
@@ -316,7 +319,7 @@
                                                 <li class="tag-item">디자인</li>
                                                 <li class="tag-item">일상</li>
                                             </ul>
-                                            <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                            <strong class="story-tit"><span class="quote">"</span>타이틀이 두줄<br>까지 노출됩니다<span class="quote">"</span></strong>
                                         </div>
                                     </div>
                                     <div class="flex-wrap">
@@ -337,7 +340,7 @@
                                                 <li class="tag-item">디자인</li>
                                                 <li class="tag-item">일상</li>
                                             </ul>
-                                            <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                            <strong class="story-tit"><span class="quote">"</span>타이틀이 두줄<br>까지 노출됩니다<span class="quote">"</span></strong>
                                         </div>
                                     </div>
                                     <div class="flex-wrap">
@@ -358,7 +361,7 @@
                                                 <li class="tag-item">디자인</li>
                                                 <li class="tag-item">일상</li>
                                             </ul>
-                                            <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                            <strong class="story-tit"><span class="quote">"</span>타이틀이 두줄<br>까지 노출됩니다<span class="quote">"</span></strong>
                                         </div>
                                     </div>
                                     <div class="flex-wrap">
@@ -371,10 +374,10 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination d-mb"></div>
                     </div>
                     <div class="btn-wrap">
-                        <button type="button">더 많은 이야기 둘러보기</button>
+                        <button type="button" onclick="location.href='/vintwire/html/sub/stroy/story.html'">더 많은 이야기 둘러보기</button>
                     </div>
                 </div>
             </section>
@@ -437,7 +440,10 @@
         breakpoints: {
             768 : {
                 slidesPerView: 4,
-            }
+                spaceBetween: 16,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+            },
         }
     });
 </script>
