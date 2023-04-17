@@ -45,6 +45,9 @@
                     li {
                         a {
                             font-size: 4.9rem;
+                            @include tablet {
+                                font-size: 3.6rem;
+                            }
                         }
                     }
                 }
@@ -71,10 +74,6 @@
                 @include notebook {
                     font-size: 2rem;
                 }
-                // @include tablet_junction {font-size: 1.6rem;}
-                // @include tablet {
-                //     font-size: 2rem;
-                // }
             }
         }
         #gnb {
@@ -111,7 +110,7 @@
                         display: none;
                         position: absolute;
                         bottom: -3.5rem;
-                        left: 16rem;
+                        left: 15rem;
                         z-index:1;
                         @include tablet{display: block;}
                         .inner{
