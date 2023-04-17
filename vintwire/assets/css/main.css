@@ -2666,7 +2666,19 @@ body.fixed {
     font-size: 1.4rem;
   }
 }
-#main #container #ourStory .story-inner #storySlide .category-list .date {
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .flex-wrap .members-warp .icon-member {
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 6vw;
+  }
+}
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .flex-wrap .members-warp .writer {
+    font-size: 5vw;
+  }
+}
+#main #container #ourStory .story-inner #storySlide .category-list .flex-wrap .date {
   font-family: "Pretendard";
   font-size: 2rem;
   font-weight: 400;
