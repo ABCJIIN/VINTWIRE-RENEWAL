@@ -862,25 +862,49 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         gap: 4rem 0;
                         @media (max-width: 980px){
                             grid-template-columns: repeat(4, 1fr);
+                            gap: 0;
                         }
                         @include tablet {
                             display: flex;
                             gap: 0;
                         }
                         .swiper-slide {
-                            min-width: 260px;
-                        }
-                        .story-tit {
-                            position: relative;
-                            padding:1.2rem 0.3rem;
-                            @media (max-width: 980px){font-size: 1.6vw;}
                             @include tablet {
-                                font-size: 5vw;
+                                min-width: 260px;
+                            }
+                            .preview-info {
+                                padding: 0.8rem 0.8rem 2rem 0.8rem;
                             }
                         }
                         .tag-item {
                             @media (max-width: 980px){font-size: 1vw;}
                             @include tablet{font-size: 1.4rem;}
+                        }
+                        .story-tit {
+                            position: relative;
+                            white-space: nowrap;
+                            // padding:1.2rem 0.3rem;
+                            @media (max-width: 980px){font-size: 1.6vw;}
+                            @include tablet {
+                                font-size: 5vw;
+                            }
+                        }
+                        .tit-emphasis {
+                            padding: 0 1.5vw;
+                            &::before {
+                                top: -0.8rem;
+                            }
+                            &::after {
+                                bottom: -0.8rem;
+                            }
+                            @include tablet {
+                                padding: 0 4vw;
+                                // padding: 0 2rem;
+                                &::before, &::after {
+                                    width: 3vw;
+                                    height: 2.6vh;
+                                }
+                            }
                         }
                         .flex-wrap {
                             .members-warp {
