@@ -383,52 +383,45 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
         #project {
             position: relative;
             width: 100%;
-            // height: 100vh;
             padding: 0 0 20rem; 
             background: $black;
             *{color: $white;}
-            @include tablet{
-                margin-top: 0 !important;
-                padding: 8rem 0 !important;
-                // height: calc(100vh - 9.6rem) !important;
-            }
-            // &::after {
-            //     position: absolute;
-            //     bottom: 0;
-            //     content: "";
-            //     width: 100%;
-            //     height: 44rem;
-            //     background: url(/vintwire/assets/images/main/projects_bg.png) no-repeat center/cover;
-            // }
+            @include background(main, project_bg, png, no-repeat, 100%, center, bottom);
+            @include tablet{padding: 8rem 0;}
             .sec-tit{
                 position: sticky;
-                top: 0rem;
-                background: #222;
+                top: 0;
+                background: $black;
                 padding: 12rem 0 4rem;
                 z-index: 2;
+                @include tablet{
+                    position: static;
+                    padding: 0;
+                }
             }
             .project-inner {
-                // position: relative;
-                // @include flexbox (column, center, center);
-                // padding-top: 2rem;
-                // padding-bottom: 20rem;
-                // height: auto;
                 margin-top: 6rem;
-                @include tablet {
-                    display: block;
-                    // height: 100%;
-                }
                 .project-wrap{
                     &-list{
-                        background: $black;
-                        &:not(:first-child){margin-top: 12rem;}
+                        position: relative;
+                        &:not(:first-child){
+                            margin-top: 12rem;
+                            @include tablet{margin-top: 4rem;}
+                        }
                         &:nth-child(even){
                             flex-direction: row-reverse;
+                            @include tablet{flex-direction: column;}
                             .project-info{
                                 .page-num{
                                     transform: rotate(-90deg);
                                     right: 0;
                                     left: auto;
+                                    @include tablet{
+                                        transform: rotate(0);
+                                        top: 2rem;
+                                        left: auto;
+                                        right: 1.4rem;
+                                    }
                                 }
                                 &-name + div{
                                     justify-content: flex-end;
@@ -437,43 +430,81 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 }
                             }
                         }
-                        &:nth-child(1){.img-wrap{@include background(main, project_img_kita, png, no-repeat, cover, center, center);}}
-                        &:nth-child(2){.img-wrap{@include background(main, project_img_koreanAir, png, no-repeat, cover, center, center);}}
-                        &:nth-child(3){.img-wrap{@include background(main, project_img_lg, png, no-repeat, cover, center, center);}}
-                        &:nth-child(4){.img-wrap{@include background(main, project_img_hyundai, png, no-repeat, cover, center, center);}}
-                        &:nth-child(5){.img-wrap{@include background(main, project_img_nonghyup, png, no-repeat, cover, center, center);}}
+                        // &:nth-child(1){.img-wrap{@include background(main, project_img_kita, png, no-repeat, cover, center, center);}}
+                        // &:nth-child(2){.img-wrap{@include background(main, project_img_koreanAir, png, no-repeat, cover, center, center);}}
+                        // &:nth-child(3){.img-wrap{@include background(main, project_img_lg, png, no-repeat, cover, center, center);}}
+                        // &:nth-child(4){.img-wrap{@include background(main, project_img_hyundai, png, no-repeat, cover, center, center);}}
+                        // &:nth-child(5){.img-wrap{@include background(main, project_img_nonghyup, png, no-repeat, cover, center, center);}}
                         @include flexbox(row, space-between, flex-start);
                         @include tablet{
                             position: sticky;
                             top: 0;
+                            flex-direction: column;
                         }
-                        > div{
+                        > div:not(.project-info-name, .btn-group){
                             width: calc(100% / 2 - 0.8rem);
-                            min-height: 48rem;
-                            border: 1px solid #fff;
+                            height: 48rem;
+                            @include tablet{
+                                width: 100%;
+                                height: 39rem;
+                            }
                         }
                         .img-wrap{
                             border-radius: 3rem 3rem 3rem 1rem;
                             overflow: hidden;
-                            text-indent: -9999em;
-                            transition: all .35s;
-                            &:hover{
-                                background-size: 120%;
+                            &:hover{img{transform: scale(1.2);}}
+                            > img{
+                                width: 110%;
+                                height: 100%;
+                                transition: transform .35s;
+                                @include tablet{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .project-info-name{
+                            margin-top: -1rem;
+                            position: relative;
+                            z-index: -1;
+                            background: $black;
+                            span{
+                                font-size: 5.6vw;
+                                font-weight: bold;
+                                color: transparent;
+                                -webkit-text-stroke: 1px #656565;
+                                @include tablet{
+                                    font-size: 4.2rem;
+                                }
                             }
                         }
                         .project-info{
                             position: relative;
                             @include flexbox(column, flex-end, flex-start);
+                            @include tablet{
+                                padding: 2.4rem;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
                             .page-num{
                                 width: 8rem;
                                 height: 4.2rem;
-                                border: 1px solid red;
                                 position: absolute;
                                 left: -1rem;
                                 top: 3rem;
                                 transform: rotate(90deg);
                                 font-size: 3.6rem;
                                 font-weight: 900;
+                                @include tablet{
+                                    width: auto;
+                                    height: auto;
+                                    transform: rotate(0);
+                                    top: 2rem;
+                                    left: auto;
+                                    right: 1.4rem;
+                                    font-size: 2rem;
+                                }
                                 span{
                                     &:last-child{
                                         color: transparent;
@@ -481,18 +512,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                     }
                                 }
                             }
-                            &-name{
+                            .project-info-name{
                                 position: absolute;
                                 top: 50%;
                                 left: 0;
                                 z-index: 0;
                                 transform: translateY(-50%);
-                                span{
-                                    font-size: 9.6rem;
-                                    font-weight: bold;
-                                    color: transparent;
-                                    -webkit-text-stroke: 1px #656565;
-                                }
                             }
                             &-name + div{
                                 @include flexbox(column, flex-start, flex-start);
@@ -512,11 +537,16 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 > strong{
                                     font-size: 4.2vw;
                                     font-weight: bold;
+                                    @include tablet{font-size: 2rem;}
                                 }
                                 > ul{
                                     li{
                                         font-size: 1.8rem;
                                         line-height: 2.8rem;
+                                        @include tablet{
+                                            font-size: 1.4rem;
+                                            line-height: 2.6rem;
+                                        }
                                     }
                                 }
                             }

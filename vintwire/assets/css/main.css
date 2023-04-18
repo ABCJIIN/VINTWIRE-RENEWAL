@@ -2830,33 +2830,37 @@ body.fixed {
   width: 100%;
   padding: 0 0 20rem;
   background: #222;
+  background-image: url(/vintwire/assets/images/main/project_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
 }
 #main #container #project * {
   color: #fff;
 }
 @media (max-width: 768px) {
   #main #container #project {
-    margin-top: 0 !important;
-    padding: 8rem 0 !important;
+    padding: 8rem 0;
   }
 }
 #main #container #project .sec-tit {
   position: sticky;
-  top: 0rem;
+  top: 0;
   background: #222;
   padding: 12rem 0 4rem;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  #main #container #project .sec-tit {
+    position: static;
+    padding: 0;
+  }
+}
 #main #container #project .project-inner {
   margin-top: 6rem;
 }
-@media (max-width: 768px) {
-  #main #container #project .project-inner {
-    display: block;
-  }
-}
 #main #container #project .project-inner .project-wrap-list {
-  background: #222;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2874,17 +2878,39 @@ body.fixed {
 #main #container #project .project-inner .project-wrap-list:not(:first-child) {
   margin-top: 12rem;
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list:not(:first-child) {
+    margin-top: 4rem;
+  }
+}
 #main #container #project .project-inner .project-wrap-list:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 #main #container #project .project-inner .project-wrap-list:nth-child(even) .project-info .page-num {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   right: 0;
   left: auto;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list:nth-child(even) .project-info .page-num {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    top: 2rem;
+    left: auto;
+    right: 1.4rem;
+  }
 }
 #main #container #project .project-inner .project-wrap-list:nth-child(even) .project-info-name + div {
   -webkit-box-pack: end;
@@ -2893,56 +2919,64 @@ body.fixed {
   margin-left: auto;
   margin-right: 0;
 }
-#main #container #project .project-inner .project-wrap-list:nth-child(1) .img-wrap {
-  background-image: url(/vintwire/assets/images/main/project_img_kita.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#main #container #project .project-inner .project-wrap-list:nth-child(2) .img-wrap {
-  background-image: url(/vintwire/assets/images/main/project_img_koreanAir.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#main #container #project .project-inner .project-wrap-list:nth-child(3) .img-wrap {
-  background-image: url(/vintwire/assets/images/main/project_img_lg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#main #container #project .project-inner .project-wrap-list:nth-child(4) .img-wrap {
-  background-image: url(/vintwire/assets/images/main/project_img_hyundai.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#main #container #project .project-inner .project-wrap-list:nth-child(5) .img-wrap {
-  background-image: url(/vintwire/assets/images/main/project_img_nonghyup.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 @media (max-width: 768px) {
   #main #container #project .project-inner .project-wrap-list {
     position: sticky;
     top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
-#main #container #project .project-inner .project-wrap-list > div {
+#main #container #project .project-inner .project-wrap-list > div:not(.project-info-name, .btn-group) {
   width: calc(50% - 0.8rem);
-  min-height: 48rem;
-  border: 1px solid #fff;
+  height: 48rem;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list > div:not(.project-info-name, .btn-group) {
+    width: 100%;
+    height: 39rem;
+  }
 }
 #main #container #project .project-inner .project-wrap-list .img-wrap {
   border-radius: 3rem 3rem 3rem 1rem;
   overflow: hidden;
-  text-indent: -9999em;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
 }
-#main #container #project .project-inner .project-wrap-list .img-wrap:hover {
-  background-size: 120%;
+#main #container #project .project-inner .project-wrap-list .img-wrap:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#main #container #project .project-inner .project-wrap-list .img-wrap > img {
+  width: 110%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list .img-wrap > img {
+    width: 100%;
+    height: auto;
+  }
+}
+#main #container #project .project-inner .project-wrap-list .project-info-name {
+  margin-top: -1rem;
+  position: relative;
+  z-index: -1;
+  background: #222;
+}
+#main #container #project .project-inner .project-wrap-list .project-info-name span {
+  font-size: 5.6vw;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #656565;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list .project-info-name span {
+    font-size: 4.2rem;
+  }
 }
 #main #container #project .project-inner .project-wrap-list .project-info {
   position: relative;
@@ -2960,10 +2994,17 @@ body.fixed {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list .project-info {
+    padding: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 #main #container #project .project-inner .project-wrap-list .project-info .page-num {
   width: 8rem;
   height: 4.2rem;
-  border: 1px solid red;
   position: absolute;
   left: -1rem;
   top: 3rem;
@@ -2972,23 +3013,29 @@ body.fixed {
   font-size: 3.6rem;
   font-weight: 900;
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list .project-info .page-num {
+    width: auto;
+    height: auto;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    top: 2rem;
+    left: auto;
+    right: 1.4rem;
+    font-size: 2rem;
+  }
+}
 #main #container #project .project-inner .project-wrap-list .project-info .page-num span:last-child {
   color: transparent;
   -webkit-text-stroke: 1px #656565;
 }
-#main #container #project .project-inner .project-wrap-list .project-info-name {
+#main #container #project .project-inner .project-wrap-list .project-info .project-info-name {
   position: absolute;
   top: 50%;
   left: 0;
   z-index: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-#main #container #project .project-inner .project-wrap-list .project-info-name span {
-  font-size: 9.6rem;
-  font-weight: bold;
-  color: transparent;
-  -webkit-text-stroke: 1px #656565;
 }
 #main #container #project .project-inner .project-wrap-list .project-info-name + div {
   display: -webkit-box;
@@ -3020,9 +3067,20 @@ body.fixed {
   font-size: 4.2vw;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list .project-info-name + div > strong {
+    font-size: 2rem;
+  }
+}
 #main #container #project .project-inner .project-wrap-list .project-info-name + div > ul li {
   font-size: 1.8rem;
   line-height: 2.8rem;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list .project-info-name + div > ul li {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
 }
 #main #container #project .project-inner .btn-wrap {
   width: 100%;
