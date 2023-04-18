@@ -384,7 +384,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             position: relative;
             width: 100%;
             // height: 100vh;
-            padding: 12rem 0 20rem; 
+            padding: 0 0 20rem; 
             background: $black;
             *{color: $white;}
             @include tablet{
@@ -400,10 +400,13 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             //     height: 44rem;
             //     background: url(/vintwire/assets/images/main/projects_bg.png) no-repeat center/cover;
             // }
-            // .sec-tit{
-            //     position: absolute;
-            //     top: 0;
-            // }
+            .sec-tit{
+                position: sticky;
+                top: 0rem;
+                background: #222;
+                padding: 12rem 0 4rem;
+                z-index: 2;
+            }
             .project-inner {
                 // position: relative;
                 // @include flexbox (column, center, center);
@@ -419,7 +422,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 }
                 .project-wrap{
                     &-list{
-                        position: sticky;
                         background: $black;
                     top: 0;
                         &:not(:first-child){margin-top: 12rem;}
