@@ -2384,6 +2384,13 @@ button.more-btn.on::before {
   -webkit-filter: invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(98%) contrast(107%);
           filter: invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(98%) contrast(107%);
 }
+.wrap #container .leo .introductory {
+  border-color: #FFAF02;
+}
+.wrap #container .leo .tit-emphasisp::before, .wrap #container .leo .tit-emphasisp::after {
+  -webkit-filter: invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(98%) contrast(107%);
+          filter: invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(98%) contrast(107%);
+}
 
 .wrap:not(#main) #intro + section {
   margin-top: -4rem;

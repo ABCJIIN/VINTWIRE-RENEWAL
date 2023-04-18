@@ -24,6 +24,12 @@ $jason : #83D8A6; //제이슨
 $milky : #EA95AB; //밀키
 $noah : #B284D3; //노아
 $jinny: #FFAF02; //지니
+// 누구세요
+$leo: #81A9E8; //레오
+$ethan: #F89977; //에단
+$park: #F56E6E;//박
+$john: #317CA3;//존
+$paul: #9DD94A;//폴
 
 // 맴버 필터
 $f-jane :invert(95%) sepia(11%) saturate(3984%) hue-rotate(145deg) brightness(82%) contrast(76%);
@@ -39,6 +45,11 @@ $f-jason :invert(79%) sepia(20%) saturate(675%) hue-rotate(92deg) brightness(100
 $f-milky :invert(64%) sepia(51%) saturate(317%) hue-rotate(295deg) brightness(96%) contrast(91%);
 $f-noah :invert(55%) sepia(49%) saturate(395%) hue-rotate(232deg) brightness(97%) contrast(87%);
 $f-jinny :invert(72%) sepia(91%) saturate(1867%) hue-rotate(354deg) brightness(98%) contrast(107%);
+$f-leo :invert(73%) sepia(62%) saturate(1655%) hue-rotate(185deg) brightness(93%) contrast(95%);
+$f-ethan :invert(73%) sepia(62%) saturate(1655%) hue-rotate(185deg) brightness(93%) contrast(95%);
+$f-park :invert(73%) sepia(62%) saturate(1655%) hue-rotate(185deg) brightness(93%) contrast(95%);
+$f-john :invert(73%) sepia(62%) saturate(1655%) hue-rotate(185deg) brightness(93%) contrast(95%);
+$f-paul :invert(73%) sepia(62%) saturate(1655%) hue-rotate(185deg) brightness(93%) contrast(95%);
 
 @mixin flexbox($direction, $justfy, $align){
 	display:flex;
