@@ -33,13 +33,13 @@
                 }
                 &.jane {
                     background:$jane;
-                    .character{@include background(common, character_jane, png, no-repeat, contain, center, bottom);}
+                    .character{@include background(common/character, character_jane, png, no-repeat, contain, center, bottom);}
                 }
                 &.anna {background:$anna;}
                 &.jasmine {background:$jasmine;}
                 &.steven {
                     background: $steven;
-                    .character{@include background(common, character_steven, png, no-repeat, contain, center, bottom);}
+                    .character{@include background(common/character, character_steven, png, no-repeat, contain, center, bottom);}
                 }
                 &.woody {background: $woody;}
                 &.summer {background:$summer;}

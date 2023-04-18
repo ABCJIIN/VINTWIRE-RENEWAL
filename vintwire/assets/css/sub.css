@@ -3695,7 +3695,7 @@ button.more-btn.on::before {
   background: #48BCBE;
 }
 #story #container #intro.datail.jane .character {
-  background-image: url(/vintwire/assets/images/common/character_jane.png);
+  background-image: url(/vintwire/assets/images/common/character/character_jane.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
@@ -3710,7 +3710,7 @@ button.more-btn.on::before {
   background: #F4B893;
 }
 #story #container #intro.datail.steven .character {
-  background-image: url(/vintwire/assets/images/common/character_steven.png);
+  background-image: url(/vintwire/assets/images/common/character/character_steven.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;

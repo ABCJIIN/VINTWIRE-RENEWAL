@@ -24,8 +24,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"
     integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw==" crossorigin="anonymous"></script>
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="btn-wrap">
-                        <button type="button">Vintwire BROCHURE</button>
+                        <button type="button" onclick="window.open('/vintwire/assets/PDF/Vintwire_Brochure.pdf')">Vintwire BROCHURE</button>
                     </div>
                 </div>
                 <div class="line-wrap">
@@ -122,14 +122,16 @@
                     <h2>PROJECTS</h2>
                     <p>기술과 가치를 잇는 빈트와이어의 프로젝트를 소개합니다.</p>
                 </div>
-                <div class="project-inner">
-                    <div id="projectSlide" class="d-pc">
-                        <div class="project-info">
-                            <div class="img-wrap"></div>
+                <div class="project-inner con-box">
+                    <div class="project-wrap d-pc">
+                        <div class="project-wrap-list">
+                            <div class="img-wrap">
+                                <img src="/vintwire/assets/images/main/project_img_kita.png" alt="무역협회">
+                            </div>
                             <div class="project-explain">
                                 <div class="explain-wrap">
                                     <p class="page-num"><span>1</span><span>/5</span></p>
-                                    <span class="stroke-text point">KITA.NET</span>
+                                    <span class="stroke-text animate__animated animate__fadeInLeft ani-delay02">KITA.NET</span>
                                     <div class="project-btn-wrap">
                                         <button type="button">PC</button>
                                         <button type="button">MOBILE</button>
@@ -142,11 +144,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-info">
+                        <div class="project-wrap-list">
                             <div class="project-explain">
                                 <div class="explain-wrap">
                                     <p class="page-num"><span>2</span><span>/5</span></p>
-                                    <span class="stroke-text point">KOREAN AIR AEROSPACE</span>
+                                    <span class="stroke-text animate__animated animate__fadeInRight ani-delay02">KOREAN AIR<br>AEROSPACE</span>
                                     <div class="project-btn-wrap">
                                         <button type="button">PC</button>
                                         <button type="button">MOBILE</button>
@@ -158,31 +160,35 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="img-wrap"></div>
+                            <div class="img-wrap">
+                                <img src="/vintwire/assets/images/main/project_img_koreanAir.png" alt="대한항공 항공우주사업본부">
+                            </div>
                         </div>
-                        <div class="project-info">
-                            <div class="img-wrap"></div>
-                                <div class="project-explain">
-                                    <div class="explain-wrap">
-                                        <p class="page-num"><span>3</span><span>/5</span></p>
-                                        <span class="stroke-text point">LG ELECTRONICS</span>
-                                        <div class="project-btn-wrap">
-                                            <button type="button">PC</button>
-                                            <button type="button">MOBILE</button>
-                                        </div>
-                                        <strong>LG전자 스토리콘텐츠</strong>
-                                        <ul class="join">
-                                            <li>클라이언트 : 병무청</li>
-                                            <li>파트너사 : 라온시큐어</li>
-                                        </ul>
+                        <div class="project-wrap-list">
+                            <div class="img-wrap">
+                                <img src="/vintwire/assets/images/main/project_img_lg.png" alt="LG전자 스토리콘텐츠">
+                            </div>
+                            <div class="project-explain">
+                                <div class="explain-wrap">
+                                    <p class="page-num"><span>3</span><span>/5</span></p>
+                                    <span class="stroke-text animate__animated animate__fadeInLeft ani-delay02">LG <br class="d-mb">ELECTRONICS</span>
+                                    <div class="project-btn-wrap">
+                                        <button type="button">PC</button>
+                                        <button type="button">MOBILE</button>
                                     </div>
+                                    <strong>LG전자 스토리콘텐츠</strong>
+                                    <ul class="join">
+                                        <li>클라이언트 : 병무청</li>
+                                        <li>파트너사 : 라온시큐어</li>
+                                    </ul>
                                 </div>
-                        </div>                        
-                        <div class="project-info">
+                            </div>
+                        </div>
+                        <div class="project-wrap-list">
                             <div class="project-explain">
                                 <div class="explain-wrap">
                                     <p class="page-num"><span>4</span><span>/5</span></p>
-                                    <span class="stroke-text point">HYUNDAI ROBOTICS</span>
+                                    <span class="stroke-text animate__animated animate__fadeInRight ani-delay02">HYUNDAI<br>ROBOTICS</span>
                                     <div class="project-btn-wrap">
                                         <button type="button">PC</button>
                                         <button type="button">MOBILE</button>
@@ -194,14 +200,18 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="img-wrap"></div>
-                        </div>                        
-                        <div class="project-info">
-                            <div class="img-wrap"></div>
+                            <div class="img-wrap">
+                                <img src="/vintwire/assets/images/main/project_img_hyundai.png" alt="현대로보틱스">
+                            </div>
+                        </div>
+                        <div class="project-wrap-list">
+                            <div class="img-wrap">
+                                <img src="/vintwire/assets/images/main/project_img_nonghyup.png" alt="농협생명수련원">
+                            </div>
                                 <div class="project-explain">
                                     <div class="explain-wrap">
                                         <p class="page-num"><span>5</span><span>/5</span></p>
-                                    <span class="stroke-text point">NONGHYUP LIFE INSURANCE TRAINING CENTER</span>
+                                    <span class="stroke-text animate__animated animate__fadeInLeft ani-delay02">NONGHYUP LIFE<br>INSURANCE</span>
                                     <div class="project-btn-wrap">
                                         <button type="button">PC</button>
                                         <button type="button">MOBILE</button>
@@ -213,14 +223,7 @@
                                     </ul>
                                     </div>
                                 </div>
-                        </div>                        
-                    </div>
-                    <div class="project d-mb">
-                        <div class="project-item section01">project 01</div>                        
-                        <div class="project-item section02">project 02</div>                        
-                        <div class="project-item section03">project 03</div>                        
-                        <div class="project-item section04">project 04</div>                        
-                        <div class="project-item section05">project 05</div>                        
+                        </div>
                     </div>
                     <div class="btn-wrap">
                         <button type="button">더 많은 프로젝트 둘러보기</button>
@@ -230,36 +233,42 @@
             <section id="find">
                 <div class="find-inner con-box animate__animated animate__fadeInUp ani-delay01">
                     <p class="find-title">
-                        <span>새로운 프로젝트를 함께 할 </span>
+                        <span>새로운 프로젝트를 함께 할 </span><br class="d-mb">
                         <span>동료를 찾습니다</span>
                     </p>
-                    <p class="sub-title">최고의 동료들과 함께 혁신을 꿈꾼다면 누구나 함께 할 수 있어요!</p>
+                    <p class="sub-title">최고의 동료들과 함께 혁신을 꿈꾼다면 <br class="d-mb">누구나 함께 할 수 있어요!</p>
                     <ul>
-                        <li class="introduce">
-                            <div class="introduce-inner purple-box">
-                                <span class="tag-item">PLANNING</span>
-                                <p>사용자 경험 개선을 위한 전략을 세우고<br class="d-pc">
-                                    프로젝트의 기초를 다져요.</p>
+                        <li class="introduce purple-box">
+                            <div class="introduce-inner">
+                                <div class="text-wrap">
+                                    <span class="tag-item">PLANNING</span>
+                                    <p>사용자 경험 개선을 위한 <br class="d-mb">전략을 세우고<br>
+                                        프로젝트의 기초를 다져요.</p>
+                                </div>
                                 <div class="img-wrap">
                                     <img src="/vintwire/assets/images/main/ux_plan.png" alt="ux 기획 이미지">
                                 </div>
                             </div>
                         </li>
-                        <li class="introduce">
-                            <div class="introduce-inner purple-box">
-                                <span class="tag-item">DESIGN</span>
-                                <p>UX전략에 맞는 톤앤매너로<br class="d-pc">
-                                    사용자 경험을 다채롭게 만들어요.</p>
+                        <li class="introduce purple-box">
+                            <div class="introduce-inner">
+                                <div class="text-wrap">
+                                    <span class="tag-item">DESIGN</span>
+                                    <p>UX전략에 맞는 <br class="d-mb">톤앤매너로<br class="d-pc">
+                                        사용자 경험을 <br class="d-mb">다채롭게 만들어요.</p>
+                                </div>
                                 <div class="img-wrap">
                                     <img src="/vintwire/assets/images/main/ux_design.png" alt="ux 디자인 이미지">
                                 </div>
                             </div>
                         </li>
-                        <li class="introduce">
-                            <div class="introduce-inner purple-box">
-                                <span class="tag-item">DEV.</span>
-                                <p>최적의 사용자 경험을 위해<br class="d-pc">
-                                    디지털을 기반으로 구현해요.</p>
+                        <li class="introduce purple-box">
+                            <div class="introduce-inner">
+                                <div class="text-wrap">
+                                    <span class="tag-item">DEV.</span>
+                                    <p>최적의 사용자 경험을 위해<br>
+                                        디지털을 기반으로 구현해요.</p>
+                                </div>
                                 <div class="img-wrap">
                                     <img src="/vintwire/assets/images/main/ux_dev.png" alt="ux 개발 이미지">
                                 </div>
@@ -267,8 +276,8 @@
                         </li>
                     </ul>
                     <div class="btn-wrap">
-                        <button type="button" class="black">메일 지원하기</button>
-                        <button type="button">잡코리아 지원하기</button>
+                        <button type="button" class="black" onclick="window.open('mailto:contact@vintwire.com')">메일 지원하기</button>
+                        <button type="button" onclick="window.open('https://www.jobkorea.co.kr/Recruit/Co_Read/Recruit/C/vintwire?ChkDispType=1')">잡코리아 지원하기</button>
                     </div>
                 </div>
             </section>
@@ -276,219 +285,145 @@
                 <div class="story-inner con-box animate__animated animate__fadeInUp ani-delay01">
                     <div class="sec-tit">
                         <h2>OUR STORY</h2>
-                        <p>빈트와이어가 전하는 다양한 소식과 이야기들을 만나보세요!</p>
+                        <p>빈트와이어가 전하는 다양한 <br class="d-mb">소식과 이야기들을 만나보세요!</p>
                     </div>
                     <div class="icon-wrap">
-                        <span class="icon-big-star">
+                        <span class="icon-story-star">
                             <img class="d-pc" src="/vintwire/assets/images/main/story_star.svg" alt="별 아이콘">
                         </span>
                         <span class="icon-double-circle">
-                            <img src="/vintwire/assets/images/main/strory_double_circle.svg" alt="다이어그램 아이콘">
+                            <img src="/vintwire/assets/images/main/intro_double_circle_mb.svg" alt="다이어그램 아이콘">
                         </span>
                     </div>
-                    <ul class="category-list">
-                        <li>
-                            <a href="javascript:volid(0)">
-                                <div class="preview-img">
-                                    <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
-                                    <div class="preview-info">
-                                        <ul class="tag-list">
-                                            <li class="tag-item">디자인</li>
-                                            <li class="tag-item">일상</li>
-                                        </ul>
-                                        <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                    <div class="swiper" id="storySlide">
+                        <ul class="category-list swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)" class="sophia">
+                                    <div class="preview-img">
+                                        <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
+                                        <div class="preview-info">
+                                            <ul class="tag-list">
+                                                <li class="tag-item">디자인</li>
+                                                <li class="tag-item">일상</li>
+                                            </ul>
+                                            <strong class="story-tit tit-emphasis">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-wrap">
-                                    <div class="members-wrap">
-                                        <span class="icon-member sophia">S</span>
-                                        <span class="writer sophia">sophia</span>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member sophia">S</span>
+                                            <span class="writer sophia">sophia</span>
+                                        </div>
+                                        <span class="date">2023-04-03</span>
                                     </div>
-                                    <span class="date">2023-04-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:volid(0)">
-                                <div class="preview-img">
-                                    <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_steven.png" alt="sophia story">
-                                    <div class="preview-info">
-                                        <ul class="tag-list">
-                                            <li class="tag-item">디자인</li>
-                                            <li class="tag-item">일상</li>
-                                        </ul>
-                                        <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)" class="steven">
+                                    <div class="preview-img">
+                                        <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_steven.png" alt="sophia story">
+                                        <div class="preview-info">
+                                            <ul class="tag-list">
+                                                <li class="tag-item">디자인</li>
+                                                <li class="tag-item">일상</li>
+                                            </ul>
+                                            <strong class="story-tit tit-emphasis">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-wrap">
-                                    <div class="members-wrap">
-                                        <span class="icon-member steven">S</span>
-                                        <span class="writer steven">Steven</span>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member steven">S</span>
+                                            <span class="writer steven">Steven</span>
+                                        </div>
+                                        <span class="date">2023-04-03</span>
                                     </div>
-                                    <span class="date">2023-04-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:volid(0)">
-                                <div class="preview-img">
-                                    <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_felix.png" alt="sophia story">
-                                    <div class="preview-info">
-                                        <ul class="tag-list">
-                                            <li class="tag-item">디자인</li>
-                                            <li class="tag-item">일상</li>
-                                        </ul>
-                                        <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)" class="felix">
+                                    <div class="preview-img">
+                                        <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_felix.png" alt="sophia story">
+                                        <div class="preview-info">
+                                            <ul class="tag-list">
+                                                <li class="tag-item">디자인</li>
+                                                <li class="tag-item">일상</li>
+                                            </ul>
+                                            <strong class="story-tit tit-emphasis">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-wrap">
-                                    <div class="members-wrap">
-                                        <span class="icon-member felix">F</span>
-                                        <span class="writer felix">Felix</span>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member felix">F</span>
+                                            <span class="writer felix">Felix</span>
+                                        </div>
+                                        <span class="date">2023-04-03</span>
                                     </div>
-                                    <span class="date">2023-04-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:volid(0)">
-                                <div class="preview-img">
-                                    <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
-                                    <div class="preview-info">
-                                        <ul class="tag-list">
-                                            <li class="tag-item">디자인</li>
-                                            <li class="tag-item">일상</li>
-                                        </ul>
-                                        <strong class="story-tit">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)" class="sophia">
+                                    <div class="preview-img">
+                                        <img src="/vintwire/assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story">
+                                        <div class="preview-info">
+                                            <ul class="tag-list">
+                                                <li class="tag-item">디자인</li>
+                                                <li class="tag-item">일상</li>
+                                            </ul>
+                                            <strong class="story-tit tit-emphasis">타이틀이 두줄<br>까지 노출됩니다</strong>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="flex-wrap">
-                                    <div class="members-wrap">
-                                        <span class="icon-member sophia">S</span>
-                                        <span class="writer sophia">sophia</span>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member sophia">S</span>
+                                            <span class="writer sophia">sophia</span>
+                                        </div>
+                                        <span class="date">2023-04-03</span>
                                     </div>
-                                    <span class="date">2023-04-03</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination d-mb"></div>
+                    </div>
                     <div class="btn-wrap">
-                        <button type="button">더 많은 이야기 둘러보기</button>
+                        <button type="button" onclick="location.href='/vintwire/html/sub/stroy/story.html'">더 많은 이야기 둘러보기</button>
                     </div>
                 </div>
             </section>
         </div>
-        <footer id="footer">
-        </footer>   
+        <footer id="footer"></footer>   
     </div>
+    <!-- ourStory 모바일 슬라이드 -->
     <script>
-        gsap.registerPlugin(ScrollTrigger);
-gsap.defaults({ease: "power1", duration: 3});
-
-const tl = gsap.timeline();
-tl.from(".section01", {yPercent: 100})
-  .from(".section02", {yPercent: 100})
-  .from(".section03", {yPercent: 100})
-  .from(".section04", {yPercent: 100})
-  .from(".section05", {yPercent: 100});
-
-ScrollTrigger.create({
-	animation: tl,
-  trigger: "#project",
-  start: "top top", 
-	markers: true,
-  end: "+=500%",
-  pin: true,
-	scrub: true,
-	anticipatePin: 1
-});
-
-//         gsap.utils.toArray(".box").forEach((section, i) => {
-//         	ScrollTrigger.create({
-//         		trigger: section,
-//         		start: "top top", 
-//         		pin: true,
-//         		pinSpacing: false,
-//         	});
-//         });
-// ScrollTrigger.create({
-//   snap: 1 / 4
-// });
-        
-        // ScrollTrigger.create({
-		// 		trigger: '.groups',
-		// 		start: 'top 66px',
-		// 		end: '+=' + `${groupContentH}`,
-		// 		pin: true,
-		// 		animation: groupSlider,
-		// 		scrub: 0.5,
-		// 		invalidateOnRefresh: true,
-		// 	});
-
-        // gsap.defaults({ease: 'none', duration: 2});
-        // ScrollTrigger.create({
-        //     animation: t1,
-        //     trigger: '#project',
-        //     start: 'top top',
-        //     // end: '+=100%',
-        //     markers: true,
-        //     scrub: true,
-        //     pin: true,
-        //     anticipatePin: 1,
-        // });
-
-
-        // ScrollTrigger.defaults({
-        //     toggleActions: "restart pause resume pause",
-        //     scroller: ".test"
-        // });
-
-        // gsap.utils.toArray("#project").forEach((panel, i) => {
-        //     ScrollTrigger.create({
-        //       trigger: panel,
-        //       start: "top top", 
-        //       scrub: false,
-        //       pin: true, 
-        //       markers: true,
-        //     //   pinSpacing: false 
-        //     });
-        // });
-
-        // ScrollTrigger.create({
-        //   snap: 1 / 4
-        // });
-
-        var projectConH = $('#project').outerHeight(true);
-        function respon() {
-
-            var width = $(window).width()
-
-            if (window.matchMedia("(min-width: 768px)").matches) {
-                var projectPc = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: "#project",
-                        pin: true,
-                        // scrub: 0.5,
-                        start: "top top",
-                        end: "+=100%",
-                        markers: true,
-                    }
-                })
-                .fromTo('#projectSlide.d-pc',{y: 0, duration: .5},{y: 100, duration: .5});
-            } else {
-                console.log('mobile')
+        var swiper = new Swiper('#storySlide', {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
+        pagination: {
+            el: "#storySlide .swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+                768 : {
+                    slidesPerView: 4,
+                    spaceBetween: 16,
+                    slidesOffsetBefore: 0,
+                    slidesOffsetAfter: 0,
+                },
             }
+        });
 
-
-        }respon()
-
-        function resize() {
-
-            $(window).on('resize',$.throttle(500,function(){
-                respon()
-            }))
-
-        }resize()
+        var projectPc = gsap.timeline({
+        scrollTrigger: {
+                trigger: "#project",
+                pin: true,
+                // scrub: 0.5,
+                start: "top top",
+                end: "+=100%",
+                markers: true,
+            }
+        })
+        .fromTo('.project-wrap.d-pc',{y: 0, duration: .5},{y: 100, duration: .5});
     </script>
 </body>
 </html>
