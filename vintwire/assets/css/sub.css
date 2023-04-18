@@ -2047,7 +2047,6 @@ button.more-btn.on::before {
 
 .wrap {
   width: 100%;
-  overflow-x: hidden;
 }
 .wrap #container section {
   position: relative;
