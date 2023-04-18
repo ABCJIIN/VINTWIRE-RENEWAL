@@ -400,7 +400,7 @@
                                 @include tablet{
                                     padding: 0.8rem 0.8rem 1.8rem 0.8rem;}
                                 .story-tit{
-                                    font-size: 1.6vw;
+                                    font-size: 2rem;
                                     font-weight: bold;
                                     line-height: 1.2;
                                     color: $black;
@@ -521,8 +521,24 @@
             .tit-emphasis{&::before, &::after{filter: $f-jinny;}}
         }
         .leo{
-            .introductory{border-color: $jinny;}
-            .tit-emphasisp{&::before, &::after{filter: $f-jinny;}}
+            .introductory{border-color: $leo;}
+            .tit-emphasis{&::before, &::after{filter: $f-leo;}}
+        }
+        .ethan{
+            .introductory{border-color: $ethan;}
+            .tit-emphasis{&::before, &::after{filter: $f-ethan;}}
+        }
+        .park{
+            .introductory{border-color: $park;}
+            .tit-emphasis{&::before, &::after{filter: $f-park;}}
+        }
+        .john{
+            .introductory{border-color: $john;}
+            .tit-emphasis{&::before, &::after{filter: $f-john;}}
+        }
+        .paul{
+            .introductory{border-color: $paul;}
+            .tit-emphasis{&::before, &::after{filter: $f-paul;}}
         }
     }
 }
