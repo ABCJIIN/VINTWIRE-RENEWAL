@@ -63,11 +63,10 @@
             }
             .line-cont{
                 // margin-top: 10rem;
-                border: 1px solid #000;
                 .line-wrap{
                     position: relative;
                     width: 100%;
-                    // min-height: 34rem;
+                    min-height: 34rem;
                     .line{
                         width: 0%;
                         overflow: hidden;
@@ -87,9 +86,9 @@
                         }
                         p{
                             background:#F8F8F8; 
-                            // width: 66rem;
-                            width: 70rem;
-                            font-family: $montserrat;
+                            width: 66rem;
+                            // width: 70rem;
+                            // font-family: $montserrat;
                             font-size: 2.8rem;
                             white-space: nowrap;
                             position: relative;
@@ -142,17 +141,6 @@
                 margin: 0 auto;
             }
             .member-wrap{
-                &:first-child{
-                    .member-list{
-                        &::before{
-                            content: '';
-                            display: block;
-                            width: 2%;
-                            height: 10rem;
-                            @include tablet_junction{display: none;}
-                        }
-                    }
-                }
                 &:not(:first-child){
                     margin-top: 8rem;
                     @include tablet{margin-top: 6rem;}
@@ -184,7 +172,7 @@
                     }
                 }
                 .member-list{
-                    @include flexbox(row, center, center);
+                    @include flexbox(row, flex-start, center);
                     gap: 3.6rem 1.6rem;
                     flex-wrap: wrap;
                     @include tablet_junction{
