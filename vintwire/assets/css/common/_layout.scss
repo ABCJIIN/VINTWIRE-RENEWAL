@@ -520,6 +520,10 @@
             .introductory{border-color: $jinny;}
             .tit-emphasisp{&::before, &::after{filter: $f-jinny;}}
         }
+        .leo{
+            .introductory{border-color: $jinny;}
+            .tit-emphasisp{&::before, &::after{filter: $f-jinny;}}
+        }
     }
 }
 .wrap:not(#main){
