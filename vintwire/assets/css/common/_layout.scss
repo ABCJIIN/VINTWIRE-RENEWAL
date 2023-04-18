@@ -397,7 +397,7 @@
                                 left: 0;
                                 transform: translateY(-50%);
                                 @include flexbox(column, space-between, flex-start);
-                                @include tablet{
+                                @include mobile{
                                     padding: 0.8rem 0.8rem 1.8rem 0.8rem;}
                                 .story-tit{
                                     font-size: 1.6vw;
