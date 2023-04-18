@@ -391,24 +391,33 @@
                             .preview-info{
                                 width: 70%;
                                 height: 100%;
-                                padding: 1.6rem;
+                                padding: 1.6rem 1.6rem 3.8rem 1.6rem;
                                 position: absolute;
                                 top: 50%;
                                 left: 0;
                                 transform: translateY(-50%);
                                 @include flexbox(column, space-between, flex-start);
-                                @include tablet{padding: 0.8rem;}
+                                @include tablet{
+                                    padding: 0.8rem 0.8rem 1.8rem 0.8rem;}
                                 .story-tit{
                                     font-size: 1.6vw;
                                     font-weight: bold;
                                     line-height: 1.2;
                                     color: $black;
-                                    @media (max-width: 980px){font-size: 2.4rem;}
+                                    white-space: normal;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    @media (max-width: 980px){font-size: 3.2vw;}
+                                    @include tablet {
+                                        font-size: 6vw;
+                                    }
                                 }
                                 .tag-list{
                                     flex-wrap: wrap;
                                     .tag-item{
-                                        font-size: 1vw;
+                                        font-size: 1.4rem;
                                         @media (max-width: 980px){font-size: 2rem;}
                                         @include tablet{font-size: 1.4rem;}
                                     }
@@ -429,6 +438,9 @@
         .tit-emphasis{
             position: relative;
             padding: 0 3rem;
+            @include tablet {
+                padding: 0 2rem;
+            }
             &::before, &::after{
                 content:"";
                 display:inline-block;
@@ -438,8 +450,8 @@
                 z-index: 0;
                 @include background(icon, icon_dobule_dot, svg, no-repeat, contain, center, center);
                 @include tablet{
-                    width: 1.2rem;
-                    height: 1rem;
+                    width: 1.5rem;
+                    height: 1.2rem;
                 }
             }
             &::before{
