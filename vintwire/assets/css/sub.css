@@ -2250,7 +2250,7 @@ button.more-btn.on::before {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media (max-width: 768px) {
+@media (max-width: 420px) {
   .wrap #container section .category-list > li > a .preview-img .preview-info {
     padding: 0.8rem 0.8rem 1.8rem 0.8rem;
   }
