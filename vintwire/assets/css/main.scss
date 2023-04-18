@@ -386,6 +386,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             height: 100%;
             padding: 12rem 0 20rem; 
             background: $black;
+            *{color: $white;}
             @include tablet{
                 margin-top: 0 !important;
                 padding: 8rem 0 !important;
@@ -399,235 +400,119 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             //     height: 44rem;
             //     background: url(/vintwire/assets/images/main/projects_bg.png) no-repeat center/cover;
             // }
-            > .con-box{
-                height: 100%;
-            }
-            .sec-tit {
-                // position: sticky;
-                // top: 0;
-                // padding-top: 10rem;
-                // padding-bottom: 6rem;
-                // height: 22.4rem;
-                width: 100%;
-                z-index: 20;
-                background: $black;
-                @include tablet {
-                    position: relative;
-                }
-                h2 {
-                    color: $white;
-                }
-                p {
-                    color: $white;
-                }
-            }
+            // .sec-tit{
+            //     position: absolute;
+            //     top: 0;
+            // }
             .project-inner {
-                position: relative;
-                @include flexbox (column, center, center);
+                // position: relative;
+                // @include flexbox (column, center, center);
                 // padding-top: 2rem;
                 // padding-bottom: 20rem;
                 // height: auto;
-                width: 100%;
                 margin-top: 6rem;
                 @include tablet {
                     display: block;
                     height: 100%;
                 }
-                #projectSlide {
-                    // margin: 100px auto;
-                    // width: 320px;
-                    // height: 240px;
-                    overflow: hidden;
-                    position: relative;
-                    width: 100%;
-                    padding-bottom: 6rem;
-                    // @include tablet {
-                    //     width: 315px;
-                    //     height: 389px;
-                    //     display: block;
-                    //     padding: 0;
-                    // }
-                    .project-info{
-                        @include tablet{
-                            width: 100%;
-                            height: 100vh;
-                            background: #eee;
+                .project-wrap{
+                    &-list{
+                        &:not(:first-child){margin-top: 12rem;}
+                        &:nth-child(even){
+                            flex-direction: row-reverse;
+                            .project-info{
+                                .page-num{
+                                    transform: rotate(-90deg);
+                                    right: 0;
+                                    left: auto;
+                                }
+                                &-name + div{
+                                    justify-content: flex-end;
+                                    margin-left: auto;
+                                    margin-right: 0;
+                                }
+                            }
                         }
-                    }
-                    // .swiper-wrapper {
-                    //     width: 100%;
-                    //     gap: 12rem;
-                    //     @include flexbox (column, center, center);
-                    //     @include tablet {
-                    //         // display: block;
-                    //         position: relative;
-                    //         gap: 0;
-                    //         width: 100%;
-                    //         height: 100%;
-                    //         display: block;
-                    //     }
-                    //     .swiper-slide {
-                    //         @include flexbox (row, flex-start, flex-end);
-                    //         width: 100%;
-                    //         // position: relative;
-                    //         @include tablet {
-                    //             height: 100%;
-                    //             // @include flexbox (row, center, center);
-                    //         }
-                    //         &:nth-of-type(1) {
-                    //             .img-wrap {
-                    //                 background: url(/vintwire/assets/images/main/kita_net.png) no-repeat center/cover;
-                    //                 border-radius: 3.2rem 3.2rem 8rem 3.2rem;
-                    //             }
-                    //         }
-                    //         &:nth-of-type(2) {
-                    //             .img-wrap {
-                    //                 background: url(/vintwire/assets/images/main/korean_air.png) no-repeat center/cover;
-                    //                 border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
-                    //             }
-                    //             .stroke-text {
-                    //                 left: 0;
-                    //             }
-                    //         }
-                    //         &:nth-of-type(3) {
-                    //             .img-wrap {
-                    //                 background: url(/vintwire/assets/images/main/lg_electronics.png) no-repeat center/cover;
-                    //                 border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
-                    //             }
-                    //         }
-                    //         &:nth-of-type(4) {
-                    //             .img-wrap {
-                    //                 background: url(/vintwire/assets/images/main/hyundai_robotics.png) no-repeat center/cover;
-                    //                 border-radius: 4rem 4rem 4rem 0.8rem;
-                    //             }
-                    //             .stroke-text {
-                    //                 left: 0;
-                    //             }
-                    //         }
-                    //         &:nth-of-type(5) {
-                    //             .img-wrap {
-                    //                 background: url(/vintwire/assets/images/main/nonghyup_life.png) no-repeat center/cover;
-                    //                 border-radius: 3.2rem 3.2rem 3.2rem 0.8rem;
-                    //             }
-                    //         }
-                    //         .img-wrap {
-                    //             width: 50%;
-                    //             height: 48rem;
-                    //             @include tablet {
-                    //                 width: 100%;
-                    //                 height: 100%;
-                    //             }
-                    //         }
-                    //         .project-explain {
-                    //             width: 50%;
-                    //             padding: 0 1.6rem;
-                    //             @include tablet {
-                    //                 width: 100%;
-                    //                 height: 100%;
-                    //                 position: absolute;
-                    //             }
-                    //             &:nth-child(even) {
-                    //                 @include flexbox (column, flex-start, flex-start);
-                    //                 .explain-wrap {
-                    //                     @include flexbox (column, flex-start, flex-start);
-                    //                     .page-num {
-                    //                         transform: rotate(90deg);
-                    //                         transform-origin: left top;
-                    //                         left: calc(50% + 5.2rem);
-                    //                     }
-                    //                 }
-                    //             }
-                    //             &:nth-child(odd) {
-                    //                 @include flexbox (column, flex-end, flex-end);
-                    //                 .explain-wrap {
-                    //                     @include flexbox (column, flex-start, flex-start);
-                    //                     .page-num {
-                    //                         transform: rotate(-90deg);
-                    //                         transform-origin: right top;
-                    //                         right: calc(50% + 5.2rem);
-                    //                     }
-                    //                 }
-                    //             }
-                    //             .explain-wrap {
-                    //                 .page-num {
-                    //                     position: absolute;
-                    //                     top: 0;
-                    //                     font-family: $pretendard;
-                    //                     font-size: 3.6rem;
-                    //                     font-weight: 900;
-                    //                     span:nth-of-type(1) {
-                    //                         color: $white;
-                    //                     }
-                    //                     span:nth-of-type(2) {
-                    //                         color: transparent;
-                    //                         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-                    //                     }
-                    //                 }
-                    //                 .stroke-text {
-                    //                     position: absolute;
-                    //                     top: 15rem;
-                    //                     font-family: $pretendard;
-                    //                     font-size: 9.6rem;
-                    //                     font-weight: 700;
-                    //                     line-height: 7.9rem;
-                    //                     color: transparent;
-                    //                     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-                    //                     white-space: nowrap;
-                    //                     z-index: -5;
-                    //                 }
-                    //                 .project-btn-wrap {
-                    //                     @include flexbox (row, center, center);
-                    //                     gap: 0.8rem;
-                    //                     button {
-                    //                         background: #FFE75C;
-                    //                         font-family: $pretendard;
-                    //                         font-size: 1.4rem;
-                    //                         font-weight: 600;
-                    //                         color: #6A6AE6;
-                    //                         width: 8rem;
-                    //                         height: 2.4rem;
-                    //                         text-align: center;
-                    //                         border-radius: 0.4rem;
-                    //                         border: none;
-                    //                         padding: 0;
-                    //                     }
-                    //                 }
-                    //                 strong {
-                    //                     font-family: $pretendard;
-                    //                     font-size: 7.2rem;
-                    //                     font-weight: 700;
-                    //                     line-height: 7.9rem;
-                    //                     color: $white;
-                    //                     padding-top: 1.5rem;
-                    //                     padding-bottom: 2rem;
-                    //                 }
-                    //                 .join {
-                    //                     @include flexbox (column, flex-start, flex-start);
-                    //                     line-height: 2.8rem;
-                    //                     li {
-                    //                         font-family: $pretendard;
-                    //                         font-size: 1.8rem;
-                    //                         font-weight: 400;
-                    //                         color: $white;
-                    //                     }
-                    //                 }
-                    //             }
-                    //         }
-                    //     }
-                    // }
-                }
-                .project{
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                    &-item{
-                        width: 100%;
-                        height: 100%;
-                        &.section01{background: red;}
-                        &.section02{background: orange;}
-                        &.section03{background: green;}
-                        &.section04{background: greenyellow;}
-                        &.section05{background: yellow;}
+                        &:nth-child(1){.img-wrap{@include background(main, project_img_kita, png, no-repeat, cover, center, center);}}
+                        &:nth-child(2){.img-wrap{@include background(main, project_img_koreanAir, png, no-repeat, cover, center, center);}}
+                        &:nth-child(3){.img-wrap{@include background(main, project_img_lg, png, no-repeat, cover, center, center);}}
+                        &:nth-child(4){.img-wrap{@include background(main, project_img_hyundai, png, no-repeat, cover, center, center);}}
+                        &:nth-child(5){.img-wrap{@include background(main, project_img_nonghyup, png, no-repeat, cover, center, center);}}
+                        @include flexbox(row, space-between, flex-start);
+                        > div{
+                            width: calc(100% / 2 - 0.8rem);
+                            min-height: 48rem;
+                            border: 1px solid #fff;
+                        }
+                        .img-wrap{
+                            border-radius: 3rem 3rem 3rem 1rem;
+                            overflow: hidden;
+                            text-indent: -9999em;
+                            transition: all .35s;
+                            &:hover{
+                                background-size: 120%;
+                            }
+                        }
+                        .project-info{
+                            position: relative;
+                            @include flexbox(column, flex-end, flex-start);
+                            .page-num{
+                                width: 8rem;
+                                height: 4.2rem;
+                                border: 1px solid red;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                transform: rotate(90deg);
+                                font-size: 3.6rem;
+                                font-weight: 900;
+                                span{
+                                    &:last-child{
+                                        color: transparent;
+                                        -webkit-text-stroke: 1px #656565;
+                                    }
+                                }
+                            }
+                            &-name{
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                z-index: 0;
+                                transform: translateY(-50%);
+                                span{
+                                    font-size: 9.6rem;
+                                    font-weight: bold;
+                                    color: transparent;
+                                    -webkit-text-stroke: 1px #656565;
+                                }
+                            }
+                            &-name + div{
+                                @include flexbox(column, flex-start, flex-start);
+                                gap: 1rem;
+                                position: relative;
+                                z-index: 1;
+                                .tag-list{
+                                    .tag-item{
+                                        width: 8rem;
+                                        font-weight: 600;
+                                        color: $purple;
+                                        font-size: 1.4rem;
+                                        padding: .4rem;
+                                        border-radius: .4rem;
+                                    }
+                                }
+                                > strong{
+                                    font-size: 4.2vw;
+                                    font-weight: bold;
+                                }
+                                > ul{
+                                    li{
+                                        font-size: 1.8rem;
+                                        line-height: 2.8rem;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 .btn-wrap {
