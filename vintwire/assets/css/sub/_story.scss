@@ -41,15 +41,42 @@
                     background: $steven;
                     .character{@include background(common/character, character_steven, png, no-repeat, contain, center, bottom);}
                 }
-                &.woody {background: $woody;}
-                &.summer {background:$summer;}
-                &.felix {background:$felix;}
-                &.sophia {background:$sophia;}
-                &.nia {background:$nia;}
-                &.jason {background:$jason;}
-                &.milky {background:$milky;}
-                &.noah {background:$noah;}
-                &.jinny {background: $jinny;}
+                &.woody {
+                    background: $woody;
+                    .character{@include background(common/character, character_woody, png, no-repeat, contain, center, bottom);}
+                }
+                &.summer {
+                    background:$summer;
+                    .character{@include background(common/character, character_summer, png, no-repeat, contain, center, bottom);}
+                }
+                &.felix {
+                    background:$felix;
+                    .character{@include background(common/character, character_felix, png, no-repeat, contain, center, bottom);}
+                }
+                &.sophia {
+                    background:$sophia;
+                    .character{@include background(common/character, character_sopia, png, no-repeat, contain, center, bottom);}
+                }
+                &.nia {
+                    background:$nia;
+                    .character{@include background(common/character, character_nia, png, no-repeat, contain, center, bottom);}
+                }
+                &.jason {
+                    background:$jason;
+                    .character{@include background(common/character, character_jason, png, no-repeat, contain, center, bottom);}
+                }
+                &.milky {
+                    background:$milky;
+                    .character{@include background(common/character, character_milky, png, no-repeat, contain, center, bottom);}
+                }
+                &.noah {
+                    background:$noah;
+                    .character{@include background(common/character, character_noah, png, no-repeat, contain, center, bottom);}
+                }
+                &.jinny {
+                    background: $jinny;
+                    .character{@include background(common/character, character_jinny, png, no-repeat, contain, center, bottom);}
+                }
                 .tag-list{justify-content: center;}
                 .intro-tit{
                     > h2{
