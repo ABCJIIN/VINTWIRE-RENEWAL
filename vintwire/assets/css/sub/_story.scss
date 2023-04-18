@@ -55,7 +55,7 @@
                 }
                 &.sophia {
                     background:$sophia;
-                    .character{@include background(common/character, character_sopia, png, no-repeat, contain, center, bottom);}
+                    .character{@include background(common/character, character_sophia, png, no-repeat, contain, center, bottom);}
                 }
                 &.nia {
                     background:$nia;
@@ -81,6 +81,7 @@
                 .intro-tit{
                     > h2{
                         font-family: $montserrat;
+                        margin-top: 1.2rem;
                         margin-bottom: 6.2rem;
                         @include tablet{
                             font-size: 2rem;
@@ -144,6 +145,84 @@
                                 width: 3.2rem;
                                 height: 0.8rem;
                                 top: -1.6rem;
+                            }
+                        }
+                    }
+                    .category-list {
+                        @include flexbox (row, center, center);
+                        @include tablet {
+                            display: grid;
+                        }
+                        .story-tit {
+                            font-size: 2.4rem;
+                            @include notebook {
+                                font-size: 3.2rem;
+                            }
+                            @include tablet {
+                                font-size: 5.8vw;
+                            }
+                        }
+                        .tit-emphasis {
+                            @include notebook {
+                                padding: 0 4rem;
+                            }
+                            @include tablet {
+                                padding: 0 2rem;
+                            }
+                            &::before, &::after {
+                                @include notebook {
+                                    width: 2.6rem;
+                                    height: 2.1rem;
+                                }
+                                @include tablet{
+                                    width: 1.5rem;
+                                    height: 1.2rem;
+                                }
+                            }
+                        }
+                        .tag-list{
+                            flex-wrap: wrap;
+                            .tag-item{
+                                @include notebook {
+                                    font-size: 1.9rem;
+                                    padding: 1.6rem 1.8rem;
+                                }
+                                @include tablet {
+                                    font-size: 1.4rem;
+                                    padding: 1.2rem 1.3rem;
+                                }
+                            }
+                        }
+                        .flex-wrap {
+                            .members-wrap {
+                                .icon-member {
+                                    @include notebook {
+                                        width: 4.5rem;
+                                        height: 4.5rem;
+                                        font-size: 3.2rem;
+                                    }
+                                    @include tablet {
+                                        width: 3.4rem;
+                                        height: 3.4rem;
+                                        font-size: 2.5rem;
+                                    }
+                                }
+                                .writer {
+                                    @include notebook {
+                                        font-size: 2.7rem;
+                                    }
+                                    @include tablet {
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+                            .date {
+                                @include notebook {
+                                    font-size: 2.7rem;
+                                }
+                                @include tablet {
+                                    font-size: 2rem;
+                                }
                             }
                         }
                     }
