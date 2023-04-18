@@ -218,11 +218,6 @@
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="member-wrap">
-                        <strong class="team-name animate__animated animate__fadeInRight">UI/UX DESIGN TEAM</strong>
-                        <ul class="member-list designer designer con-box">
                             <!-- 디자인팀 -->
                             <li class="summer">
                                 <a href="javascript:void(0)">
@@ -292,12 +287,7 @@
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="member-wrap">
-                        <strong class="team-name animate__animated animate__fadeInLeft">UI/UX DEV. TEAM</strong>
-                        <ul class="member-list developer con-box">
-                            <!-- 개발팀 -->
+                            <!-- 퍼블팀 -->
                             <li class="jason">
                                 <a href="javascript:void(0)">
                                     <div>
@@ -366,6 +356,92 @@
                                     </div>
                                 </a>
                             </li>
+                            <!-- 개발팀 -->
+                            <li class="leo">
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <div class="character"><img src="/vintwire/assets/images/common/character/character_leo.png" alt="leo"></div>
+                                        <div class="introductory">
+                                            <p class="tit-emphasis">누구도 항상 옳지는 않다</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member leo">L</span>
+                                            <span class="writer leo">Leo</span>
+                                        </div>
+                                        <span class="team-name">Developer</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ethan">
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <div class="character"><img src="/vintwire/assets/images/common/character/character_ethan.png" alt="ethan"></div>
+                                        <div class="introductory">
+                                            <p class="tit-emphasis">시작이 반이다, <br class="d-mb">오늘도 반은 했다</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member ethan">E</span>
+                                            <span class="writer ethan">Ethan</span>
+                                        </div>
+                                        <span class="team-name">Developer</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="park">
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <div class="character"><img src="/vintwire/assets/images/common/character/character_park.png" alt="park"></div>
+                                        <div class="introductory">
+                                            <p class="tit-emphasis">한 줄이면 된다</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member park">P</span>
+                                            <span class="writer park">Park</span>
+                                        </div>
+                                        <span class="team-name">Developer</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="john">
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <div class="character"><img src="/vintwire/assets/images/common/character/character_john.png" alt="john"></div>
+                                        <div class="introductory">
+                                            <p class="tit-emphasis">새로고침해주세요</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member john">J</span>
+                                            <span class="writer john">John</span>
+                                        </div>
+                                        <span class="team-name">Developer</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="paul">
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <div class="character"><img src="/vintwire/assets/images/common/character/character_paul.png" alt="paul"></div>
+                                        <div class="introductory">
+                                            <p class="tit-emphasis">여기가 아닌가라는 <br class="d-mb">생각이 든다면<br> 여기가 끝이 아니라는 말</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member paul">P</span>
+                                            <span class="writer paul">Paul</span>
+                                        </div>
+                                        <span class="team-name">Developer</span>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -373,49 +449,60 @@
         </div>
         <footer id="footer"></footer>
     </div>
-    <script>
-        const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
+    <script>        
+        $(document).ready(function(){
 
-        function aboutAni(){
-            // gsap.set('.intro-icon-wrap .icon',{ scale:0 })
-            // gsap.to('.intro-icon-wrap .icon:nth-child(1)',{ scale:1, duration:0.3, delay:0.7 })
-            // gsap.to('.intro-icon-wrap .icon:nth-child(2)',{ scale:1, duration:0.2, delay:1 })
-            // gsap.to('.intro-icon-wrap .icon:nth-child(3)',{ scale:1, duration:0.5, delay:1 })
-            // gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(1)',{ y:-40, repeat:-1, yoyo:true, delay:1, duration:1.2, ease:"Back.aseOut.config(1.71.7)" })
-            // gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(2)',{ y:-20, repeat:-1, yoyo:true, delay:1, duration:0.7, ease:"Back.aseOut.config(1.71.7)" })
-            // gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(3)',{ y:-30, repeat:-1, yoyo:true, delay:1, duration:1.1, ease:"Back.aseOut.config(1.71.7)" })
+            const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
 
-            gsap.set(".line p", {
-                x: (i) => i * 1320
-            });
 
-            gsap.to(".line.gray p", {
+            function aboutAni() {
+
+                gsap.set('.intro-icon-wrap .icon',{ scale:0 })
+                gsap.to('.intro-icon-wrap .icon:nth-child(1)',{ scale:1, duration:0.3, delay:0.7 })
+                gsap.to('.intro-icon-wrap .icon:nth-child(2)',{ scale:1, duration:0.2, delay:1 })
+                gsap.to('.intro-icon-wrap .icon:nth-child(3)',{ scale:1, duration:0.5, delay:1 })
+                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(1)',{ y:-40, repeat:-1, yoyo:true, delay:1, duration:1.2, ease:"Back.aseOut.config(1.71.7)" })
+                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(2)',{ y:-20, repeat:-1, yoyo:true, delay:1, duration:0.7, ease:"Back.aseOut.config(1.71.7)" })
+                gsap.to('.intro-icon-wrap .d-pc .icon:nth-child(3)',{ y:-30, repeat:-1, yoyo:true, delay:1, duration:1.1, ease:"Back.aseOut.config(1.71.7)" })
+
+                gsap.set(".line p", {
+                    x: (i) => i * 1320
+                });
+
+                gsap.to(".line.gray p", {
                 duration: 20,
                 ease: "none",
                 x: "+=1320", //move each box 500px to right
                 modifiers: {
-                x: gsap.utils.unitize(x => parseFloat(x) % 1320) //force x value to be between 0 and 500 using modulus
+                    x: gsap.utils.unitize(x => parseFloat(x) % 1320) //force x value to be between 0 and 500 using modulus
                 },
-            repeat: -1
-            });
+                repeat: -1
+                });
 
-            gsap.to(".line.purple p", {
-            duration: 20,
-            ease: "none",
-            direction:'reverse',
-            x: "-=1400", //move each box 500px to right
-            modifiers: {
-                x: gsap.utils.unitize(x => parseFloat(x) % 1320) //force x value to be between 0 and 500 using modulus
-            },
-            repeat: -1
-            });
-        }
+                gsap.to(".line.purple p", {
+                duration: 20,
+                ease: "none",
+                direction:'reverse',
+                x: "-=1320", //move each box 500px to right
+                modifiers: {
+                    x: gsap.utils.unitize(x => parseFloat(x) % 1320) //force x value to be between 0 and 500 using modulus
+                },
+                repeat: -1
+                });
 
-        if(isTouchDevice ) {
-            $('.line-wrap').empty()
-        } else {
-            aboutAni()
-        }
+
+
+            }
+        
+            if(isTouchDevice ) {
+                $('.line-wrap').empty()
+            } else {
+                aboutAni()
+            }
+             
+             
+
+            })
 </script>
 </body>
 </html>
