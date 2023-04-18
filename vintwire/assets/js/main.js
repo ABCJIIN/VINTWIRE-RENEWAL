@@ -62,10 +62,24 @@ $(document).ready(function(){
         var width = $(window).width()
 
         if (window.matchMedia("(min-width: 768px)").matches) {
-            introFixed()
+            introFixed();
         } else {
-            intro.off('mouseWheel')
-            $('body').removeClass('fixed')
+            intro.off('mouseWheel');
+            $('body').removeClass('fixed');
+            
+            // gsap.registerPlugin(ScrollTrigger);
+            // let panels = gsap.utils.toArray(".project-wrap-list");
+            // let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+
+            // panels.forEach((panel, i) => {
+            //     ScrollTrigger.create({
+            //         trigger: panel,
+            //         start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
+            //         markers: true,
+            //         pin: true, 
+            //         pinSpacing: false 
+            //     });
+            // });
         }
         
 
@@ -79,25 +93,7 @@ $(document).ready(function(){
         }))
 
     }
-    resize()
-
-});
-
-// value 롤링
-
-$(function(){
-    $('.animate__animated:not(.delay)').viewportChecker({
-        classToAdd: 'on',
-        offset: 100,
-    });
-
-    $('.animate__animated.delay').viewportChecker({
-        classToAdd: 'on',
-        offset: 125,
-    });
-});
-
-$(document).ready(function(){
+    resize();
 
     function valueAni() {
 
@@ -128,9 +124,73 @@ $(document).ready(function(){
     const isTouchDevice = false; // 항상 false 값 할당
 
     if (isTouchDevice) {
-    $('.line-wrap').empty();
+        $('.line-wrap').empty();
     } else {
-    valueAni();
+        valueAni();
     }
 
-})
+    // ourStory 모바일 슬라이드
+    var swiper = new Swiper('#storySlide', {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
+        pagination: {
+            el: "#storySlide .swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            768 : {
+                slidesPerView: 4,
+                spaceBetween: 16,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+            },
+        }
+    });
+        
+        gsap.registerPlugin(ScrollTrigger);
+        // ScrollTrigger.create({
+        //     trigger: "#project",
+        //     pin: true,
+        //     start: "top", 
+        //     end: 'bottom bottom',
+        //     // scrub: 0.2,
+        //     markers: true,
+        // });
+
+        // let st = ScrollTrigger.create({
+        //     trigger: ".project-wrap.d-pc",
+        //     pin: ".pin",
+        //     start: "top center",
+        //     end: "+=500"
+        // });
+
+        // var projectPc = gsap.timeline({
+        // scrollTrigger: {
+        //         trigger: "#project",
+        //         pin: true,
+        //         scrub: 0.5,
+        //         start: "top top",
+        //         end: "+=100%",
+        //         markers: true,
+        //     }
+        // })
+        // .fromTo('#project .sec-tit',{y: 0, duration: .5},{y: 0, duration: .5})
+        // .fromTo('.project-wrap.d-pc',{y: 0, duration: .5},{y: 100, duration: .5});
+
+});
+
+// value 롤링
+
+$(function(){
+    $('.animate__animated:not(.delay)').viewportChecker({
+        classToAdd: 'on',
+        offset: 100,
+    });
+
+    $('.animate__animated.delay').viewportChecker({
+        classToAdd: 'on',
+        offset: 125,
+    });
+});

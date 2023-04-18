@@ -51,6 +51,7 @@ $(document).ready(function(){
 
     // job faq
     $('.faq-list-comment').slideUp();
+    $('.faq-list li.on').find('.faq-list-comment').slideDown();
     $('.faq-list-tit').on('click', function() {
         function slideDown(target) {
           slideUp();
