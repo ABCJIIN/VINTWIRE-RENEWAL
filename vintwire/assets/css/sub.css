@@ -2050,10 +2050,25 @@ button.more-btn.on::before {
 #about #container #group .sec-tit {
   margin-bottom: 6rem;
 }
-#about #container #group .group-chart .img-wrap > img {
-  max-width: 100%;
+#about #container #group .group-chart {
+  width: 100%;
+  overflow-x: auto;
+}
+#about #container #group .group-chart .img-wrap {
+  max-width: 1250px;
   margin: 0 auto;
-  display: block;
+}
+#about #container #group .group-chart .img-wrap::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+#about #container #group .group-chart .img-wrap::-webkit-scrollbar-thumb {
+  background-color: #6A6AE6;
+  border-radius: 0.5rem;
+}
+#about #container #group .group-chart .img-wrap::-webkit-scrollbar-track {
+  background-color: #DDDDDD;
+  border-radius: 0.5rem;
 }
 #about #container #member {
   padding: 14rem 0 10rem;
