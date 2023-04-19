@@ -1,7 +1,9 @@
 #project{
+    overflow-x: hidden;
     #intro{
         &::after{
             content: 'VINTWIRE PROJECT';
+            font-family: $panchang;
             display: block;
             font-size: 12rem;
             font-weight: bold;
@@ -11,6 +13,11 @@
             position: absolute;
             bottom: -8rem;
             left: 5%;
+            @include tablet{
+                font-size: 2.6rem;
+                bottom: 0;
+                left: -1rem;
+            }
         }
     }
     #projectList{
