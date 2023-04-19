@@ -132,19 +132,17 @@ $(document).ready(function(){
     // ourStory 모바일 슬라이드
     var swiper = new Swiper('#storySlide', {
         slidesPerView: 1.3,
-        spaceBetween: 20,
-        slidesOffsetBefore: 20,
-        slidesOffsetAfter: 20,
+        centeredSlides: true,
+        spaceBetween: 10,
         pagination: {
             el: "#storySlide .swiper-pagination",
             clickable: true,
         },
         breakpoints: {
-            768 : {
+            769 : {
                 slidesPerView: 4,
                 spaceBetween: 16,
-                slidesOffsetBefore: 0,
-                slidesOffsetAfter: 0,
+                centeredSlides: false,
             },
         }
     });
