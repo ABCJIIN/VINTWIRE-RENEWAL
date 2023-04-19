@@ -66,20 +66,6 @@ $(document).ready(function(){
         } else {
             intro.off('mouseWheel');
             $('body').removeClass('fixed');
-            
-            // gsap.registerPlugin(ScrollTrigger);
-            // let panels = gsap.utils.toArray(".project-wrap-list");
-            // let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
-
-            // panels.forEach((panel, i) => {
-            //     ScrollTrigger.create({
-            //         trigger: panel,
-            //         start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
-            //         markers: true,
-            //         pin: true, 
-            //         pinSpacing: false 
-            //     });
-            // });
         }
         
 

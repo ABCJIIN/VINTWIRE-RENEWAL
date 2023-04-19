@@ -15,11 +15,8 @@
                 max-width: 1280px;
                 min-height: 42rem;
                 margin: 0 auto;
-                border: 1px solid #000;
                 position: relative;
-                // @include flexbox(row, space-around, flex-start);
                 &-info{
-                    border: 1px solid #000;
                     width: 100%;
                     height: 16rem;
                     margin: 0 auto;
@@ -29,16 +26,27 @@
                     padding: 2rem 1.6rem 2.6rem;
                     @include flexbox(row, center, center);
                     @include background(sub/about, tag_info_bg, png, no-repeat, 100%, left, center);
+                    @include tablet{
+                        width: 70%;
+                        height: auto;
+                        margin: -4rem 0 0 auto;
+                        background-image: none;
+                        background: $white;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        padding: 1.4rem;
+                    }
                 }
                 &-icon{
-                    img{
-                        width: 100%;
-                        display: block;
+                    @include tablet{
+                        width: 70%;
+                        position: relative;
+                        z-index: 1;
                     }
+                    img{width: 100%;}
                 }
                 .icon{
                     width: calc(100% / 3);
-                    border: 1px solid red;
                     position: absolute;
                     top: 0;
                     z-index: 0;
@@ -70,14 +78,25 @@
                             left: 50%;
                             transform: translateX(-50%);
                             @include tablet{
-                                width: 100%;
+                                width: 70%;
                                 position: static;
                                 transform: translateX(0);
+                                margin-left: auto;
+                                margin-right: 0;
+                            }
+                        }
+                        .tag-info{
+                            @include tablet{
+                                margin-left: 0;
+                                margin-right: auto;
                             }
                         }
                         .star{
                             &.big{bottom: 0;right: 0;}
-                            &.small{bottom: -12rem;left: 0;}
+                            &.small{
+                                bottom: -12rem;left: 0;
+                                @include tablet{bottom: auto;top: 0;}
+                            }
                         }
                     }
                     &:nth-child(3){
@@ -87,8 +106,14 @@
                             margin-top: 2.4rem;
                         }
                         .star{
-                            &.big{top: 0;right: 0;}
-                            &.small{top: 2rem;left: -4rem;}
+                            &.big{
+                                top: 0;right: 0;
+                                @include tablet{top: auto;right: auto;bottom: 0;left: 0;}
+                            }
+                            &.small{
+                                top: 2rem;left: -4rem;
+                                @include tablet{top: 4rem;left: auto;right: 0;}
+                            }
                         }
                     }
                     .star{
@@ -104,46 +129,43 @@
                     }
                 }
             }
-            .line-cont{
-                // margin-top: 10rem;
-                .line-wrap{
-                    position: relative;
-                    width: 100%;
-                    min-height: 34rem;
-                    .line{
-                        width: 0%;
-                        overflow: hidden;
-                        position:absolute;
-                        top: 50%;
-                        border: 1px solid #000;
-                        transform: translateY(-50%) rotate(-5deg);
-                        animation: w100_ani .85s .5s both alternate;
-                        @include flexbox(row, flex-start, center);
-                        &.purple{
-                            transform: translateY(-50%) rotate(5deg);
-                            p{
-                                background: $purple;
-                                color: $white;
-                                &::before{filter: invert(0%) sepia(83%) saturate(7487%) hue-rotate(57deg) brightness(94%) contrast(101%);}
-                            }
-                        }
+            .line-wrap{
+                position: relative;
+                width: 100%;
+                min-height: 22rem;
+                .line{
+                    position:absolute; 
+                    top: 50%; 
+                    display:flex;
+                    background:#F8F8F8;
+                    height: 8rem;
+                    left:50%;
+                    transform: translate(-50%, -50%) rotate(-5deg);
+                    z-index:-2;
+                    &.purple{
+                        background: $purple;
+                        left: 50%;
+                        z-index: -1;
+                        transform: translate(-50%, -50%) rotate(5deg);
+                        p{color: $white;}
+                    }
+                    &.gray{
                         p{
-                            background:#F8F8F8; 
-                            width: 66rem;
-                            // width: 70rem;
-                            // font-family: $montserrat;
-                            font-size: 2.8rem;
-                            white-space: nowrap;
-                            position: relative;
-                            @include flexbox(row, flex-start, center);
-                            &::before {
-                                content: '';
-                                display:inline-block; 
-                                width: 4.8rem; 
-                                height: 4.8rem; 
-                                @include background(icon, intro_line_icon, svg, no-repeat, contain, center, center);
-                                margin:0 0.6rem;
-                            }
+                            &::before{filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);}
+                        }
+                    }
+                    p{
+                        width: 66rem;
+                        font-size: 2.8rem;
+                        white-space:nowrap;
+                        @include flexbox(row, flex-start, center);
+                        &::before {
+                            content: "";
+                            display: inline-block; 
+                            width: 4.7rem; 
+                            height: 4.7rem; 
+                            margin: 0 0.6rem;
+                            @include background(icon, intro_line_icon, svg, no-repeat, contain, center, center);
                         }
                     }
                 }
@@ -151,6 +173,7 @@
         }
         #group{
             padding: 8rem 0;
+            @include tablet{padding: 4rem 0;}
             &::after{
                 content: '';
                 width: calc(100% - 2rem);
@@ -164,25 +187,27 @@
                 border-radius: 5rem;
                 background: #E8E8FF;
             }
-            .sec-tit{margin-bottom: 6rem;}
             .group-chart{
                 width: 100%;
+                margin-top: 6rem;
                 overflow-x: auto;
+                @include tablet{margin-top: 2.4rem;}
+                &::-webkit-scrollbar {
+                    width: 1rem;
+                    height: .8rem;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: $purple;
+                    border-radius: 0.5rem;
+                }
+                &::-webkit-scrollbar-track {
+                  background-color: #DDDDDD;
+                  border-radius: 0.5rem;
+                }
                 .img-wrap{
                     max-width: 1250px;
                     margin: 0 auto;
-                    &::-webkit-scrollbar {
-                        width: 1rem;
-                        height: 1rem;
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        background-color: $purple;
-                        border-radius: 0.5rem;
-                    }
-                    &::-webkit-scrollbar-track {
-                      background-color: #DDDDDD;
-                      border-radius: 0.5rem;
-                    }
+                    @include tablet{padding-bottom: 2.4rem;}
                 }
             }
         }
