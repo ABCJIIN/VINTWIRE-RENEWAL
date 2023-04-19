@@ -11,22 +11,25 @@
         }
         #introCont{
             .tag{
-                width: 100%;
+                width: calc(100% - 6rem);
                 max-width: 1280px;
                 min-height: 42rem;
                 margin: 0 auto;
                 border: 1px solid #000;
                 position: relative;
                 // @include flexbox(row, space-around, flex-start);
+                @include tablet{
+
+                }
                 &-info{
                     border: 1px solid #000;
                     width: 100%;
                     height: 16rem;
                     margin: 0 auto;
                     text-align: center;
-                    font-size: 1.5vw;
+                    font-size: 1.2vw;
                     line-height: 1.5;
-                    padding: 2.6rem 1.6rem;
+                    padding: 2rem 1.6rem 2.6rem;
                     @include flexbox(row, center, center);
                     @include background(sub/about, tag_info_bg, png, no-repeat, 100%, left, center);
                 }
@@ -36,28 +39,64 @@
                         display: block;
                     }
                 }
-                > div{
+                .icon{
                     width: calc(100% / 3);
                     border: 1px solid red;
                     position: absolute;
                     top: 0;
                     z-index: 0;
-                    &:nth-child(1){left: 0;}
+                    @include tablet{
+                        width: 100%;
+                        position: static;
+                    }
+                    &:nth-child(1){
+                        left: 0;
+                        .star{
+                            &.big{top: 4rem;left: 0;}
+                            &.small{top: 0;right: 0;}
+                        }
+                    }
                     &:nth-child(2){
                         margin-top: 8rem;
-                        left: 50%;
-                        transform: translateX(-50%);
+                        left: 33.3%;
+                        // transform: translateX(-50%);
                         z-index: 1;
+                        @include tablet{
+                            // transform: translateX(0) !important;
+                            margin-top: 2.4rem;
+                        }
                         .tag-icon{
                             width: 110%;
                             position: absolute;
                             left: 50%;
                             transform: translateX(-50%);
                         }
+                        .star{
+                            &.big{bottom: 0;right: 0;}
+                            &.small{bottom: -12rem;left: 0;}
+                        }
                     }
                     &:nth-child(3){
                         margin-top: 1.6rem;
                         right: 0;
+                        @include tablet{
+                            margin-top: 2.4rem;
+                        }
+                        .star{
+                            &.big{top: 0;right: 0;}
+                            &.small{top: 2rem;left: -4rem;}
+                        }
+                    }
+                    .star{
+                        width: 5.4rem;
+                        height: 5.4rem;
+                        position: absolute;
+                        z-index: 10;
+                        @include flexbox(row, center, center);
+                        > img{
+                            max-width: 100%;
+                            display: block;
+                        }
                     }
                 }
             }
