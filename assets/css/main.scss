@@ -147,7 +147,13 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 }
             }
             .icon-wrap {
-                
+                overflow: hidden;                
+                width: 100vw;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
                 .icon-big-star {
                     position:absolute;
                     top:-8rem;
@@ -308,6 +314,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 }
                 .purple-line {
                     position: absolute;
+                    overflow: hidden;
                     left:50%;
                     transform: translateX(-50%);
                     bottom: 0;
