@@ -101,19 +101,24 @@
                     max-width: 1088px;
                     margin: 9rem auto 16.8rem;
                     @include tablet{margin: 6rem auto 12.4rem;}
-                    p{
+                    p{  
+                        max-width: 81.2rem;
+                        margin: 0 auto;
                         font-size: 2rem;
                         line-height: 3rem;
+                        border: 1px solid red;
                         @include tablet{
                             font-size: 1.6rem;
                             line-height: 2.6rem;
                         }
                     }
                     .img-wrap{
+                        width: 100%;
                         margin: 6rem 0;
                         @include flexbox(row, center, center);
                         @include tablet{margin: 3.6rem 0;}
-                        > img{max-width: 100%;}
+                        > img{max-width: 81.2rem;
+                        width: 100%;}
                     }
                     button{
                         margin: 4rem auto 0;
@@ -166,7 +171,7 @@
                             @include notebook {
                                 padding: 0 4rem;
                             }
-                            @include tablet {
+                            @include mobile {
                                 padding: 0 2rem;
                             }
                             &::before, &::after {
@@ -174,7 +179,7 @@
                                     width: 2.6rem;
                                     height: 2.1rem;
                                 }
-                                @include tablet{
+                                @include mobile{
                                     width: 1.5rem;
                                     height: 1.2rem;
                                 }
