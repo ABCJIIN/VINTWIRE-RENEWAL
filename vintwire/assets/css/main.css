@@ -1712,7 +1712,7 @@ button.more-btn.on::before {
   }
 }
 .wrap #container section .category-list > li > a .preview-img .preview-info .story-tit {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.2;
   color: #222;
