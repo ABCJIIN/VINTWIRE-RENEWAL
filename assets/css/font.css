@@ -2,70 +2,70 @@
 	font-family: 'Pretendard';
 	font-weight: 900;
 	font-display: swap;
-	src: local('Pretendard Black'), url('/vintwire/assets/font/Pretendard-Black.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-Black.woff') format('woff');
+	src: local('Pretendard Black'), url('../../assets/font/Pretendard-Black.woff2') format('woff2'), url('../../assets/font/Pretendard-Black.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 800;
 	font-display: swap;
-	src: local('Pretendard ExtraBold'), url('/vintwire/assets/font/Pretendard-ExtraBold.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-ExtraBold.woff') format('woff');
+	src: local('Pretendard ExtraBold'), url('../../assets/font/Pretendard-ExtraBold.woff2') format('woff2'), url('../../assets/font/Pretendard-ExtraBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 700;
 	font-display: swap;
-	src: local('Pretendard Bold'), url('/vintwire/assets/font/Pretendard-Bold.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-Bold.woff') format('woff');
+	src: local('Pretendard Bold'), url('../../assets/font/Pretendard-Bold.woff2') format('woff2'), url('../../assets/font/Pretendard-Bold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 600;
 	font-display: swap;
-	src: local('Pretendard SemiBold'), url('/vintwire/assets/font/Pretendard-SemiBold.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-SemiBold.woff') format('woff');
+	src: local('Pretendard SemiBold'), url('../../assets/font/Pretendard-SemiBold.woff2') format('woff2'), url('../../assets/font/Pretendard-SemiBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 500;
 	font-display: swap;
-	src: local('Pretendard Medium'), url('/vintwire/assets/font/Pretendard-Medium.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-Medium.woff') format('woff');
+	src: local('Pretendard Medium'), url('../../assets/font/Pretendard-Medium.woff2') format('woff2'), url('../../assets/font/Pretendard-Medium.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 400;
 	font-display: swap;
-	src: local('Pretendard Regular'), url('/vintwire/assets/font/Pretendard-Regular.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-Regular.woff') format('woff');
+	src: local('Pretendard Regular'), url('../../assets/font/Pretendard-Regular.woff2') format('woff2'), url('../../assets/font/Pretendard-Regular.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 300;
 	font-display: swap;
-	src: local('Pretendard Light'), url('/vintwire/assets/font/Pretendard-Light.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-Light.woff') format('woff');
+	src: local('Pretendard Light'), url('../../assets/font/Pretendard-Light.woff2') format('woff2'), url('../../assets/font/Pretendard-Light.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 200;
 	font-display: swap;
-	src: local('Pretendard ExtraLight'), url('/vintwire/assets/font/Pretendard-ExtraLight.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-ExtraLight.woff') format('woff');
+	src: local('Pretendard ExtraLight'), url('../../assets/font/Pretendard-ExtraLight.woff2') format('woff2'), url('../../assets/font/Pretendard-ExtraLight.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 100;
 	font-display: swap;
-	src: local('Pretendard Thin'), url('/vintwire/assets/font/Pretendard-Thin.woff2') format('woff2'), url('/vintwire/assets/font/Pretendard-Thin.woff') format('woff');
+	src: local('Pretendard Thin'), url('../../assets/font/Pretendard-Thin.woff2') format('woff2'), url('../../assets/font/Pretendard-Thin.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Panchang';
-	src:url('/vintwire/assets/font/Panchang-Variable.woff2') format('woff2'),
-		url('/vintwire/assets/font/Panchang-Variable.woff') format('woff'),
-		url('/vintwire/assets/font/Panchang-Variable.ttf') format('truetype');
+	src:url('../../assets/font/Panchang-Variable.woff2') format('woff2'),
+		url('../../assets/font/Panchang-Variable.woff') format('woff'),
+		url('../../assets/font/Panchang-Variable.ttf') format('truetype');
 		font-weight: 200 800;
 		font-display: swap;
 		font-style: normal;
@@ -74,9 +74,9 @@
   
   @font-face {
 	font-family: 'Panchang';
-	src:url('/vintwire/assets/font/Panchang-Extralight.woff2') format('woff2'),
-		url('/vintwire/assets/font/Panchang-Extralight.woff') format('woff'),
-		url('/vintwire/assets/font/Panchang-Extralight.ttf') format('truetype');
+	src:url('../../assets/font/Panchang-Extralight.woff2') format('woff2'),
+		url('../../assets/font/Panchang-Extralight.woff') format('woff'),
+		url('../../assets/font/Panchang-Extralight.ttf') format('truetype');
 		font-weight: 200;
 		font-display: swap;
 		font-style: normal;
@@ -85,9 +85,9 @@
   
   @font-face {
 	font-family: 'Panchang';
-	src:url('/vintwire/assets/font/Panchang-Light.woff2') format('woff2'),
-		url('/vintwire/assets/font/Panchang-Light.woff') format('woff'),
-		url('/vintwire/assets/font/Panchang-Light.ttf') format('truetype');
+	src:url('../../assets/font/Panchang-Light.woff2') format('woff2'),
+		url('../../assets/font/Panchang-Light.woff') format('woff'),
+		url('../../assets/font/Panchang-Light.ttf') format('truetype');
 		font-weight: 300;
 		font-display: swap;
 		font-style: normal;
@@ -96,9 +96,9 @@
   
   @font-face {
 	font-family: 'Panchang';
-	src:url('/vintwire/assets/font/Panchang-Regular.woff2') format('woff2'),
-		url('/vintwire/assets/font/Panchang-Regular.woff') format('woff'),
-		url('/vintwire/assets/font/Panchang-Regular.ttf') format('truetype');
+	src:url('../../assets/font/Panchang-Regular.woff2') format('woff2'),
+		url('../../assets/font/Panchang-Regular.woff') format('woff'),
+		url('../../assets/font/Panchang-Regular.ttf') format('truetype');
 		font-weight: 400;
 		font-display: swap;
 		font-style: normal;
@@ -107,9 +107,9 @@
   
   @font-face {
 	font-family: 'Panchang';
-	src:url('/vintwire/assets/font/Panchang-Medium.woff2') format('woff2'),
-		url('/vintwire/assets/font/Panchang-Medium.woff') format('woff'),
-		url('/vintwire/assets/font/Panchang-Medium.ttf') format('truetype');
+	src:url('../../assets/font/Panchang-Medium.woff2') format('woff2'),
+		url('../../assets/font/Panchang-Medium.woff') format('woff'),
+		url('../../assets/font/Panchang-Medium.ttf') format('truetype');
 		font-weight: 500;
 		font-display: swap;
 		font-style: normal;
@@ -118,9 +118,9 @@
   
   @font-face {
 	font-family: 'Panchang';
-	src:url('/vintwire/assets/font/Panchang-Semibold.woff2') format('woff2'),
-		url('/vintwire/assets/font/Panchang-Semibold.woff') format('woff'),
-		url('/vintwire/assets/font/Panchang-Semibold.ttf') format('truetype');
+	src:url('../../assets/font/Panchang-Semibold.woff2') format('woff2'),
+		url('../../assets/font/Panchang-Semibold.woff') format('woff'),
+		url('../../assets/font/Panchang-Semibold.ttf') format('truetype');
 		font-weight: 600;
 		font-display: swap;
 		font-style: normal;
@@ -129,9 +129,9 @@
   
   @font-face {
 	font-family: 'Panchang';
-	src: url('/vintwire/assets/font/Panchang-Bold.woff2') format('woff2'),
-		 url('/vintwire/assets/font/Panchang-Bold.woff') format('woff'),
-		 url('/vintwire/assets/font/Panchang-Bold.ttf') format('truetype');
+	src: url('../../assets/font/Panchang-Bold.woff2') format('woff2'),
+		 url('../../assets/font/Panchang-Bold.woff') format('woff'),
+		 url('../../assets/font/Panchang-Bold.ttf') format('truetype');
 		 font-weight: 700;
 		 font-display: swap;
 		 font-style: normal;
@@ -140,9 +140,9 @@
   
   @font-face {
 	font-family: 'Panchang';
-	src:url('/vintwire/assets/font/Panchang-Extrabold.woff2') format('woff2'),
-		url('/vintwire/assets/font/Panchang-Extrabold.woff') format('woff'),
-		url('/vintwire/assets/font/Panchang-Extrabold.ttf') format('truetype');
+	src:url('../../assets/font/Panchang-Extrabold.woff2') format('woff2'),
+		url('../../assets/font/Panchang-Extrabold.woff') format('woff'),
+		url('../../assets/font/Panchang-Extrabold.ttf') format('truetype');
 		font-weight: 800;
 		font-display: swap;
 		font-style: normal;
