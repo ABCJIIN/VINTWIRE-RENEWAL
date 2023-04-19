@@ -60,14 +60,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
             }
             .text-wrap {
                 position: relative;
-                // padding-top: 36.6rem;
                 width: 100%;
-                // display: flex;
-                // @include tablet {
-                //     display: flex;
-                //     justify-content: center;
-                //     align-items: flex-start;
-                // }
                 .text {
                     display:flex;
                     justify-content:flex-start;
@@ -75,21 +68,16 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     flex-direction: row;
                     gap:2.4rem;
                     font-size:4rem;
-                    // font-size: 2.1vw;
                     color:#fff;
                     line-height:3.6rem;
                     text-align:center;
                     padding-bottom: 4.5rem;
-                    // margin-bottom:19.5rem;
                     @include tablet {
                         font-size: 2rem;
                         flex-direction: column;
                         gap: 0;
                         padding-bottom: 5rem;
                     }
-                    // br {
-                    //     display: none;
-                    // }
                     .line {
                         width: 10.4rem;
                         height: 1px;
@@ -104,8 +92,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 }
                 .title {
                     position: absolute;
-                    // top:6.5rem;
-                    // left:0;
                     text-align:center;
                     line-height:1;
                     @include tablet {
@@ -123,7 +109,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             font-family: $panchang;
                             overflow: hidden;
                             font-size: 12rem;
-                            // font-size: 6.2vw;
                             line-height: 0.9;
                             @include tablet {
                                 font-size: 4rem;
@@ -131,7 +116,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             
                             span {
                                 position:relative;
-                                // font-size:12rem;
                                 font-weight:700;
                                 color: transparent;
                                 -webkit-text-stroke: 1px $white;
@@ -144,19 +128,19 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                     -webkit-text-stroke: 0;
                                 }
                                 &::before {
-                                    display:none;
-                                    animation:rotate_image 30s linear infinite reverse;
+                                    display: none;
+                                    animation: rotate_image 30s linear infinite reverse;
                                     content:"";
-                                    width:24rem;
-                                    height:24rem;
-                                    background:url(/vintwire/assets/images/main/intro_small_star.svg) no-repeat center;
-                                    position:absolute;
-                                    top:-8rem;
-                                    right:-15rem;
+                                    width: 24rem;
+                                    height: 24rem;
+                                    position: absolute;
+                                    top: -8rem;
+                                    right: -15rem;
+                                    @include background(main, intro_small_star, svg, no-repeat, contain, center, center);
                                 }
                             }
                             &:last-child {
-                                opacity:0.54;
+                                opacity: 0.54;
                             }
                         }
                     }
@@ -261,7 +245,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         .icon-smile {
                             width:5.3rem;
                             height:5.3rem;
-                            background:url(/vintwire/assets/images/common/icon_smile_yellow.svg) no-repeat center/contain;
                             transition: 1s;
                             transform:scale(0);
                             animation:rotate_image 30s linear infinite reverse;
@@ -269,6 +252,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             bottom: 6.5rem;
                             left:-2rem;
                             z-index:-1;
+                            @include background(common, icon_smile_yellow, svg, no-repeat, contain, center, center);
                             @include tablet {
                                 width: 4.2rem;
                                 height: 4.2rem;
@@ -279,11 +263,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             &.purple {
                                 width:7.8rem;
                                 height:7.8rem;
-                                background:url(/vintwire/assets/images/common/icon_smile_purple.svg) no-repeat center/contain;
                                 animation:rotate_image 30s linear infinite;
                                 top:-11rem;
                                 left: 75rem;
-                                // bottom:auto;
+                                @include background(common, icon_smile_purple, svg, no-repeat, contain, center, center);
                                 @include tablet {
                                     width: 4.2rem;
                                     height: 4.2rem;
@@ -314,23 +297,16 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 .btn-wrap {
                     width: 100%;
                     text-align: center;
-                    // padding-bottom: 9rem;
                 }
             }
             .line-wrap {
                 position: absolute;
                 bottom: 0;
-                // left:0;
-                // transform: translateX(-50%) rotate(0);
-                // position:absolute;
-                // bottom: 8rem;
                 width:100%;
                 @include tablet {
                     bottom: 0;
-                    // z-index: 222;
                 }
                 .purple-line {
-                    // width: 200%;
                     position: absolute;
                     left:50%;
                     transform: translateX(-50%);
@@ -340,7 +316,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     align-items: center;
                     justify-content: center;
                     background: $purple;
-                    // gap: 20rem;
                     @include tablet {
                         height: 4rem;
                         bottom: 0;
@@ -353,7 +328,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         justify-content: center;
                         font-family: $panchang;
                         font-size: 3.2rem;
-                        // font-size: 2.8rem;
                         font-weight: 700;
                         white-space:nowrap;
                         -webkit-text-stroke: 1px $white;
@@ -368,9 +342,9 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             display:inline-block; 
                             width:4.7rem; 
                             height:4.7rem; 
-                            background:url(/vintwire/assets/images/common/icon_smile_yellow.svg) no-repeat center; 
                             background-size:contain;
                             margin:0 0.6rem;
+                            @include background(common, icon_smile_yellow, svg, no-repeat, contain, center, center);
                             @include tablet {
                                 width: 2.4rem;
                                 height: 2.4rem;
@@ -430,11 +404,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 }
                             }
                         }
-                        // &:nth-child(1){.img-wrap{@include background(main, project_img_kita, png, no-repeat, cover, center, center);}}
-                        // &:nth-child(2){.img-wrap{@include background(main, project_img_koreanAir, png, no-repeat, cover, center, center);}}
-                        // &:nth-child(3){.img-wrap{@include background(main, project_img_lg, png, no-repeat, cover, center, center);}}
-                        // &:nth-child(4){.img-wrap{@include background(main, project_img_hyundai, png, no-repeat, cover, center, center);}}
-                        // &:nth-child(5){.img-wrap{@include background(main, project_img_nonghyup, png, no-repeat, cover, center, center);}}
                         @include flexbox(row, space-between, flex-start);
                         @include tablet{
                             position: sticky;
@@ -627,7 +596,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     @include flexbox (row, center, center);
                     max-width: 1640px;
                     padding: 6rem 0 3.2rem 0;
-                    // width: calc(100% - 4rem);
                     width: 100%;
                     gap: 1.5rem;
                     @include tablet {
@@ -677,7 +645,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                     padding-top: 3.4rem;
                                     line-height: 3.6rem;
                                     word-break: keep-all;
-                                    // padding-bottom: 6.4rem;
                                     @include tablet {
                                         font-size: 1.4rem;
                                         line-height: 2.2rem;
@@ -691,12 +658,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 bottom: 4.3rem;
                                 width: 60%;
                                 @include tablet {
-                                    // position: relative;
                                     right: 0;
                                     bottom: 1rem;
                                     height: 10rem;
                                     width: 35%;
-                                    // height: 65%;
                                 }
                                 img {
                                     width: 100%;
@@ -822,34 +787,9 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             @media (max-width: 980px){font-size: 1.6vw;}
                             @include tablet {
                                 font-size: 5vw;
-                                // font-size: 2rem;
                             }
                         }
-                        // .tit-emphasis {
-                        //     @include tablet {
-                        //         padding: 0 4vw;
-                        //         // padding: 0 2rem;
-                        //         &::before, &::after {
-                        //             width: 3vw;
-                        //             height: 2.6vh;
-                        //         }
-                        //     }
-                        // }
                         .flex-wrap {
-                            // .members-warp {
-                            //     .icon-member {
-                            //         @include tablet {
-                            //             width: 3.4rem;
-                            //             height: 3.4rem;
-                            //             font-size: 6vw;
-                            //         }
-                            //     }
-                            //     .writer {
-                            //         @include tablet {
-                            //             font-size: 5vw;
-                            //         }
-                            //     }
-                            // }
                             .date {
                                 font-family: $pretendard;
                                 font-size: 2rem;
@@ -885,35 +825,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     text-align: center;
                 }
             }
-        }
-        #test{
-            padding: 8rem 0;
-            background: $black;
-            width: 100%;
-            height: 100vh;
-            position: relative;
-            // height: 80%;
-            > .test-inner{
-                width: 100%;
-                height: 100%;
-                // border: 1px solid #fff;
-                // overflow-y: scroll;
-                // scroll-snap-type: y mandatory;
-                // -ms-overflow-style: none;
-                // scrollbar-width: none;
-                // position: relative;
-                // &::-webkit-scrollbar {display: none;}
-                // scroll-snap-align: start;
-            }
-        }
-        .box{
-            width: 100%;
-            height: 100%;
-            &.red{background: red;}
-            &.orange{background: orange;}
-            &.green{background: green;}
-            &.yellow{background: yellow;}
-            &.blue{background: blue;}
         }
     }
 }
