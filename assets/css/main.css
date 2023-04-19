@@ -793,13 +793,13 @@ button.more-btn::before {
   width: 1.6rem;
   height: 1.6rem;
   display: block;
-  background-image: url(/vintwire/assets/images/icon/more_icon01.png);
+  background-image: url(../../assets/images/icon/more_icon01.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 button.more-btn.on::before {
-  background-image: url(/vintwire/assets/images/icon/more_icon02.png);
+  background-image: url(../../assets/images/icon/more_icon02.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -1591,13 +1591,13 @@ button.more-btn::before {
   width: 1.6rem;
   height: 1.6rem;
   display: block;
-  background-image: url(/vintwire/assets/images/icon/more_icon01.png);
+  background-image: url(../../assets/images/icon/more_icon01.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 button.more-btn.on::before {
-  background-image: url(/vintwire/assets/images/icon/more_icon02.png);
+  background-image: url(../../assets/images/icon/more_icon02.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -2147,7 +2147,7 @@ button.more-btn.on::before {
   width: 100%;
 }
 .wrap #container section#intro .intro-bg {
-  background-image: url(/vintwire/assets/images/sub/top_bg.png);
+  background-image: url(../../assets/images/sub/top_bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center bottom;
@@ -2326,7 +2326,7 @@ button.more-btn.on::before {
   height: 1.6rem;
   position: absolute;
   z-index: 0;
-  background-image: url(/vintwire/assets/images/icon/icon_dobule_dot.svg);
+  background-image: url(../../assets/images/icon/icon_dobule_dot.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -2663,10 +2663,13 @@ body.fixed {
   content: "";
   width: 24rem;
   height: 24rem;
-  background: url(/vintwire/assets/images/main/intro_small_star.svg) no-repeat center;
   position: absolute;
   top: -8rem;
   right: -15rem;
+  background-image: url(../../assets/images/main/intro_small_star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 #main #container #intro .text-wrap .title .inner p:last-child {
   opacity: 0.54;
@@ -2802,7 +2805,6 @@ body.fixed {
 #main #container #value .value-inner .text-wrap .title .icon-smile {
   width: 5.3rem;
   height: 5.3rem;
-  background: url(/vintwire/assets/images/common/icon_smile_yellow.svg) no-repeat center/contain;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transform: scale(0);
@@ -2812,6 +2814,10 @@ body.fixed {
   bottom: 6.5rem;
   left: -2rem;
   z-index: -1;
+  background-image: url(../../assets/images/common/icon_smile_yellow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 @media (max-width: 768px) {
   #main #container #value .value-inner .text-wrap .title .icon-smile {
@@ -2824,11 +2830,14 @@ body.fixed {
 #main #container #value .value-inner .text-wrap .title .icon-smile.purple {
   width: 7.8rem;
   height: 7.8rem;
-  background: url(/vintwire/assets/images/common/icon_smile_purple.svg) no-repeat center/contain;
   -webkit-animation: rotate_image 30s linear infinite;
           animation: rotate_image 30s linear infinite;
   top: -11rem;
   left: 75rem;
+  background-image: url(../../assets/images/common/icon_smile_purple.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 @media (max-width: 768px) {
   #main #container #value .value-inner .text-wrap .title .icon-smile.purple {
@@ -2926,9 +2935,12 @@ body.fixed {
   display: inline-block;
   width: 4.7rem;
   height: 4.7rem;
-  background: url(/vintwire/assets/images/common/icon_smile_yellow.svg) no-repeat center;
   background-size: contain;
   margin: 0 0.6rem;
+  background-image: url(../../assets/images/common/icon_smile_yellow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 @media (max-width: 768px) {
   #main #container #value .line-wrap .purple-line p::before {
@@ -2941,7 +2953,7 @@ body.fixed {
   width: 100%;
   padding: 0 0 20rem;
   background: #222;
-  background-image: url(/vintwire/assets/images/main/project_bg.png);
+  background-image: url(../../assets/images/main/project_bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center bottom;
@@ -3701,34 +3713,4 @@ body.fixed {
   padding-top: 2rem;
   width: 100%;
   text-align: center;
-}
-#main #container #test {
-  padding: 8rem 0;
-  background: #222;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-#main #container #test > .test-inner {
-  width: 100%;
-  height: 100%;
-}
-#main #container .box {
-  width: 100%;
-  height: 100%;
-}
-#main #container .box.red {
-  background: red;
-}
-#main #container .box.orange {
-  background: orange;
-}
-#main #container .box.green {
-  background: green;
-}
-#main #container .box.yellow {
-  background: yellow;
-}
-#main #container .box.blue {
-  background: blue;
 }
