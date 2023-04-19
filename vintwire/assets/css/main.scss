@@ -805,6 +805,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 @include tablet_junction {
                                     padding: 0.8rem 0.8rem 1.8rem 0.8rem;
                                 }
+                                @include tablet {
+                                    padding: 1.6rem 1.6rem 3.8rem 1.6rem;
+                                }
+                                @include mobile {
+                                    padding: 0.8rem 0.8rem 1.8rem 0.8rem;
+                                }
                             }
                         }
                         .tag-item {

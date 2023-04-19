@@ -2844,6 +2844,16 @@ body.fixed {
     padding: 0.8rem 0.8rem 1.8rem 0.8rem;
   }
 }
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .swiper-slide .preview-info {
+    padding: 1.6rem 1.6rem 3.8rem 1.6rem;
+  }
+}
+@media (max-width: 420px) {
+  #main #container #ourStory .story-inner #storySlide .category-list .swiper-slide .preview-info {
+    padding: 0.8rem 0.8rem 1.8rem 0.8rem;
+  }
+}
 @media (max-width: 980px) {
   #main #container #ourStory .story-inner #storySlide .category-list .tag-item {
     font-size: 1vw;
