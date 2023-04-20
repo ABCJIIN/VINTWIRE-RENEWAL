@@ -132,6 +132,7 @@
             .line-wrap{
                 position: relative;
                 width: 100%;
+                overflow-x: hidden;
                 min-height: 22rem;
                 .line{
                     position:absolute; 
