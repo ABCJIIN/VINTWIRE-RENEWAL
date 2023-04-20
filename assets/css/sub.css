@@ -192,6 +192,25 @@ body {
     font-size: 1.4rem;
   }
 }
+body.cursor * {
+  cursor: none;
+}
+body .cursor {
+  width: 7rem;
+  height: 5rem;
+  text-indent: -9999em;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+  background-image: url(../../assets/images/icon/rainbow_ddong_star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+body .cursor.on {
+  display: block;
+}
 
 .hide {
   position: absolute;
@@ -1049,6 +1068,25 @@ body {
   body {
     font-size: 1.4rem;
   }
+}
+body.cursor * {
+  cursor: none;
+}
+body .cursor {
+  width: 7rem;
+  height: 5rem;
+  text-indent: -9999em;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+  background-image: url(../../assets/images/icon/rainbow_ddong_star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+body .cursor.on {
+  display: block;
 }
 
 .hide {
@@ -2879,6 +2917,9 @@ button.more-btn.on::before {
   }
 }
 #about #container #member .member-wrap .member-list {
+  gap: 3.6rem 1.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2892,9 +2933,9 @@ button.more-btn.on::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 3.6rem 1.6rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+#about #container #member .member-wrap .member-list:hover * {
+  cursor: none;
 }
 @media (max-width: 930px) {
   #about #container #member .member-wrap .member-list {

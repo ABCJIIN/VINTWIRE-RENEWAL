@@ -192,6 +192,25 @@ body {
     font-size: 1.4rem;
   }
 }
+body.cursor * {
+  cursor: none;
+}
+body .cursor {
+  width: 7rem;
+  height: 5rem;
+  text-indent: -9999em;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+  background-image: url(../../assets/images/icon/rainbow_ddong_star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+body .cursor.on {
+  display: block;
+}
 
 .hide {
   position: absolute;
@@ -1049,6 +1068,25 @@ body {
   body {
     font-size: 1.4rem;
   }
+}
+body.cursor * {
+  cursor: none;
+}
+body .cursor {
+  width: 7rem;
+  height: 5rem;
+  text-indent: -9999em;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+  background-image: url(../../assets/images/icon/rainbow_ddong_star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+body .cursor.on {
+  display: block;
 }
 
 .hide {
