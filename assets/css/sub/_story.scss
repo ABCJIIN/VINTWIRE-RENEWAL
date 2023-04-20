@@ -7,6 +7,7 @@
             @include tablet{font-size: 2rem;}
         }
         #intro{
+            max-height: 56rem;
             .intro-bg{
                 background-position: left bottom -120px;
                 @include tablet{
@@ -21,7 +22,7 @@
                     height: 28.8rem;
                     display: block;
                     position: absolute;
-                    right: 12%;
+                    right: 10%;
                     bottom: 0;
                     text-indent: -9999em;
                     @include notebook{
@@ -101,9 +102,21 @@
                     }
                     > h2{
                         font-family: $montserrat;
-                        margin-top: 1.2rem;
-                        margin-bottom: 6.2rem;
+                        // margin-top: 1.2rem;
+                        // margin-bottom: 6.2rem;
+                        padding-top: 1.2rem;
+                        padding-bottom: 6.2rem;
+                        max-width: 81.2rem;
+                        width: 100%;
+                        margin: 0 auto;
+                        word-break: keep-all;
+                        font-size: 3.6vw;
+                        line-height: 1.2;
+                        @include notebook {
+                            font-size: 3.4vw;
+                        }
                         @include tablet{
+                            padding: 0;
                             font-size: 2rem;
                             line-height: 3.2rem;
                             margin: 1rem 0 2.4rem;
@@ -179,7 +192,8 @@
                     .category-list {
                         @include flexbox (row, center, center);
                         @include tablet {
-                            display: grid;
+                            display: flex;
+                            flex-direction: column;
                         }
                         .story-tit {
                             font-size: 2.4rem;
@@ -187,12 +201,19 @@
                                 font-size: 3.2rem;
                             }
                             @include tablet {
-                                font-size: 5.8vw;
+                                // font-size: 5.8vw;
+                                font-size: 2.4rem;
+                            }
+                            @include mobile {
+                                font-size: 2rem;
                             }
                         }
                         .tit-emphasis {
                             @include notebook {
                                 padding: 0 4rem;
+                            }
+                            @include tablet {
+                                padding: 0 3rem;
                             }
                             @include mobile {
                                 padding: 0 2rem;
@@ -201,6 +222,10 @@
                                 @include notebook {
                                     width: 2.6rem;
                                     height: 2.1rem;
+                                }
+                                @include tablet {
+                                    width: 2rem;
+                                    height: 1.6rem;
                                 }
                                 @include mobile{
                                     width: 1.5rem;
