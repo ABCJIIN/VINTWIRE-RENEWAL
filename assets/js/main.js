@@ -16,7 +16,9 @@ $(document).ready(function(){
             offset: 125,
         });
     }
-    init()
+    init();
+    
+    AOS.init({once: true});
 
     function introFixed() {
 
@@ -132,41 +134,9 @@ $(document).ready(function(){
             },
         }
     });
-        
-        gsap.registerPlugin(ScrollTrigger);
-        // ScrollTrigger.create({
-        //     trigger: "#project",
-        //     pin: true,
-        //     start: "top", 
-        //     end: 'bottom bottom',
-        //     // scrub: 0.2,
-        //     markers: true,
-        // });
-
-        // let st = ScrollTrigger.create({
-        //     trigger: ".project-wrap.d-pc",
-        //     pin: ".pin",
-        //     start: "top center",
-        //     end: "+=500"
-        // });
-
-        // var projectPc = gsap.timeline({
-        // scrollTrigger: {
-        //         trigger: "#project",
-        //         pin: true,
-        //         scrub: 0.5,
-        //         start: "top top",
-        //         end: "+=100%",
-        //         markers: true,
-        //     }
-        // })
-        // .fromTo('#project .sec-tit',{y: 0, duration: .5},{y: 0, duration: .5})
-        // .fromTo('.project-wrap.d-pc',{y: 0, duration: .5},{y: 100, duration: .5});
-
 });
 
 // value 롤링
-
 $(function(){
     $('.animate__animated:not(.delay)').viewportChecker({
         classToAdd: 'on',

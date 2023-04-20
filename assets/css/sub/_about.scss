@@ -133,7 +133,8 @@
                 position: relative;
                 width: 100%;
                 overflow: hidden;
-                min-height: 22rem;
+                min-height: 28rem;
+                @include tablet{min-height: 10rem;}
                 .line{
                     position:absolute; 
                     top: 50%; 
@@ -143,6 +144,31 @@
                     left:50%;
                     transform: translate(-50%, -50%) rotate(-5deg);
                     z-index:-2;
+                    @include tablet{
+                        height: 2.8rem;
+                    }
+                    p{
+                        width: 66rem;
+                        font-size: 2.8rem;
+                        white-space:nowrap;
+                        @include flexbox(row, flex-start, center);
+                        @include tablet{
+                            width: auto;
+                            font-size: .8rem;
+                        }
+                        &::before {
+                            content: "";
+                            display: inline-block; 
+                            width: 4.7rem; 
+                            height: 4.7rem; 
+                            margin: 0 0.6rem;
+                            @include background(icon, intro_line_icon, svg, no-repeat, contain, center, center);
+                            @include tablet{
+                                width: 1.8rem;
+                                height: 1.8rem;
+                            }
+                        }
+                    }
                     &.purple{
                         background: $purple;
                         left: 50%;
@@ -153,20 +179,6 @@
                     &.gray{
                         p{
                             &::before{filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);}
-                        }
-                    }
-                    p{
-                        width: 66rem;
-                        font-size: 2.8rem;
-                        white-space:nowrap;
-                        @include flexbox(row, flex-start, center);
-                        &::before {
-                            content: "";
-                            display: inline-block; 
-                            width: 4.7rem; 
-                            height: 4.7rem; 
-                            margin: 0 0.6rem;
-                            @include background(icon, intro_line_icon, svg, no-repeat, contain, center, center);
                         }
                     }
                 }
