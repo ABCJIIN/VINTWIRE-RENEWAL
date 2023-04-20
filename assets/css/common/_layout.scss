@@ -141,6 +141,14 @@
     width: 100%;
     background: $white;
     margin-top: 14rem;
+    &.on{
+        .inner{
+            .stroke-title{
+                color: $purple;
+                -webkit-text-stroke: 1px $purple;
+            }
+        }
+    }
     .inner {
         width: 100%;
         height: 100%;
@@ -159,11 +167,7 @@
             -webkit-text-stroke: 1px #C4C4EB;
             white-space: nowrap;
             cursor: default;
-            transition: all .85s;
-            &:hover{
-                color: $purple;
-                -webkit-text-stroke: 1px $purple;
-            }
+            transition: all .5s;
             @include tablet {
                 display: flex;
                 flex-direction: column;
