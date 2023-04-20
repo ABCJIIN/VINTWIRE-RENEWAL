@@ -617,6 +617,14 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     .introduce {
                         width: calc(100% / 3);
                         height: 51.5rem;
+                        &:hover {
+                            box-shadow: 0 0 3rem rgba(235, 187, 84, 0.2);
+                            border: solid 1px rgba(235, 187, 84, 0.2);
+                            transition: 0.2s ease-out;
+                        }
+                        &:not(:hover) {
+                            transition: 0.2s ease-out;
+                        }
                         @include tablet {
                             width: 100%;
                             min-width: 314px;
