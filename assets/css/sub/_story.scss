@@ -164,7 +164,8 @@
                     .category-list {
                         @include flexbox (row, center, center);
                         @include tablet {
-                            display: grid;
+                            display: flex;
+                            flex-direction: column;
                         }
                         .story-tit {
                             font-size: 2.4rem;
@@ -172,12 +173,19 @@
                                 font-size: 3.2rem;
                             }
                             @include tablet {
-                                font-size: 5.8vw;
+                                // font-size: 5.8vw;
+                                font-size: 2.4rem;
+                            }
+                            @include mobile {
+                                font-size: 2rem;
                             }
                         }
                         .tit-emphasis {
                             @include notebook {
                                 padding: 0 4rem;
+                            }
+                            @include tablet {
+                                padding: 0 3rem;
                             }
                             @include mobile {
                                 padding: 0 2rem;
@@ -186,6 +194,10 @@
                                 @include notebook {
                                     width: 2.6rem;
                                     height: 2.1rem;
+                                }
+                                @include tablet {
+                                    width: 2rem;
+                                    height: 1.6rem;
                                 }
                                 @include mobile{
                                     width: 1.5rem;
