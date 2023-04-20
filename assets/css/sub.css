@@ -3289,7 +3289,7 @@ button.more-btn.on::before {
 }
 #story #container #categories .category-list-wrap .category-content-wrap {
   width: 100%;
-  max-width: 1088px;
+  max-width: 81.2rem;
   margin: 9rem auto 16.8rem;
 }
 @media (max-width: 768px) {
@@ -3298,7 +3298,7 @@ button.more-btn.on::before {
   }
 }
 #story #container #categories .category-list-wrap .category-content-wrap p {
-  max-width: 81.2rem;
+  width: 100%;
   margin: 0 auto;
   font-size: 2rem;
   line-height: 3rem;
@@ -3323,7 +3323,6 @@ button.more-btn.on::before {
   }
 }
 #story #container #categories .category-list-wrap .category-content-wrap .img-wrap > img {
-  max-width: 81.2rem;
   width: 100%;
 }
 #story #container #categories .category-list-wrap .category-content-wrap button {
