@@ -105,6 +105,19 @@ $(document).ready(function(){
         aboutAni();
     }
 
+    var cursor = $('.cursor');
+    $('.member-list').mousemove(function(e){
+        cursor.addClass('on');
+        cursor.css({
+            top: e.pageY - cursor.height() / 2,
+            left: e.pageX - cursor.width() / 2
+        });
+    });
+    
+    $('.member-list').mouseleave(function(e){
+        cursor.removeClass('on');
+    });
+
     /* job */
     // job 상단 슬라이드
     var swiper = new Swiper("#teamSwiper", {
