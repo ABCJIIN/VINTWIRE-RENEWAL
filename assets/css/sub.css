@@ -1819,11 +1819,9 @@ button.more-btn.on::before {
   transition: 0.4s;
   line-height: 1;
 }
-@media (max-width: 768px) {
-  #header > .inner #gnb li a:hover {
-    line-height: 0;
-    color: #6A6AE6;
-  }
+#header > .inner #gnb li a:hover {
+  line-height: 0;
+  color: #6A6AE6;
 }
 #header > .inner #gnb li a .arr-btn {
   display: none;
