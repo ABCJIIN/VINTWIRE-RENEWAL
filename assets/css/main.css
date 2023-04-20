@@ -3627,7 +3627,13 @@ body.fixed {
   }
 }
 #main #container #ourStory .story-inner #storySlide {
-  width: calc(100% - 2rem);
+  width: calc(100% - 6rem);
+  max-width: 1640px;
+}
+@media (max-width: 768px) {
+  #main #container #ourStory .story-inner #storySlide {
+    width: calc(100% - 2rem);
+  }
 }
 #main #container #ourStory .story-inner #storySlide .category-list {
   padding-top: 6rem;
