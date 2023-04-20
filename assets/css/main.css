@@ -3017,6 +3017,12 @@ body.fixed {
     margin-top: 4rem;
   }
 }
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list {
+    position: sticky;
+    top: 0;
+  }
+}
 #main #container #project .project-inner .project-wrap-list > a {
   width: 100%;
   display: -webkit-box;
@@ -3035,8 +3041,6 @@ body.fixed {
 }
 @media (max-width: 768px) {
   #main #container #project .project-inner .project-wrap-list > a {
-    position: sticky;
-    top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3088,6 +3092,15 @@ body.fixed {
           justify-content: flex-end;
   margin-left: auto;
   margin-right: 0;
+}
+@media (max-width: 768px) {
+  #main #container #project .project-inner .project-wrap-list:nth-child(even) > a .project-info-name + div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
 #main #container #project .project-inner .project-wrap-list .img-wrap {
   border-radius: 3rem 3rem 3rem 1rem;

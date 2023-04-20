@@ -2701,7 +2701,12 @@ button.more-btn.on::before {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 22rem;
+  min-height: 28rem;
+}
+@media (max-width: 768px) {
+  #about #container #introCont .line-wrap {
+    min-height: 10rem;
+  }
 }
 #about #container #introCont .line-wrap .line {
   position: absolute;
@@ -2716,19 +2721,10 @@ button.more-btn.on::before {
           transform: translate(-50%, -50%) rotate(-5deg);
   z-index: -2;
 }
-#about #container #introCont .line-wrap .line.purple {
-  background: #6A6AE6;
-  left: 50%;
-  z-index: -1;
-  -webkit-transform: translate(-50%, -50%) rotate(5deg);
-          transform: translate(-50%, -50%) rotate(5deg);
-}
-#about #container #introCont .line-wrap .line.purple p {
-  color: #fff;
-}
-#about #container #introCont .line-wrap .line.gray p::before {
-  -webkit-filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
-          filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
+@media (max-width: 768px) {
+  #about #container #introCont .line-wrap .line {
+    height: 2.8rem;
+  }
 }
 #about #container #introCont .line-wrap .line p {
   width: 66rem;
@@ -2748,6 +2744,12 @@ button.more-btn.on::before {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 768px) {
+  #about #container #introCont .line-wrap .line p {
+    width: auto;
+    font-size: 0.8rem;
+  }
+}
 #about #container #introCont .line-wrap .line p::before {
   content: "";
   display: inline-block;
@@ -2758,6 +2760,26 @@ button.more-btn.on::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+}
+@media (max-width: 768px) {
+  #about #container #introCont .line-wrap .line p::before {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+#about #container #introCont .line-wrap .line.purple {
+  background: #6A6AE6;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%) rotate(5deg);
+          transform: translate(-50%, -50%) rotate(5deg);
+}
+#about #container #introCont .line-wrap .line.purple p {
+  color: #fff;
+}
+#about #container #introCont .line-wrap .line.gray p::before {
+  -webkit-filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
+          filter: invert(40%) sepia(75%) saturate(690%) hue-rotate(206deg) brightness(95%) contrast(90%);
 }
 #about #container #group {
   padding: 8rem 0;
@@ -3975,8 +3997,26 @@ button.more-btn.on::before {
 #story #container #intro.datail.anna {
   background: #93D2F8;
 }
+#story #container #intro.datail.anna .character {
+  background-image: url(../../assets/images/common/character/character_anna.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+#story #container #intro.datail.anna .intro-tit h2, #story #container #intro.datail.anna .intro-tit p {
+  color: #222;
+}
 #story #container #intro.datail.jasmine {
   background: #F5D4DD;
+}
+#story #container #intro.datail.jasmine .character {
+  background-image: url(../../assets/images/common/character/character_jasmine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+#story #container #intro.datail.jasmine .intro-tit h2, #story #container #intro.datail.jasmine .intro-tit p {
+  color: #222;
 }
 #story #container #intro.datail.steven {
   background: #F4B893;
@@ -4005,6 +4045,9 @@ button.more-btn.on::before {
   background-size: contain;
   background-position: center bottom;
 }
+#story #container #intro.datail.summer .intro-tit h2, #story #container #intro.datail.summer .intro-tit p {
+  color: #222;
+}
 #story #container #intro.datail.felix {
   background: #5385F8;
 }
@@ -4031,6 +4074,9 @@ button.more-btn.on::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
+}
+#story #container #intro.datail.nia .intro-tit h2, #story #container #intro.datail.nia .intro-tit p {
+  color: #222;
 }
 #story #container #intro.datail.jason {
   background: #83D8A6;
@@ -4067,6 +4113,21 @@ button.more-btn.on::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
+}
+#story #container #intro.datail.leo {
+  background: #81A9E8;
+}
+#story #container #intro.datail.ethan {
+  background: #F89977;
+}
+#story #container #intro.datail.park {
+  background: #F56E6E;
+}
+#story #container #intro.datail.john {
+  background: #317CA3;
+}
+#story #container #intro.datail.paul {
+  background: #9DD94A;
 }
 #story #container #intro.datail .tag-list {
   -webkit-box-pack: center;

@@ -395,14 +395,14 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             margin-top: 12rem;
                             @include tablet{margin-top: 4rem;}
                         }
+                        @include tablet{
+                            position: sticky;
+                            top: 0;
+                        }
                         > a{
                             width: 100%;
                             @include flexbox(row, space-between, flex-start);
-                            @include tablet{
-                                position: sticky;
-                                top: 0;
-                                flex-direction: column;
-                            }
+                            @include tablet{flex-direction: column;}
                             > div:not(.project-info-name, .btn-group){
                                 width: calc(100% / 2 - 0.8rem);
                                 height: 48rem;
@@ -432,6 +432,11 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                         justify-content: flex-end;
                                         margin-left: auto;
                                         margin-right: 0;
+                                        @include tablet{
+                                            justify-content: flex-start;
+                                            margin-left: 0;
+                                            margin-right: auto;
+                                        }
                                     }
                                 }
                             }

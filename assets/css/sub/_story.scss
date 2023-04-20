@@ -35,8 +35,16 @@
                     background:$jane;
                     .character{@include background(common/character, character_jane, png, no-repeat, contain, center, bottom);}
                 }
-                &.anna {background:$anna;}
-                &.jasmine {background:$jasmine;}
+                &.anna {
+                    background:$anna;
+                    .character{@include background(common/character, character_anna, png, no-repeat, contain, center, bottom);}
+                    .intro-tit{h2,p{color: $black;}}
+                }
+                &.jasmine {
+                    background:$jasmine;
+                    .character{@include background(common/character, character_jasmine, png, no-repeat, contain, center, bottom);}
+                    .intro-tit{h2,p{color: $black;}}
+                }
                 &.steven {
                     background: $steven;
                     .character{@include background(common/character, character_steven, png, no-repeat, contain, center, bottom);}
@@ -48,6 +56,7 @@
                 &.summer {
                     background:$summer;
                     .character{@include background(common/character, character_summer, png, no-repeat, contain, center, bottom);}
+                    .intro-tit{h2,p{color: $black;}}
                 }
                 &.felix {
                     background:$felix;
@@ -60,6 +69,7 @@
                 &.nia {
                     background:$nia;
                     .character{@include background(common/character, character_nia, png, no-repeat, contain, center, bottom);}
+                    .intro-tit{h2,p{color: $black;}}
                 }
                 &.jason {
                     background:$jason;
@@ -77,6 +87,11 @@
                     background: $jinny;
                     .character{@include background(common/character, character_jinny, png, no-repeat, contain, center, bottom);}
                 }
+                &.leo {background: $leo;}
+                &.ethan {background: $ethan;}
+                &.park {background: $park;}
+                &.john {background: $john;}
+                &.paul {background: $paul;}
                 .tag-list{justify-content: center;}
                 .intro-tit{
                     .tag-list {
