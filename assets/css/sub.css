@@ -2093,6 +2093,7 @@ button.more-btn.on::before {
 #about #container #introCont .line-wrap {
   position: relative;
   width: 100%;
+  overflow-x: hidden;
   min-height: 22rem;
 }
 #about #container #introCont .line-wrap .line {
