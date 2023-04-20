@@ -118,6 +118,12 @@
                         @include tablet{margin: 3.6rem 0;}
                         > img{max-width: 81.2rem;
                         width: 100%;}
+                        &.emoji{
+                            img{
+                                width: auto;
+                                max-width: 100%;
+                            }
+                        }
                     }
                     button{
                         margin: 4rem auto 0;
