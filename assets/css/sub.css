@@ -3955,6 +3955,11 @@ button.more-btn.on::before {
 #story #container #intro {
   max-height: 56rem;
 }
+@media (max-width: 1280px) {
+  #story #container #intro {
+    max-height: 100%;
+  }
+}
 #story #container #intro .intro-bg {
   background-position: left bottom -120px;
 }

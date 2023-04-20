@@ -8,6 +8,7 @@
         }
         #intro{
             max-height: 56rem;
+            @include notebook{max-height: 100%;}
             .intro-bg{
                 background-position: left bottom -120px;
                 @include tablet{
