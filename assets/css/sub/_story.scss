@@ -98,11 +98,10 @@
             .category-list-wrap{
                 .category-content-wrap{
                     width: 100%;
-                    max-width: 1088px;
+                    max-width: 81.2rem;
                     margin: 9rem auto 16.8rem;
                     @include tablet{margin: 6rem auto 12.4rem;}
-                    p{  
-                        max-width: 81.2rem;
+                    p{  width: 100%;
                         margin: 0 auto;
                         font-size: 2rem;
                         line-height: 3rem;
@@ -116,8 +115,7 @@
                         margin: 6rem 0;
                         @include flexbox(row, center, center);
                         @include tablet{margin: 3.6rem 0;}
-                        > img{max-width: 81.2rem;
-                        width: 100%;}
+                        > img{width: 100%;}
                         &.emoji{
                             img{
                                 width: auto;
