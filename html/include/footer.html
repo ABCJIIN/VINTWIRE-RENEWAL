@@ -44,3 +44,17 @@
     </div>
     <p class="copyright">COPYRIGHT © VINTWIRE All Rights Reserved.</p>
 </div>
+<script>
+    $(window).scroll(function(){
+        var docH = $(document).height();
+        var winH = $(window).height();
+        var ftH = $('footer').innerHeight() / 3;
+        var reachingPoint = docH - winH - ftH;
+        
+        if(Math.round($(window).scrollTop()) >= reachingPoint){
+            $('footer').addClass('on');
+        }else{
+            $('footer').removeClass('on');
+        }
+    });
+</script>
