@@ -19,7 +19,6 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -40,7 +39,7 @@
         <div id="container">
             <section id="intro">
                 <div class="intro-bg">서브페이지 bg입니다</div>
-                <div class="intro-tit con-box">
+                <div class="intro-tit con-box animate__animated animate__fadeIn">
                     <h2>project</h2>
                     <p>
                         사용자를 위한 디지털 공간을 디자인합니다<br class="d-pc">
@@ -526,5 +525,9 @@
         </div>
         <footer id="footer"></footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({once: true});
+    </script>
 </body>
 </html>
