@@ -545,26 +545,18 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
         }
         #find {
             position: relative;
-            width: calc(100% - 4rem);
             margin: 4rem auto 0 auto;
-            @include tablet {
-                width: calc(100% - 2.2rem);
-            }
             @include flexbox (row, center, center);
             &::after {
                 content: "";
                 position: absolute;
                 max-width: 1840px;
-                width: 100%;
+                width: calc(100% - 2rem);
                 background: #F8F8F8;
                 height: 100%;
                 border-radius: 8rem;
                 z-index: -5;
-                @include tablet {
-                    border-radius: 1.2rem;
-                    width: 100%;
-                    min-width: 355px;
-                }
+                @include tablet {border-radius: 1rem;}
             }
             .find-inner {
                 @include flexbox (column, flex-start, center);
@@ -698,13 +690,9 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
         }
         #ourStory {
             position: relative;
-            width: calc(100% - 4rem);
             overflow: hidden;
             margin: 7.7rem auto 0 auto;
-            @include tablet {
-                margin: 2rem auto 0 auto;
-                width: calc(100% - 2.2rem);
-            }
+            @include tablet {margin: 2rem auto 0 auto;}
             &::after {
                 content: "";
                 position: absolute;
@@ -712,15 +700,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 left: 50%;
                 transform: translate(-50%, -50%);
                 max-width: 1840px;
-                width: 100%;
+                width: calc(100% - 2rem);
                 background: linear-gradient(to bottom, #E8E8FF 0%, #E8E8FF 50%, $white 100%);
                 height: 100%;
                 border-radius: 8rem;
                 z-index: -999;
-                @include tablet {
-                    border-radius: 1.2rem;
-                    min-width: 355px;
-                }
+                @include tablet {border-radius: 1.2rem;}
             }
             .story-inner {
                 @include flexbox (column, flex-start, center);
@@ -730,7 +715,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     padding-top: 8rem;
                     padding-bottom: 8rem;
                     overflow: hidden;
-                    width: 100%;
                 }
                 .icon-wrap {
                     z-index: -10;
@@ -762,7 +746,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     }
                 }
                 #storySlide {
-                    width: 100%;
+                    width: calc(100% - 2rem);
                     .category-list {
                         padding-top: 6rem;
                         padding-bottom: 3.2rem;

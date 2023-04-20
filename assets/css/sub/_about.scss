@@ -132,7 +132,7 @@
             .line-wrap{
                 position: relative;
                 width: 100%;
-                overflow-x: hidden;
+                overflow: hidden;
                 min-height: 22rem;
                 .line{
                     position:absolute; 
@@ -208,8 +208,7 @@
                 .img-wrap{
                     max-width: 1250px;
                     margin: 0 auto;
-                    @include tablet{padding-bottom: 2.4rem;}
-                }
+                    padding-bottom: 2.4rem;}
             }
         }
         #member{
