@@ -481,7 +481,7 @@ body {
 
 .tag-item {
   background: #FFE75C;
-  padding: 1.2rem 1.3rem;
+  padding: 1.1rem 1.3rem;
   border-radius: 5rem;
   color: #6A6AE6;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1095,7 +1095,7 @@ body {
 
 .tag-item {
   background: #FFE75C;
-  padding: 1.2rem 1.3rem;
+  padding: 1.1rem 1.3rem;
   border-radius: 5rem;
   color: #6A6AE6;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1708,7 +1708,7 @@ button.more-btn.on::before {
 }
 @media (max-width: 420px) {
   .wrap #container section .category-list > li > a .preview-img .preview-info {
-    padding: 0.8rem 0.8rem 1.8rem 0.8rem;
+    padding: 1.5rem 0.8rem 1.8rem 1.9rem;
   }
 }
 .wrap #container section .category-list > li > a .preview-img .preview-info .story-tit {

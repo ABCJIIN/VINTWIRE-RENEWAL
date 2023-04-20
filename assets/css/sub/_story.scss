@@ -4,7 +4,7 @@
             color: #aaa;
             font-size: 2rem;
             line-height: 2.6rem;
-            @include tablet{font-size: 1.4rem;}
+            @include tablet{font-size: 2rem;}
         }
         #intro{
             .intro-bg{
@@ -79,6 +79,11 @@
                 }
                 .tag-list{justify-content: center;}
                 .intro-tit{
+                    .tag-list {
+                        .tag-item {
+                            padding: 0.8rem 0.9rem;
+                        }
+                    }
                     > h2{
                         font-family: $montserrat;
                         margin-top: 1.2rem;
@@ -197,7 +202,7 @@
                                 }
                                 @include tablet {
                                     font-size: 1.4rem;
-                                    padding: 1.2rem 1.3rem;
+                                    padding: 1.1rem 1.3rem;
                                 }
                             }
                         }

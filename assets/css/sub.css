@@ -481,7 +481,7 @@ body {
 
 .tag-item {
   background: #FFE75C;
-  padding: 1.2rem 1.3rem;
+  padding: 1.1rem 1.3rem;
   border-radius: 5rem;
   color: #6A6AE6;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1095,7 +1095,7 @@ body {
 
 .tag-item {
   background: #FFE75C;
-  padding: 1.2rem 1.3rem;
+  padding: 1.1rem 1.3rem;
   border-radius: 5rem;
   color: #6A6AE6;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1708,7 +1708,7 @@ button.more-btn.on::before {
 }
 @media (max-width: 420px) {
   .wrap #container section .category-list > li > a .preview-img .preview-info {
-    padding: 0.8rem 0.8rem 1.8rem 0.8rem;
+    padding: 1.5rem 0.8rem 1.8rem 1.9rem;
   }
 }
 .wrap #container section .category-list > li > a .preview-img .preview-info .story-tit {
@@ -3124,7 +3124,7 @@ button.more-btn.on::before {
 }
 @media (max-width: 768px) {
   #story #container .date {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 #story #container #intro .intro-bg {
@@ -3267,6 +3267,9 @@ button.more-btn.on::before {
 }
 #story #container #intro.datail .tag-list {
   justify-content: center;
+}
+#story #container #intro.datail .intro-tit .tag-list .tag-item {
+  padding: 0.8rem 0.9rem;
 }
 #story #container #intro.datail .intro-tit > h2 {
   font-family: "Montserrat";
@@ -3425,7 +3428,7 @@ button.more-btn.on::before {
 @media (max-width: 768px) {
   #story #container #categories .category-list-wrap .more-story .category-list .tag-list .tag-item {
     font-size: 1.4rem;
-    padding: 1.2rem 1.3rem;
+    padding: 1.1rem 1.3rem;
   }
 }
 @media (max-width: 1280px) {
