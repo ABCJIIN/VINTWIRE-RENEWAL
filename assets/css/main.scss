@@ -717,17 +717,21 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 background: linear-gradient(to bottom, #E8E8FF 0%, #E8E8FF 50%, $white 100%);
                 height: 100%;
                 border-radius: 8rem;
+                overflow: hidden;
                 z-index: -999;
                 @include tablet {border-radius: 1.2rem;}
             }
             .story-inner {
                 @include flexbox (column, flex-start, center);
+                width: calc(100% - 2rem);
+                max-width: 1640px;
+                margin: 0 auto;
                 padding-top: 4.3rem;
                 padding-bottom: 4rem;
                 @include tablet {
                     padding-top: 8rem;
                     padding-bottom: 8rem;
-                    overflow: hidden;
+                    border-radius: 1.2rem;
                 }
                 .icon-wrap {
                     z-index: -10;
@@ -738,20 +742,20 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         z-index: 10;
                         animation:rotate_image 30s linear infinite;
                         img {
-                            width: 15vw;
+                            width: 10vw;
                         }
                     }
                     .icon-double-circle {
                         position:absolute;
-                        top:-10%;
-                        right: 8%;
+                        top:-12%;
+                        right: 11%;
                         z-index:10;
                         @include tablet {
                             left: 5%;
                             top: -1%;
                         }
                         img {
-                            width: 17vw;
+                            width: 13vw;
                             @include tablet {
                                 width: 25vw;
                             }
@@ -761,7 +765,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 #storySlide {
                     width: calc(100% - 6rem);
                     max-width: 1640px;
-                    @include tablet{width: calc(100% - 2rem);}
+                    @include tablet{width: 100%}
                     .category-list {
                         padding-top: 6rem;
                         padding-bottom: 3.2rem;
