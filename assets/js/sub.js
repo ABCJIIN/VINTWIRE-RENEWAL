@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    // INCLUDE 파일 공통요소 불러오는 스크립트
-    $("#header").load("../include/header.html"); // 헤더 INCLUDE  
-    $("#footer").load("../include/footer.html"); // 푸터 INCLUDE
+    // // INCLUDE 파일 공통요소 불러오는 스크립트
+    // $("#header").load("../include/header.html"); // 헤더 INCLUDE  
+    // $("#footer").load("../include/footer.html"); // 푸터 INCLUDE
 
     /* 공통 */
     function init() {
@@ -53,7 +53,7 @@ $(document).ready(function(){
         }))
     }resize();
 
-    // AOS.init({once: true});
+    AOS.init({once: true});
 
     /* about */
     // about 상단 비쥬얼
@@ -158,4 +158,3 @@ $(document).ready(function(){
 
 });
 
-// AOS.init({once: true});
