@@ -158,6 +158,12 @@
             color: transparent;
             -webkit-text-stroke: 1px #C4C4EB;
             white-space: nowrap;
+            cursor: default;
+            transition: all .35s;
+            &:hover{
+                color: $purple;
+                -webkit-text-stroke: 1px $purple;
+            }
             @include tablet {
                 display: flex;
                 flex-direction: column;
@@ -296,7 +302,7 @@
             position: relative;
             // 서브페이지 인트로
             .sec-tit{
-                width: 100%;
+                // width: 100%;
                 text-align: center;
                 > h2{
                     font-family: $panchang;
