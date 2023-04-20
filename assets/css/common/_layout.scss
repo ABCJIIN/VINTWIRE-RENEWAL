@@ -100,11 +100,9 @@
                     text-decoration: none;
                     transition: 0.4s;
                     line-height: 1;
-                    @include tablet {
-                        &:hover {
-                            line-height: 0;
-                            color: $purple;
-                        }
+                    &:hover {
+                        line-height: 0;
+                        color: $purple;
                     }
                     .arr-btn{
                         display: none;
