@@ -224,6 +224,10 @@
                     &.on{
                         .faq-list-tit{
                             &::after{transform: translateY(-50%) rotate(180deg);}
+                            .qa-num{
+                                color: $purple;
+                                -webkit-text-stroke: 1px $purple;
+                            }
                         }
                     }
                 }
@@ -249,6 +253,7 @@
                         color: transparent;
                         font-size: 3.6rem;
                         font-weight: 800;
+                        transition: all .35s;
                         @include tablet{font-size: 2.4rem;}
                     }
                     &::after{

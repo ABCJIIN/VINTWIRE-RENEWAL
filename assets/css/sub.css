@@ -3409,6 +3409,10 @@ button.more-btn.on::before {
   -webkit-transform: translateY(-50%) rotate(180deg);
           transform: translateY(-50%) rotate(180deg);
 }
+#job #container #faq .faq-list > li.on .faq-list-tit .qa-num {
+  color: #6A6AE6;
+  -webkit-text-stroke: 1px #6A6AE6;
+}
 #job #container #faq .faq-list-tit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3449,6 +3453,8 @@ button.more-btn.on::before {
   color: transparent;
   font-size: 3.6rem;
   font-weight: 800;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 @media (max-width: 768px) {
   #job #container #faq .faq-list-tit .qa-num {
