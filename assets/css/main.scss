@@ -395,40 +395,45 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             margin-top: 12rem;
                             @include tablet{margin-top: 4rem;}
                         }
-                        &:nth-child(even){
-                            flex-direction: row-reverse;
-                            @include tablet{flex-direction: column;}
-                            .project-info{
-                                .page-num{
-                                    transform: rotate(-90deg);
-                                    right: 0;
-                                    left: auto;
-                                    @include tablet{
-                                        transform: rotate(0);
-                                        top: 2rem;
-                                        left: auto;
-                                        right: 1.4rem;
-                                    }
-                                }
-                                &-name + div{
-                                    justify-content: flex-end;
-                                    margin-left: auto;
-                                    margin-right: 0;
+                        > a{
+                            width: 100%;
+                            @include flexbox(row, space-between, flex-start);
+                            @include tablet{
+                                position: sticky;
+                                top: 0;
+                                flex-direction: column;
+                            }
+                            > div:not(.project-info-name, .btn-group){
+                                width: calc(100% / 2 - 0.8rem);
+                                height: 48rem;
+                                @include tablet{
+                                    width: 100%;
+                                    height: 39rem;
                                 }
                             }
                         }
-                        @include flexbox(row, space-between, flex-start);
-                        @include tablet{
-                            position: sticky;
-                            top: 0;
-                            flex-direction: column;
-                        }
-                        > div:not(.project-info-name, .btn-group){
-                            width: calc(100% / 2 - 0.8rem);
-                            height: 48rem;
-                            @include tablet{
-                                width: 100%;
-                                height: 39rem;
+                        &:nth-child(even){
+                            > a{
+                                flex-direction: row-reverse;
+                                @include tablet{flex-direction: column;}
+                                .project-info{
+                                    .page-num{
+                                        transform: rotate(-90deg);
+                                        right: 0;
+                                        left: auto;
+                                        @include tablet{
+                                            transform: rotate(0);
+                                            top: 2rem;
+                                            left: auto;
+                                            right: 1.4rem;
+                                        }
+                                    }
+                                    &-name + div{
+                                        justify-content: flex-end;
+                                        margin-left: auto;
+                                        margin-right: 0;
+                                    }
+                                }
                             }
                         }
                         .img-wrap{

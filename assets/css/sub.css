@@ -1849,8 +1849,8 @@ button.more-btn.on::before {
   -webkit-text-stroke: 1px #C4C4EB;
   white-space: nowrap;
   cursor: default;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.85s;
+  transition: all 0.85s;
 }
 #footer .inner .stroke-title:hover {
   color: #6A6AE6;
