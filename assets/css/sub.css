@@ -3149,6 +3149,26 @@ button.more-btn.on::before {
     display: block;
   }
 }
+#story #container #categoryList .category-list .tit-emphasis {
+  padding: 0 3rem;
+}
+@media (max-width: 420px) {
+  #story #container #categoryList .category-list .tit-emphasis {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #story #container #categoryList .category-list .tit-emphasis::before, #story #container #categoryList .category-list .tit-emphasis::after {
+    width: 2rem;
+    height: 1.6rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 420px) {
+  #story #container #categoryList .category-list .tit-emphasis::before, #story #container #categoryList .category-list .tit-emphasis::after {
+    width: 1.5rem;
+    height: 1.2rem;
+  }
+}
 #story #container .date {
   color: #aaa;
   font-size: 2rem;
