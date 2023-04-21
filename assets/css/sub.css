@@ -473,6 +473,14 @@ body .cursor.on {
     width: 100%;
   }
 }
+@keyframes floating {
+  0% {
+    transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    transform: rotate(0) translate(0, 10%);
+  }
+}
 @keyframes upScale {
   0% {
     transform: scaleX(0);
@@ -1104,6 +1112,14 @@ body .cursor.on {
   }
   to {
     width: 100%;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    transform: rotate(0) translate(0, 10%);
   }
 }
 @keyframes upScale {
