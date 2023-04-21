@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UI,UX,웹디자인,APP">
+    <meta name="description" content="(주)빈트와이어는 UI/UX 분야에 오랜 기간 동안 종사한 전문가 그룹입니다. 온/오프라인 디지털 기반의 산업, 기술, 문화, 마케팅에 대한 다양한 지식과 통찰력을 갖추고 있습니다. 디지털 커뮤니케이션을 위한 웹, 모바일 사이트 및 어플리케이션(APP)의 전략수립과 디자인, 개발까지 그리고 온 오프라인 마케팅 &amp; 프로모션까지 디지털서비스의 모든 경험을 구현하는 Digital Media기반 Consulting 기업입니다.">
+    <meta property="og:url" content="http://www.vintwire.com/"/> <!--공유링크-->
+    <meta property="og:title" content="디지털 서비스의 모든 경험을 구현하는 빈트와이어" /><!--타이틀-->
+    <meta property="og:description" content=" "/> <!--설명문구-->
+    <meta property="og:image" content="../../../assets/images/thumbnail.jpg"/> <!--썸네일-->
+    <title>빈트와이어</title>
+    <link rel="icon" href="../../../assets/images/favicon-16x16.png" sizes="16x16"> 
+    <link rel="icon" href="../../../assets/images/favicon-32x32.png" sizes="32x32"> 
+    <link rel="icon" href="../../../assets/images/favicon-48x48.png" sizes="48x48"> 
+    <!-- CDN -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 로컬 소스 -->
+    <link href="../../../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../../../assets/css/reset.css" rel="stylesheet">
+    <link href="../../../assets/css/font.css" rel="stylesheet">
+    <link href="../../../assets/css/sub.css" rel="stylesheet">
+    <script src="../../../assets/js/sub.js"></script>
+</head>
+<body>
+    <div id="story" class="wrap">
+        <header id="header"></header>
+        <div id="container">
+            <section id="intro">
+                <div class="intro-bg">서브페이지 bg입니다</div>
+                <div class="intro-tit con-box animate__animated animate__fadeIn">
+                    <h2>story</h2>
+                    <p>
+                        빈트와이어의 프로젝트와 일상에 대한 <br>이야기를 담았습니다
+                    </p>
+                </div>
+            </section>
+            <section id="categoryList">
+                <ul class="category-list con-box">
+                    <li class="animate__animated animate__fadeInUp ani-delay01">
+                        <a href="story_jinny.html" class="jinny">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_jinny.png" alt="jinny story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">개발</li>
+                                        <li class="tag-item">주말</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">주말을 알차게<br>보내는 방법</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member jinny">J</span>
+                                    <span class="writer jinny">Jinny</span>
+                                </div>
+                                <span class="date">2023-04-18</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay01">
+                        <a href="story_woody.html" class="woody">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_woody.png" alt="woody story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">기획</li>
+                                        <li class="tag-item">일상</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">든든한 아침🥪</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member woody">W</span>
+                                    <span class="writer woody">Woody</span>
+                                </div>
+                                <span class="date">2023-04-12</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay02">
+                        <a href="story_milky.html" class="milky">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_milky.png" alt="milky story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">개발</li>
+                                        <li class="tag-item">꿀팁정보</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">맛집 탐방 일지</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member milky">M</span>
+                                    <span class="writer milky">Milky</span>
+                                </div>
+                                <span class="date">2023-03-24</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay03">
+                        <a href="story_felix.html" class="felix">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_felix.png" alt="felix story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">디자인</li>
+                                        <li class="tag-item">종무식</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">펠릭스의<br>홀로서기</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member felix">F</span>
+                                    <span class="writer felix">Felix</span>
+                                </div>
+                                <span class="date">2023-03-20</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay04">
+                        <a href="story_jason.html" class="jason">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_jason.png" alt="jason story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">개발</li>
+                                        <li class="tag-item">여행</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">힘들고 지치면<br>여행을 떠나봐요🛩️</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member jason">J</span>
+                                    <span class="writer jason">Jason</span>
+                                </div>
+                                <span class="date">2022-09-30</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay05">
+                        <a href="story_noah.html" class="noah">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_noah.png" alt="noah story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">개발</li>
+                                        <li class="tag-item">일상</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">커뮤니케이션</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member noah">N</span>
+                                    <span class="writer noah">Noah</span>
+                                </div>
+                                <span class="date">2022-06-24</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay06">
+                        <a href="story_sophia.html" class="sophia">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_sophia.png" alt="sophia story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">디자인</li>
+                                        <li class="tag-item">일상</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">소피아의<br>스트레스 해소법🤯</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member sophia">S</span>
+                                    <span class="writer sophia">Sophia</span>
+                                </div>
+                                <span class="date">2022-03-25</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay07">
+                        <a href="story_summer.html" class="summer">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_summer.png" alt="summer story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">디자인</li>
+                                        <li class="tag-item">회식</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">즐거운<br>토마호크와 맛있는 회식</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member summer">S</span>
+                                    <span class="writer summer">Summer</span>
+                                </div>
+                                <span class="date">2022-01-14</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay08">
+                        <a href="story_steven.html" class="steven">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_steven.png" alt="steven story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">기획</li>
+                                        <li class="tag-item">일상</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">검암동<br>오뎅 아저씨</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member steven">S</span>
+                                    <span class="writer steven">Steven</span>
+                                </div>
+                                <span class="date">2021-10-28</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate__animated animate__fadeInUp ani-delay08">
+                        <a href="story_jane.html" class="jane">
+                            <div class="preview-img">
+                                <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_jane.png" alt="jane story" />
+                                <div class="preview-info">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">기획</li>
+                                        <li class="tag-item">행사</li>
+                                    </ul>
+                                    <strong class="story-tit tit-emphasis">처음 애플워치<br>차게 된 날</strong>
+                                </div>
+                            </div>
+                            <div class="flex-wrap">
+                                <div class="members-wrap">
+                                    <span class="icon-member jane">J</span>
+                                    <span class="writer jane">Jane</span>
+                                </div>
+                                <span class="date">2021-03-26</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
