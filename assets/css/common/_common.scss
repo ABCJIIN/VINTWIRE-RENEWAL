@@ -163,7 +163,6 @@ body{
         pointer-events: none;
         z-index: 9999;
         display: none;
-        // transition: all .1s;
         @include background(icon, rainbow_ddong_star, png, no-repeat, contain, center, center);
         &.on{display: block;}
     }
@@ -304,27 +303,19 @@ body{
     to{width: 100%;}
 }
 
-// @keyframes projects_left {
-//     from {left: -50%;}
-//     to {left: 0;}
-// }
+@keyframes scroll_ani {
+    from {transform: translateY(0);}
+    to {transform: translateY(1rem);}
+}
 
 @keyframes upScale {
-    0% {
-        transform:scaleX(0)
-    }
-    100% {
-        transform:scaleX(1)
-    }
+    0% {transform:scaleX(0)}
+    100% {transform:scaleX(1)}
 }
 
 @keyframes upScaleMb {
-    0% {
-        transform:scaleY(0)
-    }
-    100% {
-        transform:scaleY(1)
-    }
+    0% {transform:scaleY(0)}
+    100% {transform:scaleY(1)}
 }
 
 /* 공통 아이템 */
