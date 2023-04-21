@@ -2697,21 +2697,22 @@ body.fixed {
     gap: 1.2rem;
   }
 }
-#main #container #find .find-inner ul .introduce {
+#main #container #find .find-inner ul .purple-box {
   position: relative;
   width: 33.3333333333%;
   height: 51.5rem;
+  padding: 4rem 2.4rem 4.2rem;
 }
-#main #container #find .find-inner ul .introduce:hover {
+#main #container #find .find-inner ul .purple-box:hover {
   box-shadow: 0 0 2rem rgba(106, 106, 230, 0.8);
   border: solid 1px rgba(106, 106, 230, 0.3);
   transition: 0.2s ease-out;
 }
-#main #container #find .find-inner ul .introduce:not(:hover) {
+#main #container #find .find-inner ul .purple-box:not(:hover) {
   transition: 0.2s ease-out;
 }
 @media (max-width: 768px) {
-  #main #container #find .find-inner ul .introduce {
+  #main #container #find .find-inner ul .purple-box {
     width: 100%;
     min-width: 314px;
     height: 16rem;
@@ -2719,20 +2720,19 @@ body.fixed {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 3.2rem 1.2rem 3.2rem 1.5rem;
   }
 }
-#main #container #find .find-inner ul .introduce .introduce-inner {
+#main #container #find .find-inner ul .purple-box .introduce-inner {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 4rem 2.4rem;
   height: 100%;
 }
 @media (max-width: 768px) {
-  #main #container #find .find-inner ul .introduce .introduce-inner {
-    padding: 0 1.5rem;
+  #main #container #find .find-inner ul .purple-box .introduce-inner {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -2740,31 +2740,31 @@ body.fixed {
     align-items: center;
   }
 }
-#main #container #find .find-inner ul .introduce .introduce-inner .text-wrap {
+#main #container #find .find-inner ul .purple-box .introduce-inner .text-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 768px) {
-  #main #container #find .find-inner ul .introduce .introduce-inner .text-wrap {
+  #main #container #find .find-inner ul .purple-box .introduce-inner .text-wrap {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
 }
-#main #container #find .find-inner ul .introduce .introduce-inner .text-wrap .tag-item {
+#main #container #find .find-inner ul .purple-box .introduce-inner .text-wrap .tag-item {
   font-family: "Pretendard";
   font-size: 1.4rem;
   border: none;
 }
 @media (max-width: 768px) {
-  #main #container #find .find-inner ul .introduce .introduce-inner .text-wrap .tag-item {
+  #main #container #find .find-inner ul .purple-box .introduce-inner .text-wrap .tag-item {
     padding: 0.8rem 0.9rem;
   }
 }
-#main #container #find .find-inner ul .introduce .introduce-inner .text-wrap p {
+#main #container #find .find-inner ul .purple-box .introduce-inner .text-wrap p {
   font-family: "Pretendard";
   font-size: 2.4rem;
   font-weight: 700;
@@ -2775,31 +2775,58 @@ body.fixed {
   word-break: keep-all;
 }
 @media (max-width: 768px) {
-  #main #container #find .find-inner ul .introduce .introduce-inner .text-wrap p {
+  #main #container #find .find-inner ul .purple-box .introduce-inner .text-wrap p {
     font-size: 1.4rem;
     line-height: 2.2rem;
     text-align: left;
     padding-top: 1rem;
   }
 }
-#main #container #find .find-inner ul .introduce .introduce-inner .img-wrap {
-  position: absolute;
-  bottom: 4.3rem;
-  width: 60%;
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
-  #main #container #find .find-inner ul .introduce .introduce-inner .img-wrap {
-    right: 0;
-    bottom: 1rem;
-    height: 10rem;
-    width: 35%;
+  #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
-#main #container #find .find-inner ul .introduce .introduce-inner .img-wrap img {
-  width: 100%;
-  height: 100%;
+@media (max-width: 768px) {
+  #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img {
+    width: 50%;
+  }
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(1) {
+  position: relative;
+  width: 40%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(2) {
+  position: absolute;
+  width: 17%;
+  top: 20%;
+  right: 22%;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(3) {
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  left: 22%;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(4) {
+  position: absolute;
+  width: 14%;
+  bottom: 0;
+  right: 22%;
 }
 #main #container #find .find-inner .btn-wrap {
   display: flex;

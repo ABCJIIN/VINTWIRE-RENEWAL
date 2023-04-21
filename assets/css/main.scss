@@ -619,10 +619,11 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         padding: 3.8rem 0 2.4rem 0;
                         gap: 1.2rem;
                     }
-                    .introduce {
+                    .purple-box {
                         position: relative;
                         width: calc(100% / 3);
                         height: 51.5rem;
+                        padding: 4rem 2.4rem 4.2rem;
                         &:hover {
                             box-shadow: 0 0 2rem rgba(106, 106, 230, 0.8);
                             border: solid 1px rgba(106, 106, 230, 0.3);
@@ -636,14 +637,15 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             min-width: 314px;
                             height: 16rem;
                             @include flexbox (row, center, center);
+                            padding: 3.2rem 1.2rem 3.2rem 1.5rem;
+
                         }
                         .introduce-inner {
                             position: relative;
-                            @include flexbox (column, flex-start, center);
-                            padding: 4rem 2.4rem;
+                            @include flexbox (column, space-between, center);
                             height: 100%;
                             @include tablet {
-                                padding: 0 1.5rem;
+                                // padding: 0 1.5rem;
                                 width: 100%;
                                 @include flexbox (row, space-between, center);
                             }
@@ -678,19 +680,49 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                 }
                             }
                             .img-wrap {
-                                position: absolute;
-                                bottom: 4.3rem;
-                                width: 60%;
+                                position: relative;
+                                // position: absolute;
+                                // bottom: 0;
+                                // width: 60%;
+                                width: 100%;
+                                @include flexbox (row, center, center);
                                 @include tablet {
-                                    right: 0;
-                                    bottom: 1rem;
-                                    height: 10rem;
-                                    width: 35%;
+                                    width: 60%;
+                                    @include flexbox (row, flex-end, center);
                                 }
+                                // @include tablet {
+                                //     // right: 0;
+                                //     // bottom: 1rem;
+                                //     // height: 10rem;
+                                //     width: 20%;
+                                // }
                                 img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: contain;
+                                    @include tablet {
+                                        width: 50%;
+                                    }
+                                    &:nth-child(1) {
+                                        position: relative;
+                                        width: 40%;
+                                        object-fit: contain;
+                                    }
+                                    &:nth-child(2) {
+                                        position: absolute;
+                                        width: 17%;
+                                        top: 20%;
+                                        right: 22%;
+                                    }
+                                    &:nth-child(3) {
+                                        position: absolute;
+                                        width: 20%;
+                                        top: 40%;
+                                        left: 22%;
+                                    }
+                                    &:nth-child(4) {
+                                        position: absolute;
+                                        width: 14%;
+                                        bottom: 0;
+                                        right: 22%;
+                                    }
                                 }
                             }
                         }
