@@ -2263,7 +2263,7 @@ body.fixed {
   transform: scale(0);
   animation: rotate_image 30s linear infinite reverse;
   position: absolute;
-  bottom: 6.5rem;
+  bottom: 8rem;
   left: -2rem;
   z-index: -1;
   background-image: url(../../assets/images/common/icon_smile_yellow.svg);
