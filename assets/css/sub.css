@@ -683,6 +683,24 @@ body .cursor.on {
             transform: translateY(1rem);
   }
 }
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+            transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+            transform: rotate(0) translate(0, 10%);
+  }
+}
 @-webkit-keyframes upScale {
   0% {
     -webkit-transform: scaleX(0);
@@ -1528,6 +1546,24 @@ body .cursor.on {
   to {
     -webkit-transform: translateY(1rem);
             transform: translateY(1rem);
+  }
+}
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+            transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+            transform: rotate(0) translate(0, 10%);
   }
 }
 @keyframes upScale {
@@ -3109,8 +3145,10 @@ button.more-btn.on::before {
   color: #222;
 }
 
-#job #container #vintTeam .con-box {
-  width: 100%;
+@media (max-width: 768px) {
+  #job #container #vintTeam .con-box {
+    width: 100%;
+  }
 }
 #job #container #vintTeam #teamSwiper {
   width: 100%;
@@ -3126,7 +3164,7 @@ button.more-btn.on::before {
 }
 @media (max-width: 768px) {
   #job #container #vintTeam #teamSwiper .swiper-slide {
-    min-height: 31.4rem;
+    min-height: 37.2rem;
   }
 }
 #job #container #vintTeam #teamSwiper .swiper-slide .character {
@@ -3752,24 +3790,20 @@ button.more-btn.on::before {
   content: "VINTWIRE PROJECT";
   font-family: "Panchang";
   display: block;
-  font-size: 6.5vw;
+  font-size: 6.2vw;
   font-weight: bold;
   -webkit-text-stroke: 1px rgba(34, 34, 34, 0.2);
   color: transparent;
   white-space: nowrap;
   position: absolute;
-  bottom: -4rem;
-  left: 5%;
+  bottom: -3.5rem;
+  right: 0;
 }
 @media (max-width: 768px) {
   #project #intro::after {
+    font-size: 6.7vw;
     bottom: 0;
-    left: -1rem;
-  }
-}
-@media (max-width: 420px) {
-  #project #intro::after {
-    font-size: 2.6rem;
+    right: -1.2vw;
   }
 }
 #project #projectList {

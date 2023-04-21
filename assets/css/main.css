@@ -683,6 +683,24 @@ body .cursor.on {
             transform: translateY(1rem);
   }
 }
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+            transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+            transform: rotate(0) translate(0, 10%);
+  }
+}
 @-webkit-keyframes upScale {
   0% {
     -webkit-transform: scaleX(0);
@@ -1528,6 +1546,24 @@ body .cursor.on {
   to {
     -webkit-transform: translateY(1rem);
             transform: translateY(1rem);
+  }
+}
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: rotate(0) translate(0, -10%);
+            transform: rotate(0) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translate(0, 10%);
+            transform: rotate(0) translate(0, 10%);
   }
 }
 @keyframes upScale {
@@ -2894,7 +2930,7 @@ body.fixed {
           transform: scale(0);
   animation: rotate_image 30s linear infinite reverse;
   position: absolute;
-  bottom: 6.5rem;
+  bottom: 8rem;
   left: -2rem;
   z-index: -1;
   background-image: url(../../assets/images/common/icon_smile_yellow.svg);
@@ -3451,12 +3487,9 @@ body.fixed {
   height: 51.5rem;
   padding: 4rem 2.4rem 4.2rem;
 }
-#main #container #find .find-inner ul .purple-box:hover {
-  -webkit-box-shadow: 0 0 2rem rgba(106, 106, 230, 0.8);
-          box-shadow: 0 0 2rem rgba(106, 106, 230, 0.8);
-  border: solid 1px rgba(106, 106, 230, 0.3);
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
+#main #container #find .find-inner ul .purple-box:hover img:nth-child(2), #main #container #find .find-inner ul .purple-box:hover img:nth-child(3), #main #container #find .find-inner ul .purple-box:hover img:nth-child(4) {
+  -webkit-animation: none !important;
+          animation: none !important;
 }
 #main #container #find .find-inner ul .purple-box:not(:hover) {
   -webkit-transition: 0.2s ease-out;
@@ -3597,7 +3630,7 @@ body.fixed {
 }
 @media (max-width: 768px) {
   #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap {
-    width: 60%;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3613,34 +3646,103 @@ body.fixed {
             align-items: center;
   }
 }
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img {
+  z-index: 10;
+}
 @media (max-width: 768px) {
   #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img {
-    width: 50%;
+    width: 100%;
+    max-width: 11rem;
   }
 }
 #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(1) {
   position: relative;
-  width: 40%;
+  width: 35%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(2) {
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-plan:hover img:nth-child(2), #main #container #find .find-inner ul .purple-box .introduce-inner .img-plan:hover img:nth-child(3), #main #container #find .find-inner ul .purple-box .introduce-inner .img-plan:hover img:nth-child(4) {
+  -webkit-animation: none !important;
+          animation: none !important;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-plan img:nth-child(2) {
+  position: absolute;
+  width: 10%;
+  top: 5%;
+  left: 28%;
+  -webkit-animation: floating 1s ease-in-out infinite alternate;
+  animation: floating 1s ease-in-out infinite alternate;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-plan img:nth-child(3) {
+  z-index: 5;
+  position: absolute;
+  width: 15%;
+  top: 10%;
+  right: 27%;
+  -webkit-animation: floating 1.5s ease-in-out infinite alternate;
+  animation: floating 1.5s ease-in-out infinite alternate;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-plan img:nth-child(4) {
+  position: absolute;
+  width: 11%;
+  bottom: 10%;
+  left: 25%;
+  -webkit-animation: floating 1.2s ease-in-out infinite alternate;
+  animation: floating 1.2s ease-in-out infinite alternate;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-design:hover img:nth-child(2), #main #container #find .find-inner ul .purple-box .introduce-inner .img-design:hover img:nth-child(3), #main #container #find .find-inner ul .purple-box .introduce-inner .img-design:hover img:nth-child(4) {
+  -webkit-animation: none !important;
+          animation: none !important;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-design img:nth-child(2) {
+  z-index: 5;
   position: absolute;
   width: 17%;
   top: 20%;
-  right: 22%;
+  right: 24%;
+  -webkit-animation: floating 1s ease-in-out infinite alternate;
+  animation: floating 1s ease-in-out infinite alternate;
 }
-#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(3) {
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-design img:nth-child(3) {
   position: absolute;
   width: 20%;
   top: 40%;
   left: 22%;
+  -webkit-animation: floating 1.5s ease-in-out infinite alternate;
+  animation: floating 1.5s ease-in-out infinite alternate;
 }
-#main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(4) {
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-design img:nth-child(4) {
   position: absolute;
   width: 14%;
   bottom: 0;
   right: 22%;
+  -webkit-animation: floating 1.2s ease-in-out infinite alternate;
+  animation: floating 1.2s ease-in-out infinite alternate;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-dev img:nth-child(2) {
+  position: absolute;
+  width: 14%;
+  top: 5%;
+  left: 25%;
+  -webkit-animation: floating 1.2s ease-in-out infinite alternate;
+  animation: floating 1.2s ease-in-out infinite alternate;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-dev img:nth-child(3) {
+  z-index: 5;
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  left: 25%;
+  -webkit-animation: floating 1.5s ease-in-out infinite alternate;
+  animation: floating 1.5s ease-in-out infinite alternate;
+}
+#main #container #find .find-inner ul .purple-box .introduce-inner .img-dev img:nth-child(4) {
+  position: absolute;
+  width: 12%;
+  bottom: 10%;
+  right: 25%;
+  -webkit-animation: floating 1s ease-in-out infinite alternate;
+  animation: floating 1s ease-in-out infinite alternate;
 }
 #main #container #find .find-inner .btn-wrap {
   display: -webkit-box;

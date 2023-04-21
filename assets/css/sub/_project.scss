@@ -5,19 +5,19 @@
             content: 'VINTWIRE PROJECT';
             font-family: $panchang;
             display: block;
-            font-size: 6.5vw;
+            font-size: 6.2vw;
             font-weight: bold;
             -webkit-text-stroke: 1px rgba($black, 0.2);
             color: transparent;
             white-space: nowrap;
             position: absolute;
-            bottom: -4rem;
-            left: 5%;
+            bottom: -3.5rem;
+            right: 0;
             @include tablet{
+                font-size: 6.7vw;
                 bottom: 0;
-                left: -1rem;
+                right: -1.2vw;
             }
-            @include mobile{font-size: 2.6rem;}
         }
     }
     #projectList{
