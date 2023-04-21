@@ -2976,6 +2976,18 @@ button.more-btn.on::before {
   height: 100%;
   position: relative;
 }
+#about #container #member .member-wrap .member-list > li > a[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 8rem;
+  font-weight: bold;
+  text-align: right;
+  color: #222;
+  z-index: 10;
+}
 #about #container #member .member-wrap .member-list > li > a > div:first-child {
   position: relative;
 }
