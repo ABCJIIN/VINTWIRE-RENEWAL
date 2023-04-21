@@ -523,4 +523,33 @@
             }
         }
     }
+    #contents {
+        .contents-inner {
+            @include flexbox (column, center, center);
+            .img-wrap {
+                width: calc(100% - 8rem);
+                margin: 0 auto;
+                max-width: 1640px;
+                img {
+                    width: 100%;
+                }
+            }
+            .progress-img {
+                padding-top: 12rem;
+                padding-bottom: 7.7rem;
+            }
+            .screen-img {
+                width: 100%;
+                max-width: 100%;
+            }
+            .btn-wrap {
+                padding-top: 7.1rem;
+                width: 100%;
+                text-align: center;
+                button {
+                    max-width: 24rem;
+                }
+            }
+        }
+    }
 }
