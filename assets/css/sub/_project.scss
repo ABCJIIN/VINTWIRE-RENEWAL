@@ -311,6 +311,9 @@
     &.kita{
         .project-info-bg{@include background(sub/project/details, project_sub_kita, png, no-repeat, cover, center, center);}
     }
+    &.orange-gre {
+        .project-info-bg{@include background(sub/project/details, project_sub_orange_gre, png, no-repeat, cover, center, center);}
+    }
     #projectInfo{
         margin-top: 14rem;
         padding: 17rem 0 3.6rem; 
@@ -549,6 +552,18 @@
                 button {
                     max-width: 24rem;
                 }
+            }
+            .keypoint-img {
+                padding-top: 18.3rem;
+                padding-bottom: 8rem;
+            }
+            .light_mode-img {
+                width: 100%;
+                max-width: 100%;
+            }
+            .dark_mode-img {
+                width: 100%;
+                max-width: 100%;
             }
         }
     }

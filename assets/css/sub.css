@@ -3242,6 +3242,12 @@ button.more-btn.on::before {
   background-size: cover;
   background-position: center center;
 }
+#projectDetails.orange-gre .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/project_sub_orange_gre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 #projectDetails #projectInfo {
   margin-top: 14rem;
   padding: 17rem 0 3.6rem;
@@ -3557,6 +3563,18 @@ button.more-btn.on::before {
 }
 #projectDetails #contents .contents-inner .btn-wrap button {
   max-width: 24rem;
+}
+#projectDetails #contents .contents-inner .keypoint-img {
+  padding-top: 18.3rem;
+  padding-bottom: 8rem;
+}
+#projectDetails #contents .contents-inner .light_mode-img {
+  width: 100%;
+  max-width: 100%;
+}
+#projectDetails #contents .contents-inner .dark_mode-img {
+  width: 100%;
+  max-width: 100%;
 }
 
 #story #container #categoryList .category-list .tit-emphasis {
