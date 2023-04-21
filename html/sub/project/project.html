@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UI,UX,웹디자인,APP">
+    <meta name="description" content="(주)빈트와이어는 UI/UX 분야에 오랜 기간 동안 종사한 전문가 그룹입니다. 온/오프라인 디지털 기반의 산업, 기술, 문화, 마케팅에 대한 다양한 지식과 통찰력을 갖추고 있습니다. 디지털 커뮤니케이션을 위한 웹, 모바일 사이트 및 어플리케이션(APP)의 전략수립과 디자인, 개발까지 그리고 온 오프라인 마케팅 &amp; 프로모션까지 디지털서비스의 모든 경험을 구현하는 Digital Media기반 Consulting 기업입니다.">
+    <meta property="og:url" content="http://www.vintwire.com/"/> <!--공유링크-->
+    <meta property="og:title" content="디지털 서비스의 모든 경험을 구현하는 빈트와이어" /><!--타이틀-->
+    <meta property="og:description" content=" "/> <!--설명문구-->
+    <meta property="og:image" content="../../../assets/images/thumbnail.jpg"/> <!--썸네일-->
+    <title>빈트와이어</title>
+    <link rel="icon" href="../../../assets/images/favicon-16x16.png" sizes="16x16"> 
+    <link rel="icon" href="../../../assets/images/favicon-32x32.png" sizes="32x32"> 
+    <link rel="icon" href="../../../assets/images/favicon-48x48.png" sizes="48x48"> 
+    <!-- CDN -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 로컬 소스 -->
+    <link href="../../../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../../../assets/css/reset.css" rel="stylesheet">
+    <link href="../../../assets/css/font.css" rel="stylesheet">
+    <link href="../../../assets/css/sub.css" rel="stylesheet">
+    <script src="../../../assets/js/sub.js"></script>
+</head>
+<body>
+    <div id="project" class="wrap">
+        <header id="header"></header>
+        <div id="container">
+            <section id="intro">
+                <div class="intro-bg">서브페이지 bg입니다</div>
+                <div class="intro-tit con-box animate__animated animate__fadeIn">
+                    <h2>project</h2>
+                    <p>
+                        사용자를 위한 디지털 공간을 디자인합니다<br class="d-pc">
+                        <span class="d-pc">Design a digital space for you</span>
+                    </p>
+                </div>
+            </section>
+            <section id="projectList">
+                <div class="con-box">
+                    <ul class="project-list type01">
+                        <li class="border-blunt" data-aos="fade-left">
+                            <a href="https://www.kita.net/" title="한국무역협회" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list01.png" alt="한국무역협회" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list01.png" alt="한국무역협회" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>한국무역협회</strong>
+                                            <p>UX 컨설팅</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="border-blunt" data-aos="fade-left" data-aos-mobile="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <a href="https://membership.kita.net/ " title="무역지원서비스" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list02.png" alt="무역지원서비스" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list02.png" alt="무역지원서비스" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>무역지원서비스</strong>
+                                            <p>UX 컨설팅</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project-txt txt-right" data-aos="fade-up" data-aos-mobile="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="txt-wrap">
+                                    <strong>Invaluable</strong>
+                                    <p>반복과 검증을 바탕으로 <br>브랜드의 가치를 전달합니다</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="project-list type02">
+                        <li class="project-txt txt-left" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="txt-wrap">
+                                    <strong>Optimized</strong>
+                                    <p>사용자 중심 프로세스를 통해 <br>최적의 디지털 경험을 제공합니다</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-duration="1000">
+                            <a href="https://aerospace.koreanair.com/main/en" title="대한항공 항공우주사업본부" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list03.png" alt="대한항공 항공우주사업본부" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list03.png" alt="대한항공 항공우주사업본부" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>대한항공 <br>항공우주사업본부</strong>
+                                            <p>기획 / 디자인 / 퍼블리싱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="border-blunt" data-aos="fade-right" data-aos-mobile="fade-up" data-aos-duration="1000">
+                            <a href="http://service.hyundai-robotics.com/" title="현대로보틱스" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list04.png" alt="현대로보틱스" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list04.png" alt="현대로보틱스" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>현대로보틱스</strong>
+                                            <p>기획 / 디자인 / 퍼블리싱 / 개발</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="project-list type03">
+                        <li data-aos="fade-left" data-aos-mobile="fade-up"  data-aos-duration="1000">
+                            <a href="https://www.lge.co.kr/story/trend/ice-water-purifier-refrigerator" title="LG전자 스토리콘텐츠" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list05.png" alt="LG전자 스토리콘텐츠" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list05.png" alt="LG전자 스토리콘텐츠" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>LG전자 스토리콘텐츠</strong>
+                                            <p>기획 / 디자인 / 퍼블리싱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-mobile="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <a href="javascript:void(0)">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list06.png" alt="농협생명수련원" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list06.png" alt="농협생명수련원" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>농협생명수련원</strong>
+                                            <p>기획 / 디자인 / 퍼블리싱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-mobile="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <a href="https://www.nhbank.com/nhmn/KO_NHMN_01.do" title="농협은행" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list07.png" alt="농협은행" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list07.png" alt="농협은행" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>농협은행</strong>
+                                            <p>기획 / 디자인 / 퍼블리싱 / 개발</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-mobile="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                            <a href="https://www.dauning.com/main/index.php?&utm_source=google&utm_medium=google-sa&utm_campaign=dauning10&utm_term=22-10-7&utm_content=sa10&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDWq_BN-HKMCiBPa_5icHqTAy9W8GE9qUePFIyFD-k0YszHxWzuWTWhoCa4cQAvD_BwE" title="다우닝" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list08.png" alt="다우닝" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list08.png" alt="다우닝" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>다우닝</strong>
+                                            <p>기획 / 디자인 / 퍼블리싱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="project-list type01">
+                        <li class="border-blunt" data-aos="fade-left" data-aos-mobile="fade-up" data-aos-duration="1000">
+                            <a href="https://www.powderroom.co.kr/home/today/" title="파우더 룸" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list09.png" alt="파우더룸" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list09.png" alt="파우더룸" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">APP</span>
+                                        <div class="project-info">
+                                            <strong>파우더룸</strong>
+                                            <p>디자인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-mobile="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list10.png" alt="베네타" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list10.png" alt="베네타" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">PC / Mobile</span>
+                                    <div class="project-info">
+                                        <strong>베네타</strong>
+                                        <p>디자인 / 퍼블리싱</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project-txt txt-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <div class="inner">
+                                <div class="txt-wrap">
+                                    <strong>Innovative</strong>
+                                    <p>더 나은 사용자 경험의 혁신을 위한 <br>방향겅을 제시합니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="project-list type01">
+                        <li class="border-blunt" data-aos="fade-left" data-aos-duration="1000">
+                            <a href="https://www.oda.go.kr/opo/nmasc/main.do" title="KOICA" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list11.png" alt="KOICA" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list11.png" alt="KOICA" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>KOICA</strong>
+                                            <p>디자인 / 퍼블리싱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list12.png" alt="현대건설기계" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list12.png" alt="현대건설기계" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">PC / Mobile</span>
+                                    <div class="project-info">
+                                        <strong>현대건설기계</strong>
+                                        <p>기획 / 디자인 / 퍼블리싱</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="empty">
+
+                        </li>
+                    </ul>
+                    <ul class="project-list type02">
+                        <li class="empty">
+                            
+                        </li>
+                        <li data-aos="fade-right" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list13.png" alt="하나1Q UI 개발" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list13.png" alt="하나1Q UI 개발" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">APP</span>
+                                    <div class="project-info">
+                                        <strong>하나1Q UI 개발</strong>
+                                        <p>퍼블리싱</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-blunt"  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list14.png" alt="하이투자증권 MTS" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list14.png" alt="하이투자증권 MTS" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">APP</span>
+                                    <div class="project-info">
+                                        <strong>하이투자증권 MTS</strong>
+                                        <p>기획</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="project-list type03">
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list15.png" alt="LG유플러스 전송망" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list15.png" alt="LG유플러스 전송망" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">PC</span>
+                                    <div class="project-info">
+                                        <strong>LG유플러스 전송망</strong>
+                                        <p>디자인 / 퍼블리싱</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <a href="https://www.mzzin.com/" title="마켓찐" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list16.png" alt="마켓찐" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list16.png" alt="마켓찐" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC</span>
+                                        <div class="project-info">
+                                            <strong>마켓찐</strong>
+                                            <p>기획 / 디자인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list17.png" alt="전자지갑 민원서비스 앱" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list17.png" alt="전자지갑 민원서비스 앱" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">APP</span>
+                                    <div class="project-info">
+                                        <strong>전자지갑 <br>민원서비스 앱</strong>
+                                        <p>개발</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list18.png" alt="국민은행 마이데이터" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list18.png" alt="국민은행 마이데이터" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">OTHER</span>
+                                    <div class="project-info">
+                                        <strong>국민은행 <br>마이데이터</strong>
+                                        <p>개발</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="project-list type01">
+                        <li class="border-blunt" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list19.png" alt="현대오토에버" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list19.png" alt="현대오토에버" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">PC / Mobile</span>
+                                    <div class="project-info">
+                                        <strong>현대오토에버</strong>
+                                        <p>디자인 / 퍼블리싱 / 개발</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-blunt" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list20.png" alt="롯데카드" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list20.png" alt="롯데카드" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">PC</span>
+                                    <div class="project-info">
+                                        <strong>롯데카드</strong>
+                                        <p>개발</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="empty">
+                            
+                        </li>
+                    </ul>
+                    <ul class="project-list type02">
+                        <li class="empty">
+                            
+                        </li>
+                        <li data-aos="fade-right" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list21.png" alt="행안부 모바일 신분증 앱" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list21.png" alt="행안부 모바일 신분증 앱" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">PC</span>
+                                    <div class="project-info">
+                                        <strong>행안부 <br>모바일 신분증 앱</strong>
+                                        <p>기획 / 디자인</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-blunt" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list22.png" alt="경상남도 전자지갑 앱" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list22.png" alt="경상남도 전자지갑 앱" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">OTHER</span>
+                                    <div class="project-info">
+                                        <strong>경상잠도 전자지갑 앱</strong>
+                                        <p>영상제작</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="project-list type03">
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-duration="1000">
+                            <a href="https://www.kyungnam.ac.kr/sites/ko/index.do" title="경남대학교 홈페이지" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list23.png" alt="경남대학교 홈페이지" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list23.png" alt="경남대학교 홈페이지" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>경남대학교 홈<br>페이지</strong>
+                                            <p>기획 / 디자인 / 퍼블리싱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list24.png" alt="스마트워치APP" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list24.png" alt="스마트워치APP" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">APP</span>
+                                    <div class="project-info">
+                                        <strong>스마트워치APP</strong>
+                                        <p>개발</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <div class="inner">
+                                <div class="img-wrap">
+                                    <img src="../../../assets/images/sub/project/pc/project-list25.png" alt="멀티클라우드 통합관리솔루션" class="pc-show">
+                                    <img src="../../../assets/images/sub/project/m/project-list25.png" alt="멀티클라우드 통합관리솔루션" class="m-show">
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="label">PC</span>
+                                    <div class="project-info">
+                                        <strong>멀티클라우드 <br>통합관리솔루션</strong>
+                                        <p>개발</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-mobile="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                            <a href="https://www.cocktailcloud.io/" title="아콘소프트 칵테일 클라우드 솔루션" target="_blank">
+                                <div class="inner">
+                                    <div class="img-wrap">
+                                        <img src="../../../assets/images/sub/project/pc/project-list26.png" alt="아콘소프트 칵테일 클라우드 솔루션" class="pc-show">
+                                        <img src="../../../assets/images/sub/project/m/project-list26.png" alt="아콘소프트 칵테일 클라우드 솔루션" class="m-show">
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <span class="label">PC / Mobile</span>
+                                        <div class="project-info">
+                                            <strong>아콘소프트 칵테일 <br>클라우드 솔루션</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
