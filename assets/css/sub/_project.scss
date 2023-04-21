@@ -112,11 +112,17 @@
                                 opacity: 0;
                                 transition: opacity 0.3s;
                             }
+                            > strong {
+                                font-family: $panchang;
+                            }
                             strong {
                                 font-size: 3.6rem;
                                 font-weight: 700;
                                 line-height: 1.334;
                                 transition: all 0.3s;
+                            }
+                            p {
+                                font-family: $pretendard;
                             }
                         }
                     }

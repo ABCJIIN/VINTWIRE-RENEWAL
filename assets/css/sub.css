@@ -3922,12 +3922,18 @@ button.more-btn.on::before {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
+#project #projectList .con-box .project-list li .inner .txt-wrap > strong {
+  font-family: "Panchang";
+}
 #project #projectList .con-box .project-list li .inner .txt-wrap strong {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.334;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+#project #projectList .con-box .project-list li .inner .txt-wrap p {
+  font-family: "Pretendard";
 }
 #project #projectList .con-box .project-list li.project-txt * {
   color: #C2C2C2;
