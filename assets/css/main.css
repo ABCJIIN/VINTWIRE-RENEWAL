@@ -2792,7 +2792,7 @@ body.fixed {
 }
 @media (max-width: 768px) {
   #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap {
-    width: 60%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -2801,12 +2801,13 @@ body.fixed {
 }
 @media (max-width: 768px) {
   #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img {
-    width: 50%;
+    width: 100%;
+    max-width: 11rem;
   }
 }
 #main #container #find .find-inner ul .purple-box .introduce-inner .img-wrap img:nth-child(1) {
   position: relative;
-  width: 40%;
+  width: 35%;
   -o-object-fit: contain;
      object-fit: contain;
 }
