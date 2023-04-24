@@ -4282,7 +4282,7 @@ button.more-btn.on::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 12rem;
+  margin-top: 4.6rem;
 }
 @media (max-width: 768px) {
   #projectDetails #overview .overview-info > div:last-child {
