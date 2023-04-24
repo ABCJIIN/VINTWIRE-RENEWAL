@@ -308,8 +308,8 @@
     }
 }
 #projectDetails{
-    &.kita{
-        .project-info-bg{@include background(sub/project/details, project_sub_kita, png, no-repeat, cover, center, center);}
+    &.kita-net{
+        .project-info-bg{@include background(sub/project/details, project_sub_kita_net, png, no-repeat, cover, center, center);}
     }
     &.orange-gre {
         .project-info-bg{@include background(sub/project/details, project_sub_orange_gre, png, no-repeat, cover, center, center);}
@@ -318,10 +318,16 @@
         .project-info-bg{@include background(sub/project/details, project_sub_hyundai_robotics, png, no-repeat, cover, center, center);}
     }
     &.nh-bank {
-        .project-info-bg{@include background(sub/project/details, project_sub_nh_bank, png, no-repeat, cover, center, center);}
+        .project-info-bg{@include background(sub/project/details, project_sub_nh_bank, png, no-repeat, cover, center, center);
+        @include tablet {
+            @include background(sub/project/details, project_sub_nh_bank_mb, png, no-repeat, cover, center, bottom);
+        }}
     }
     &.lg-story {
         .project-info-bg{@include background(sub/project/details, project_sub_lg_story, png, no-repeat, cover, center, center);}
+    }
+    &.kita {
+        .project-info-bg{@include background(sub/project/details, project_sub_kita, png, no-repeat, cover, center, center);}
     }
     #projectInfo{
         margin-top: 14rem;
@@ -368,7 +374,7 @@
                 }
                 > li{
                     @include flexbox(row, flex-start, flex-start);
-                    gap: 0.8rem;
+                    gap: 0.8rem 0;
                     padding: 0 3rem;
                     position: relative;
                     @include tablet{
@@ -406,10 +412,10 @@
                     .tag-item{
                         box-shadow: none;
                         background: transparent;
-                        border: 1px solid $white;
-                        color: $white;
+                        border: 1px solid rgba(255, 255, 255, 0.6);
+                        color: rgba(255, 255, 255, 0.6);
                         display: inline-block;
-                        @include tablet{margin: 0 .4rem;}
+                        margin: 0 0.4rem;
                     }
                 }
             }
@@ -430,6 +436,7 @@
                 font-weight: 500;
                 font-size: 2rem;
                 text-align: center;
+                color: rgba(255, 255, 255, 0.6);
                 @include tablet{font-size: 1.2rem;}
             }
             .scroll-info{
@@ -456,10 +463,31 @@
     #overview{
         margin-top: 16rem;
         margin-bottom: 16rem;
+        &.lg-overview {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include background(sub/project/details, lg_overview_bg_pc, png, no-repeat, contain, center, center);
+                width: 100%;
+                height: 100%;
+                padding-top: 16rem;
+                padding-bottom: 16rem;
+                z-index: -1;
+                @include tablet {
+                    @include background(sub/project/details, lg_overview_bg_mb, png, no-repeat, cover, left, top);
+                    padding-top: 8rem;
+                    padding-bottom: 8rem;
+                }
+            }
+        }
         @include tablet{
             margin-top: 8rem;
             margin-bottom: 8rem;}
-        > .con-box{max-width: 1364px;}
+        > .con-box{
+            max-width: 1364px;}
         .overview-tit{
             font-size: 2.6rem;
             font-weight: bold;
@@ -490,6 +518,15 @@
                     }
                 }
             }
+            // &.lg-story-bg {
+            //     &::before {
+            //         content: '';
+            //         position: absolute;
+            //         width: 100%;
+            //         height: 100%;
+            //         @include background(sub/project/details, lg_overview_bg_pc, png, no-repeat, contain, center, center);
+            //     }
+            // }
             > div{
                 @include flexbox(row, space-between, flex-start);
                 gap: 1.6rem;
@@ -576,14 +613,17 @@
                 gap: 4rem;
             }
             .img-wrap {
-                width: calc(100% - 6rem);
+                width: calc(100% - 8rem);
                 margin: 0 auto;
-                max-width: 1640px;
+                max-width: 100%;
+                @include tablet {
+                    width: calc(100% - 6rem);
+                }
                 img {
                     width: 100%;
                 }
             }
-            .kita-03 {
+            .kita-net-02 {
                 width: 100%;
                 max-width: 100%;
             }
