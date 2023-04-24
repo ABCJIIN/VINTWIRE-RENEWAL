@@ -4069,6 +4069,12 @@ button.more-btn.on::before {
   background-size: cover;
   background-position: center center;
 }
+#projectDetails.orange-gre .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/project_sub_orange_gre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 #projectDetails #projectInfo {
   margin-top: 14rem;
   padding: 17rem 0 3.6rem;
@@ -4406,6 +4412,57 @@ button.more-btn.on::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+}
+#projectDetails #contents .contents-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#projectDetails #contents .contents-inner .img-wrap {
+  width: calc(100% - 8rem);
+  margin: 0 auto;
+  max-width: 1640px;
+}
+#projectDetails #contents .contents-inner .img-wrap img {
+  width: 100%;
+}
+#projectDetails #contents .contents-inner .progress-img {
+  padding-top: 12rem;
+  padding-bottom: 7.7rem;
+}
+#projectDetails #contents .contents-inner .screen-img {
+  width: 100%;
+  max-width: 100%;
+}
+#projectDetails #contents .contents-inner .btn-wrap {
+  padding-top: 7.1rem;
+  width: 100%;
+  text-align: center;
+}
+#projectDetails #contents .contents-inner .btn-wrap button {
+  max-width: 24rem;
+}
+#projectDetails #contents .contents-inner .keypoint-img {
+  padding-top: 18.3rem;
+  padding-bottom: 8rem;
+}
+#projectDetails #contents .contents-inner .light_mode-img {
+  width: 100%;
+  max-width: 100%;
+}
+#projectDetails #contents .contents-inner .dark_mode-img {
+  width: 100%;
+  max-width: 100%;
 }
 
 #story #container #categoryList .category-list .tit-emphasis {
