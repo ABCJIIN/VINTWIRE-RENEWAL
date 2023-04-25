@@ -470,8 +470,10 @@
         }
     }
     #overview{
-        margin-top: 16rem;
-        margin-bottom: 16rem;
+        // margin-top: 16rem;
+        // margin-bottom: 16rem;
+        padding: 16rem 0;
+        @include tablet{padding: 8rem 0;}
         &::before {
             content: '';
             position: absolute;
@@ -506,33 +508,24 @@
         }
         &.nh-life-overview {
             &::before {
-                top: 0;
+                top: 6rem;
                 left: 0;
-                transform: translate(0, -80%);
-                width: 10%;
-                height: 10%;
+                transform: translate(0);
+                width: 21rem;
+                height: 18.8rem;
+                padding: 0;
+                border: 1px solid #000;
                 @include background(sub/project/details/nh_life, nh_life_icon_01, png, no-repeat, contain, center, bottom);
+                @include tablet{
+                    width: 13.8rem;
+                    height: 12.2rem;
+                    top: 1.2rem;
+                    left: auto;
+                    right: 0;
+                }
             }
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: -60%;
-                right: 0;
-                transform: translate(0, 0);
-                width: 17%;
-                height: 100%;
-                @include background(sub/project/details/nh_life, nh_life_icon_02, png, no-repeat, contain, center, center);
-                z-index: 5;
-            }
-            
         }
-        @include tablet{
-            margin-top: 8rem;
-            margin-bottom: 8rem;}
-        > .con-box{
-            max-width: 1364px;
-            width: calc(100% - 3.2rem);
-        }
+        > .con-box{max-width: 1364px;}
         .overview-tit{
             font-size: 2.6rem;
             font-weight: bold;
@@ -592,6 +585,7 @@
                     line-height: 1.2;
                     font-weight: bold; 
                     display: block;
+                    word-break: keep-all;
                     @include tablet{font-size: 4rem;}
                 }
                 p{
@@ -641,6 +635,10 @@
                 }
             }
         }
+    }
+    .nh-life-overview + #contents{
+        margin-top: -30rem;
+        @include tablet{margin-top: -10rem;}
     }
     #contents {
         .img-wrap {
