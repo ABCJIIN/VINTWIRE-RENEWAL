@@ -329,6 +329,9 @@
     &.kita {
         .project-info-bg{@include background(sub/project/details, project_sub_kita, png, no-repeat, cover, center, center);}
     }
+    &.koreanair {
+        .project-info-bg{@include background(sub/project/details, project_sub_koreanair, png, no-repeat, cover, center, center);}
+    }
     #projectInfo{
         margin-top: 14rem;
         padding: 17rem 0 3.6rem; 
