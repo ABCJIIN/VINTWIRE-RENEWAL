@@ -470,11 +470,10 @@ button{
     border-radius: 50%;
     @include background(common, top_btn_bg, png, no-repeat, contain, center, center);
     z-index: 999;
-    @include flexbox( column, center , center);
-    gap: 0.8rem;
     cursor: pointer;
+    display: none;
     .top_arrow {
-        display: inline-block;
+        display: block;
     }
     .top_text {
         font-family: $pretendard;

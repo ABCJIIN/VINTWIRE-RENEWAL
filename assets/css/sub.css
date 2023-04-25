@@ -662,15 +662,11 @@ button.more-btn.on::before {
   background-size: contain;
   background-position: center center;
   z-index: 999;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
   cursor: pointer;
+  display: none;
 }
 .top_btn .top_arrow {
-  display: inline-block;
+  display: block;
 }
 .top_btn .top_text {
   font-family: "Pretendard";
@@ -1341,15 +1337,11 @@ button.more-btn.on::before {
   background-size: contain;
   background-position: center center;
   z-index: 999;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
   cursor: pointer;
+  display: none;
 }
 .top_btn .top_arrow {
-  display: inline-block;
+  display: block;
 }
 .top_btn .top_text {
   font-family: "Pretendard";
