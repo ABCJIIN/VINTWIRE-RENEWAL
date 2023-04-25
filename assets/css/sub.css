@@ -4203,64 +4203,8 @@ button.more-btn.on::before {
     display: block;
   }
 }
-#projectDetails.kita-net .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/kita_net/project_sub_kita_net.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 #projectDetails.orange-gre .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/orange_gre/project_sub_orange_gre.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.hyundai-robotics .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/hyundai_robotics/project_sub_hyundai_robotics.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.nh-bank .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-@media (max-width: 768px) {
-  #projectDetails.nh-bank .project-info-bg {
-    background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank_mb.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-  }
-}
-#projectDetails.lg-story .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/lg_story/project_sub_lg_story.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.kita .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/kita/project_sub_kita.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.koreanair .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/koreanair/project_sub_koreanair.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.nh-life .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/nh_life/project_sub_nh_life.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.yg-1 .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/yg_1/project_sub_yg_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -4291,6 +4235,7 @@ button.more-btn.on::before {
 @media (max-width: 768px) {
   #projectDetails #projectInfo .project-info-bg {
     width: calc(100% - 3.2rem);
+    border-radius: 2rem;
   }
 }
 #projectDetails #projectInfo .project-info-bg::before {
@@ -4454,30 +4399,12 @@ button.more-btn.on::before {
           animation: scroll_ani 0.5s both alternate infinite;
 }
 #projectDetails #overview {
+  z-index: 10;
   padding: 16rem 0;
 }
 @media (max-width: 768px) {
   #projectDetails #overview {
     padding: 8rem 0;
-  }
-}
-#projectDetails #overview::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  padding-top: 16rem;
-  padding-bottom: 16rem;
-  z-index: -1;
-}
-@media (max-width: 768px) {
-  #projectDetails #overview::before {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
   }
 }
 #projectDetails #overview.lg-overview::before {
@@ -4516,7 +4443,6 @@ button.more-btn.on::before {
   width: 21rem;
   height: 18.8rem;
   padding: 0;
-  border: 1px solid #000;
   background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_01.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -4550,24 +4476,20 @@ button.more-btn.on::before {
   content: "";
   position: absolute;
   width: 40%;
-  height: 100%;
+  height: 33rem;
+  right: 3rem;
+  bottom: 9rem;
   background-image: url(../../assets/images/sub/project/details/nh_bank/nh_bank_overview_bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
-  right: 3rem;
 }
 @media (max-width: 768px) {
   #projectDetails #overview .overview-info.nh-bank-bg::before {
-    bottom: 0;
-  }
-}
-@media (max-width: 420px) {
-  #projectDetails #overview .overview-info.nh-bank-bg::before {
-    width: 100%;
-    right: auto;
-    bottom: 1rem;
-    left: 0;
+    width: 80%;
+    height: 16.5rem;
+    right: -1rem;
+    bottom: 10.8rem;
   }
 }
 #projectDetails #overview .overview-info > div {
