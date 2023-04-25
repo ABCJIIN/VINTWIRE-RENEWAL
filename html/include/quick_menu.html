@@ -1,0 +1,26 @@
+<button type="button" class="top_btn">
+    <div class="top_arrow">
+        <img src="/assets/images/icon/top_arrow_icon.png" alt="top 화살표">
+    </div>
+    <span class="top_text">TOP</span>
+</button>
+
+<!-- TOP 버튼 -->
+<script>
+    $(document).ready(function () {
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.top_btn').fadeIn(800);
+        } else {
+            $('.top_btn').fadeOut(600);
+        }
+    });
+
+    $('.top_btn').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 300);
+    });
+
+});
+</script>
