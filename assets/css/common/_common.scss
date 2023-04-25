@@ -337,6 +337,13 @@ body{
     100% {transform:scaleY(1)}
 }
 
+// 퀵메뉴(TOP 버튼) 애니메이션
+
+@keyframes topRotation {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* 공통 아이템 */
 .tag-list{
     @include flexbox(row, flex-start, flex-start);
@@ -461,25 +468,57 @@ button{
     }
 }
 
-.top_btn {
-    position: fixed;
-    right: 0.8rem;
-    bottom: 0.8rem;
-    width: 12.4rem;
-    height: 12.4rem;
-    border-radius: 50%;
-    @include background(common, top_btn_bg, png, no-repeat, contain, center, center);
-    z-index: 999;
-    cursor: pointer;
-    display: none;
-    .top_arrow {
-        display: block;
-    }
-    .top_text {
-        font-family: $pretendard;
-        font-size: 2rem;
-        font-weight: 700;
-        color: $purple;
-        line-height: 1.7rem;
+// TOP 버튼
+
+#topBtn {
+    .top_btn {
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        width: 8.5rem;
+        height: 8.5rem;
+        border-radius: 50%;
+        z-index: 999;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: none;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-50% , -50%);
+            width: 100%;
+            height: 100%;
+            @include background(common, top_btn_bg, png, no-repeat, contain, center, center);
+            animation: topRotation 20s linear infinite;
+            z-index: -999;
+        }
+        @include tablet {
+            width: 6.5rem;
+            height: 6.5rem;
+        }
+        .top_arrow {
+            display: inline-block;
+            @include flexbox(row,center ,center);
+            width: 2.4rem;
+            margin: 0 auto;
+            @include tablet {
+                width: 1.6rem;
+            }
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .top_text {
+            font-family: $pretendard;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $purple;
+            line-height: 1.7rem;
+            letter-spacing: 0;
+        }
     }
 }

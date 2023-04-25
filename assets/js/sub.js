@@ -2,6 +2,7 @@ $(document).ready(function(){
     // // INCLUDE 파일 공통요소 불러오는 스크립트
     $("#header").load("../../include/header.html"); // 헤더 INCLUDE  
     $("#footer").load("../../include/footer.html"); // 푸터 INCLUDE
+    $("#topBtn").load("../../include/quick_menu.html"); // 퀵메뉴 INCLUDE
 
     /* 공통 */
     function init() {
