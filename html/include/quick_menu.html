@@ -11,15 +11,15 @@
     
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
-            $('.top_btn').fadeIn(800);
+            $('.top_btn').fadeIn(300);
         } else {
-            $('.top_btn').fadeOut(600);
+            $('.top_btn').fadeOut(300);
         }
     });
 
     $('.top_btn').click(function (event) {
         event.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 300);
+        $('html, body').animate({ scrollTop: 0 }, 500);
     });
 
 });
