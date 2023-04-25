@@ -3237,51 +3237,51 @@ button.more-btn.on::before {
   }
 }
 #projectDetails.kita-net .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/project_sub_kita_net.png);
+  background-image: url(../../assets/images/sub/project/details/kita_net/project_sub_kita_net.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #projectDetails.orange-gre .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/project_sub_orange_gre.png);
+  background-image: url(../../assets/images/sub/project/details/orange_gre/project_sub_orange_gre.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #projectDetails.hyundai-robotics .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/project_sub_hyundai_robotics.png);
+  background-image: url(../../assets/images/sub/project/details/hyundai_robotics/project_sub_hyundai_robotics.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #projectDetails.nh-bank .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/project_sub_nh_bank.png);
+  background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 @media (max-width: 768px) {
   #projectDetails.nh-bank .project-info-bg {
-    background-image: url(../../assets/images/sub/project/details/project_sub_nh_bank_mb.png);
+    background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank_mb.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
   }
 }
 #projectDetails.lg-story .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/project_sub_lg_story.png);
+  background-image: url(../../assets/images/sub/project/details/lg_story/project_sub_lg_story.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #projectDetails.kita .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/project_sub_kita.png);
+  background-image: url(../../assets/images/sub/project/details/kita/project_sub_kita.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #projectDetails.koreanair .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/project_sub_koreanair.png);
+  background-image: url(../../assets/images/sub/project/details/koreanair/project_sub_koreanair.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3469,28 +3469,28 @@ button.more-btn.on::before {
   }
 }
 #projectDetails #overview.lg-overview::before {
-  background-image: url(../../assets/images/sub/project/details/lg_overview_bg_pc.png);
+  background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_pc.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 @media (max-width: 768px) {
   #projectDetails #overview.lg-overview::before {
-    background-image: url(../../assets/images/sub/project/details/lg_overview_bg_mb.png);
+    background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_mb.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
   }
 }
 #projectDetails #overview.koreanair-overview::before {
-  background-image: url(../../assets/images/sub/project/details/koreanair_overview_bg_pc.png);
+  background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_pc.png);
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: center center;
 }
 @media (max-width: 768px) {
   #projectDetails #overview.koreanair-overview::before {
-    background-image: url(../../assets/images/sub/project/details/koreanair_overview_bg_mb.png);
+    background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_mb.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: left top;
@@ -3522,7 +3522,7 @@ button.more-btn.on::before {
   position: absolute;
   width: 40%;
   height: 100%;
-  background-image: url(../../assets/images/sub/project/details/nh_bank_overview_bg.png);
+  background-image: url(../../assets/images/sub/project/details/nh_bank/nh_bank_overview_bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
@@ -3661,10 +3661,6 @@ button.more-btn.on::before {
 #projectDetails #contents .img-wrap img {
   width: 100%;
   display: block;
-}
-#projectDetails #contents .img-wrap .koeanair-03 {
-  width: 100%;
-  max-width: 100%;
 }
 #projectDetails #contents .btn-wrap {
   width: 100%;

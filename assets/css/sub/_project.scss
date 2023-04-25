@@ -309,28 +309,28 @@
 }
 #projectDetails{
     &.kita-net{
-        .project-info-bg{@include background(sub/project/details, project_sub_kita_net, png, no-repeat, cover, center, center);}
+        .project-info-bg{@include background(sub/project/details/kita_net, project_sub_kita_net, png, no-repeat, cover, center, center);}
     }
     &.orange-gre {
-        .project-info-bg{@include background(sub/project/details, project_sub_orange_gre, png, no-repeat, cover, center, center);}
+        .project-info-bg{@include background(sub/project/details/orange_gre, project_sub_orange_gre, png, no-repeat, cover, center, center);}
     }
     &.hyundai-robotics {
-        .project-info-bg{@include background(sub/project/details, project_sub_hyundai_robotics, png, no-repeat, cover, center, center);}
+        .project-info-bg{@include background(sub/project/details/hyundai_robotics, project_sub_hyundai_robotics, png, no-repeat, cover, center, center);}
     }
     &.nh-bank {
-        .project-info-bg{@include background(sub/project/details, project_sub_nh_bank, png, no-repeat, cover, center, center);
+        .project-info-bg{@include background(sub/project/details/nh_bank, project_sub_nh_bank, png, no-repeat, cover, center, center);
         @include tablet {
-            @include background(sub/project/details, project_sub_nh_bank_mb, png, no-repeat, cover, center, bottom);
+            @include background(sub/project/details/nh_bank, project_sub_nh_bank_mb, png, no-repeat, cover, center, bottom);
         }}
     }
     &.lg-story {
-        .project-info-bg{@include background(sub/project/details, project_sub_lg_story, png, no-repeat, cover, center, center);}
+        .project-info-bg{@include background(sub/project/details/lg_story, project_sub_lg_story, png, no-repeat, cover, center, center);}
     }
     &.kita {
-        .project-info-bg{@include background(sub/project/details, project_sub_kita, png, no-repeat, cover, center, center);}
+        .project-info-bg{@include background(sub/project/details/kita, project_sub_kita, png, no-repeat, cover, center, center);}
     }
     &.koreanair {
-        .project-info-bg{@include background(sub/project/details, project_sub_koreanair, png, no-repeat, cover, center, center);}
+        .project-info-bg{@include background(sub/project/details/koreanair, project_sub_koreanair, png, no-repeat, cover, center, center);}
     }
     #projectInfo{
         margin-top: 14rem;
@@ -484,17 +484,17 @@
         }
         &.lg-overview {
             &::before {
-                @include background(sub/project/details, lg_overview_bg_pc, png, no-repeat, contain, center, center);
+                @include background(sub/project/details/lg_story, lg_overview_bg_pc, png, no-repeat, contain, center, center);
                 @include tablet {
-                    @include background(sub/project/details, lg_overview_bg_mb, png, no-repeat, cover, left, top);
+                    @include background(sub/project/details/lg_story, lg_overview_bg_mb, png, no-repeat, cover, left, top);
                 }
             }
         }
         &.koreanair-overview {
             &::before {
-                @include background(sub/project/details, koreanair_overview_bg_pc, png, no-repeat, 110%, center, center);
+                @include background(sub/project/details/koreanair, koreanair_overview_bg_pc, png, no-repeat, 110%, center, center);
                 @include tablet {
-                    @include background(sub/project/details, koreanair_overview_bg_mb, png, no-repeat, 100%, left, top);
+                    @include background(sub/project/details/koreanair, koreanair_overview_bg_mb, png, no-repeat, 100%, left, top);
                 }
             }
         }
@@ -520,7 +520,7 @@
                     position: absolute;
                     width: 40%;
                     height: 100%;
-                    @include background(sub/project/details, nh_bank_overview_bg, png, no-repeat, contain, right, bottom);
+                    @include background(sub/project/details/nh_bank, nh_bank_overview_bg, png, no-repeat, contain, right, bottom);
                     right: 3rem;
                     @include tablet {
                         bottom: 0;
@@ -621,47 +621,7 @@
                 width: 100%;
                 display: block;
             }
-            .koeanair-03 {
-                width: 100%;
-                max-width: 100%;
-            }
         }
-        // .contents-inner {
-        //     @include flexbox (column, center, center);
-        //     gap: 6rem;
-        //     @include tablet {
-        //         gap: 4rem;
-        //     }
-        //     .kita-net-02 {
-        //         width: 100%;
-        //         max-width: 100%;
-        //     }
-        //     .orange-gre-02 {
-        //         width: 100%;
-        //         max-width: 100%;
-        //         @include tablet {
-        //             width: calc(100% - 6rem);
-        //         }
-        //     }
-        //     .orange-gre-03 {
-        //         width: 100%;
-        //         max-width: 100%;
-        //         @include tablet {
-        //             width: calc(100% - 6rem);
-        //         }
-        //     }
-        //     .hyundai-robotics-02 {
-        //         width: 100%;
-        //         max-width: 100%;
-        //     }
-        //     .nh-bank-02 {
-        //         width: 100%;
-        //         max-width: 100%;
-        //         @include tablet {
-        //             width: calc(100% - 6rem);
-        //         }
-        //     }
-        // }
         .btn-wrap {
             width: 100%;
             text-align: center;
