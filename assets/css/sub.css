@@ -4366,8 +4366,12 @@ button.more-btn.on::before {
           animation: scroll_ani 0.5s both alternate infinite;
 }
 #projectDetails #overview {
-  margin-top: 16rem;
-  margin-bottom: 16rem;
+  padding: 16rem 0;
+}
+@media (max-width: 768px) {
+  #projectDetails #overview {
+    padding: 8rem 0;
+  }
 }
 #projectDetails #overview::before {
   content: "";
@@ -4417,41 +4421,30 @@ button.more-btn.on::before {
   }
 }
 #projectDetails #overview.nh-life-overview::before {
-  top: 0;
+  top: 6rem;
   left: 0;
-  -webkit-transform: translate(0, -80%);
-          transform: translate(0, -80%);
-  width: 10%;
-  height: 10%;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  width: 21rem;
+  height: 18.8rem;
+  padding: 0;
+  border: 1px solid #000;
   background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_01.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
 }
-#projectDetails #overview.nh-life-overview::after {
-  content: "";
-  position: absolute;
-  bottom: -60%;
-  right: 0;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  width: 17%;
-  height: 100%;
-  background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_02.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  z-index: 5;
-}
 @media (max-width: 768px) {
-  #projectDetails #overview {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+  #projectDetails #overview.nh-life-overview::before {
+    width: 13.8rem;
+    height: 12.2rem;
+    top: 1.2rem;
+    left: auto;
+    right: 0;
   }
 }
 #projectDetails #overview > .con-box {
   max-width: 1364px;
-  width: calc(100% - 3.2rem);
 }
 #projectDetails #overview .overview-tit {
   font-size: 2.6rem;
@@ -4551,6 +4544,7 @@ button.more-btn.on::before {
   line-height: 1.2;
   font-weight: bold;
   display: block;
+  word-break: keep-all;
 }
 @media (max-width: 768px) {
   #projectDetails #overview .overview-info > div h2 {
@@ -4643,6 +4637,14 @@ button.more-btn.on::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+}
+#projectDetails .nh-life-overview + #contents {
+  margin-top: -30rem;
+}
+@media (max-width: 768px) {
+  #projectDetails .nh-life-overview + #contents {
+    margin-top: -10rem;
+  }
 }
 #projectDetails #contents .img-wrap {
   max-width: 100%;
