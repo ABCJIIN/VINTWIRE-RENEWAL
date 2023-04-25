@@ -3655,67 +3655,14 @@ button.more-btn.on::before {
   background-size: contain;
   background-position: center center;
 }
-#projectDetails #contents .contents-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6rem;
-}
-@media (max-width: 768px) {
-  #projectDetails #contents .contents-inner {
-    gap: 4rem;
-  }
-}
-#projectDetails #contents .contents-inner .img-wrap {
-  width: calc(100% - 8rem);
-  margin: 0 auto;
+#projectDetails #contents .img-wrap {
   max-width: 100%;
 }
-@media (max-width: 768px) {
-  #projectDetails #contents .contents-inner .img-wrap {
-    width: calc(100% - 6rem);
-  }
-}
-#projectDetails #contents .contents-inner .img-wrap img {
+#projectDetails #contents .img-wrap img {
   width: 100%;
+  display: block;
 }
-#projectDetails #contents .contents-inner .kita-net-02 {
-  width: 100%;
-  max-width: 100%;
-}
-#projectDetails #contents .contents-inner .orange-gre-02 {
-  width: 100%;
-  max-width: 100%;
-}
-@media (max-width: 768px) {
-  #projectDetails #contents .contents-inner .orange-gre-02 {
-    width: calc(100% - 6rem);
-  }
-}
-#projectDetails #contents .contents-inner .orange-gre-03 {
-  width: 100%;
-  max-width: 100%;
-}
-@media (max-width: 768px) {
-  #projectDetails #contents .contents-inner .orange-gre-03 {
-    width: calc(100% - 6rem);
-  }
-}
-#projectDetails #contents .contents-inner .hyundai-robotics-02 {
-  width: 100%;
-  max-width: 100%;
-}
-#projectDetails #contents .contents-inner .nh-bank-02 {
-  width: 100%;
-  max-width: 100%;
-}
-@media (max-width: 768px) {
-  #projectDetails #contents .contents-inner .nh-bank-02 {
-    width: calc(100% - 6rem);
-  }
-}
-#projectDetails #contents .contents-inner .koeanair-03 {
+#projectDetails #contents .img-wrap .koeanair-03 {
   width: 100%;
   max-width: 100%;
 }
