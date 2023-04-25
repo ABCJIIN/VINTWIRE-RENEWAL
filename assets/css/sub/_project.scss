@@ -559,6 +559,7 @@
                 }
                 h2{
                     font-size: 6.4rem;
+                    line-height: 1.2;
                     font-weight: bold; 
                     display: block;
                     @include tablet{font-size: 4rem;}
@@ -613,14 +614,8 @@
     }
     #contents {
         .img-wrap {
-            // width: calc(100% - 8rem);
-            // margin: 0 auto;
             max-width: 100%;
-            // @include tablet {width: calc(100% - 6rem);}
-            img {
-                width: 100%;
-                display: block;
-            }
+            img {width: 100%;}
         }
         .btn-wrap {
             width: 100%;
