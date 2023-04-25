@@ -460,3 +460,27 @@ button{
         }
     }
 }
+
+.top_btn {
+    position: fixed;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    width: 12.4rem;
+    height: 12.4rem;
+    border-radius: 50%;
+    @include background(common, top_btn_bg, png, no-repeat, contain, center, center);
+    z-index: 999;
+    @include flexbox( column, center , center);
+    gap: 0.8rem;
+    cursor: pointer;
+    .top_arrow {
+        display: inline-block;
+    }
+    .top_text {
+        font-family: $pretendard;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $purple;
+        line-height: 1.7rem;
+    }
+}

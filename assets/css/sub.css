@@ -650,6 +650,36 @@ button.more-btn.on::before {
   width: 14rem;
 }
 
+.top_btn {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: 12.4rem;
+  height: 12.4rem;
+  border-radius: 50%;
+  background-image: url(../../assets/images/common/top_btn_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.top_btn .top_arrow {
+  display: inline-block;
+}
+.top_btn .top_text {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6A6AE6;
+  line-height: 1.7rem;
+}
+
 /* 20230410 test */ /* 노트북 */
 /* 테블릿 */
 /* 모바일 */
@@ -1297,6 +1327,36 @@ button.more-btn.on::before {
 }
 .arr-btn.w162 .inner img {
   width: 14rem;
+}
+
+.top_btn {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: 12.4rem;
+  height: 12.4rem;
+  border-radius: 50%;
+  background-image: url(../../assets/images/common/top_btn_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.top_btn .top_arrow {
+  display: inline-block;
+}
+.top_btn .top_text {
+  font-family: "Pretendard";
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6A6AE6;
+  line-height: 1.7rem;
 }
 
 /* 노트북 */
@@ -3286,6 +3346,18 @@ button.more-btn.on::before {
   background-size: cover;
   background-position: center center;
 }
+#projectDetails.nh-life .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/nh_life/project_sub_nh_life.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.yg-1 .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/yg_1/project_sub_yg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 #projectDetails #projectInfo {
   margin-top: 14rem;
   padding: 17rem 0 3.6rem;
@@ -3495,6 +3567,31 @@ button.more-btn.on::before {
     background-size: 100%;
     background-position: left top;
   }
+}
+#projectDetails #overview.nh-life-overview::before {
+  top: 0;
+  left: 0;
+  transform: translate(0, -80%);
+  width: 10%;
+  height: 10%;
+  background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+#projectDetails #overview.nh-life-overview::after {
+  content: "";
+  position: absolute;
+  bottom: -60%;
+  right: 0;
+  transform: translate(0, 0);
+  width: 17%;
+  height: 100%;
+  background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: 5;
 }
 @media (max-width: 768px) {
   #projectDetails #overview {

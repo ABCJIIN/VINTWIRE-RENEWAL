@@ -332,6 +332,12 @@
     &.koreanair {
         .project-info-bg{@include background(sub/project/details/koreanair, project_sub_koreanair, png, no-repeat, cover, center, center);}
     }
+    &.nh-life {
+        .project-info-bg{@include background(sub/project/details/nh_life, project_sub_nh_life, png, no-repeat, cover, center, center);}
+    }
+    &.yg-1 {
+        .project-info-bg{@include background(sub/project/details/yg_1, project_sub_yg_1, png, no-repeat, cover, center, center);}
+    }
     #projectInfo{
         margin-top: 14rem;
         padding: 17rem 0 3.6rem; 
@@ -497,6 +503,28 @@
                     @include background(sub/project/details/koreanair, koreanair_overview_bg_mb, png, no-repeat, 100%, left, top);
                 }
             }
+        }
+        &.nh-life-overview {
+            &::before {
+                top: 0;
+                left: 0;
+                transform: translate(0, -80%);
+                width: 10%;
+                height: 10%;
+                @include background(sub/project/details/nh_life, nh_life_icon_01, png, no-repeat, contain, center, bottom);
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -60%;
+                right: 0;
+                transform: translate(0, 0);
+                width: 17%;
+                height: 100%;
+                @include background(sub/project/details/nh_life, nh_life_icon_02, png, no-repeat, contain, center, center);
+                z-index: 5;
+            }
+            
         }
         @include tablet{
             margin-top: 8rem;
