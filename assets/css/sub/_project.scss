@@ -50,21 +50,21 @@
                         display: block;
                         height: 100%;
                         position: relative;
-                        &::after {
-                            content: '';
-                            width: 4rem;
-                            height: 4rem;
-                            background-image: url(../../assets/images/icon/link_icon.svg);
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center center;
-                            position: absolute;
-                            top: 3.6rem;
-                            right: 3.6rem;
-                            z-index: 2;
-                            opacity: 0;
-                            transition: opacity 0.3s;
-                        }
+                        // &::after {
+                        //     content: '';
+                        //     width: 4rem;
+                        //     height: 4rem;
+                        //     background-image: url(../../assets/images/icon/link_icon.svg);
+                        //     background-size: contain;
+                        //     background-repeat: no-repeat;
+                        //     background-position: center center;
+                        //     position: absolute;
+                        //     top: 3.6rem;
+                        //     right: 3.6rem;
+                        //     z-index: 2;
+                        //     opacity: 0;
+                        //     transition: opacity 0.3s;
+                        // }
                     }
                     .inner {
                         width: 100%;
