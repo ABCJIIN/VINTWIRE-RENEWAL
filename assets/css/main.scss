@@ -297,7 +297,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             font-size: 1.6rem;
                             line-height: 2.8rem;
                             padding-top: 2.4rem;
-                            padding-bottom: 4rem;
+                            padding-bottom: 2.4rem;
                         }
                     }
                 }
@@ -451,11 +451,23 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         .img-wrap{
                             border-radius: 3rem 3rem 3rem 1rem;
                             overflow: hidden;
-                            &:hover{img{transform: scale(1.2);}}
+                            position: relative;
+                            &::before{
+                                content: '';
+                                display: inline;
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(0,0,0,0.4);
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: 1;
+                            }
+                            &:hover{img{transform: scale(1.05);}}
                             > img{
                                 width: 110%;
                                 height: 100%;
-                                transition: transform .35s;
+                                transition: transform .3s;
                                 @include tablet{
                                     width: 100%;
                                     height: auto;

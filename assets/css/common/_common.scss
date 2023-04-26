@@ -384,7 +384,7 @@ button{
     color: $white;
     border-radius: 5rem;
     padding: 1.6rem;
-    letter-spacing: -0.2rem;
+    letter-spacing: -0.02em;
     cursor: pointer;
     @include tablet{
         max-width: 100%;
@@ -407,7 +407,10 @@ button{
         color: #767676;
     }
     &.btn-type2{
-        max-width: 24rem;
+        width: 24rem;
+    }
+    &.btn-type3{
+        width: 36rem;
     }
     &.more-btn{
         @include flexbox(row, center, center);
