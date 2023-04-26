@@ -505,24 +505,12 @@ body .cursor.on {
     transform: scaleY(1);
   }
 }
-@-webkit-keyframes topRotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 @keyframes topRotation {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /* 공통 아이템 */
@@ -688,16 +676,14 @@ button.more-btn.on::before {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background-image: url(../../assets/images/common/top_btn_bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  -webkit-animation: topRotation 20s linear infinite;
-          animation: topRotation 20s linear infinite;
+  animation: topRotation 20s linear infinite;
   z-index: -999;
 }
 @media (max-width: 768px) {
@@ -708,19 +694,10 @@ button.more-btn.on::before {
 }
 #topBtn .top_btn .top_arrow {
   display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 2.4rem;
   margin: 0 auto;
 }
@@ -1249,12 +1226,10 @@ body .cursor.on {
 }
 @keyframes topRotation {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /* 공통 아이템 */
@@ -1420,16 +1395,14 @@ button.more-btn.on::before {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background-image: url(../../assets/images/common/top_btn_bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  -webkit-animation: topRotation 20s linear infinite;
-          animation: topRotation 20s linear infinite;
+  animation: topRotation 20s linear infinite;
   z-index: -999;
 }
 @media (max-width: 768px) {
@@ -1440,19 +1413,10 @@ button.more-btn.on::before {
 }
 #topBtn .top_btn .top_arrow {
   display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 2.4rem;
   margin: 0 auto;
 }
