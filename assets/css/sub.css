@@ -2827,7 +2827,7 @@ button.more-btn.on::before {
   #about #container #introCont .tag-info {
     width: 70%;
     height: auto;
-    margin: -4rem 0 0 auto;
+    margin: -3rem 0 0 auto;
     background-image: none;
     background: #fff;
     font-size: 1.4rem;
