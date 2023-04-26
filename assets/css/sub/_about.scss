@@ -92,10 +92,13 @@
                             }
                         }
                         .star{
-                            &.big{bottom: 0;right: 0;}
+                            &.big{
+                                bottom: 0;right: 0;
+                                @include tablet {bottom:auto; top: 50%;}
+                            }
                             &.small{
                                 bottom: -12rem;left: 0;
-                                @include tablet{bottom: auto;top: 0;}
+                                @include tablet{bottom: auto; top: 40%;}
                             }
                         }
                     }
@@ -112,7 +115,7 @@
                             }
                             &.small{
                                 top: 2rem;left: -4rem;
-                                @include tablet{top: 4rem;left: auto;right: 0;}
+                                @include tablet{top: auto; bottom: 20%; left: auto;right: 0;}
                             }
                         }
                     }
