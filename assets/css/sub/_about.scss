@@ -92,10 +92,13 @@
                             }
                         }
                         .star{
-                            &.big{bottom: 0;right: 0;}
+                            &.big{
+                                bottom: 0;right: 0;
+                                @include tablet {bottom:auto; top: 50%;}
+                            }
                             &.small{
                                 bottom: -12rem;left: 0;
-                                @include tablet{bottom: auto;top: 0;}
+                                @include tablet{bottom: auto; top: 40%;}
                             }
                         }
                     }
@@ -112,7 +115,7 @@
                             }
                             &.small{
                                 top: 2rem;left: -4rem;
-                                @include tablet{top: 4rem;left: auto;right: 0;}
+                                @include tablet{top: auto; bottom: 20%; left: auto;right: 0;}
                             }
                         }
                     }
@@ -214,8 +217,8 @@
                     border-radius: 0.5rem;
                 }
                 &::-webkit-scrollbar-track {
-                  background-color: #DDDDDD;
-                  border-radius: 0.5rem;
+                    background-color: #DDDDDD;
+                    border-radius: 0.5rem;
                 }
                 .img-wrap{
                     max-width: 1250px;
@@ -224,7 +227,7 @@
             }
         }
         #member{
-            padding: 14rem 0 10rem;
+            padding: 14rem 0 0;
             @include tablet{padding: 8rem 0 0;}
             .sec-tit{
                 margin-bottom: 9.4rem;
@@ -314,8 +317,13 @@
                                         margin: 0 auto;
                                         @include tablet{
                                             position: relative;
+                                            width: 30%;
                                             z-index: 1;
                                             margin: 0;
+                                            padding: 0 1.2rem;
+                                            @include mobile {
+                                                width: 40%;
+                                            }
                                         }
                                         > img{
                                             max-width: 100%;

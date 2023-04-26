@@ -500,12 +500,14 @@ button{
             height: 6.5rem;
         }
         .top_arrow {
-            display: inline-block;
+            @include background(icon, top_arrow_icon, png, no-repeat, contain, center, center);
             @include flexbox(row,center ,center);
             width: 2.4rem;
+            height: 1.2rem;
             margin: 0 auto;
             @include tablet {
                 width: 1.6rem;
+                height: 0.8rem;
             }
             img {
                 width: 100%;
