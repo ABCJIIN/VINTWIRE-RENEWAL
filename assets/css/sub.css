@@ -693,17 +693,22 @@ button.more-btn.on::before {
   }
 }
 #topBtn .top_btn .top_arrow {
-  display: inline-block;
+  background-image: url(../../assets/images/icon/top_arrow_icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 2.4rem;
+  height: 1.2rem;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
   #topBtn .top_btn .top_arrow {
     width: 1.6rem;
+    height: 0.8rem;
   }
 }
 #topBtn .top_btn .top_arrow img {
@@ -1412,17 +1417,22 @@ button.more-btn.on::before {
   }
 }
 #topBtn .top_btn .top_arrow {
-  display: inline-block;
+  background-image: url(../../assets/images/icon/top_arrow_icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 2.4rem;
+  height: 1.2rem;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
   #topBtn .top_btn .top_arrow {
     width: 1.6rem;
+    height: 0.8rem;
   }
 }
 #topBtn .top_btn .top_arrow img {
