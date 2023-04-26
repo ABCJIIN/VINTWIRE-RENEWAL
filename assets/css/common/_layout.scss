@@ -510,10 +510,6 @@
             .tit-emphasis{&::before, &::after{filter: $f-nia;}}
         }
         .jason{
-            .introductory{border-color: $nia;}
-            .tit-emphasis{&::before, &::after{filter: $f-nia;}}
-        }
-        .jason{
             .introductory{border-color: $jason;}
             .tit-emphasis{&::before, &::after{filter: $f-jason;}}
         }

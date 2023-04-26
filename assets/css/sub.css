@@ -2711,13 +2711,6 @@ button.more-btn.on::before {
           filter: invert(77%) sepia(57%) saturate(338%) hue-rotate(347deg) brightness(105%) contrast(98%);
 }
 .wrap #container .jason .introductory {
-  border-color: #FDD885;
-}
-.wrap #container .jason .tit-emphasis::before, .wrap #container .jason .tit-emphasis::after {
-  -webkit-filter: invert(77%) sepia(57%) saturate(338%) hue-rotate(347deg) brightness(105%) contrast(98%);
-          filter: invert(77%) sepia(57%) saturate(338%) hue-rotate(347deg) brightness(105%) contrast(98%);
-}
-.wrap #container .jason .introductory {
   border-color: #83D8A6;
 }
 .wrap #container .jason .tit-emphasis::before, .wrap #container .jason .tit-emphasis::after {
