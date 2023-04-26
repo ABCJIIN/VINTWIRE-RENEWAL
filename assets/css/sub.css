@@ -741,12 +741,24 @@ body .cursor.on {
             transform: scaleY(1);
   }
 }
-@keyframes topRotation {
+@-webkit-keyframes topRotation {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes topRotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /* 공통 아이템 */
@@ -942,14 +954,16 @@ button.more-btn.on::before {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background-image: url(../../assets/images/common/top_btn_bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  animation: topRotation 20s linear infinite;
+  -webkit-animation: topRotation 20s linear infinite;
+          animation: topRotation 20s linear infinite;
   z-index: -999;
 }
 @media (max-width: 768px) {
@@ -960,10 +974,19 @@ button.more-btn.on::before {
 }
 #topBtn .top_btn .top_arrow {
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 2.4rem;
   margin: 0 auto;
 }
@@ -1658,10 +1681,12 @@ body .cursor.on {
 }
 @keyframes topRotation {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /* 공통 아이템 */
@@ -1857,14 +1882,16 @@ button.more-btn.on::before {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background-image: url(../../assets/images/common/top_btn_bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  animation: topRotation 20s linear infinite;
+  -webkit-animation: topRotation 20s linear infinite;
+          animation: topRotation 20s linear infinite;
   z-index: -999;
 }
 @media (max-width: 768px) {
@@ -1875,10 +1902,19 @@ button.more-btn.on::before {
 }
 #topBtn .top_btn .top_arrow {
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 2.4rem;
   margin: 0 auto;
 }
@@ -3969,9 +4005,15 @@ button.more-btn.on::before {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+@media (max-width: 768px) {
+  #project #projectList .con-box .project-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 #project #projectList .con-box .project-list li {
   width: 100%;
-  min-height: 36rem;
+  min-height: 3.6rem;
   position: relative;
   border-radius: 3.2rem;
   overflow: hidden;
@@ -3982,6 +4024,16 @@ button.more-btn.on::before {
 #project #projectList .con-box .project-list li * {
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  #project #projectList .con-box .project-list li {
+    width: calc(50% - 0.8rem) !important;
+    min-height: 18rem;
+    border-radius: 1.2rem 1.2rem 1.2rem 0.4rem !important;
+  }
+  #project #projectList .con-box .project-list li.empty, #project #projectList .con-box .project-list li.project-txt {
+    display: none;
+  }
+}
 #project #projectList .con-box .project-list li a {
   display: block;
   height: 100%;
@@ -3991,10 +4043,6 @@ button.more-btn.on::before {
   content: "";
   width: 4rem;
   height: 4rem;
-  background-image: url(../../assets/images/icon/link_icon.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
   position: absolute;
   top: 3.6rem;
   right: 3.6rem;
@@ -4002,6 +4050,15 @@ button.more-btn.on::before {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  background-image: url(../../assets/images/icon/link_icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #project #projectList .con-box .project-list li a::after {
+    display: none;
+  }
 }
 #project #projectList .con-box .project-list li .inner {
   width: 100%;
@@ -4022,7 +4079,6 @@ button.more-btn.on::before {
   height: 100%;
 }
 #project #projectList .con-box .project-list li .inner .img-wrap img {
-  display: block;
   width: 100%;
   height: 100%;
   -webkit-transition: -webkit-transform 0.3s;
@@ -4030,13 +4086,14 @@ button.more-btn.on::before {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-#project #projectList .con-box .project-list li .inner .img-wrap .pc-show {
-  display: block;
-}
-#project #projectList .con-box .project-list li .inner .img-wrap .m-show {
-  display: none;
-}
 #project #projectList .con-box .project-list li .inner .txt-wrap {
+  width: 100%;
+  height: 100%;
+  padding: 3.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4047,13 +4104,14 @@ button.more-btn.on::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  padding: 3.6rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 768px) {
+  #project #projectList .con-box .project-list li .inner .txt-wrap {
+    padding: 0.8rem 0.9rem;
+  }
 }
 #project #projectList .con-box .project-list li .inner .txt-wrap .label {
   font-size: 2rem;
@@ -4061,6 +4119,13 @@ button.more-btn.on::before {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+@media (max-width: 768px) {
+  #project #projectList .con-box .project-list li .inner .txt-wrap .label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 1;
+  }
 }
 #project #projectList .con-box .project-list li .inner .txt-wrap > strong {
   font-family: "Panchang";
@@ -4072,8 +4137,19 @@ button.more-btn.on::before {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+@media (max-width: 768px) {
+  #project #projectList .con-box .project-list li .inner .txt-wrap strong {
+    font-size: 1.8rem;
+    bottom: 0 !important;
+  }
+}
 #project #projectList .con-box .project-list li .inner .txt-wrap p {
   font-family: "Pretendard";
+}
+@media (max-width: 768px) {
+  #project #projectList .con-box .project-list li .inner .txt-wrap p {
+    display: none;
+  }
 }
 #project #projectList .con-box .project-list li.project-txt * {
   color: #C2C2C2;
@@ -4165,46 +4241,135 @@ button.more-btn.on::before {
   margin-top: 1.6rem;
 }
 
-@media screen and (max-width: 768px) {
-  #project #projectList .con-box .project-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #project #projectList .con-box .project-list li {
-    width: calc(50% - 0.8rem) !important;
-    min-height: 18rem;
-    border-radius: 1.2rem 1.2rem 1.2rem 0.4rem !important;
-  }
-  #project #projectList .con-box .project-list li a::after {
-    display: none;
-  }
-  #project #projectList .con-box .project-list li.empty, #project #projectList .con-box .project-list li.project-txt {
-    display: none;
-  }
-  #project #projectList .con-box .project-list li .inner .txt-wrap {
-    padding: 0.8rem 0.9rem;
-  }
-  #project #projectList .con-box .project-list li .inner .txt-wrap .label {
-    font-size: 1.4rem;
-    font-weight: 400;
-    opacity: 1;
-  }
-  #project #projectList .con-box .project-list li .inner .txt-wrap strong {
-    font-size: 1.8rem;
-    bottom: 0 !important;
-  }
-  #project #projectList .con-box .project-list li .inner .txt-wrap p {
-    display: none;
-  }
-  #project #projectList .con-box .project-list li .inner .img-wrap .pc-show {
-    display: none;
-  }
-  #project #projectList .con-box .project-list li .inner .img-wrap .m-show {
-    display: block;
-  }
-}
 #projectDetails.orange-gre .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/orange_gre/project_sub_orange_gre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.hyundai-robotics .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/hyundai_robotics/project_sub_hyundai_robotics.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.nh-bank .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.nh-bank .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+#projectDetails.nh-bank #overview {
+  background-image: url(../../assets/images/sub/project/details/nh_bank/nh_bank_overview_bg.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right bottom 116px;
+}
+@media (max-width: 768px) {
+  #projectDetails.nh-bank #overview {
+    background-size: 90%;
+    background-position: right bottom 100px;
+  }
+}
+#projectDetails.lg-story .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/lg_story/project_sub_lg_story.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.lg-story #overview {
+  background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_pc.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.lg-story #overview {
+    background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_mb.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+  }
+}
+#projectDetails.kita .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/kita/project_sub_kita.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.kita-net .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/kita_net/project_sub_kita_net.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.koreanair .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/koreanair/project_sub_koreanair.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.koreanair #overview {
+  background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_pc.png);
+  background-repeat: no-repeat;
+  background-size: 112%;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.koreanair #overview {
+    background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_mb.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+  }
+}
+#projectDetails.nh-life .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/nh_life/project_sub_nh_life.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#projectDetails.nh-life #overview::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  z-index: -1;
+  width: 21rem;
+  height: 18.8rem;
+  background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+@media (max-width: 768px) {
+  #projectDetails.nh-life #overview::before {
+    width: 13.8rem;
+    height: 12.2rem;
+    top: 1.2rem;
+    left: auto;
+    right: 0;
+  }
+}
+#projectDetails.nh-life #contents {
+  margin-top: -30rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.nh-life #contents {
+    margin-top: -10rem;
+  }
+}
+#projectDetails.yg-1 .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/yg_1/project_sub_yg_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -4407,56 +4572,6 @@ button.more-btn.on::before {
     padding: 8rem 0;
   }
 }
-#projectDetails #overview.lg-overview::before {
-  background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_pc.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-@media (max-width: 768px) {
-  #projectDetails #overview.lg-overview::before {
-    background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_mb.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
-  }
-}
-#projectDetails #overview.koreanair-overview::before {
-  background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_pc.png);
-  background-repeat: no-repeat;
-  background-size: 110%;
-  background-position: center center;
-}
-@media (max-width: 768px) {
-  #projectDetails #overview.koreanair-overview::before {
-    background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_mb.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: left top;
-  }
-}
-#projectDetails #overview.nh-life-overview::before {
-  top: 6rem;
-  left: 0;
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  width: 21rem;
-  height: 18.8rem;
-  padding: 0;
-  background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_01.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center bottom;
-}
-@media (max-width: 768px) {
-  #projectDetails #overview.nh-life-overview::before {
-    width: 13.8rem;
-    height: 12.2rem;
-    top: 1.2rem;
-    left: auto;
-    right: 0;
-  }
-}
 #projectDetails #overview > .con-box {
   max-width: 1364px;
 }
@@ -4470,26 +4585,6 @@ button.more-btn.on::before {
   #projectDetails #overview .overview-tit {
     font-size: 2rem;
     margin-bottom: 1.6rem;
-  }
-}
-#projectDetails #overview .overview-info.nh-bank-bg::before {
-  content: "";
-  position: absolute;
-  width: 40%;
-  height: 33rem;
-  right: 3rem;
-  bottom: 9rem;
-  background-image: url(../../assets/images/sub/project/details/nh_bank/nh_bank_overview_bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right bottom;
-}
-@media (max-width: 768px) {
-  #projectDetails #overview .overview-info.nh-bank-bg::before {
-    width: 80%;
-    height: 16.5rem;
-    right: -1rem;
-    bottom: 10.8rem;
   }
 }
 #projectDetails #overview .overview-info > div {
@@ -4647,14 +4742,6 @@ button.more-btn.on::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-}
-#projectDetails .nh-life-overview + #contents {
-  margin-top: -30rem;
-}
-@media (max-width: 768px) {
-  #projectDetails .nh-life-overview + #contents {
-    margin-top: -10rem;
-  }
 }
 #projectDetails #contents .img-wrap {
   max-width: 100%;
