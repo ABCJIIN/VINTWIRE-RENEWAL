@@ -821,7 +821,7 @@ button {
   color: #fff;
   border-radius: 5rem;
   padding: 1.6rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.02em;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -847,7 +847,10 @@ button:disabled {
   color: #767676;
 }
 button.btn-type2 {
-  max-width: 24rem;
+  width: 24rem;
+}
+button.btn-type3 {
+  width: 36rem;
 }
 button.more-btn {
   display: -webkit-box;
@@ -1754,7 +1757,7 @@ button {
   color: #fff;
   border-radius: 5rem;
   padding: 1.6rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.02em;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -1780,7 +1783,10 @@ button:disabled {
   color: #767676;
 }
 button.btn-type2 {
-  max-width: 24rem;
+  width: 24rem;
+}
+button.btn-type3 {
+  width: 36rem;
 }
 button.more-btn {
   display: -webkit-box;
@@ -3098,6 +3104,11 @@ button.more-btn.on::before {
   border-radius: 5rem;
   background: #E8E8FF;
 }
+@media (max-width: 768px) {
+  #about #container #group::after {
+    border-radius: 1rem;
+  }
+}
 #about #container #group .group-chart {
   width: 100%;
   margin-top: 6rem;
@@ -3230,22 +3241,39 @@ button.more-btn.on::before {
             justify-content: flex-start !important;
   }
 }
+@media (max-width: 768px) {
+  #about #container #member .member-wrap .member-list > li:nth-child(even) > a[title]::after {
+    right: auto;
+    left: 0;
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+}
 #about #container #member .member-wrap .member-list > li > a {
   width: 100%;
   height: 100%;
   position: relative;
 }
-#about #container #member .member-wrap .member-list > li > a[title]:hover::after {
+#about #container #member .member-wrap .member-list > li > a[title]::after {
   content: attr(title);
   position: absolute;
-  top: 0;
+  bottom: 80%;
   right: 0;
-  width: 30%;
-  height: 8rem;
+  width: 100%;
+  height: 10%;
   font-weight: bold;
   text-align: right;
   color: #222;
   z-index: 10;
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  #about #container #member .member-wrap .member-list > li > a[title]::after {
+    bottom: 14rem;
+  }
+}
+#about #container #member .member-wrap .member-list > li > a[title]:hover::after {
+  opacity: 1;
 }
 #about #container #member .member-wrap .member-list > li > a > div:first-child {
   position: relative;
@@ -3323,7 +3351,7 @@ button.more-btn.on::before {
     width: calc(62% - 1rem);
     font-size: 1.4rem;
     line-height: 2.6rem;
-    padding: 0 1.2rem;
+    padding: 0 1.6rem;
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4078,9 +4106,11 @@ button.more-btn.on::before {
   right: 3.6rem;
   z-index: 2;
   opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  background-image: url(../../assets/images/icon/link_icon.svg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-image: url(../../assets/images/icon/link_icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -4174,6 +4204,7 @@ button.more-btn.on::before {
   font-family: "Panchang";
 }
 #project #projectList .con-box .project-list li .inner .txt-wrap strong {
+  display: block;
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.334;
@@ -4187,6 +4218,7 @@ button.more-btn.on::before {
   }
 }
 #project #projectList .con-box .project-list li .inner .txt-wrap p {
+  display: block;
   font-family: "Pretendard";
 }
 @media (max-width: 768px) {
@@ -4204,6 +4236,11 @@ button.more-btn.on::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
+}
+#project #projectList .con-box .project-list li.project-txt .inner .txt-wrap strong, #project #projectList .con-box .project-list li.project-txt .inner .txt-wrap p {
+  display: block;
+  width: 100%;
 }
 #project #projectList .con-box .project-list li.project-txt .inner .txt-wrap p {
   line-height: 1.5;
@@ -4233,6 +4270,7 @@ button.more-btn.on::before {
 #project #projectList .con-box .project-list li:not(.empty) .inner .txt-wrap .project-info strong {
   position: relative;
   bottom: -3rem;
+  word-break: keep-all;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -4245,6 +4283,8 @@ button.more-btn.on::before {
 }
 #project #projectList .con-box .project-list li:hover a::after {
   opacity: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 #project #projectList .con-box .project-list li:hover .inner .txt-wrap .label {
   opacity: 1;

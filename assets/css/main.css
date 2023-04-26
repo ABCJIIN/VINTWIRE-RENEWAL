@@ -821,7 +821,7 @@ button {
   color: #fff;
   border-radius: 5rem;
   padding: 1.6rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.02em;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -847,7 +847,10 @@ button:disabled {
   color: #767676;
 }
 button.btn-type2 {
-  max-width: 24rem;
+  width: 24rem;
+}
+button.btn-type3 {
+  width: 36rem;
 }
 button.more-btn {
   display: -webkit-box;
@@ -1754,7 +1757,7 @@ button {
   color: #fff;
   border-radius: 5rem;
   padding: 1.6rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.02em;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -1780,7 +1783,10 @@ button:disabled {
   color: #767676;
 }
 button.btn-type2 {
-  max-width: 24rem;
+  width: 24rem;
+}
+button.btn-type3 {
+  width: 36rem;
 }
 button.more-btn {
   display: -webkit-box;
@@ -3169,7 +3175,7 @@ body.fixed {
     font-size: 1.6rem;
     line-height: 2.8rem;
     padding-top: 2.4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2.4rem;
   }
 }
 #main #container #value .value-inner .btn-wrap {
@@ -3400,18 +3406,30 @@ body.fixed {
 #main #container #project .project-inner .project-wrap-list .img-wrap {
   border-radius: 3rem 3rem 3rem 1rem;
   overflow: hidden;
+  position: relative;
+}
+#main #container #project .project-inner .project-wrap-list .img-wrap::before {
+  content: "";
+  display: inline;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 #main #container #project .project-inner .project-wrap-list .img-wrap:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 #main #container #project .project-inner .project-wrap-list .img-wrap > img {
   width: 110%;
   height: 100%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 @media (max-width: 768px) {
   #main #container #project .project-inner .project-wrap-list .img-wrap > img {

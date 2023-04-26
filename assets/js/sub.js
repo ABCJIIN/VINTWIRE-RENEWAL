@@ -36,15 +36,22 @@ $(document).ready(function(){
     function respon(){
         var width = $(window).width();
         if (window.matchMedia("(max-width: 768px)").matches) {
+            //about
             $('.benefit-list:nth-child(2) .benefit-item02').appendTo('.benefit-list:first-child');
             $('.benefit-list:nth-child(3) .benefit-item03').appendTo('.benefit-list:first-child');
             $('.benefit-list:nth-child(4) .benefit-item04').appendTo('.benefit-list:first-child');
             $('#about .tag-info').addClass('purple-box');
+
+            //porject
+            // $('.project-list li[data]')
         }else{
+            //about
             $('.benefit-list:first-child .benefit-item02').appendTo('.benefit-list:nth-child(2)');
             $('.benefit-list:first-child .benefit-item03').appendTo('.benefit-list:nth-child(3)');
             $('.benefit-list:first-child .benefit-item04').appendTo('.benefit-list:nth-child(4)');
             $('#about .tag-info').removeClass('purple-box');
+
+            //porject
         }
     }respon();
 
