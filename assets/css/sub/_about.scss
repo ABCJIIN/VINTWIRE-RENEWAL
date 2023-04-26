@@ -224,7 +224,7 @@
             }
         }
         #member{
-            padding: 14rem 0 10rem;
+            padding: 14rem 0 0;
             @include tablet{padding: 8rem 0 0;}
             .sec-tit{
                 margin-bottom: 9.4rem;
@@ -314,8 +314,13 @@
                                         margin: 0 auto;
                                         @include tablet{
                                             position: relative;
+                                            width: 30%;
                                             z-index: 1;
                                             margin: 0;
+                                            padding: 0 1.2rem;
+                                            @include mobile {
+                                                width: 40%;
+                                            }
                                         }
                                         > img{
                                             max-width: 100%;

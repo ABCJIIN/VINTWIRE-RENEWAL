@@ -349,18 +349,25 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                             font-size: 1.6rem;
                             width: 30rem;
                         }
-
-                        &::before {
+                            &::before {
                             content:"";
                             display:inline-block; 
                             width:4.7rem; 
                             height:4.7rem; 
-                            background-size:contain;
                             margin:0 0.6rem;
-                            @include background(common, icon_smile_yellow, svg, no-repeat, contain, center, center);
                             @include tablet {
                                 width: 2.4rem;
                                 height: 2.4rem;
+                            }
+                        }
+                        &:nth-child(odd) {
+                            &::before {
+                                @include background(common, icon_smile_yellow, svg, no-repeat, contain, center, center);
+                            }
+                        }
+                        &:nth-child(even) {
+                            &::before {
+                                @include background(common, icon_smile_white, svg, no-repeat, contain, center, center);
                             }
                         }
                     }
