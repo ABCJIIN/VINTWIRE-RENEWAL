@@ -4241,103 +4241,159 @@ button.more-btn.on::before {
   margin-top: 1.6rem;
 }
 
-#projectDetails.orange-gre .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/orange_gre/project_sub_orange_gre.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.hyundai-robotics .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/hyundai_robotics/project_sub_hyundai_robotics.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#projectDetails.nh-bank .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank.png);
+#projectDetails.orange .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/orange/intro_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 @media (max-width: 768px) {
-  #projectDetails.nh-bank .project-info-bg {
-    background-image: url(../../assets/images/sub/project/details/nh_bank/project_sub_nh_bank_mb.png);
+  #projectDetails.orange .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/orange/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+#projectDetails.hyundai-robotics .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/hyundai_robotics/intro_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.hyundai-robotics .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/hyundai_robotics/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+#projectDetails.nhbank .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/nhbank/intro_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.nhbank .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/nhbank/intro_mb.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
   }
 }
-#projectDetails.nh-bank #overview {
-  background-image: url(../../assets/images/sub/project/details/nh_bank/nh_bank_overview_bg.png);
+#projectDetails.nhbank #overview {
+  background-image: url(../../assets/images/sub/project/details/nhbank/overview_pc.png);
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: right bottom 116px;
 }
 @media (max-width: 768px) {
-  #projectDetails.nh-bank #overview {
+  #projectDetails.nhbank #overview {
     background-size: 90%;
     background-position: right bottom 100px;
   }
 }
-#projectDetails.lg-story .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/lg_story/project_sub_lg_story.png);
+#projectDetails.lgstory .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/lgstory/intro_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-#projectDetails.lg-story #overview {
-  background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_pc.png);
+@media (max-width: 768px) {
+  #projectDetails.lgstory .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/lgstory/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+#projectDetails.lgstory #overview {
+  background-image: url(../../assets/images/sub/project/details/lgstory/overview_pc.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 @media (max-width: 768px) {
-  #projectDetails.lg-story #overview {
-    background-image: url(../../assets/images/sub/project/details/lg_story/lg_overview_bg_mb.png);
+  #projectDetails.lgstory #overview {
+    background-image: url(../../assets/images/sub/project/details/lgstory/overview_mb.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top center;
   }
 }
 #projectDetails.kita .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/kita/project_sub_kita.png);
+  background-image: url(../../assets/images/sub/project/details/kita/intro_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-#projectDetails.kita-net .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/kita_net/project_sub_kita_net.png);
+@media (max-width: 768px) {
+  #projectDetails.kita .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/kita/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+#projectDetails.kitanet .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/kitanet/intro_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/kitanet/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 #projectDetails.koreanair .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/koreanair/project_sub_koreanair.png);
+  background-image: url(../../assets/images/sub/project/details/koreanair/intro_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
+@media (max-width: 768px) {
+  #projectDetails.koreanair .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/koreanair/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
 #projectDetails.koreanair #overview {
-  background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_pc.png);
+  background-image: url(../../assets/images/sub/project/details/koreanair/overview_pc.png);
   background-repeat: no-repeat;
   background-size: 112%;
   background-position: center center;
 }
 @media (max-width: 768px) {
   #projectDetails.koreanair #overview {
-    background-image: url(../../assets/images/sub/project/details/koreanair/koreanair_overview_bg_mb.png);
+    background-image: url(../../assets/images/sub/project/details/koreanair/overview_mb.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top center;
   }
 }
-#projectDetails.nh-life .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/nh_life/project_sub_nh_life.png);
+#projectDetails.nhlife .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/nhlife/intro_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-#projectDetails.nh-life #overview::before {
+@media (max-width: 768px) {
+  #projectDetails.nhlife .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/nhlife/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+#projectDetails.nhlife #overview::before {
   content: "";
   display: block;
   position: absolute;
@@ -4346,13 +4402,13 @@ button.more-btn.on::before {
   z-index: -1;
   width: 21rem;
   height: 18.8rem;
-  background-image: url(../../assets/images/sub/project/details/nh_life/nh_life_icon_01.png);
+  background-image: url(../../assets/images/sub/project/details/nhlife/object_icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
 }
 @media (max-width: 768px) {
-  #projectDetails.nh-life #overview::before {
+  #projectDetails.nhlife #overview::before {
     width: 13.8rem;
     height: 12.2rem;
     top: 1.2rem;
@@ -4360,19 +4416,41 @@ button.more-btn.on::before {
     right: 0;
   }
 }
-#projectDetails.nh-life #contents {
+#projectDetails.nhlife #contents {
   margin-top: -30rem;
 }
 @media (max-width: 768px) {
-  #projectDetails.nh-life #contents {
+  #projectDetails.nhlife #contents {
     margin-top: -10rem;
   }
 }
-#projectDetails.yg-1 .project-info-bg {
-  background-image: url(../../assets/images/sub/project/details/yg_1/project_sub_yg_1.png);
+#projectDetails.yg1 .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/yg1/intro_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.yg1 .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/yg1/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+#projectDetails.koica .project-info-bg {
+  background-image: url(../../assets/images/sub/project/details/koica/intro_pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails.koica .project-info-bg {
+    background-image: url(../../assets/images/sub/project/details/koica/intro_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 #projectDetails #projectInfo {
   margin-top: 14rem;

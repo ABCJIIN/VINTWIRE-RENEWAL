@@ -223,53 +223,72 @@
 }
 
 #projectDetails{
-    &.orange-gre {
-        .project-info-bg{@include background(sub/project/details/orange_gre, project_sub_orange_gre, png, no-repeat, cover, center, center);}
+    &.orange {
+        .project-info-bg{
+            @include background(sub/project/details/orange, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/orange, intro_mb, png, no-repeat, cover, center, center);}
+        }
     } 
     &.hyundai-robotics {
         .project-info-bg{
-            @include background(sub/project/details/hyundai_robotics, project_sub_hyundai_robotics, png, no-repeat, cover, center, center);
+            @include background(sub/project/details/hyundai_robotics, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/hyundai_robotics, intro_mb, png, no-repeat, cover, center, center);}
         }
     }
-    &.nh-bank {
+    &.nhbank {
         .project-info-bg{
-            @include background(sub/project/details/nh_bank, project_sub_nh_bank, png, no-repeat, cover, center, center);
+            @include background(sub/project/details/nhbank, intro_pc, png, no-repeat, cover, center, center);
             @include tablet {
-                @include background(sub/project/details/nh_bank, project_sub_nh_bank_mb, png, no-repeat, cover, center, bottom);
+                @include background(sub/project/details/nhbank, intro_mb, png, no-repeat, cover, center, bottom);
             }
         }
         #overview{
-            @include background(sub/project/details/nh_bank, nh_bank_overview_bg, png, no-repeat, 40%, right, bottom 116px);
+            @include background(sub/project/details/nhbank, overview_pc, png, no-repeat, 40%, right, bottom 116px);
             @include tablet{
                 background-size: 90%;
                 background-position: right bottom 100px;
             }
         }
     }
-    &.lg-story {
-        .project-info-bg{@include background(sub/project/details/lg_story, project_sub_lg_story, png, no-repeat, cover, center, center);}
+    &.lgstory {
+        .project-info-bg{
+            @include background(sub/project/details/lgstory, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/lgstory, intro_mb, png, no-repeat, cover, center, center);}
+        }
         #overview{
-            @include background(sub/project/details/lg_story, lg_overview_bg_pc, png, no-repeat, contain, center, center);
+            @include background(sub/project/details/lgstory, overview_pc, png, no-repeat, contain, center, center);
             @include tablet{
-                @include background(sub/project/details/lg_story, lg_overview_bg_mb, png, no-repeat, 100%, top, center);
+                @include background(sub/project/details/lgstory, overview_mb, png, no-repeat, 100%, top, center);
             }
         }
     }
     &.kita {
-        .project-info-bg{@include background(sub/project/details/kita, project_sub_kita, png, no-repeat, cover, center, center);}
-    }
-    &.kita-net{
-        .project-info-bg{@include background(sub/project/details/kita_net, project_sub_kita_net, png, no-repeat, cover, center, center);}
-    }
-    &.koreanair {
-        .project-info-bg{@include background(sub/project/details/koreanair, project_sub_koreanair, png, no-repeat, cover, center, center);}
-        #overview{
-            @include background(sub/project/details/koreanair, koreanair_overview_bg_pc, png, no-repeat, 112%, center, center);
-            @include tablet{@include background(sub/project/details/koreanair, koreanair_overview_bg_mb, png, no-repeat, 100%, top, center);}
+        .project-info-bg{
+            @include background(sub/project/details/kita, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/kita, intro_mb, png, no-repeat, cover, center, center);}
         }
     }
-    &.nh-life {
-        .project-info-bg{@include background(sub/project/details/nh_life, project_sub_nh_life, png, no-repeat, cover, center, center);}
+    &.kitanet{
+        .project-info-bg{
+            @include background(sub/project/details/kitanet, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/kitanet, intro_mb, png, no-repeat, cover, center, center);}
+        }
+    }
+    &.koreanair {
+        .project-info-bg{
+            @include background(sub/project/details/koreanair, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/koreanair, intro_mb, png, no-repeat, cover, center, center);}
+        }
+        #overview{
+            @include background(sub/project/details/koreanair, overview_pc, png, no-repeat, 112%, center, center);
+            @include tablet{@include background(sub/project/details/koreanair, overview_mb, png, no-repeat, 100%, top, center);}
+        }
+    }
+    &.nhlife {
+        .project-info-bg{
+            @include background(sub/project/details/nhlife, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/nhlife, intro_mb, png, no-repeat, cover, center, center);}
+        }
         #overview{
             &::before {
                 content: '';
@@ -280,7 +299,7 @@
                 z-index: -1;
                 width: 21rem;
                 height: 18.8rem;
-                @include background(sub/project/details/nh_life, nh_life_icon_01, png, no-repeat, contain, center, bottom);
+                @include background(sub/project/details/nhlife, object_icon, png, no-repeat, contain, center, bottom);
                 @include tablet{
                     width: 13.8rem;
                     height: 12.2rem;
@@ -295,8 +314,17 @@
             @include tablet{margin-top: -10rem;}
         }
     }
-    &.yg-1 {
-        .project-info-bg{@include background(sub/project/details/yg_1, project_sub_yg_1, png, no-repeat, cover, center, center);}
+    &.yg1 {
+        .project-info-bg{
+            @include background(sub/project/details/yg1, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/yg1, intro_mb, png, no-repeat, cover, center, center);}
+        }
+    }
+    &.koica {
+        .project-info-bg{
+            @include background(sub/project/details/koica, intro_pc, png, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/koica, intro_mb, png, no-repeat, cover, center, center);}
+        }
     }
     #projectInfo{
         margin-top: 14rem;
