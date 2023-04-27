@@ -154,7 +154,8 @@
                         white-space:nowrap;
                         @include flexbox(row, flex-start, center);
                         @include tablet{
-                            width: auto;
+                            // width: auto;
+                            width: 25rem;
                             font-size: .8rem;
                         }
                         &::before {
