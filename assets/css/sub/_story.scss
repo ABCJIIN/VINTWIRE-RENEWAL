@@ -123,16 +123,14 @@
                     }
                     > h2{
                         font-family: $montserrat;
-                        // margin-top: 1.2rem;
-                        // margin-bottom: 6.2rem;
-                        padding-top: 1.2rem;
-                        padding-bottom: 6.2rem;
+                        margin: 1.2rem 0 6.2rem;
                         max-width: 81.2rem;
                         width: 100%;
                         margin: 0 auto;
                         word-break: keep-all;
                         font-size: 3.6vw;
                         line-height: 1.2;
+                        @include ellipsis(2);
                         @include notebook {
                             font-size: 3.4vw;
                         }
