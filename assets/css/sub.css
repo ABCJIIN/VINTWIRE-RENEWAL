@@ -3154,6 +3154,9 @@ button.more-btn.on::before {
     align-items: flex-start;
   }
 }
+#job #container #recruitment .recruitment-list > li .purple-box > div {
+  padding-bottom: 1.6rem;
+}
 #job #container #recruitment .recruitment-list > li .purple-box > div .tag-item {
   display: block;
   width: 6rem;
