@@ -33,7 +33,7 @@
             @include tablet{font-size: 2rem;}
         }
         #intro{
-            max-height: 56rem;
+            // max-height: 56rem;
             @include notebook{max-height: 100%;}
             .intro-bg{
                 background-position: left bottom -120px;
@@ -129,7 +129,8 @@
                     }
                     > h2{
                         font-family: $montserrat;
-                        margin: 1.2rem 0 6.2rem;
+                        // margin: 1.2rem 0 6.2rem;
+                        padding: 1.2rem 0 6.2rem;
                         max-width: 81.2rem;
                         width: 100%;
                         margin: 0 auto;
