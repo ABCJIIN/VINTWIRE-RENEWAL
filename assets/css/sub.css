@@ -4106,9 +4106,6 @@ button.more-btn.on::before {
     font-size: 2rem;
   }
 }
-#story #container #intro {
-  max-height: 56rem;
-}
 @media (max-width: 1280px) {
   #story #container #intro {
     max-height: 100%;
@@ -4299,7 +4296,7 @@ button.more-btn.on::before {
 }
 #story #container #intro.datail .intro-tit > h2 {
   font-family: "Montserrat";
-  margin: 1.2rem 0 6.2rem;
+  padding: 1.2rem 0 6.2rem;
   max-width: 81.2rem;
   width: 100%;
   margin: 0 auto;
