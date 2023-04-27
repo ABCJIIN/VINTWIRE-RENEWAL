@@ -4039,7 +4039,7 @@ button.more-btn.on::before {
 @media (max-width: 768px) {
   #job #container #recruitment .recruitment-list > li .purple-box .team-support {
     padding: 1rem 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 #job #container #recruitment .btn_wrap {
