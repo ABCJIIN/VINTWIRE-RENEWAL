@@ -981,9 +981,6 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     margin-top: 6rem;
                     width: 100%;
                     text-align: center;
-                    button {
-                        font-family: $pretendard;
-                    }
                     @include tablet{margin-top: 2.4rem;}
                 }
             }
