@@ -122,7 +122,7 @@ $(document).ready(function(){
     }
 
     // ourStory 모바일 슬라이드
-    var swiper = new Swiper('#storySlide', {
+    var storySlide = new Swiper('#storySlide', {
         slidesPerView: 1.3,
         centeredSlides: true,
         spaceBetween: 10,
@@ -130,14 +130,28 @@ $(document).ready(function(){
             el: "#storySlide .swiper-pagination",
             clickable: true,
         },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
         breakpoints: {
-            769 : {
+            768 : {
                 slidesPerView: 4,
                 spaceBetween: 16,
                 centeredSlides: false,
             },
         }
     });
+});
+
+$('#storySlide').on('mouseover', function(){
+    storySlide.autoplay.stop();
+    console.log('멈춤')
+});
+
+$('#storySlide').on('mouseleave', function(){
+    storySlide.autoplay.start();
+    console.log('시작')
 });
 
 // value 롤링
