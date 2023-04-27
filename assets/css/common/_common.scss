@@ -476,17 +476,14 @@ button{
 #topBtn {
     position: sticky;
     display: inline-block;
-    top: 80%;
+    top: 85%;
     left: 90%;
-    // bottom: 5%;
-    // right: 5%;
     z-index: 999;
-    // top: 10rem;
-    // right: 0;
+    @include tablet {
+        left: 80%;
+        top: 85%;
+    }
     .top_btn {
-        // position: fixed;
-        // right: 5%;
-        // bottom: 5%;
         width: 8.5rem;
         height: 8.5rem;
         border-radius: 50%;
