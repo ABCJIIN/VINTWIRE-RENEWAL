@@ -1,5 +1,5 @@
 #project{
-    overflow-x: hidden;
+    // overflow-x: hidden;
     #intro{
         &::after{
             content: 'VINTWIRE PROJECT';
@@ -13,6 +13,11 @@
             position: absolute;
             bottom: -3.5rem;
             right: 0;
+            width: 100%;
+            overflow: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {display: none;}
             @include tablet{
                 font-size: 6.7vw;
                 bottom: 0;

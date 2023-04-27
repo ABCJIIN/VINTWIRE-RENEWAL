@@ -2136,11 +2136,17 @@ button.more-btn.on::before {
   }
 }
 
+#container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 14rem;
+}
+
 #footer {
   position: relative;
   width: 100%;
   background: #fff;
-  margin-top: 14rem;
 }
 #footer.on .inner .stroke-title {
   color: #E8E8FF;
