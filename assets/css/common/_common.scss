@@ -150,9 +150,9 @@ body{
     line-height: 1;
     letter-spacing: -0.02rem;
     color: $black;
-    font-family: $pretendard;
     width: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    *{font-family: $pretendard;} 
     @include tablet{font-size: 1.4rem;}
     &.cursor{*{cursor: none;}}
     .cursor{
