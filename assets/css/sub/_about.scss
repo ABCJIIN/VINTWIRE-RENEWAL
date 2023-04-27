@@ -267,16 +267,16 @@
                     }
                 }
                 .member-list{
-                    gap: 3.6rem 1.6rem;
+                    gap: 3.6rem 2.4rem;
                     flex-wrap: wrap;
                     &:hover{*{cursor: none;}}
-                    @include flexbox(row, flex-start, center);
+                    @include flexbox(row, center, center);
                     @include tablet_junction{
                         justify-content: space-between;
                         gap: 1.8rem;
                     }
                     > li{
-                        width: calc(100% / 4 - 1.2rem);
+                        width: calc(100% / 3 - 1.6rem);
                         max-width: 40rem;
                         @include tablet_junction{
                             width: calc(100% / 2 - 1.2rem);

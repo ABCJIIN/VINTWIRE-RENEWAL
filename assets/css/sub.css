@@ -2492,11 +2492,11 @@ button.more-btn.on::before {
   }
 }
 #about #container #member .member-wrap .member-list {
-  gap: 3.6rem 1.6rem;
+  gap: 3.6rem 2.4rem;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 #about #container #member .member-wrap .member-list:hover * {
@@ -2509,7 +2509,7 @@ button.more-btn.on::before {
   }
 }
 #about #container #member .member-wrap .member-list > li {
-  width: calc(25% - 1.2rem);
+  width: calc(33.3333333333% - 1.6rem);
   max-width: 40rem;
 }
 @media (max-width: 930px) {
