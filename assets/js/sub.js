@@ -115,13 +115,13 @@ $(document).ready(function(){
         },
         repeat: -1
         });
-    }
+    }aboutAni();
     
-    if(isTouchDevice ) {
-        $('.line-wrap').empty();
-    } else {
-        aboutAni();
-    }
+    // if(isTouchDevice ) {
+    //     $('.line-wrap').empty();
+    // } else {
+    //     aboutAni();
+    // }
 
     var cursor = $('.cursor');
     $('.member-list').mousemove(function(e){
