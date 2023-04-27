@@ -66,7 +66,7 @@ $(document).ready(function(){
     AOS.init({once: true});
     function AOS_MOBILE() {
         if (matchMedia("screen and (max-width: 768px)").matches) {
-        //   $('.project-list > li').attr('class', 'animate__animated animate__fadeInUp');
+          $('.project-list > li').attr('data-aos', 'fade-up');
       
         }
     }
