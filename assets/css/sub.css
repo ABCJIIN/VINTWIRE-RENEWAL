@@ -2201,7 +2201,7 @@ button.more-btn.on::before {
     background: #fff;
     font-size: 1.4rem;
     line-height: 2rem;
-    padding: 1.4rem;
+    padding: 1.4rem 0.8rem;
   }
 }
 @media (max-width: 768px) {
@@ -2650,10 +2650,11 @@ button.more-btn.on::before {
 }
 @media (max-width: 768px) {
   #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p {
-    width: calc(62% - 1rem);
+    width: calc(65% - 1rem);
     font-size: 1.4rem;
     line-height: 2.6rem;
     padding: 0 1.6rem;
+    word-break: keep-all;
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
