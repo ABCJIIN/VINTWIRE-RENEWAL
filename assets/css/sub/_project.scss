@@ -601,6 +601,9 @@
             width: 100%;
             text-align: center;
             margin-top: 6rem;
+            @include tablet {
+                margin-top: 2.4rem;
+            }
             button {max-width: 24rem;}
         }
     }
