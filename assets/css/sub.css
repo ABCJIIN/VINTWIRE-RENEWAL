@@ -1606,8 +1606,8 @@ button.more-btn.on::before {
   margin-top: 14rem;
 }
 #footer.on .inner .stroke-title {
-  color: #6A6AE6;
-  -webkit-text-stroke: 1px #6A6AE6;
+  color: #E8E8FF;
+  -webkit-text-stroke: 1px #E8E8FF;
 }
 #footer .inner {
   width: 100%;
@@ -3452,6 +3452,30 @@ button.more-btn.on::before {
 }
 #project #projectList .con-box .project-list + .project-list {
   margin-top: 1.6rem;
+}
+#project #projectList.on [data-aos=new-animation] {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+#project #projectList.on [data-aos=new-animation] [data-aos=new-animation] {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+#project #projectList.on [data-aos=new-animation].aos-animate {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+@media (max-width: 768px) {
+  #project #projectList.on [data-aos=new-animation] {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  #project #projectList.on.aos-animate {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 #projectDetails.orange .project-info-bg {
