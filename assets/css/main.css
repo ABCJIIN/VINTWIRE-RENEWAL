@@ -2914,7 +2914,7 @@ body.fixed {
 #main #container #find .find-inner .sub-title {
   font-family: "Pretendard";
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #222;
   white-space: nowrap;
 }
@@ -3333,13 +3333,11 @@ body.fixed {
   width: 100%;
   text-align: center;
 }
-<<<<<<< Updated upstream
 #main #container #ourStory .story-inner .btn-wrap button {
   font-family: "Pretendard";
-=======
+}
 @media (max-width: 768px) {
   #main #container #ourStory .story-inner .btn-wrap {
     margin-top: 2.4rem;
   }
->>>>>>> Stashed changes
 }

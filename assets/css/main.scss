@@ -622,7 +622,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                 .sub-title {
                     font-family: $pretendard;
                     font-size: 2rem;
-                    font-weight: 400;
+                    font-weight: 500;
                     color: $black;
                     white-space: nowrap;
                     @include tablet {
@@ -979,13 +979,10 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     margin-top: 6rem;
                     width: 100%;
                     text-align: center;
-<<<<<<< Updated upstream
                     button {
                         font-family: $pretendard;
                     }
-=======
                     @include tablet{margin-top: 2.4rem;}
->>>>>>> Stashed changes
                 }
             }
         }
