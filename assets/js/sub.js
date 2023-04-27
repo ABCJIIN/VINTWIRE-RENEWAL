@@ -138,11 +138,15 @@ $(document).ready(function(){
 
     /* job */
     // job 상단 슬라이드
-    var swiper = new Swiper("#teamSwiper", {
+    var teamSwiper = new Swiper("#teamSwiper", {
         slidesPerView: 1.2,
         spaceBetween: 10,
         autoHeight : false,
         centeredSlides: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: "#teamSwiper .swiper-pagination",
             clickable: true,
@@ -156,6 +160,14 @@ $(document).ready(function(){
               resistance : false, 
             },
         },
+    });
+
+    $('#teamSwiper').on('mouseover', function(){
+        teamSwiper.autoplay.stop();
+    });
+    
+    $('#teamSwiper').on('mouseleave', function(){
+        teamSwiper.autoplay.start();
     });
 
     // job benefit
