@@ -3137,13 +3137,17 @@ button.more-btn.on::before {
 }
 @media (max-width: 930px) {
   #job #container #recruitment .recruitment-list > li .team-character {
-    width: 12rem;
-    height: 9.8rem;
     position: absolute;
     top: 50%;
     right: 1.6rem;
     transform: translateY(-50%);
     z-index: 1;
+  }
+}
+@media (max-width: 768px) {
+  #job #container #recruitment .recruitment-list > li .team-character {
+    width: 12rem;
+    height: 9.8rem;
   }
 }
 #job #container #recruitment .recruitment-list > li .purple-box {
@@ -3206,12 +3210,13 @@ button.more-btn.on::before {
 }
 @media (max-width: 930px) {
   #job #container #recruitment .recruitment-list > li .purple-box .team-support {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 768px) {
   #job #container #recruitment .recruitment-list > li .purple-box .team-support {
     padding: 1rem 1.5rem;
+    font-size: 1.8rem;
   }
 }
 #job #container #recruitment .btn_wrap {
