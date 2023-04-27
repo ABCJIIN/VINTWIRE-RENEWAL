@@ -4987,6 +4987,11 @@ button.more-btn.on::before {
   text-align: center;
   margin-top: 6rem;
 }
+@media (max-width: 768px) {
+  #projectDetails #contents .btn-wrap {
+    margin-top: 2.4rem;
+  }
+}
 #projectDetails #contents .btn-wrap button {
   max-width: 24rem;
 }
