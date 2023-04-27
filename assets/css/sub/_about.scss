@@ -34,7 +34,7 @@
                         background: $white;
                         font-size: 1.4rem;
                         line-height: 2rem;
-                        padding: 1.4rem;
+                        padding: 1.4rem .8rem;
                     }
                 }
                 &-icon{
@@ -66,10 +66,8 @@
                     &:nth-child(2){
                         margin-top: 8rem;
                         left: 33.3%;
-                        // transform: translateX(-50%);
                         z-index: 1;
                         @include tablet{
-                            // transform: translateX(0) !important;
                             margin-top: 2.4rem;
                         }
                         .tag-icon{
@@ -366,10 +364,11 @@
                                         > p{
                                             @include ellipsis($num: 2);
                                             @include tablet{
-                                                width: calc(62% - 1rem);
+                                                width: calc(65% - 1rem);
                                                 font-size: 1.4rem;
                                                 line-height: 2.6rem;
                                                 padding: 0 1.6rem;
+                                                word-break: keep-all;
                                                 @include ellipsis($num: 3);
                                             }
                                         }
