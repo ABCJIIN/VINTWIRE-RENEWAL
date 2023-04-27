@@ -519,11 +519,12 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                                     left: auto;
                                     right: 1.4rem;
                                     font-size: 2rem;
+                                    z-index: 2;
                                 }
                                 span{
                                     &:last-child{
                                         color: transparent;
-                                        -webkit-text-stroke: 1px #656565;
+                                        -webkit-text-stroke: 1px #B4B4B4;
                                     }
                                 }
                             }
@@ -908,7 +909,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                     max-width: 1640px;
                     @include tablet{width: 100%}
                     .category-list {
-                        padding: 6rem 0;
+                        padding: 6rem 0 0;
                         gap: 4rem 0;
                         @media (max-width: 980px){
                             grid-template-columns: repeat(4, 1fr);
@@ -917,6 +918,7 @@ body.fixed { width:100%; height:100%; overflow:hidden;}
                         @include tablet {
                             display: flex;
                             gap: 0;
+                            padding: 6rem 0;
                         }
                         .swiper-slide {
                             @include tablet {
