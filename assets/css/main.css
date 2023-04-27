@@ -664,9 +664,15 @@ button.more-btn.on::before {
 #topBtn {
   position: sticky;
   display: inline-block;
-  top: 80%;
+  top: 85%;
   left: 90%;
   z-index: 999;
+}
+@media (max-width: 768px) {
+  #topBtn {
+    left: 80%;
+    top: 85%;
+  }
 }
 #topBtn .top_btn {
   width: 8.5rem;
@@ -1395,9 +1401,15 @@ button.more-btn.on::before {
 #topBtn {
   position: sticky;
   display: inline-block;
-  top: 80%;
+  top: 85%;
   left: 90%;
   z-index: 999;
+}
+@media (max-width: 768px) {
+  #topBtn {
+    left: 80%;
+    top: 85%;
+  }
 }
 #topBtn .top_btn {
   width: 8.5rem;
@@ -2164,6 +2176,7 @@ body.fixed {
   margin: 0 auto;
 }
 #main #container {
+  width: auto;
   height: auto;
 }
 #main #container #intro {

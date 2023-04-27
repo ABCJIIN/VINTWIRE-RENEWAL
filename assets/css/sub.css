@@ -664,9 +664,15 @@ button.more-btn.on::before {
 #topBtn {
   position: sticky;
   display: inline-block;
-  top: 80%;
+  top: 85%;
   left: 90%;
   z-index: 999;
+}
+@media (max-width: 768px) {
+  #topBtn {
+    left: 80%;
+    top: 85%;
+  }
 }
 #topBtn .top_btn {
   width: 8.5rem;
@@ -1395,9 +1401,15 @@ button.more-btn.on::before {
 #topBtn {
   position: sticky;
   display: inline-block;
-  top: 80%;
+  top: 85%;
   left: 90%;
   z-index: 999;
+}
+@media (max-width: 768px) {
+  #topBtn {
+    left: 80%;
+    top: 85%;
+  }
 }
 #topBtn .top_btn {
   width: 8.5rem;
@@ -3147,7 +3159,7 @@ button.more-btn.on::before {
   padding: 1rem;
   font-size: 1.4rem;
   font-weight: 500;
-  margin-bottom: 2.6rem;
+  margin-bottom: 1.6rem;
 }
 @media (max-width: 930px) {
   #job #container #recruitment .recruitment-list > li .purple-box > div .tag-item {
@@ -3167,23 +3179,8 @@ button.more-btn.on::before {
   }
 }
 #job #container #recruitment .recruitment-list > li .purple-box .team-support {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2.2rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #222;
-}
-@media (max-width: 930px) {
-  #job #container #recruitment .recruitment-list > li .purple-box .team-support {
-    margin-top: 1.6rem;
-    gap: 1rem;
-  }
-}
-#job #container #recruitment .recruitment-list > li .purple-box .team-support .arr-btn img {
-  animation: arr_ani 0.5s infinite both alternate;
+  padding: 2rem;
+  width: auto;
 }
 
 #project {
@@ -3462,27 +3459,20 @@ button.more-btn.on::before {
   margin-top: 1.6rem;
 }
 #project #projectList.on [data-aos=new-animation] {
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
 }
 #project #projectList.on [data-aos=new-animation] [data-aos=new-animation] {
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
 }
 #project #projectList.on [data-aos=new-animation].aos-animate {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 @media (max-width: 768px) {
   #project #projectList.on [data-aos=new-animation] {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    transform: translateY(100px);
   }
   #project #projectList.on.aos-animate {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -4309,8 +4299,13 @@ button.more-btn.on::before {
   max-width: 100%;
 }
 #story #container #categories .category-list-wrap .category-content-wrap button {
-  margin: 4rem auto 0;
+  margin: 6rem auto 0;
   display: block;
+}
+@media (max-width: 768px) {
+  #story #container #categories .category-list-wrap .category-content-wrap button {
+    margin: 2.4rem auto 0;
+  }
 }
 #story #container #categories .category-list-wrap .more-story > strong {
   color: #6A6AE6;
