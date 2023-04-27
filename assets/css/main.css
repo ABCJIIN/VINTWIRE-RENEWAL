@@ -661,10 +661,14 @@ button.more-btn.on::before {
   width: 14rem;
 }
 
+#topBtn {
+  position: sticky;
+  display: inline-block;
+  top: 80%;
+  left: 90%;
+  z-index: 999;
+}
 #topBtn .top_btn {
-  position: fixed;
-  right: 5%;
-  bottom: 5%;
   width: 8.5rem;
   height: 8.5rem;
   border-radius: 50%;
@@ -1388,10 +1392,14 @@ button.more-btn.on::before {
   width: 14rem;
 }
 
+#topBtn {
+  position: sticky;
+  display: inline-block;
+  top: 80%;
+  left: 90%;
+  z-index: 999;
+}
 #topBtn .top_btn {
-  position: fixed;
-  right: 5%;
-  bottom: 5%;
   width: 8.5rem;
   height: 8.5rem;
   border-radius: 50%;
@@ -2154,6 +2162,9 @@ body.fixed {
   position: relative;
   width: 100%;
   margin: 0 auto;
+}
+#main #container {
+  height: auto;
 }
 #main #container #intro {
   position: relative;
