@@ -43,15 +43,16 @@ $(document).ready(function(){
             $('#about .tag-info').addClass('purple-box');
 
             //porject
-            // $('.project-list li[data]')
+            $('#projectList').addClass('on');
         }else{
             //about
             $('.benefit-list:first-child .benefit-item02').appendTo('.benefit-list:nth-child(2)');
             $('.benefit-list:first-child .benefit-item03').appendTo('.benefit-list:nth-child(3)');
             $('.benefit-list:first-child .benefit-item04').appendTo('.benefit-list:nth-child(4)');
             $('#about .tag-info').removeClass('purple-box');
-
+            
             //porject
+            $('#projectList').removeClass('on');
         }
     }respon();
 
@@ -61,7 +62,16 @@ $(document).ready(function(){
         }))
     }resize();
 
+    /* project */
     AOS.init({once: true});
+    function AOS_MOBILE() {
+        if (matchMedia("screen and (max-width: 768px)").matches) {
+      
+          $('.project-list > li').attr('data-aos', 'fade-up');
+      
+        }
+    }
+    AOS_MOBILE();
 
     /* about */
     // about 상단 비쥬얼

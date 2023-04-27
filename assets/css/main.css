@@ -1606,8 +1606,8 @@ button.more-btn.on::before {
   margin-top: 14rem;
 }
 #footer.on .inner .stroke-title {
-  color: #6A6AE6;
-  -webkit-text-stroke: 1px #6A6AE6;
+  color: #E8E8FF;
+  -webkit-text-stroke: 1px #E8E8FF;
 }
 #footer .inner {
   width: 100%;

@@ -241,6 +241,17 @@
                 & + .project-list {margin-top: 1.6rem;}
             }
         }
+        &.on{
+            [data-aos="new-animation"]{
+                transition-property: transform;
+                [data-aos="new-animation"]{transform: translateY(100px)}
+                &.aos-animate {transform: translateY(0)}
+            }
+            @include tablet{
+                [data-aos="new-animation"]{transform: translateY(100px)}
+                &.aos-animate {transform: translateY(0)}
+            }
+        }
     }
 }
 
