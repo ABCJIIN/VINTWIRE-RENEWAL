@@ -2794,11 +2794,12 @@ body.fixed {
     left: auto;
     right: 1.4rem;
     font-size: 2rem;
+    z-index: 2;
   }
 }
 #main #container #project .project-inner .project-wrap-list .project-info .page-num span:last-child {
   color: transparent;
-  -webkit-text-stroke: 1px #656565;
+  -webkit-text-stroke: 1px #B4B4B4;
 }
 #main #container #project .project-inner .project-wrap-list .project-info .project-info-name {
   position: absolute;
@@ -3240,7 +3241,7 @@ body.fixed {
   }
 }
 #main #container #ourStory .story-inner #storySlide .category-list {
-  padding: 6rem 0;
+  padding: 6rem 0 0;
   gap: 4rem 0;
 }
 @media (max-width: 980px) {
@@ -3253,6 +3254,7 @@ body.fixed {
   #main #container #ourStory .story-inner #storySlide .category-list {
     display: flex;
     gap: 0;
+    padding: 6rem 0;
   }
 }
 @media (max-width: 768px) {
