@@ -339,6 +339,10 @@
                         }
                         > div{
                             padding-bottom: 1.6rem;
+                            @include tablet_junction {
+                                padding-bottom: 3.2rem;
+                                padding-top: 0.6rem;
+                            }
                             .tag-item{
                                 display: block;
                                 width: 6rem;
@@ -360,8 +364,19 @@
                             }
                         }
                         .team-support {
+                            font-family: $pretendard;
                             padding: 2rem;
                             width: auto;
+                            @include notebook {
+                                font-size: 1.6rem;
+                            }
+                            @include tablet_junction {
+                                // padding: 1rem 1.5rem;
+                                font-size: 1.8rem;
+                            }
+                            @include tablet {
+                                padding: 1rem 1.5rem;
+                            }
                         }
                         // .team-support{
                         //     @include flexbox(row, space-between, center);
@@ -380,6 +395,15 @@
                         //     }
                         // }
                     }
+                }
+            }
+            .btn_wrap {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 6rem;
+                @include tablet {
+                    margin-top: 2.4rem;
                 }
             }
         }
