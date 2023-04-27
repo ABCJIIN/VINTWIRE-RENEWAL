@@ -64,13 +64,13 @@ $(document).ready(function(){
 
     /* project */
     AOS.init({once: true});
-    function AOS_MOBILE() {
-        if (matchMedia("screen and (max-width: 768px)").matches) {
-          $('.project-list > li').attr('data-aos', 'fade-up');
+    // function AOS_MOBILE() {
+    //     if (matchMedia("screen and (max-width: 768px)").matches) {
+    //       $('.project-list > li').attr('data-aos', 'fade-up');
       
-        }
-    }
-    AOS_MOBILE();
+    //     }
+    // }
+    // AOS_MOBILE();
 
     /* about */
     // about 상단 비쥬얼
