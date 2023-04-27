@@ -2565,7 +2565,7 @@ button.more-btn.on::before {
   display: block;
 }
 .wrap #container section .category-list > li > a .preview-img .preview-info {
-  width: 70%;
+  width: 65%;
   height: 100%;
   padding: 1.6rem 1.6rem 3.8rem 1.6rem;
   position: absolute;
@@ -2598,7 +2598,6 @@ button.more-btn.on::before {
   line-height: 1.2;
   color: #222;
   white-space: normal;
-  word-break: keep-all;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
