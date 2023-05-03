@@ -402,11 +402,37 @@
                     gap: 2.4rem;
                 }
                 > li{
+                    &.jane {.preview-img{&::after{@include background(common/character, character_jane, png, no-repeat, 100%, center, bottom);}}}
+                    &.anna {.preview-img{&::after{@include background(common/character, character_anna, png, no-repeat, 100%, center, bottom);}}}
+                    &.jasmine {.preview-img{&::after{@include background(common/character, character_jasmine, png, no-repeat, 100%, center, bottom);}}}
+                    &.steven {.preview-img{&::after{@include background(common/character, character_steven, png, no-repeat, 100%, center, bottom);}}}
+                    &.woody {.preview-img{&::after{@include background(common/character, character_woody, png, no-repeat, 100%, center, bottom);}}}
+                    &.summer {.preview-img{&::after{@include background(common/character, character_summer, png, no-repeat, 100%, center, bottom);}}}
+                    &.felix {.preview-img{&::after{@include background(common/character, character_felix, png, no-repeat, 100%, center, bottom);}}}
+                    &.sophia {.preview-img{&::after{@include background(common/character, character_sophia, png, no-repeat, 100%, center, bottom);}}}
+                    &.nia {.preview-img{&::after{@include background(common/character, character_nia, png, no-repeat, 100%, center, bottom);}}}
+                    &.jason {.preview-img{&::after{@include background(common/character, character_jason, png, no-repeat, 100%, center, bottom);}}}
+                    &.milky {.preview-img{&::after{@include background(common/character, character_milky, png, no-repeat, 100%, center, bottom);}}}
+                    &.noah {.preview-img{&::after{@include background(common/character, character_noah, png, no-repeat, 100%, center, bottom);}}}
+                    &.jinny {.preview-img{&::after{@include background(common/character, character_jinny, png, no-repeat, 100%, center, bottom);}}}
                     > a{
                         width: 100%;
                         height: 100%;
                         .preview-img{
                             position: relative;
+                            border-radius: 2rem;
+                            overflow: hidden;
+                            &::after{
+                                content: '';
+                                width: 35%;
+                                height: 80%;
+                                position: absolute;
+                                bottom: 0;
+                                right: 1rem;
+                                background-size: 90%;
+                                background-repeat: no-repeat;
+                                background-position: center bottom;
+                            }
                             img{
                                 width: 100%;
                                 display: block;
@@ -414,7 +440,8 @@
                             .preview-info{
                                 width: 65%;
                                 height: 100%;
-                                padding: 1.6rem 1.6rem 3.8rem 1.6rem;
+                                // padding: 1.6rem 1.6rem 3.8rem 1.6rem;
+                                padding: 1.6rem;
                                 position: absolute;
                                 top: 50%;
                                 left: 0;
