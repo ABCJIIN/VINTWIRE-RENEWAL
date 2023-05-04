@@ -92,7 +92,6 @@ $f-paul :invert(78%) sepia(97%) saturate(340%) hue-rotate(27deg) brightness(92%)
         border-radius: 50%;
         font-family: $montserrat;
         @include flexbox(row, center, center);
-    
         &.jane {background:$jane;}
         &.anna {background:$anna;}
         &.jasmine {background:$jasmine;}
@@ -116,8 +115,6 @@ $f-paul :invert(78%) sepia(97%) saturate(340%) hue-rotate(27deg) brightness(92%)
         font-size: 2rem;
         font-weight: 600;
         line-height: 2.6rem;
-        color: $black;
-
         &.jane {color:$jane;}
         &.anna {color:$anna;}
         &.jasmine {color:$jasmine;}
