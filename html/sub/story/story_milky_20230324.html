@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UI,UX,웹디자인,APP">
+    <meta name="description" content="(주)빈트와이어는 UI/UX 분야에 오랜 기간 동안 종사한 전문가 그룹입니다. 온/오프라인 디지털 기반의 산업, 기술, 문화, 마케팅에 대한 다양한 지식과 통찰력을 갖추고 있습니다. 디지털 커뮤니케이션을 위한 웹, 모바일 사이트 및 어플리케이션(APP)의 전략수립과 디자인, 개발까지 그리고 온 오프라인 마케팅 &amp; 프로모션까지 디지털서비스의 모든 경험을 구현하는 Digital Media기반 Consulting 기업입니다.">
+    <meta property="og:url" content="http://www.vintwire.com/"/> <!--공유링크-->
+    <meta property="og:title" content="디지털 서비스의 모든 경험을 구현하는 빈트와이어" /><!--타이틀-->
+    <meta property="og:description" content=" "/> <!--설명문구-->
+    <meta property="og:image" content="../../../assets/images/thumbnail.jpg"/> <!--썸네일-->
+    <title>빈트와이어</title>
+    <link rel="icon" href="../../../assets/images/favicon-16x16.png" sizes="16x16"> 
+    <link rel="icon" href="../../../assets/images/favicon-32x32.png" sizes="32x32"> 
+    <link rel="icon" href="../../../assets/images/favicon-48x48.png" sizes="48x48"> 
+    <!-- CDN -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 로컬 소스 -->
+    <link href="../../../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../../../assets/css/reset.css" rel="stylesheet">
+    <link href="../../../assets/css/font.css" rel="stylesheet">
+    <link href="../../../assets/css/sub.css" rel="stylesheet">
+    <script src="../../../assets/js/sub.js"></script>
+</head>
+<body>
+    <div id="story" class="wrap">
+        <header id="header"></header>
+        <div id="container">
+            <div id="topBtn"></div>
+            <section id="intro" class="datail milky">
+                <div class="intro-tit con-box animate__animated animate__fadeIn">
+                    <ul class="tag-list">
+                        <li class="tag-item">개발</li>
+                        <li class="tag-item">꿀팁정보</li>
+                    </ul>
+                    <h2>맛집 탐방 일지</h2>
+                    <p>2023-03-24 / Milky / UX 개발</p>
+                </div>
+                <div class="character animate__animated animate__fadeInRight ani-delay01">캐릭터</div>
+            </section>
+            <section id="categories" class="datail">
+                <div class="category-list-wrap con-box">
+                    <div class="category-content-wrap">
+                        <div class="img-wrap">
+                            <img src="../../../assets/images/sub/stroy/milky/story_milky.jpg" alt="milky story 이미지">
+                        </div>
+                        <button type="button" onclick="location.href='./story.html'">목록으로 돌아가기</button>
+                    </div>
+                    <div class="more-story">
+                        <strong>더 많은 이야기들</strong>
+                        <ul class="category-list">
+                            <li class="woody">
+                                <a href="story_woody_20230412.html">
+                                    <div class="preview-img">
+                                        <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_woody.png" alt="woody story" />
+                                        <div class="preview-info">
+                                            <ul class="tag-list">
+                                                <li class="tag-item">기획</li>
+                                                <li class="tag-item">일상</li>
+                                            </ul>
+                                            <strong class="story-tit tit-emphasis">든든한 아침🥪</strong>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member woody">W</span>
+                                            <span class="writer woody">Woody</span>
+                                        </div>
+                                        <span class="date">2023-04-12</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="felix">
+                                <a href="story_felix_20230320.html">
+                                    <div class="preview-img">
+                                        <img src="../../../assets/images/common/character_thumbnail/character_thumbnail_felix.png" alt="felix story" />
+                                        <div class="preview-info">
+                                            <ul class="tag-list">
+                                                <li class="tag-item">디자인</li>
+                                                <li class="tag-item">종무식</li>
+                                            </ul>
+                                            <strong class="story-tit tit-emphasis">펠릭스의<br>홀로서기</strong>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap">
+                                        <div class="members-wrap">
+                                            <span class="icon-member felix">F</span>
+                                            <span class="writer felix">Felix</span>
+                                        </div>
+                                        <span class="date">2023-03-20</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
