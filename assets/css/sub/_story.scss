@@ -172,9 +172,10 @@
                     .img-wrap{
                         width: 100%;
                         margin: 6rem 0;
-                        @include flexbox(row, center, center);
+                        // @include flexbox(row, center, center);
                         @include tablet{margin: 3.6rem 0;}
                         > img{width: 100%;}
+                        > span{display: block;}
                         &.emoji{
                             img{
                                 width: auto;
