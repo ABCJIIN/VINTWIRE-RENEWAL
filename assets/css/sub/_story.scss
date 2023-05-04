@@ -2,14 +2,6 @@
     #container{
         #categoryList {
             .category-list {
-                // .preview-img{
-                //     min-height: 28rem;
-                //     border: 1px solid #000;
-                //     width: 100%;
-                //     height: 100%;
-                //     background-color: $nia;
-                //     @include background(common, character_thumbnail_bg, png, no-repeat, center, center);
-                // }
                 .preview-info {
                     width: 60%; 
                     .tit-emphasis {
@@ -231,89 +223,6 @@
                         @include tablet {
                             display: flex;
                             flex-direction: column;
-                        }
-                        .story-tit {
-                            font-size: 2.4rem;
-                            @include notebook {
-                                font-size: 3.2rem;
-                            }
-                            @include tablet {
-                                // font-size: 5.8vw;
-                                font-size: 2.4rem;
-                            }
-                            @include mobile {
-                                font-size: 2rem;
-                            }
-                        }
-                        .tit-emphasis {
-                            @include notebook {
-                                padding: 0 4rem;
-                            }
-                            @include tablet {
-                                padding: 0 3rem;
-                            }
-                            @include mobile {
-                                padding: 0 2rem;
-                            }
-                            &::before, &::after {
-                                @include notebook {
-                                    width: 2.6rem;
-                                    height: 2.1rem;
-                                }
-                                @include tablet {
-                                    width: 2rem;
-                                    height: 1.6rem;
-                                }
-                                @include mobile{
-                                    width: 1.5rem;
-                                    height: 1.2rem;
-                                }
-                            }
-                        }
-                        .tag-list{
-                            flex-wrap: wrap;
-                            .tag-item{
-                                @include notebook {
-                                    font-size: 1.9rem;
-                                    padding: 1.6rem 1.8rem;
-                                }
-                                @include tablet {
-                                    font-size: 1.4rem;
-                                    padding: 1.1rem 1.3rem;
-                                }
-                            }
-                        }
-                        .flex-wrap {
-                            .members-wrap {
-                                .icon-member {
-                                    @include notebook {
-                                        width: 4.5rem;
-                                        height: 4.5rem;
-                                        font-size: 3.2rem;
-                                    }
-                                    @include tablet {
-                                        width: 3.4rem;
-                                        height: 3.4rem;
-                                        font-size: 2.5rem;
-                                    }
-                                }
-                                .writer {
-                                    @include notebook {
-                                        font-size: 2.7rem;
-                                    }
-                                    @include tablet {
-                                        font-size: 2rem;
-                                    }
-                                }
-                            }
-                            .date {
-                                @include notebook {
-                                    font-size: 2.7rem;
-                                }
-                                @include tablet {
-                                    font-size: 2rem;
-                                }
-                            }
                         }
                     }
                 }
