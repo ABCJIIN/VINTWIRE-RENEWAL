@@ -2688,6 +2688,7 @@ button.more-btn.on::before {
   color: #222;
   display: -webkit-box;
   overflow: hidden;
+  word-break: keep-all;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -3455,6 +3456,7 @@ button.more-btn.on::before {
 #about #container #member .member-wrap .member-list > li > a > div:first-child .introductory > p {
   display: -webkit-box;
   overflow: hidden;
+  word-break: keep-all;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -3468,6 +3470,7 @@ button.more-btn.on::before {
     word-break: keep-all;
     display: -webkit-box;
     overflow: hidden;
+    word-break: keep-all;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -5339,6 +5342,7 @@ button.more-btn.on::before {
   line-height: 1.2;
   display: -webkit-box;
   overflow: hidden;
+  word-break: keep-all;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;

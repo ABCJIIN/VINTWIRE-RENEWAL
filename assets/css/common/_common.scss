@@ -66,6 +66,7 @@ $f-paul :invert(78%) sepia(97%) saturate(340%) hue-rotate(27deg) brightness(92%)
     } @else {
       display: -webkit-box;
       overflow: hidden;
+      word-break: keep-all;
       text-overflow: ellipsis;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: $num;

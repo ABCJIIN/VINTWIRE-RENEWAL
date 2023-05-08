@@ -2688,6 +2688,7 @@ button.more-btn.on::before {
   color: #222;
   display: -webkit-box;
   overflow: hidden;
+  word-break: keep-all;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
