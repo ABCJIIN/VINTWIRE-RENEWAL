@@ -255,6 +255,24 @@ body .cursor.on {
           align-items: flex-start;
 }
 
+.list-type01 > li {
+  position: relative;
+  padding-left: 1.4rem;
+  line-height: 2.8rem;
+  color: #505050;
+}
+.list-type01 > li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.5rem;
+}
+
 /*애니메이션 효과*/
 .ani-stop {
   visibility: hidden;
@@ -1281,6 +1299,24 @@ body .cursor.on {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.list-type01 > li {
+  position: relative;
+  padding-left: 1.4rem;
+  line-height: 2.8rem;
+  color: #505050;
+}
+.list-type01 > li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.5rem;
 }
 
 /*애니메이션 효과*/
@@ -4505,6 +4541,31 @@ button.more-btn.on::before {
   }
 }
 
+#projectDetails section {
+  width: calc(100% - 3.2rem);
+  max-width: 1840px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+#projectDetails section:not(.overview) {
+  border-radius: 4rem;
+  overflow: hidden;
+}
+#projectDetails section:not(.projectInfo, .overview) {
+  margin-bottom: 4rem;
+}
+#projectDetails section .tit-detail {
+  font-size: 2.6rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 768px) {
+  #projectDetails section .tit-detail {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+}
 #projectDetails.orange .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/orange/intro_pc.png);
   background-repeat: no-repeat;
@@ -4532,6 +4593,21 @@ button.more-btn.on::before {
     background-size: cover;
     background-position: center center;
   }
+}
+#projectDetails.hyundai-robotics .color-list {
+  border: 1px solid red;
+}
+#projectDetails.hyundai-robotics .color-list > li:nth-child(1) {
+  background: #3BB88C; /* $color_list[$i] 와 같은 격이다 */
+}
+#projectDetails.hyundai-robotics .color-list > li:nth-child(2) {
+  background: #000000; /* $color_list[$i] 와 같은 격이다 */
+}
+#projectDetails.hyundai-robotics .color-list > li:nth-child(3) {
+  background: #ffffff; /* $color_list[$i] 와 같은 격이다 */
+}
+#projectDetails.hyundai-robotics .color-list > li:nth-child(4) {
+  background: #F2F2F5; /* $color_list[$i] 와 같은 격이다 */
 }
 #projectDetails.nhbank .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/nhbank/intro_pc.png);
@@ -4733,11 +4809,9 @@ button.more-btn.on::before {
   z-index: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: calc(100% - 8rem);
+  width: 100%;
   height: 100%;
   text-indent: -9999em;
-  border-radius: 3rem;
-  overflow: hidden;
 }
 @media (max-width: 768px) {
   #projectDetails #projectInfo .project-info-bg {
@@ -5085,11 +5159,183 @@ button.more-btn.on::before {
   background-size: contain;
   background-position: center center;
 }
-#projectDetails #keypoint .sec-tit {
-  font-size: 2.6rem;
-  font-weight: 500;
+#projectDetails #keypoint {
+  padding: 8rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3BB88C), to(#C1E3D7));
+  background: linear-gradient(#3BB88C, #C1E3D7);
+  border-radius: 5rem;
+}
+@media (max-width: 930px) {
+  #projectDetails #keypoint {
+    width: calc(100% - 3.2rem);
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails #keypoint {
+    padding: 6rem 0;
+    border-radius: 3rem;
+  }
+}
+#projectDetails #keypoint > .con-box {
+  width: calc(100% - 2.8rem);
+}
+#projectDetails #keypoint .keypoint-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5.6rem;
+}
+@media (max-width: 930px) {
+  #projectDetails #keypoint .keypoint-list {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+#projectDetails #keypoint .keypoint-list > li {
+  height: 32rem;
+  background: #fff;
+  border-radius: 3rem;
+  overflow: hidden;
+  padding: 2% 5%;
+  position: relative;
+  background: #fff;
+  border: 1px solid #3BB88C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 768px) {
+  #projectDetails #keypoint .keypoint-list > li {
+    height: auto;
+    padding: 7.8rem 2.4rem 4rem;
+  }
+}
+#projectDetails #keypoint .keypoint-list > li .tit-num {
+  font-size: 12rem;
+  font-weight: 800;
+  color: #fff;
+  -webkit-text-stroke: 1px #3BB88C;
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  opacity: 0.8;
+  z-index: 0;
+}
+#projectDetails #keypoint .keypoint-list > li .tit-num + div {
+  position: relative;
+  z-index: 1;
+}
+#projectDetails #keypoint .keypoint-list > li .tit-num + div > strong {
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #3BB88C;
+}
+@media (max-width: 768px) {
+  #projectDetails #keypoint .keypoint-list > li .tit-num + div > strong {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails #keypoint .keypoint-list > li .tit-num + div .list-type01 {
+    padding: 0 1.6rem;
+  }
+}
+#projectDetails #designSystem {
+  padding: 8rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7DBD7), to(#DCF0EF));
+  background: linear-gradient(#A7DBD7, #DCF0EF);
+  border-radius: 3rem;
+}
+#projectDetails #designSystem .font-list {
+  display: inline-block;
+  padding-bottom: 8rem;
+  margin-bottom: 8rem;
+  border-bottom: 1px solid #222;
+}
+#projectDetails #designSystem .font-list > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 4.8rem;
+}
+#projectDetails #designSystem .font-list > ul > li.bold-type {
+  font-weight: bold;
+}
+#projectDetails #designSystem .font-list > ul > li.regular-type {
+  font-weight: normal;
+}
+#projectDetails #designSystem .font-list > ul > li > strong {
+  font-size: 4.8rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+#projectDetails #designSystem .font-list > ul > li span {
+  font-size: 1.8rem;
+}
+#projectDetails #designSystem .color-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+}
+#projectDetails #designSystem .color-list > li {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#projectDetails #designSystem .color-list > li.white {
+  color: #fff;
 }
 #projectDetails #contents .img-wrap {
   max-width: 100%;

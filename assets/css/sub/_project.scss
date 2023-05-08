@@ -261,6 +261,27 @@
 }
 
 #projectDetails{
+    section{
+        width: calc(100% - 3.2rem);
+        max-width: 1840px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        &:not(.overview){
+            border-radius: 4rem;
+            overflow: hidden;
+        }
+        &:not(.projectInfo, .overview){margin-bottom: 4rem;}
+        .tit-detail{
+            font-size: 2.6rem;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 3.2rem;
+            @include tablet{
+                font-size: 1.8rem;
+                margin-bottom: 4rem;
+            }
+        } 
+    }
     &.orange {
         .project-info-bg{
             @include background(sub/project/details/orange, intro_pc, png, no-repeat, cover, center, center);
@@ -271,6 +292,18 @@
         .project-info-bg{
             @include background(sub/project/details/hyundai_robotics, intro_pc, png, no-repeat, cover, center, center);
             @include tablet{@include background(sub/project/details/hyundai_robotics, intro_mb, png, no-repeat, cover, center, center);}
+        }
+        $colorchip :(#3BB88C, #000000, #ffffff, #F2F2F5);
+        .color-list{
+            border: 1px solid red;
+            > li {
+                // @for $i from 1 through length($colorchip) {
+                @for $i from 1 through 4 {
+                    &:nth-child(#{$i}){
+                        background: nth($colorchip, $i); /* $color_list[$i] 와 같은 격이다 */
+                    }
+                }
+            }
         }
     }
     &.nhbank {
@@ -377,11 +410,9 @@
             left: 50%;
             z-index: 0;
             transform: translateX(-50%);
-            width: calc(100% - 8rem);
+            width: 100%;
             height: 100%;
             text-indent: -9999em;
-            border-radius: 3rem;
-            overflow: hidden;
             @include tablet{
                 width: calc(100% - 3.2rem);
                 border-radius: 2rem;
@@ -593,12 +624,119 @@
         }
     }
     #keypoint{
-       .sec-tit{
-            font-size: 2.6rem;
-            font-weight: 500;
-            display: block;
-            margin-bottom: 4rem;
-       } 
+        padding: 8rem 0;
+        // width: calc(100% - 8rem);
+        // max-width: 1840px;
+        background: linear-gradient(#3BB88C, #C1E3D7);
+        border-radius: 5rem;
+        @include tablet_junction{width: calc(100% - 3.2rem);}
+        @include tablet{
+            padding: 6rem 0;
+            border-radius: 3rem;
+        }
+        > .con-box{
+            width: calc(100% - 2.8rem);
+            // max-width: 1840px;
+            // padding: 5%;
+        }
+        .keypoint-list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5.6rem;
+            @include tablet_junction{
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            > li{
+                // width: calc(100% / 2 - 2.8rem);
+                height: 32rem;
+                background: $white;
+                border-radius: 3rem;
+                overflow: hidden;
+                padding: 2% 5%;
+                position: relative;
+                background: $white;
+                border: 1px solid #3BB88C;
+                @include flexbox(row, flex-start, center);
+                @include tablet{
+                    height: auto;
+                    padding: 7.8rem 2.4rem 4rem;
+                }
+                .tit-num{
+                    font-size: 12rem;
+                    font-weight: 800;
+                    color: $white;
+                    -webkit-text-stroke: 1px #3BB88C;
+                    position: absolute;
+                    top: -2rem;
+                    left: -1rem;
+                    opacity: .8;
+                    z-index: 0;
+                    + div{
+                        position: relative;
+                        z-index: 1;
+                        > strong{
+                            font-weight: 800;
+                            font-size: 2.8rem;
+                            line-height: 3.8rem;
+                            display: block;
+                            margin-bottom: 2.4rem;
+                            padding-bottom: 1.6rem;
+                            border-bottom: 1px solid #3BB88C;
+                            @include tablet{
+                                font-size: 2rem;
+                                line-height: 3rem;
+                                text-align: center;
+                                padding-bottom: .8rem;
+                            }
+                        }
+                        .list-type01{
+                            @include tablet{
+                                padding: 0 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #designSystem{
+        padding: 8rem 0;
+        background: linear-gradient(#A7DBD7, #DCF0EF);
+        border-radius: 3rem;
+        .font-list{
+            display: inline-block;
+            padding-bottom: 8rem;
+            margin-bottom: 8rem;
+            border-bottom: 1px solid $black;
+            > ul{
+                @include flexbox(row, flex-start, flex-start);
+                gap: 4.8rem;
+                > li{
+                    &.bold-type{font-weight: bold;}
+                    &.regular-type{font-weight: normal;}
+                    > strong{
+                        font-size: 4.8rem;
+                        display: block;
+                        margin-bottom: 1rem;
+                    }
+                    span{font-size: 1.8rem;}
+                }
+            }
+        }
+        .color-list{
+            @include flexbox(row, flex-start, center);
+            gap: 2.4rem;
+            > li{
+                width: 14rem;
+                height: 14rem;
+                border-radius: 50%;
+                font-size: 1.8rem;
+                font-weight: 500;
+                &.white{color: $white;}
+                @include flexbox(row, center, center);
+            }
+        }
     }
     #contents {
         .img-wrap {
