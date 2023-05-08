@@ -51,6 +51,8 @@ $f-park :invert(59%) sepia(54%) saturate(1693%) hue-rotate(317deg) brightness(10
 $f-john :invert(51%) sepia(4%) saturate(5987%) hue-rotate(157deg) brightness(82%) contrast(92%);
 $f-paul :invert(78%) sepia(97%) saturate(340%) hue-rotate(27deg) brightness(92%) contrast(84%);
 
+@mixin border($width, $color) {border: $width solid $color;}
+
 @mixin flexbox($direction, $justfy, $align){
 	display:flex;
     flex-direction: $direction;
@@ -184,6 +186,26 @@ body{
 }
 
 .flex-wrap{@include flexbox(row, flex-start, flex-start);}
+
+.list-type01{
+    > li{
+        position: relative;
+        padding-left: 1.4rem;
+        line-height: 2.8rem;
+        color: #505050;
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: $black;
+            position: absolute;
+            top: 1.2rem;
+            left: .5rem;
+        }
+    }
+}
 
 /*애니메이션 효과*/
 .ani-stop { visibility:hidden; -webkit-animation-name:none !important; animation-name:none !important } 

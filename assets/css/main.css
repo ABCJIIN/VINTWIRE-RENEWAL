@@ -227,6 +227,24 @@ body .cursor.on {
   align-items: flex-start;
 }
 
+.list-type01 > li {
+  position: relative;
+  padding-left: 1.4rem;
+  line-height: 2.8rem;
+  color: #505050;
+}
+.list-type01 > li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.5rem;
+}
+
 /*애니메이션 효과*/
 .ani-stop {
   visibility: hidden;
@@ -964,6 +982,24 @@ body .cursor.on {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.list-type01 > li {
+  position: relative;
+  padding-left: 1.4rem;
+  line-height: 2.8rem;
+  color: #505050;
+}
+.list-type01 > li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.5rem;
 }
 
 /*애니메이션 효과*/
