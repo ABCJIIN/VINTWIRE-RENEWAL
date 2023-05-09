@@ -266,6 +266,7 @@ $hyundai: #3BB88C;
         max-width: 1840px;
         margin: 0 auto 4rem;
         padding: 8rem 0;
+        @include tablet{margin-bottom: 6rem;}
         &:not(#overview){
             border-radius: 4rem;
             overflow: hidden;
@@ -419,10 +420,6 @@ $hyundai: #3BB88C;
             width: 100%;
             height: 100%;
             text-indent: -9999em;
-            @include tablet{
-                width: calc(100% - 3.2rem);
-                border-radius: 2rem;
-            }
             &::before{
                 content: '';
                 width: 100%;
@@ -538,7 +535,10 @@ $hyundai: #3BB88C;
         padding: 16rem 0;
         margin-bottom: 0;
         @include tablet{padding: 8rem 0;}
-        > .con-box{max-width: 1364px;}
+        > .con-box{
+            max-width: 1364px;
+            width: calc(100% - 2.8rem);
+        }
         .overview-tit{
             font-size: 2.6rem;
             font-weight: bold;
@@ -676,6 +676,7 @@ $hyundai: #3BB88C;
                         > strong{
                             font-weight: 800;
                             font-size: 2.8rem;
+                            word-break: keep-all;
                             line-height: 3.8rem;
                             display: block;
                             margin-bottom: 2.4rem;
@@ -703,12 +704,10 @@ $hyundai: #3BB88C;
         border-radius: 3rem;
         > .con-box{width: calc(100% - 2.8rem);}
         .font-list{
-            display: inline-block;
             padding-bottom: 8rem;
             margin-bottom: 8rem;
             border-bottom: 1px solid $black;
             @include tablet{
-                display: block;
                 padding-bottom: 3.8rem;
                 margin-bottom: 3.8rem;
             }
@@ -751,7 +750,10 @@ $hyundai: #3BB88C;
             @include flexbox(row, flex-start, center);
             flex-wrap: wrap;
             gap: 2.4rem;
-            @include tablet{gap: 1.4rem;}
+            @include tablet{
+                gap: 1.4rem;
+                margin: 0 1rem;
+            }
             > li{
                 width: 14rem;
                 height: 14rem;
