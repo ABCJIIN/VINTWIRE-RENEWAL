@@ -313,6 +313,27 @@ $hyundai: #3BB88C;
             }
         }
         .font-list{*{font-family: 'Noto Sans', sans-serif;}}
+        #keypoint{
+            background: linear-gradient(rgba($hyundai, .5), #C1E3D7);
+            .keypoint-list{
+                > li{
+                    background: rgba($white, .8);
+                    border: 1px solid $hyundai;
+                    .tit-num{
+                        -webkit-text-stroke: 1px $hyundai;
+                        + div{
+                            > strong{border-bottom: 1px solid $hyundai;}
+                            .list-type01{
+                                @include tablet{
+                                    padding: 0 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #designSystem{background: linear-gradient(#A7DBD7, #DCF0EF);}
     }
     &.nhbank {
         .project-info-bg{
@@ -632,7 +653,6 @@ $hyundai: #3BB88C;
         }
     }
     #keypoint{
-        background: linear-gradient(rgba($hyundai, .5), #C1E3D7);
         border-radius: 5rem;
         @include tablet_junction{width: calc(100% - 3.2rem);}
         @include tablet{
@@ -654,8 +674,6 @@ $hyundai: #3BB88C;
                 overflow: hidden;
                 padding: 2% 5%;
                 position: relative;
-                background: rgba($white, .8);
-                border: 1px solid $hyundai;
                 @include flexbox(row, flex-start, center);
                 @include tablet{
                     height: auto;
@@ -665,7 +683,6 @@ $hyundai: #3BB88C;
                     font-size: 12rem;
                     font-weight: 800;
                     color: $white;
-                    -webkit-text-stroke: 1px $hyundai;
                     position: absolute;
                     top: -2rem;
                     left: -1rem;
@@ -682,7 +699,6 @@ $hyundai: #3BB88C;
                             display: block;
                             margin-bottom: 2.4rem;
                             padding-bottom: 1.6rem;
-                            border-bottom: 1px solid $hyundai;
                             @include tablet{
                                 font-size: 2rem;
                                 line-height: 3rem;
@@ -701,7 +717,6 @@ $hyundai: #3BB88C;
         }
     }
     #designSystem{
-        background: linear-gradient(#A7DBD7, #DCF0EF);
         border-radius: 3rem;
         > .con-box{width: calc(100% - 2.8rem);}
         .font-list{
