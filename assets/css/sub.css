@@ -5339,6 +5339,7 @@ button.more-btn.on::before {
   font-size: 4.8rem;
   display: block;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 @media (max-width: 768px) {
   #projectDetails #designSystem .font-list > ul > li > strong {
