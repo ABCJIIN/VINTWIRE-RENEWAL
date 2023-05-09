@@ -4557,13 +4557,10 @@ button.more-btn.on::before {
     border-radius: 2rem;
   }
 }
-#projectDetails section:last-child {
-  margin-bottom: 0;
-}
 #projectDetails section + .btn-wrap {
   width: calc(100% - 3.2rem);
   max-width: 1840px;
-  margin: 0 auto;
+  margin: 6rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4577,6 +4574,11 @@ button.more-btn.on::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 768px) {
+  #projectDetails section + .btn-wrap {
+    margin-top: 3rem;
+  }
 }
 #projectDetails section .tit-detail {
   font-size: 2.6rem;
@@ -5435,6 +5437,7 @@ button.more-btn.on::before {
 }
 #projectDetails #preview {
   padding: 0;
+  margin-bottom: 0;
 }
 #projectDetails #preview .img-wrap img {
   max-width: 100%;
