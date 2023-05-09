@@ -4316,7 +4316,7 @@ button.more-btn.on::before {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(34, 34, 34, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -4545,21 +4545,38 @@ button.more-btn.on::before {
 #projectDetails section {
   width: calc(100% - 3.2rem);
   max-width: 1840px;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   padding: 8rem 0;
-  border: 1px solid #000;
 }
-#projectDetails section:not(.overview) {
+#projectDetails section:not(#overview) {
   border-radius: 4rem;
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  #projectDetails section:not(.overview) {
+  #projectDetails section:not(#overview) {
     border-radius: 2rem;
   }
 }
-#projectDetails section:not(.projectInfo, .overview) {
-  margin-bottom: 4rem;
+#projectDetails section:last-child {
+  margin-bottom: 0;
+}
+#projectDetails section + .btn-wrap {
+  width: calc(100% - 3.2rem);
+  max-width: 1840px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #projectDetails section .tit-detail {
   font-size: 2.6rem;
@@ -4601,20 +4618,17 @@ button.more-btn.on::before {
     background-position: center center;
   }
 }
-#projectDetails.hyundai-robotics .color-list {
-  border: 1px solid red;
-}
 #projectDetails.hyundai-robotics .color-list > li:nth-child(1) {
-  background: #3BB88C; /* $color_list[$i] 와 같은 격이다 */
+  background: #3BB88C;
 }
 #projectDetails.hyundai-robotics .color-list > li:nth-child(2) {
-  background: #000000; /* $color_list[$i] 와 같은 격이다 */
+  background: #000000;
 }
 #projectDetails.hyundai-robotics .color-list > li:nth-child(3) {
-  background: #ffffff; /* $color_list[$i] 와 같은 격이다 */
+  background: #ffffff;
 }
 #projectDetails.hyundai-robotics .color-list > li:nth-child(4) {
-  background: #F2F2F5; /* $color_list[$i] 와 같은 격이다 */
+  background: #F2F2F5;
 }
 #projectDetails.nhbank .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/nhbank/intro_pc.png);
@@ -4800,7 +4814,7 @@ button.more-btn.on::before {
   }
 }
 #projectDetails #projectInfo {
-  margin-top: 14rem;
+  margin: 14rem auto 0;
   padding: 17rem 0 3.6rem;
 }
 @media (max-width: 768px) {
@@ -4989,6 +5003,7 @@ button.more-btn.on::before {
 #projectDetails #overview {
   z-index: 10;
   padding: 16rem 0;
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   #projectDetails #overview {
@@ -5167,8 +5182,8 @@ button.more-btn.on::before {
   background-position: center center;
 }
 #projectDetails #keypoint {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3BB88C), to(#C1E3D7));
-  background: linear-gradient(#3BB88C, #C1E3D7);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 184, 140, 0.5)), to(#C1E3D7));
+  background: linear-gradient(rgba(59, 184, 140, 0.5), #C1E3D7);
   border-radius: 5rem;
 }
 @media (max-width: 930px) {
@@ -5198,12 +5213,11 @@ button.more-btn.on::before {
 }
 #projectDetails #keypoint .keypoint-list > li {
   height: 32rem;
-  background: #fff;
   border-radius: 3rem;
   overflow: hidden;
   padding: 2% 5%;
   position: relative;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid #3BB88C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5233,7 +5247,7 @@ button.more-btn.on::before {
   position: absolute;
   top: -2rem;
   left: -1rem;
-  opacity: 0.8;
+  opacity: 0.5;
   z-index: 0;
 }
 #projectDetails #keypoint .keypoint-list > li .tit-num + div {
@@ -5345,7 +5359,6 @@ button.more-btn.on::before {
 #projectDetails #designSystem .font-list + .flex-wrap .brand-logo {
   max-width: 664px;
   width: 45%;
-  border: 1px solid #000;
 }
 #projectDetails #designSystem .font-list + .flex-wrap .brand-logo img {
   width: 100%;
@@ -5411,31 +5424,29 @@ button.more-btn.on::before {
   }
 }
 #projectDetails #preview {
-  width: 100%;
-  max-width: 100%;
-  border-radius: 0;
+  padding: 0;
 }
-#projectDetails #preview::before {
-  content: "";
-  width: calc(100% - 3.2rem);
-  max-width: 1840px;
-  border-radius: 4rem;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: -1;
-  background-image: url(../../assets/images/sub/project/details/hyundai_robotics/preview_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
+#projectDetails #preview .img-wrap img {
+  max-width: 100%;
+}
+#projectDetails #contents .img-wrap {
+  max-width: 100%;
+}
+#projectDetails #contents .img-wrap img {
+  width: 100%;
+}
+#projectDetails #contents .btn-wrap {
+  width: 100%;
+  text-align: center;
+  margin-top: 6rem;
 }
 @media (max-width: 768px) {
-  #projectDetails #preview::before {
-    border-radius: 2rem;
+  #projectDetails #contents .btn-wrap {
+    margin-top: 2.4rem;
   }
+}
+#projectDetails #contents .btn-wrap button {
+  max-width: 24rem;
 }
 
 #story #container #categoryList .category-list .preview-info {
