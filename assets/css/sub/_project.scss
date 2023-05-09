@@ -281,7 +281,7 @@ $hyundai: #3BB88C;
         }
         .tit-detail{
             font-size: 2.6rem;
-            font-weight: 500;
+            font-weight: 600;
             display: block;
             margin-bottom: 3.2rem;
             @include tablet{
@@ -312,6 +312,7 @@ $hyundai: #3BB88C;
                 }
             }
         }
+        .font-list{*{font-family: 'Noto Sans', sans-serif;}}
     }
     &.nhbank {
         .project-info-bg{
@@ -456,7 +457,7 @@ $hyundai: #3BB88C;
                             display: block;
                             width: 1px;
                             height: 50%;
-                            background: $white;
+                            background: rgba($white, .6);
                             position: absolute;
                             top: 50%;
                             left: 0;
@@ -482,8 +483,8 @@ $hyundai: #3BB88C;
                     .tag-item{
                         box-shadow: none;
                         background: transparent;
-                        border: 1px solid rgba(255, 255, 255, 0.6);
-                        color: rgba(255, 255, 255, 0.6);
+                        border: 1px solid rgba($white, .6);
+                        color: rgba($white, .6);
                         display: inline-block;
                         margin: 0 0.4rem;
                     }
@@ -642,7 +643,7 @@ $hyundai: #3BB88C;
         .keypoint-list{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 5.6rem;
+            gap: 1.6rem;
             @include tablet_junction{
                 grid-template-columns: 1fr;
                 gap: 3rem;
@@ -704,7 +705,7 @@ $hyundai: #3BB88C;
         border-radius: 3rem;
         > .con-box{width: calc(100% - 2.8rem);}
         .font-list{
-            padding-bottom: 8rem;
+            padding-bottom: 7rem;
             margin-bottom: 8rem;
             border-bottom: 1px solid $black;
             @include tablet{
@@ -730,6 +731,10 @@ $hyundai: #3BB88C;
                     }
                     span{
                         font-size: 1.8rem;
+                        &:first-child{
+                            margin-right: 1.4rem;
+                            @include tablet{margin-right: 2.4rem;}
+                        }
                         @include tablet{font-size: 1.4rem;}
                     }
                 }
