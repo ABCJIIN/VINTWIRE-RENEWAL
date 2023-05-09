@@ -4548,6 +4548,11 @@ button.more-btn.on::before {
   margin: 0 auto 4rem;
   padding: 8rem 0;
 }
+@media (max-width: 768px) {
+  #projectDetails section {
+    margin-bottom: 6rem;
+  }
+}
 #projectDetails section:not(#overview) {
   border-radius: 4rem;
   overflow: hidden;
@@ -4834,12 +4839,6 @@ button.more-btn.on::before {
   height: 100%;
   text-indent: -9999em;
 }
-@media (max-width: 768px) {
-  #projectDetails #projectInfo .project-info-bg {
-    width: calc(100% - 3.2rem);
-    border-radius: 2rem;
-  }
-}
 #projectDetails #projectInfo .project-info-bg::before {
   content: "";
   width: 100%;
@@ -5012,6 +5011,7 @@ button.more-btn.on::before {
 }
 #projectDetails #overview > .con-box {
   max-width: 1364px;
+  width: calc(100% - 2.8rem);
 }
 #projectDetails #overview .overview-tit {
   font-size: 2.6rem;
@@ -5257,6 +5257,7 @@ button.more-btn.on::before {
 #projectDetails #keypoint .keypoint-list > li .tit-num + div > strong {
   font-weight: 800;
   font-size: 2.8rem;
+  word-break: keep-all;
   line-height: 3.8rem;
   display: block;
   margin-bottom: 2.4rem;
@@ -5285,14 +5286,12 @@ button.more-btn.on::before {
   width: calc(100% - 2.8rem);
 }
 #projectDetails #designSystem .font-list {
-  display: inline-block;
   padding-bottom: 8rem;
   margin-bottom: 8rem;
   border-bottom: 1px solid #222;
 }
 @media (max-width: 768px) {
   #projectDetails #designSystem .font-list {
-    display: block;
     padding-bottom: 3.8rem;
     margin-bottom: 3.8rem;
   }
@@ -5389,6 +5388,7 @@ button.more-btn.on::before {
 @media (max-width: 768px) {
   #projectDetails #designSystem .color-list {
     gap: 1.4rem;
+    margin: 0 1rem;
   }
 }
 #projectDetails #designSystem .color-list > li {
