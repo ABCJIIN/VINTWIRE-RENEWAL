@@ -1,3 +1,4 @@
+$hyundai: #3BB88C;
 #project{
     // overflow-x: hidden;
     #intro{
@@ -78,7 +79,7 @@
                             content: '';
                             width: 100%;
                             height: 100%;
-                            background-color: rgba($color: #000000, $alpha: 0.4);
+                            background-color: rgba($color: $black, $alpha: 0.4);
                             position: absolute;
                             top: 0;
                             left: 0;
@@ -87,8 +88,6 @@
                         .img-wrap {
                             height: 100%;
                             img {
-                                // display: block;
-                                // width: 100%;
                                 height: 100%;
                                 width: auto;
                                 position: absolute;
@@ -265,15 +264,20 @@
     section{
         width: calc(100% - 3.2rem);
         max-width: 1840px;
-        margin: 0 auto;
+        margin: 0 auto 4rem;
         padding: 8rem 0;
-        border: 1px solid #000;
-        &:not(.overview){
+        &:not(#overview){
             border-radius: 4rem;
             overflow: hidden;
             @include tablet{border-radius: 2rem;}
         }
-        &:not(.projectInfo, .overview){margin-bottom: 4rem;}
+        &:last-child{margin-bottom: 0;} 
+        + .btn-wrap{
+            width: calc(100% - 3.2rem);
+            max-width: 1840px;
+            margin: 0 auto;
+            @include flexbox(row, center, center);
+        }
         .tit-detail{
             font-size: 2.6rem;
             font-weight: 500;
@@ -284,6 +288,7 @@
                 margin-bottom: 4rem;
             }
         } 
+
     }
     &.orange {
         .project-info-bg{
@@ -298,12 +303,10 @@
         }
         $colorchip :(#3BB88C, #000000, #ffffff, #F2F2F5);
         .color-list{
-            border: 1px solid red;
             > li {
-                // @for $i from 1 through length($colorchip) {
-                @for $i from 1 through 4 {
+                @for $i from 1 through length($colorchip) {
                     &:nth-child(#{$i}){
-                        background: nth($colorchip, $i); /* $color_list[$i] 와 같은 격이다 */
+                        background: nth($colorchip, $i);
                     }
                 }
             }
@@ -401,7 +404,7 @@
         }
     }
     #projectInfo{
-        margin-top: 14rem;
+        margin: 14rem auto 0;
         padding: 17rem 0 3.6rem; 
         @include tablet{
             margin-top: 9.6rem;
@@ -533,6 +536,7 @@
     #overview{
         z-index: 10;
         padding: 16rem 0;
+        margin-bottom: 0;
         @include tablet{padding: 8rem 0;}
         > .con-box{max-width: 1364px;}
         .overview-tit{
@@ -627,7 +631,7 @@
         }
     }
     #keypoint{
-        background: linear-gradient(#3BB88C, #C1E3D7);
+        background: linear-gradient(rgba($hyundai, .5), #C1E3D7);
         border-radius: 5rem;
         @include tablet_junction{width: calc(100% - 3.2rem);}
         @include tablet{
@@ -644,15 +648,13 @@
                 gap: 3rem;
             }
             > li{
-                // width: calc(100% / 2 - 2.8rem);
                 height: 32rem;
-                background: $white;
                 border-radius: 3rem;
                 overflow: hidden;
                 padding: 2% 5%;
                 position: relative;
-                background: $white;
-                border: 1px solid #3BB88C;
+                background: rgba($white, .8);
+                border: 1px solid $hyundai;
                 @include flexbox(row, flex-start, center);
                 @include tablet{
                     height: auto;
@@ -662,11 +664,11 @@
                     font-size: 12rem;
                     font-weight: 800;
                     color: $white;
-                    -webkit-text-stroke: 1px #3BB88C;
+                    -webkit-text-stroke: 1px $hyundai;
                     position: absolute;
                     top: -2rem;
                     left: -1rem;
-                    opacity: .8;
+                    opacity: .5;
                     z-index: 0;
                     + div{
                         position: relative;
@@ -678,7 +680,7 @@
                             display: block;
                             margin-bottom: 2.4rem;
                             padding-bottom: 1.6rem;
-                            border-bottom: 1px solid #3BB88C;
+                            border-bottom: 1px solid $hyundai;
                             @include tablet{
                                 font-size: 2rem;
                                 line-height: 3rem;
@@ -740,7 +742,6 @@
                 .brand-logo{
                     max-width: 664px;
                     width: 45%;
-                    border: 1px solid #000;
                     img{width: 100%;}
                     @include tablet{width: 100%;}
                 }
@@ -769,37 +770,26 @@
         }
     }
     #preview{
-        width: 100%;
-        max-width: 100%;
-        border-radius: 0;
-        &::before{
-            content: '';
-            width: calc(100% - 3.2rem);
-            max-width: 1840px;
-            border-radius: 4rem;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: -1;
-            @include background(sub/project/details/hyundai_robotics, preview_bg, jpg, no-repeat, 100%, center, center);
-            @include tablet{border-radius: 2rem;}
+        // width: 100%;
+        // max-width: 100%;
+        padding: 0;
+        .img-wrap{
+            img{max-width: 100%;}
         }
     }
-    // #contents {
-    //     .img-wrap {
-    //         max-width: 100%;
-    //         img {width: 100%;}
-    //     }
-    //     .btn-wrap {
-    //         width: 100%;
-    //         text-align: center;
-    //         margin-top: 6rem;
-    //         @include tablet {
-    //             margin-top: 2.4rem;
-    //         }
-    //         button {max-width: 24rem;}
-    //     }
-    // }
+    #contents {
+        .img-wrap {
+            max-width: 100%;
+            img {width: 100%;}
+        }
+        .btn-wrap {
+            width: 100%;
+            text-align: center;
+            margin-top: 6rem;
+            @include tablet {
+                margin-top: 2.4rem;
+            }
+            button {max-width: 24rem;}
+        }
+    }
 }
