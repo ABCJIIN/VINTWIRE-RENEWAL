@@ -4541,15 +4541,22 @@ button.more-btn.on::before {
   }
 }
 
+/* 프로젝트 상세페이지 */
 #projectDetails section {
   width: calc(100% - 3.2rem);
   max-width: 1840px;
   margin: 0 auto;
+  padding: 8rem 0;
   border: 1px solid #000;
 }
 #projectDetails section:not(.overview) {
   border-radius: 4rem;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  #projectDetails section:not(.overview) {
+    border-radius: 2rem;
+  }
 }
 #projectDetails section:not(.projectInfo, .overview) {
   margin-bottom: 4rem;
@@ -5160,7 +5167,6 @@ button.more-btn.on::before {
   background-position: center center;
 }
 #projectDetails #keypoint {
-  padding: 8rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#3BB88C), to(#C1E3D7));
   background: linear-gradient(#3BB88C, #C1E3D7);
   border-radius: 5rem;
@@ -5257,16 +5263,25 @@ button.more-btn.on::before {
   }
 }
 #projectDetails #designSystem {
-  padding: 8rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#A7DBD7), to(#DCF0EF));
   background: linear-gradient(#A7DBD7, #DCF0EF);
   border-radius: 3rem;
+}
+#projectDetails #designSystem > .con-box {
+  width: calc(100% - 2.8rem);
 }
 #projectDetails #designSystem .font-list {
   display: inline-block;
   padding-bottom: 8rem;
   margin-bottom: 8rem;
   border-bottom: 1px solid #222;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list {
+    display: block;
+    padding-bottom: 3.8rem;
+    margin-bottom: 3.8rem;
+  }
 }
 #projectDetails #designSystem .font-list > ul {
   display: -webkit-box;
@@ -5282,7 +5297,18 @@ button.more-btn.on::before {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 4.8rem;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.2rem;
+  }
 }
 #projectDetails #designSystem .font-list > ul > li.bold-type {
   font-weight: bold;
@@ -5295,8 +5321,39 @@ button.more-btn.on::before {
   display: block;
   margin-bottom: 1rem;
 }
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list > ul > li > strong {
+    font-size: 2.4rem;
+  }
+}
 #projectDetails #designSystem .font-list > ul > li span {
   font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list > ul > li span {
+    font-size: 1.4rem;
+  }
+}
+#projectDetails #designSystem .font-list + .flex-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem 5%;
+}
+#projectDetails #designSystem .font-list + .flex-wrap .brand-logo {
+  max-width: 664px;
+  width: 45%;
+  border: 1px solid #000;
+}
+#projectDetails #designSystem .font-list + .flex-wrap .brand-logo img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list + .flex-wrap .brand-logo {
+    width: 100%;
+  }
 }
 #projectDetails #designSystem .color-list {
   display: -webkit-box;
@@ -5312,7 +5369,14 @@ button.more-btn.on::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2.4rem;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .color-list {
+    gap: 1.4rem;
+  }
 }
 #projectDetails #designSystem .color-list > li {
   width: 14rem;
@@ -5320,6 +5384,8 @@ button.more-btn.on::before {
   border-radius: 50%;
   font-size: 1.8rem;
   font-weight: 500;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5337,24 +5403,39 @@ button.more-btn.on::before {
 #projectDetails #designSystem .color-list > li.white {
   color: #fff;
 }
-#projectDetails #contents .img-wrap {
-  max-width: 100%;
-}
-#projectDetails #contents .img-wrap img {
-  width: 100%;
-}
-#projectDetails #contents .btn-wrap {
-  width: 100%;
-  text-align: center;
-  margin-top: 6rem;
-}
 @media (max-width: 768px) {
-  #projectDetails #contents .btn-wrap {
-    margin-top: 2.4rem;
+  #projectDetails #designSystem .color-list > li {
+    width: 8.8rem;
+    height: 8.8rem;
+    font-size: 1.4rem;
   }
 }
-#projectDetails #contents .btn-wrap button {
-  max-width: 24rem;
+#projectDetails #preview {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+}
+#projectDetails #preview::before {
+  content: "";
+  width: calc(100% - 3.2rem);
+  max-width: 1840px;
+  border-radius: 4rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+  background-image: url(../../assets/images/sub/project/details/hyundai_robotics/preview_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  #projectDetails #preview::before {
+    border-radius: 2rem;
+  }
 }
 
 #story #container #categoryList .category-list .preview-info {
