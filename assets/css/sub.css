@@ -5439,6 +5439,9 @@ button.more-btn.on::before {
   padding: 0;
   margin-bottom: 0;
 }
+#projectDetails #preview .img-wrap:not(:last-child) {
+  margin-bottom: 6rem;
+}
 #projectDetails #preview .img-wrap img {
   max-width: 100%;
 }
