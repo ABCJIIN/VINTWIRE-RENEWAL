@@ -5039,18 +5039,6 @@ button.more-btn.on::before {
   max-width: 1364px;
   width: calc(100% - 2.8rem);
 }
-#projectDetails #overview .overview-tit {
-  font-size: 2.6rem;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 3.2rem;
-}
-@media (max-width: 768px) {
-  #projectDetails #overview .overview-tit {
-    font-size: 2rem;
-    margin-bottom: 1.6rem;
-  }
-}
 #projectDetails #overview .overview-info > div {
   display: -webkit-box;
   display: -ms-flexbox;
