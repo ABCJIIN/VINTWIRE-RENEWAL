@@ -266,7 +266,6 @@ $hyundai: #3BB88C;
         max-width: 1840px;
         margin: 0 auto 4rem;
         padding: 8rem 0;
-        @include tablet{margin-bottom: 6rem;}
         &:not(#overview){
             border-radius: 4rem;
             overflow: hidden;

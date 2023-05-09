@@ -4548,11 +4548,6 @@ button.more-btn.on::before {
   margin: 0 auto 4rem;
   padding: 8rem 0;
 }
-@media (max-width: 768px) {
-  #projectDetails section {
-    margin-bottom: 6rem;
-  }
-}
 #projectDetails section:not(#overview) {
   border-radius: 4rem;
   overflow: hidden;
