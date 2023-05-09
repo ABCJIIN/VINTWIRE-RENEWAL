@@ -260,15 +260,18 @@
     }
 }
 
+/* 프로젝트 상세페이지 */
 #projectDetails{
     section{
         width: calc(100% - 3.2rem);
         max-width: 1840px;
         margin: 0 auto;
+        padding: 8rem 0;
         border: 1px solid #000;
         &:not(.overview){
             border-radius: 4rem;
             overflow: hidden;
+            @include tablet{border-radius: 2rem;}
         }
         &:not(.projectInfo, .overview){margin-bottom: 4rem;}
         .tit-detail{
@@ -624,9 +627,6 @@
         }
     }
     #keypoint{
-        padding: 8rem 0;
-        // width: calc(100% - 8rem);
-        // max-width: 1840px;
         background: linear-gradient(#3BB88C, #C1E3D7);
         border-radius: 5rem;
         @include tablet_junction{width: calc(100% - 3.2rem);}
@@ -634,11 +634,7 @@
             padding: 6rem 0;
             border-radius: 3rem;
         }
-        > .con-box{
-            width: calc(100% - 2.8rem);
-            // max-width: 1840px;
-            // padding: 5%;
-        }
+        > .con-box{width: calc(100% - 2.8rem);}
         .keypoint-list{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -701,17 +697,27 @@
         }
     }
     #designSystem{
-        padding: 8rem 0;
         background: linear-gradient(#A7DBD7, #DCF0EF);
         border-radius: 3rem;
+        > .con-box{width: calc(100% - 2.8rem);}
         .font-list{
             display: inline-block;
             padding-bottom: 8rem;
             margin-bottom: 8rem;
             border-bottom: 1px solid $black;
+            @include tablet{
+                display: block;
+                padding-bottom: 3.8rem;
+                margin-bottom: 3.8rem;
+            }
             > ul{
                 @include flexbox(row, flex-start, flex-start);
+                flex-wrap: wrap;
                 gap: 4.8rem;
+                @include tablet{
+                    flex-direction: column;
+                    gap: 2.2rem;
+                }
                 > li{
                     &.bold-type{font-weight: bold;}
                     &.regular-type{font-weight: normal;}
@@ -719,38 +725,81 @@
                         font-size: 4.8rem;
                         display: block;
                         margin-bottom: 1rem;
+                        @include tablet{font-size: 2.4rem;}
                     }
-                    span{font-size: 1.8rem;}
+                    span{
+                        font-size: 1.8rem;
+                        @include tablet{font-size: 1.4rem;}
+                    }
+                }
+            }
+            + .flex-wrap{
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 2rem 5%;
+                .brand-logo{
+                    max-width: 664px;
+                    width: 45%;
+                    border: 1px solid #000;
+                    img{width: 100%;}
+                    @include tablet{width: 100%;}
                 }
             }
         }
         .color-list{
             @include flexbox(row, flex-start, center);
+            flex-wrap: wrap;
             gap: 2.4rem;
+            @include tablet{gap: 1.4rem;}
             > li{
                 width: 14rem;
                 height: 14rem;
                 border-radius: 50%;
                 font-size: 1.8rem;
                 font-weight: 500;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
                 &.white{color: $white;}
                 @include flexbox(row, center, center);
+                @include tablet{
+                    width: 8.8rem;
+                    height: 8.8rem;
+                    font-size: 1.4rem;
+                }
             }
         }
     }
-    #contents {
-        .img-wrap {
-            max-width: 100%;
-            img {width: 100%;}
-        }
-        .btn-wrap {
-            width: 100%;
-            text-align: center;
-            margin-top: 6rem;
-            @include tablet {
-                margin-top: 2.4rem;
-            }
-            button {max-width: 24rem;}
+    #preview{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        &::before{
+            content: '';
+            width: calc(100% - 3.2rem);
+            max-width: 1840px;
+            border-radius: 4rem;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            @include background(sub/project/details/hyundai_robotics, preview_bg, jpg, no-repeat, 100%, center, center);
+            @include tablet{border-radius: 2rem;}
         }
     }
+    // #contents {
+    //     .img-wrap {
+    //         max-width: 100%;
+    //         img {width: 100%;}
+    //     }
+    //     .btn-wrap {
+    //         width: 100%;
+    //         text-align: center;
+    //         margin-top: 6rem;
+    //         @include tablet {
+    //             margin-top: 2.4rem;
+    //         }
+    //         button {max-width: 24rem;}
+    //     }
+    // }
 }
