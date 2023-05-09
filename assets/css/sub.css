@@ -3731,6 +3731,24 @@ button.more-btn.on::before {
     background-position: center center;
   }
 }
+#projectDetails.orange .color-list > li:nth-child(1) {
+  background: #16AE8A;
+}
+#projectDetails.orange .color-list > li:nth-child(2) {
+  background: #1A9175;
+}
+#projectDetails.orange .color-list > li:nth-child(3) {
+  background: #8CDAC7;
+}
+#projectDetails.orange .color-list > li:nth-child(4) {
+  background: #FA902E;
+}
+#projectDetails.orange .color-list > li:nth-child(5) {
+  background: #FFF1E3;
+}
+#projectDetails.orange .font-list * {
+  font-family: "Noto Sans", sans-serif;
+}
 #projectDetails.orange #keypoint {
   background: linear-gradient(rgba(250, 144, 46, 0.3), rgba(250, 46, 46, 0.3));
 }
@@ -3762,6 +3780,9 @@ button.more-btn.on::before {
   #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div .list-type01 {
     padding: 0 1.6rem;
   }
+}
+#projectDetails.orange #designSystem {
+  background: linear-gradient(rgba(75, 202, 172, 0.3), rgba(174, 173, 242, 0.3));
 }
 #projectDetails.hyundai-robotics .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/hyundai_robotics/intro_pc.png);

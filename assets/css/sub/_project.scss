@@ -296,7 +296,17 @@ $orange: #FA902E;
             @include background(sub/project/details/orange, intro_pc, png, no-repeat, cover, center, center);
             @include tablet{@include background(sub/project/details/orange, intro_mb, png, no-repeat, cover, center, center);}
         }
-        // $colorchip :(#16AE8A, #1A9175, #8CDAC7, #FA902E, #FFF1E3);
+        $colorchip :(#16AE8A, #1A9175, #8CDAC7, #FA902E, #FFF1E3);
+        .color-list{
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}){
+                        background: nth($colorchip, $i);
+                    }
+                }
+            }
+        }
+        .font-list{*{font-family: 'Noto Sans', sans-serif;}}
         #keypoint {
             background: linear-gradient(rgba($orange, 0.3), rgba(250, 46, 46, 0.3));
             .keypoint-list {
@@ -324,6 +334,7 @@ $orange: #FA902E;
                 }
             }
         }
+        #designSystem{background: linear-gradient(rgba(75, 202, 172, 0.3), rgba(174, 173, 242, 0.3));}
     } 
     &.hyundai-robotics {
         .project-info-bg{
