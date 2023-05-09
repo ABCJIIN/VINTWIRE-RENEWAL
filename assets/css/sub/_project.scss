@@ -785,6 +785,7 @@ $hyundai: #3BB88C;
         padding: 0;
         margin-bottom: 0;
         .img-wrap{
+            &:not(:last-child){margin-bottom: 6rem;}
             img{max-width: 100%;}
         }
     }
