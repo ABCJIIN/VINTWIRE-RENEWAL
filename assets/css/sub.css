@@ -4841,6 +4841,31 @@ button.more-btn.on::before {
     background-position: center center;
   }
 }
+#projectDetails.koica #overview::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  z-index: -1;
+  width: 18rem;
+  height: 18.8rem;
+  background-image: url(../../assets/images/sub/project/details/koica/object_icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+@media (max-width: 768px) {
+  #projectDetails.koica #overview::before {
+    width: 10.2rem;
+    height: 10.2rem;
+    top: 4rem;
+  }
+}
+#projectDetails.koica #designSystem {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(57, 65, 165, 0.5)), to(rgba(57, 65, 165, 0.1)));
+  background: linear-gradient(rgba(57, 65, 165, 0.5), rgba(57, 65, 165, 0.1));
+}
 #projectDetails #projectInfo {
   margin: 14rem auto 0;
   padding: 17rem 0 3.6rem;
@@ -5299,7 +5324,7 @@ button.more-btn.on::before {
     margin-bottom: 3.8rem;
   }
 }
-#projectDetails #designSystem .font-list > ul {
+#projectDetails #designSystem .font-list-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5318,7 +5343,7 @@ button.more-btn.on::before {
   gap: 4.8rem;
 }
 @media (max-width: 768px) {
-  #projectDetails #designSystem .font-list > ul {
+  #projectDetails #designSystem .font-list-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5326,36 +5351,36 @@ button.more-btn.on::before {
     gap: 2.2rem;
   }
 }
-#projectDetails #designSystem .font-list > ul > li.bold-type {
+#projectDetails #designSystem .font-list-group > li.bold-type {
   font-weight: bold;
 }
-#projectDetails #designSystem .font-list > ul > li.regular-type {
+#projectDetails #designSystem .font-list-group > li.regular-type {
   font-weight: normal;
 }
-#projectDetails #designSystem .font-list > ul > li > strong {
+#projectDetails #designSystem .font-list-group > li strong {
   font-size: 4.8rem;
   display: block;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 @media (max-width: 768px) {
-  #projectDetails #designSystem .font-list > ul > li > strong {
+  #projectDetails #designSystem .font-list-group > li strong {
     font-size: 2.4rem;
   }
 }
-#projectDetails #designSystem .font-list > ul > li span {
+#projectDetails #designSystem .font-list-group > li span {
   font-size: 1.8rem;
 }
-#projectDetails #designSystem .font-list > ul > li span:first-child {
+#projectDetails #designSystem .font-list-group > li span:first-child {
   margin-right: 1.4rem;
 }
 @media (max-width: 768px) {
-  #projectDetails #designSystem .font-list > ul > li span:first-child {
+  #projectDetails #designSystem .font-list-group > li span:first-child {
     margin-right: 2.4rem;
   }
 }
 @media (max-width: 768px) {
-  #projectDetails #designSystem .font-list > ul > li span {
+  #projectDetails #designSystem .font-list-group > li span {
     font-size: 1.4rem;
   }
 }
