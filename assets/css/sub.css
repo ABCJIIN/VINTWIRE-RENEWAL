@@ -4585,7 +4585,7 @@ button.more-btn.on::before {
 }
 #projectDetails section .tit-detail {
   font-size: 2.6rem;
-  font-weight: 500;
+  font-weight: 600;
   display: block;
   margin-bottom: 3.2rem;
 }
@@ -4634,6 +4634,9 @@ button.more-btn.on::before {
 }
 #projectDetails.hyundai-robotics .color-list > li:nth-child(4) {
   background: #F2F2F5;
+}
+#projectDetails.hyundai-robotics .font-list * {
+  font-family: "Noto Sans", sans-serif;
 }
 #projectDetails.nhbank .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/nhbank/intro_pc.png);
@@ -4905,7 +4908,7 @@ button.more-btn.on::before {
   display: block;
   width: 1px;
   height: 50%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 50%;
   left: 0;
@@ -5203,7 +5206,7 @@ button.more-btn.on::before {
 #projectDetails #keypoint .keypoint-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5.6rem;
+  gap: 1.6rem;
 }
 @media (max-width: 930px) {
   #projectDetails #keypoint .keypoint-list {
@@ -5286,7 +5289,7 @@ button.more-btn.on::before {
   width: calc(100% - 2.8rem);
 }
 #projectDetails #designSystem .font-list {
-  padding-bottom: 8rem;
+  padding-bottom: 7rem;
   margin-bottom: 8rem;
   border-bottom: 1px solid #222;
 }
@@ -5341,6 +5344,14 @@ button.more-btn.on::before {
 }
 #projectDetails #designSystem .font-list > ul > li span {
   font-size: 1.8rem;
+}
+#projectDetails #designSystem .font-list > ul > li span:first-child {
+  margin-right: 1.4rem;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list > ul > li span:first-child {
+    margin-right: 2.4rem;
+  }
 }
 @media (max-width: 768px) {
   #projectDetails #designSystem .font-list > ul > li span {
