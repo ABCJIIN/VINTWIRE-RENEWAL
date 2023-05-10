@@ -488,6 +488,65 @@ $nhbank: #0055A5;
             @include background(sub/project/details/kitanet, intro_pc, png, no-repeat, cover, center, center);
             @include tablet{@include background(sub/project/details/kitanet, intro_mb, png, no-repeat, cover, center, center);}
         }
+        $colorchip :(#327BBC, #64CEBC, #DD2B2E, #F8BB9F, #F29EC8, #8CD0EB);
+        .color-list{
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}){
+                        background: nth($colorchip, $i);
+                    }
+                }
+            }
+        }
+        #designAll {
+            background: linear-gradient(rgba(237, 237, 237, 0.5 ), rgba(237, 237, 237,0.1));
+            .con-box {
+                width: calc(100% - 2.8rem);
+                .design-challenge {
+                    width: 100%;
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        color: $black;
+                    }
+                    .img-wrap {
+                        max-width: 1440px;
+                        width: 100%;
+                        padding: 3.4rem 7% 8rem;
+                        @include tablet {
+                            padding: 3.5rem 0 5rem;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                #designSystem {
+                    .font-list {
+                        .bold-type, .regular-type {
+                            strong {
+                                margin-bottom: 0;
+                                @include tablet {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                            div {
+                                @include tablet {
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                    .flex-wrap {
+                        .brand-logo {
+                            @include tablet {
+                                margin: 0 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     &.koreanair {
         .project-info-bg{
@@ -988,7 +1047,7 @@ $nhbank: #0055A5;
             }
         }
     }
-    #preview{
+    #preview, #preview02{
         padding: 0;
         margin-bottom: 0;
         .img-wrap{
