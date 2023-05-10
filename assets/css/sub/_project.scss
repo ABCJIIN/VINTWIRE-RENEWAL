@@ -320,7 +320,7 @@ $yg1: #ED1C24;
                 }
             }
         }
-        .font-list{*{font-family: $notosans;}}
+        .font-list{*{font-family: $notosans;} @include tablet {*{font-family: $apple_gothicNeo;}}}
         #keypoint {
             background: linear-gradient(rgba($orange, 0.3), rgba(250, 46, 46, 0.3));
             .keypoint-list {
