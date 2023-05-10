@@ -9,8 +9,10 @@ $yg1: #ED1C24;
 .pretendard{font-family: $pretendard;}
 .notosans{font-family: $pretendard;}
 .roboto{font-family: $roboto;}
-.montserrat{font-family: $montserrat;}
-.spoqa{font-family: $spoqa;}
+.montserrat{*{font-family: $montserrat;}}
+.spoqa{*{font-family: $spoqa;}}
+.poppins{*{font-family: $poppins;}}
+.play{*{font-family: $play;}}
 
 #project{
     // overflow-x: hidden;
