@@ -509,6 +509,7 @@ $yg1: #ED1C24;
         }
         #designAll {
             background: linear-gradient(rgba(237, 237, 237, 0.5 ), rgba(237, 237, 237,0.1));
+            margin: 4rem auto;
             .con-box {
                 width: calc(100% - 2.8rem);
                 .design-challenge {
@@ -555,6 +556,10 @@ $yg1: #ED1C24;
                     }
                 }
             }
+        }
+        #preview02 {
+            width: 100%;
+            max-width: 100%;
         }
     }
     &.koreanair {
