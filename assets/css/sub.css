@@ -4219,12 +4219,20 @@ button.more-btn.on::before {
   font-family: "Roboto", sans-serif;
 }
 
-.montserrat {
+.montserrat * {
   font-family: "Montserrat";
 }
 
-.spoqa {
+.spoqa * {
   font-family: "SpoqaHanSansNeo-Regular";
+}
+
+.poppins * {
+  font-family: "Poppins", sans-serif;
+}
+
+.play * {
+  font-family: "Play", sans-serif;
 }
 
 #project #intro::after {
