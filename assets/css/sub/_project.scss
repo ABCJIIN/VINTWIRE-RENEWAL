@@ -280,7 +280,9 @@ $yg1: #ED1C24;
         width: calc(100% - 3.2rem);
         max-width: 1840px;
         margin: 0 auto 4rem;
-        padding: 8rem 0;
+        // padding: 8rem 7rem;
+        padding: 6% 5%; 
+        @include tablet{padding: 8rem 1.6rem;}
         &:not(#overview){
             border-radius: 4rem;
             overflow: hidden;
@@ -461,8 +463,6 @@ $yg1: #ED1C24;
                     gap: 6rem;
                 }
                 .brand-logo {
-                    max-width: 664px;
-                    img{width: 100%;}
                     @include tablet_junction {
                         margin: 0 1rem;
                     }
@@ -513,7 +513,8 @@ $yg1: #ED1C24;
             background: linear-gradient(rgba(237, 237, 237, 0.5 ), rgba(237, 237, 237,0.1));
             margin: 4rem auto;
             .con-box {
-                width: calc(100% - 2.8rem);
+                width: 100%;
+                max-width: 1500px;
                 .design-challenge {
                     width: 100%;
                     p {
@@ -629,6 +630,16 @@ $yg1: #ED1C24;
                         min-width: 33rem;
                         flex-direction: column;
                         > span{font-size: 3.2rem;}
+                    }
+                }
+            }
+        }
+        $colorchip :(#ED1C24, #222222, #656565, #aaaaaa, #dddddd, #ffffff);
+        .color-list{
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}){
+                        background: nth($colorchip, $i);
                     }
                 }
             }
@@ -978,11 +989,15 @@ $yg1: #ED1C24;
     }
     #designSystem{
         border-radius: 3rem;
-        > .con-box{width: calc(100% - 2.8rem);}
+        > .con-box{
+            width: 100%;
+            max-width: 1500px;
+            margin: 0;
+        }
         .brand-logo{
             max-width: 664px;
             // width: 45%;
-            img{width: 100%;}
+            img{max-width: 100%;}
             @include tablet{width: 100%;}
         }
         .font-list{
@@ -1070,7 +1085,7 @@ $yg1: #ED1C24;
             gap: 2.4rem;
             @include tablet{
                 gap: 1.4rem;
-                margin: 0 1rem;
+                margin: 0 .8rem;
             }
             > li{
                 width: 14rem;

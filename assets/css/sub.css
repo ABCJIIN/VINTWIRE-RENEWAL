@@ -4582,7 +4582,12 @@ button.more-btn.on::before {
   width: calc(100% - 3.2rem);
   max-width: 1840px;
   margin: 0 auto 4rem;
-  padding: 8rem 0;
+  padding: 6% 5%;
+}
+@media (max-width: 768px) {
+  #projectDetails section {
+    padding: 8rem 1.6rem;
+  }
 }
 #projectDetails section:not(#overview) {
   border-radius: 4rem;
@@ -4886,12 +4891,6 @@ button.more-btn.on::before {
     gap: 6rem;
   }
 }
-#projectDetails.nhbank #designSystem .flex-wrap .brand-logo {
-  max-width: 664px;
-}
-#projectDetails.nhbank #designSystem .flex-wrap .brand-logo img {
-  width: 100%;
-}
 @media (max-width: 930px) {
   #projectDetails.nhbank #designSystem .flex-wrap .brand-logo {
     margin: 0 1rem;
@@ -4987,7 +4986,8 @@ button.more-btn.on::before {
   margin: 4rem auto;
 }
 #projectDetails.kitanet #designAll .con-box {
-  width: calc(100% - 2.8rem);
+  width: 100%;
+  max-width: 1500px;
 }
 #projectDetails.kitanet #designAll .con-box .design-challenge {
   width: 100%;
@@ -5154,6 +5154,24 @@ button.more-btn.on::before {
 }
 #projectDetails.yg1 #designSystem .font-list-group > .flex-wrap .flex-wrap > span {
   font-size: 3.2rem;
+}
+#projectDetails.yg1 .color-list > li:nth-child(1) {
+  background: #ED1C24;
+}
+#projectDetails.yg1 .color-list > li:nth-child(2) {
+  background: #222222;
+}
+#projectDetails.yg1 .color-list > li:nth-child(3) {
+  background: #656565;
+}
+#projectDetails.yg1 .color-list > li:nth-child(4) {
+  background: #aaaaaa;
+}
+#projectDetails.yg1 .color-list > li:nth-child(5) {
+  background: #dddddd;
+}
+#projectDetails.yg1 .color-list > li:nth-child(6) {
+  background: #ffffff;
 }
 #projectDetails.koica .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/koica/intro_pc.png);
@@ -5697,13 +5715,15 @@ button.more-btn.on::before {
   border-radius: 3rem;
 }
 #projectDetails #designSystem > .con-box {
-  width: calc(100% - 2.8rem);
+  width: 100%;
+  max-width: 1500px;
+  margin: 0;
 }
 #projectDetails #designSystem .brand-logo {
   max-width: 664px;
 }
 #projectDetails #designSystem .brand-logo img {
-  width: 100%;
+  max-width: 100%;
 }
 @media (max-width: 768px) {
   #projectDetails #designSystem .brand-logo {
@@ -5875,7 +5895,7 @@ button.more-btn.on::before {
 @media (max-width: 768px) {
   #projectDetails #designSystem .color-list {
     gap: 1.4rem;
-    margin: 0 1rem;
+    margin: 0 0.8rem;
   }
 }
 #projectDetails #designSystem .color-list > li {
