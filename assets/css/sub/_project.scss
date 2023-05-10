@@ -657,21 +657,39 @@ $koreanair: #118FE4;
             .font-list-group{
                 flex-direction: column;
                 gap: 3rem;
+                @include tablet{gap: 4rem;}
                 > .flex-wrap{
-                    gap: 2rem 5.4rem;
+                    gap: 5.4rem;
                     align-items: center;
+                    flex-wrap: nowrap;
+                    @include tablet{gap: 2.2rem;}
                     .font-type{
                         font-size: 1.6rem;
                         font-weight: 500;
+                        @include tablet{font-size: 1.4rem;}
                         span{
                             color: $yg1;
                             margin-right: 0;
                         }
                     }
                     .flex-wrap{
-                        min-width: 33rem;
-                        flex-direction: column;
-                        > span{font-size: 3.2rem;}
+                        gap: 5.4rem;
+                        flex-wrap: wrap;
+                        @include tablet{
+                            gap: 2.2rem;
+                            flex-direction: column;
+                        }
+                        > div{
+                            min-width: 33rem;
+                            @include flexbox(column, flex-start, flex-start);
+                            @include tablet{
+                                min-width: auto;
+                            }
+                            > span{
+                                font-size: 3.2rem;
+                                @include tablet{font-size: 2rem;}
+                            }
+                        }
                     }
                 }
             }
@@ -1037,8 +1055,6 @@ $koreanair: #118FE4;
             margin: 0;
         }
         .brand-logo{
-            max-width: 664px;
-            // width: 45%;
             img{max-width: 100%;}
             @include tablet{width: 100%;}
         }
@@ -1061,7 +1077,7 @@ $koreanair: #118FE4;
                 > li{
                     flex-wrap: wrap;
                     .category-tit{
-                        width: 14rem;
+                        min-width: 14rem;
                         height: 14rem;
                         border-radius: 50%;
                         font-size: 2rem;
@@ -1069,6 +1085,11 @@ $koreanair: #118FE4;
                         border: 1px solid $yg1;
                         color: $yg1;
                         @include flexbox(row, center, center);
+                        @include tablet{
+                            min-width: 11rem;
+                            height: 11rem;
+                            font-size: 1.6rem;
+                        }
                     }
                     .category{
                         min-width: 16.4rem;
