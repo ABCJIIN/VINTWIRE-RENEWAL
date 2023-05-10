@@ -4035,6 +4035,7 @@ button.more-btn.on::before {
 }
 #projectDetails.kitanet #designAll {
   background: linear-gradient(rgba(237, 237, 237, 0.5), rgba(237, 237, 237, 0.1));
+  margin: 4rem auto;
 }
 #projectDetails.kitanet #designAll .con-box {
   width: calc(100% - 2.8rem);
@@ -4077,6 +4078,10 @@ button.more-btn.on::before {
   #projectDetails.kitanet #designAll .con-box #designSystem .flex-wrap .brand-logo {
     margin: 0 20%;
   }
+}
+#projectDetails.kitanet #preview02 {
+  width: 100%;
+  max-width: 100%;
 }
 #projectDetails.koreanair .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/koreanair/intro_pc.png);
