@@ -4955,6 +4955,10 @@ button.more-btn.on::before {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(57, 65, 165, 0.5)), to(rgba(57, 65, 165, 0.1)));
   background: linear-gradient(rgba(57, 65, 165, 0.5), rgba(57, 65, 165, 0.1));
 }
+#projectDetails.koica #designSystem .font-list {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
 #projectDetails.koica #designSystem .font-list-group {
   gap: 0;
 }
@@ -4962,19 +4966,52 @@ button.more-btn.on::before {
   padding: 4rem 0;
   width: 100%;
   max-width: 1502px;
-  gap: 1.6rem 6%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem 0;
+}
+#projectDetails.koica #designSystem .font-list-group > .flex-wrap > div:not(.category) {
+  min-width: 48rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.koica #designSystem .font-list-group > .flex-wrap > div:not(.category) {
+    min-width: auto;
+  }
 }
 #projectDetails.koica #designSystem .font-list-group > .flex-wrap:not(:first-child) {
   border-top: 1px solid #fff;
 }
 @media (max-width: 768px) {
   #projectDetails.koica #designSystem .font-list-group > .flex-wrap {
+    padding: 3rem 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 1.6rem;
   }
+  #projectDetails.koica #designSystem .font-list-group > .flex-wrap:first-child {
+    padding-top: 0;
+  }
+}
+#projectDetails.koica #designSystem .color-list {
+  margin-left: 0;
+  margin-right: 0;
+}
+#projectDetails.koica #designSystem .color-list:not(:last-child) {
+  margin-bottom: 12rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.koica #designSystem .color-list:not(:last-child) {
+    margin-bottom: 6.8rem;
+  }
+}
+#projectDetails.koica #designSystem .color-list img {
+  max-width: 100%;
 }
 #projectDetails #projectInfo {
   margin: 14rem auto 0;
@@ -5423,6 +5460,17 @@ button.more-btn.on::before {
 #projectDetails #designSystem > .con-box {
   width: calc(100% - 2.8rem);
 }
+#projectDetails #designSystem .brand-logo {
+  max-width: 664px;
+}
+#projectDetails #designSystem .brand-logo img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .brand-logo {
+    width: 100%;
+  }
+}
 #projectDetails #designSystem .font-list {
   padding-bottom: 7rem;
   margin-bottom: 8rem;
@@ -5477,15 +5525,20 @@ button.more-btn.on::before {
 #projectDetails #designSystem .font-list-group > li .notosans {
   font-family: "Pretendard";
 }
+#projectDetails #designSystem .font-list-group > li .roboto {
+  font-family: "Roboto", sans-serif;
+}
+#projectDetails #designSystem .font-list-group > li .montserrat {
+  font-family: "Montserrat";
+}
 #projectDetails #designSystem .font-list-group > li .category {
-  margin-top: 1.6rem;
+  min-width: 16.4rem;
   font-size: 1.8rem;
   color: #00246C;
   line-height: 1.5;
 }
 @media (max-width: 768px) {
   #projectDetails #designSystem .font-list-group > li .category {
-    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5557,17 +5610,6 @@ button.more-btn.on::before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2rem 5%;
-}
-#projectDetails #designSystem .font-list + .flex-wrap .brand-logo {
-  max-width: 664px;
-}
-#projectDetails #designSystem .font-list + .flex-wrap .brand-logo img {
-  width: 100%;
-}
-@media (max-width: 768px) {
-  #projectDetails #designSystem .font-list + .flex-wrap .brand-logo {
-    width: 100%;
-  }
 }
 #projectDetails #designSystem .color-list {
   display: -webkit-box;
