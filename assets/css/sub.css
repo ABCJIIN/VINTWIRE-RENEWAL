@@ -5357,6 +5357,9 @@ button.more-btn.on::before {
 #projectDetails #designSystem .font-list-group > li .regular-type {
   font-weight: normal;
 }
+#projectDetails #designSystem .font-list-group > li .category {
+  color: #00246C;
+}
 #projectDetails #designSystem .font-list-group > li > div:not(.category) strong {
   font-size: 4.8rem;
   display: block;

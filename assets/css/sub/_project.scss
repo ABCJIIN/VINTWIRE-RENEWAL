@@ -1,4 +1,5 @@
 $hyundai: #3BB88C;
+$koica: #00246C;
 #project{
     // overflow-x: hidden;
     #intro{
@@ -746,6 +747,9 @@ $hyundai: #3BB88C;
                 > li{
                     .bold-type{font-weight: bold;}
                     .regular-type{font-weight: normal;}
+                    .category{
+                        color: $koica;
+                    }
                     > div:not(.category){
                         strong{
                             font-size: 4.8rem;
