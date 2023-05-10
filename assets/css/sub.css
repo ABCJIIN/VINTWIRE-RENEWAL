@@ -3900,24 +3900,64 @@ button.more-btn.on::before {
 #projectDetails.nhbank .color-list > li:nth-child(5) {
   background: #FFFFFF;
 }
-#projectDetails.nhbank .font-list * {
-  font-family: "Noto Sans", sans-serif;
-}
 #projectDetails.nhbank #keypoint {
   background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
 }
-#projectDetails.nhbank #keypoint .keypoint-list {
-  grid-template-columns: repeat(2, 1fr);
-}
-@media (max-width: 930px) {
-  #projectDetails.nhbank #keypoint .keypoint-list {
-    grid-template-columns: 1fr;
-  }
-}
 #projectDetails.nhbank #keypoint .keypoint-list > li {
-  height: 32rem;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #0055A5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#projectDetails.nhbank #keypoint .keypoint-list > li .tit-num {
+  -webkit-text-stroke: 1px #0055A5;
+}
+#projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div {
+  max-width: 624px;
+}
+#projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div > strong {
+  border-bottom: 1px solid #0055A5;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div > strong {
+    text-align: center;
+  }
+}
+#projectDetails.nhbank #designSystem {
+  background: linear-gradient(#E0EDFF, #F4F8FD);
+}
+#projectDetails.nhbank #designSystem .flex-wrap {
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  flex-wrap: nowrap;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #designSystem .flex-wrap {
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+}
+#projectDetails.nhbank #designSystem .flex-wrap .brand-logo {
+  max-width: 664px;
+}
+#projectDetails.nhbank #designSystem .flex-wrap .brand-logo img {
+  width: 100%;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #designSystem .flex-wrap .brand-logo {
+    margin: 0 1rem;
+  }
+}
+#projectDetails.nhbank #designSystem .color-list {
+  flex-wrap: nowrap;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #designSystem .color-list {
+    flex-wrap: wrap;
+  }
 }
 #projectDetails.lgstory .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/lgstory/intro_pc.png);
