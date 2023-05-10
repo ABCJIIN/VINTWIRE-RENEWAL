@@ -3770,11 +3770,36 @@ button.more-btn.on::before {
   justify-content: flex-start;
   align-items: flex-start;
 }
+@media (max-width: 930px) {
+  #projectDetails.orange #keypoint .keypoint-list > li {
+    padding: 7% 22% 2%;
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails.orange #keypoint .keypoint-list > li {
+    padding: 11% 15% 2%;
+  }
+}
 #projectDetails.orange #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #FA902E;
 }
 #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
   border-bottom: 1px solid #FA902E;
+}
+@media (max-width: 1080px) {
+  #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 930px) {
+  #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 768px) {
   #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div .list-type01 {

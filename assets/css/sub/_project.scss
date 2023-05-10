@@ -320,10 +320,27 @@ $orange: #FA902E;
                     background: rgba($white, .9);
                     border: 1px solid $orange;
                     @include flexbox(row, flex-start, flex-start);
+                    @include tablet_junction {
+                        padding: 7% 22% 2%;
+                    }
+                    @include tablet {
+                        padding: 11% 15% 2%;
+                    }
                     .tit-num {
                         -webkit-text-stroke: 1px $orange;
                         + div {
-                            > strong {border-bottom: 1px solid $orange};
+                            > strong {
+                                border-bottom: 1px solid $orange;
+                                @media (max-width: 1080px) {
+                                    font-size: 2.2rem;
+                                }
+                                @include tablet_junction {
+                                    font-size: 2.8rem;
+                                }
+                                @include tablet {
+                                    font-size: 2rem;
+                                }
+                            }
                             .list-type01 {
                                 @include tablet {
                                     padding: 0 1.6rem;
