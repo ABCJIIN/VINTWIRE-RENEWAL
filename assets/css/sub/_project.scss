@@ -347,7 +347,7 @@ $yg1: #ED1C24;
                         + div {
                             > strong {
                                 border-bottom: 1px solid $orange;
-                                @media (max-width: 1080px) {
+                                @media (max-width: 1440px) {
                                     font-size: 2.2rem;
                                 }
                                 @include tablet_junction {
@@ -493,6 +493,17 @@ $yg1: #ED1C24;
             @include background(sub/project/details/kita, intro_pc, png, no-repeat, cover, center, center);
             @include tablet{@include background(sub/project/details/kita, intro_mb, png, no-repeat, cover, center, center);}
         }
+        $colorchip :(#FF98D0, #4DB9FF, #F8BB9F, #F29EC9, #6FAFDB, #64CEBC);
+        .color-list{
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}){
+                        background: nth($colorchip, $i);
+                    }
+                }
+            }
+        }
+        #designSystem {background: linear-gradient(rgba(255,152,208,0.3) 50%, rgba(194,189,243,0.2))}
     }
     &.kitanet{
         .project-info-bg{
