@@ -4841,19 +4841,6 @@ button.more-btn.on::before {
 #projectDetails.nhbank #keypoint .keypoint-list > li {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #0055A5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 #projectDetails.nhbank #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #0055A5;
@@ -4970,6 +4957,12 @@ button.more-btn.on::before {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 152, 208, 0.3)), to(rgba(194, 189, 243, 0.2)));
   background: linear-gradient(rgba(255, 152, 208, 0.3) 50%, rgba(194, 189, 243, 0.2));
 }
+#projectDetails.kita #designSystem .flex-wrap p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
 #projectDetails.kitanet .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/kitanet/intro_pc.png);
   background-repeat: no-repeat;
@@ -5071,6 +5064,9 @@ button.more-btn.on::before {
   }
 }
 #projectDetails.koreanair #overview {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   background-image: url(../../assets/images/sub/project/details/koreanair/overview_pc.png);
   background-repeat: no-repeat;
   background-size: 112%;
@@ -5083,6 +5079,24 @@ button.more-btn.on::before {
     background-size: 100%;
     background-position: top center;
   }
+}
+#projectDetails.koreanair #keypoint {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #458FFF), to(rgba(45, 147, 216, 0.1)));
+  background: linear-gradient(#458FFF 50%, rgba(45, 147, 216, 0.1));
+}
+#projectDetails.koreanair #keypoint .keypoint-list > li {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #118FE4;
+}
+#projectDetails.koreanair #keypoint .keypoint-list > li .tit-num {
+  -webkit-text-stroke: 1px #118FE4;
+}
+#projectDetails.koreanair #keypoint .keypoint-list > li .tit-num + div > strong {
+  border-bottom: 1px solid #118FE4;
+}
+#projectDetails.koreanair #designSystem {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #EEF5F6), to(rgba(172, 200, 207, 0.3)));
+  background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, 0.3));
 }
 #projectDetails.nhlife .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/nhlife/intro_pc.png);
@@ -5725,7 +5739,7 @@ button.more-btn.on::before {
   height: 32rem;
   border-radius: 3rem;
   overflow: hidden;
-  padding: 2% 5%;
+  padding: 8% 5% 2%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5737,9 +5751,9 @@ button.more-btn.on::before {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media (max-width: 768px) {
   #projectDetails #keypoint .keypoint-list > li {
