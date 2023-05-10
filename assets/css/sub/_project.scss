@@ -1,6 +1,8 @@
 $hyundai: #3BB88C;
 $koica: #00246C;
 $orange: #FA902E;
+$nhbank: #0055A5;
+
 #project{
     // overflow-x: hidden;
     #intro{
@@ -307,7 +309,7 @@ $orange: #FA902E;
                 }
             }
         }
-        .font-list{*{font-family: 'Noto Sans', sans-serif;}}
+        .font-list{*{font-family: $notosans;}}
         #keypoint {
             background: linear-gradient(rgba($orange, 0.3), rgba(250, 46, 46, 0.3));
             .keypoint-list {
@@ -395,15 +397,71 @@ $orange: #FA902E;
     &.nhbank {
         .project-info-bg{
             @include background(sub/project/details/nhbank, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet {
-                @include background(sub/project/details/nhbank, intro_mb, png, no-repeat, cover, center, bottom);
-            }
+            @include tablet {@include background(sub/project/details/nhbank, intro_mb, png, no-repeat, cover, center, bottom);}
         }
         #overview{
             @include background(sub/project/details/nhbank, overview_pc, png, no-repeat, 40%, right, bottom 116px);
             @include tablet{
                 background-size: 90%;
                 background-position: right bottom 100px;
+            }
+        }
+        $colorchip : (#0055A5, #BBCBD9, #484848, #D9D9D9, #FFFFFF);
+        .color-list {
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}) {
+                        background: nth($colorchip, $i);
+                    }
+                }
+            }
+        }
+        #keypoint {
+            background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
+            .keypoint-list {
+                > li {
+                    background: rgba($white, .8);
+                    border: 1px solid $nhbank;
+                    @include flexbox(row, center, center);
+                    .tit-num {
+                        -webkit-text-stroke: 1px $nhbank;
+                        + div {
+                            max-width: 624px;
+                            > strong {
+                                border-bottom: 1px solid $nhbank;
+                                @include tablet_junction {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #designSystem{
+            background: linear-gradient(#E0EDFF, #F4F8FD);
+            .flex-wrap {
+                align-items: center;
+                justify-content: space-between;
+                gap: 5%;
+                flex-wrap: nowrap;
+                @include tablet_junction {
+                    flex-wrap: wrap;
+                    gap: 6rem;
+                }
+                .brand-logo {
+                    max-width: 664px;
+                    img{width: 100%;}
+                    @include tablet_junction {
+                        margin: 0 1rem;
+                    }
+                }
+            }
+            .color-list{
+                flex-wrap: nowrap;
+                @include tablet_junction {
+                    flex-wrap: wrap;
+                }
             }
         }
     }

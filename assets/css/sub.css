@@ -4773,6 +4773,99 @@ button.more-btn.on::before {
     background-position: right bottom 100px;
   }
 }
+#projectDetails.nhbank .color-list > li:nth-child(1) {
+  background: #0055A5;
+}
+#projectDetails.nhbank .color-list > li:nth-child(2) {
+  background: #BBCBD9;
+}
+#projectDetails.nhbank .color-list > li:nth-child(3) {
+  background: #484848;
+}
+#projectDetails.nhbank .color-list > li:nth-child(4) {
+  background: #D9D9D9;
+}
+#projectDetails.nhbank .color-list > li:nth-child(5) {
+  background: #FFFFFF;
+}
+#projectDetails.nhbank #keypoint {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 240, 255, 0.5)), to(rgba(216, 217, 255, 0.5)));
+  background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
+}
+#projectDetails.nhbank #keypoint .keypoint-list > li {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #0055A5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#projectDetails.nhbank #keypoint .keypoint-list > li .tit-num {
+  -webkit-text-stroke: 1px #0055A5;
+}
+#projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div {
+  max-width: 624px;
+}
+#projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div > strong {
+  border-bottom: 1px solid #0055A5;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div > strong {
+    text-align: center;
+  }
+}
+#projectDetails.nhbank #designSystem {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E0EDFF), to(#F4F8FD));
+  background: linear-gradient(#E0EDFF, #F4F8FD);
+}
+#projectDetails.nhbank #designSystem .flex-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #designSystem .flex-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 6rem;
+  }
+}
+#projectDetails.nhbank #designSystem .flex-wrap .brand-logo {
+  max-width: 664px;
+}
+#projectDetails.nhbank #designSystem .flex-wrap .brand-logo img {
+  width: 100%;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #designSystem .flex-wrap .brand-logo {
+    margin: 0 1rem;
+  }
+}
+#projectDetails.nhbank #designSystem .color-list {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+@media (max-width: 930px) {
+  #projectDetails.nhbank #designSystem .color-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 #projectDetails.lgstory .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/lgstory/intro_pc.png);
   background-repeat: no-repeat;
