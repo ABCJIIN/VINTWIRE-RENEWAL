@@ -1,5 +1,6 @@
 $hyundai: #3BB88C;
 $koica: #00246C;
+$orange: #FA902E;
 #project{
     // overflow-x: hidden;
     #intro{
@@ -296,6 +297,45 @@ $koica: #00246C;
             @include background(sub/project/details/orange, intro_pc, png, no-repeat, cover, center, center);
             @include tablet{@include background(sub/project/details/orange, intro_mb, png, no-repeat, cover, center, center);}
         }
+        $colorchip :(#16AE8A, #1A9175, #8CDAC7, #FA902E, #FFF1E3);
+        .color-list{
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}){
+                        background: nth($colorchip, $i);
+                    }
+                }
+            }
+        }
+        .font-list{*{font-family: 'Noto Sans', sans-serif;}}
+        #keypoint {
+            background: linear-gradient(rgba($orange, 0.3), rgba(250, 46, 46, 0.3));
+            .keypoint-list {
+                grid-template-columns: repeat(3, 1fr);
+                @include tablet_junction {
+                    grid-template-columns: 1fr;
+                }
+                > li {
+                    height: 34rem;
+                    padding: 11% 15% 2%;
+                    background: rgba($white, .9);
+                    border: 1px solid $orange;
+                    @include flexbox(row, flex-start, flex-start);
+                    .tit-num {
+                        -webkit-text-stroke: 1px $orange;
+                        + div {
+                            > strong {border-bottom: 1px solid $orange};
+                            .list-type01 {
+                                @include tablet {
+                                    padding: 0 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #designSystem{background: linear-gradient(rgba(75, 202, 172, 0.3), rgba(174, 173, 242, 0.3));}
     } 
     &.hyundai-robotics {
         .project-info-bg{
