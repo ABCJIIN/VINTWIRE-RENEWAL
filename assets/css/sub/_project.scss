@@ -4,6 +4,7 @@ $orange: #FA902E;
 $nhbank: #0055A5;
 $yg1: #ED1C24;
 $koreanair: #118FE4;
+$nhlife: #6CB5EC;
 
 .bold-type{font-weight: bold;}
 .regular-type{font-weight: normal;}
@@ -623,18 +624,56 @@ $koreanair: #118FE4;
                     > .flex-wrap {
                         padding: 5rem 0;
                         width: 100%;
-                        max-width: 1502px;
+                        max-width: 1500px;
                         align-items: center;
-                        // gap: 0;
+                        .category {
+                            position: relative;
+                            color: #00246C;
+                            font-weight: 700;
+                            min-width: auto;
+                            padding-right: 5rem;
+                            ::after {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                right: -2.5rem;
+                                transform: translate(0, -50%);
+                                width: 1px;
+                                height: 10px;
+                                background: $black;
+                            }
+                        }
                         > div:not(.category) {
-                            min-width: 48rem;
-                            @include tablet{min-width: auto;}
+                            min-width: 50rem;
+                            // @media (max-width:970px) {
+                            //     min-width: 43rem;
+                            // }
+                            // @include tablet{min-width: auto;}
+                            // strong {
+                            //     @media (max-width:970px) {
+                            //         font-size: 4rem;
+                            //     }
+                            // }
                         }
                         &:not(:first-child){border-top: 1px solid #D9D9D9;}
+                        &:first-child {*{font-family: $notosans;};}
+                        &:last-child {*{font-family: $apple_gothicNeo;};}
+
                         @include tablet {
                             &:first-child{padding-top: 0;}
+                            padding: 3rem 0;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 1.6rem;
                         }
                     }
+                }
+            }
+            .color-list {
+                gap: 8rem;
+                img {
+                    width: 100%;
+                    max-width: 964px;
                 }
             }
         }
@@ -645,6 +684,9 @@ $koreanair: #118FE4;
             @include tablet{@include background(sub/project/details/nhlife, intro_mb, png, no-repeat, cover, center, center);}
         }
         #overview{
+            .con-box {
+                .overview-info {position: relative; z-index: 2;}
+            }
             &::before {
                 content: '';
                 display: block;
@@ -663,11 +705,59 @@ $koreanair: #118FE4;
                     right: 0;
                 }
             }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -2rem;
+                right: 0;
+                z-index: 1;
+                width: 25rem;
+                height: 25rem;
+                @include background(sub/project/details/nhlife, object_icon02, png, no-repeat, contain, center, bottom);
+                @include tablet {
+                    width: 9rem;
+                    height: 9rem;
+                }
+            }
         }
-        #contents{
-            margin-top: -30rem;
-            @include tablet{margin-top: -10rem;}
+        $colorchip :(#0066B3, #F5F7F8, #222222, #73777A, #C9CED3);
+        .color-list{
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}){
+                        background: nth($colorchip, $i);
+                    }
+                }
+            }
         }
+        #keypoint {
+            background: linear-gradient(#CEF2FF, #F2FCFF);
+            .keypoint-list {
+                > li {
+                    background: rgba($white, .8);
+                    border: 1px solid $nhlife;
+                    .tit-num {
+                        -webkit-text-stroke: 1px $nhlife;
+                        + div {
+                            > strong{border-bottom: 1px solid $nhlife;}
+                                                        .list-type01{
+                                @include tablet{
+                                    padding: 0 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #designSystem {
+            background: linear-gradient(rgba(255, 168, 0, 0.1), rgba(255, 228, 64, 0.5));
+        }
+        // #contents{
+        //     margin-top: -30rem;
+        //     @include tablet{margin-top: -10rem;}
+        // }
     }
     &.yg1 {
         .project-info-bg{
