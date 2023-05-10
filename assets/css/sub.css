@@ -4717,7 +4717,7 @@ button.more-btn.on::before {
 #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
   border-bottom: 1px solid #FA902E;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
   #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
     font-size: 2.2rem;
   }
@@ -4947,6 +4947,28 @@ button.more-btn.on::before {
     background-size: cover;
     background-position: center center;
   }
+}
+#projectDetails.kita .color-list > li:nth-child(1) {
+  background: #FF98D0;
+}
+#projectDetails.kita .color-list > li:nth-child(2) {
+  background: #4DB9FF;
+}
+#projectDetails.kita .color-list > li:nth-child(3) {
+  background: #F8BB9F;
+}
+#projectDetails.kita .color-list > li:nth-child(4) {
+  background: #F29EC9;
+}
+#projectDetails.kita .color-list > li:nth-child(5) {
+  background: #6FAFDB;
+}
+#projectDetails.kita .color-list > li:nth-child(6) {
+  background: #64CEBC;
+}
+#projectDetails.kita #designSystem {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 152, 208, 0.3)), to(rgba(194, 189, 243, 0.2)));
+  background: linear-gradient(rgba(255, 152, 208, 0.3) 50%, rgba(194, 189, 243, 0.2));
 }
 #projectDetails.kitanet .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/kitanet/intro_pc.png);
