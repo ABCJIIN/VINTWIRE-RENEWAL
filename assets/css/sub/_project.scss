@@ -2,6 +2,15 @@ $hyundai: #3BB88C;
 $koica: #00246C;
 $orange: #FA902E;
 $nhbank: #0055A5;
+$yg1: #ED1C24;
+
+.bold-type{font-weight: bold;}
+.regular-type{font-weight: normal;}
+.pretendard{font-family: $pretendard;}
+.notosans{font-family: $pretendard;}
+.roboto{font-family: $roboto;}
+.montserrat{font-family: $montserrat;}
+.spoqa{font-family: $spoqa;}
 
 #project{
     // overflow-x: hidden;
@@ -598,6 +607,30 @@ $nhbank: #0055A5;
             @include background(sub/project/details/yg1, intro_pc, png, no-repeat, cover, center, center);
             @include tablet{@include background(sub/project/details/yg1, intro_mb, png, no-repeat, cover, center, center);}
         }
+        #designSystem{
+            background: #FBFBFB;
+            .font-list-group{
+                flex-direction: column;
+                gap: 3rem;
+                > .flex-wrap{
+                    gap: 2rem 5.4rem;
+                    align-items: center;
+                    .font-type{
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        span{
+                            color: $yg1;
+                            margin-right: 0;
+                        }
+                    }
+                    .flex-wrap{
+                        min-width: 33rem;
+                        flex-direction: column;
+                        > span{font-size: 3.2rem;}
+                    }
+                }
+            }
+        }
     }
     &.koica {
         .project-info-bg{
@@ -968,20 +1001,22 @@ $nhbank: #0055A5;
                 }
                 > li{
                     flex-wrap: wrap;
-                    .bold-type{font-weight: bold;}
-                    .regular-type{font-weight: normal;}
-                    .pretendard{font-family: $pretendard;}
-                    .notosans{font-family: $pretendard;}
-                    .roboto{font-family: $roboto;}
-                    .montserrat{font-family: $montserrat;}
+                    .category-tit{
+                        width: 14rem;
+                        height: 14rem;
+                        border-radius: 50%;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        border: 1px solid $yg1;
+                        color: $yg1;
+                        @include flexbox(row, center, center);
+                    }
                     .category{
                         min-width: 16.4rem;
                         font-size: 1.8rem;
                         color: $koica;
                         line-height: 1.5;
-                        @include tablet{
-                            @include flexbox(row, flex-start, center);
-                        }
+                        @include tablet{@include flexbox(row, flex-start, center);}
                         > strong{
                             font-weight: bold;
                             position: relative;
