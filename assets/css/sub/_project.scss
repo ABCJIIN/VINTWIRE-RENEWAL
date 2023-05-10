@@ -615,6 +615,28 @@ $koreanair: #118FE4;
         }
         #designSystem {
             background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, .3));
+            .font-list {
+                border-bottom: 0;
+                padding-bottom: 0;
+                &-group {
+                    gap: 0;
+                    > .flex-wrap {
+                        padding: 5rem 0;
+                        width: 100%;
+                        max-width: 1502px;
+                        align-items: center;
+                        // gap: 0;
+                        > div:not(.category) {
+                            min-width: 48rem;
+                            @include tablet{min-width: auto;}
+                        }
+                        &:not(:first-child){border-top: 1px solid #D9D9D9;}
+                        @include tablet {
+                            &:first-child{padding-top: 0;}
+                        }
+                    }
+                }
+            }
         }
     }
     &.nhlife {

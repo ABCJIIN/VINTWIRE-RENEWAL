@@ -5098,6 +5098,35 @@ button.more-btn.on::before {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #EEF5F6), to(rgba(172, 200, 207, 0.3)));
   background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, 0.3));
 }
+#projectDetails.koreanair #designSystem .font-list {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+#projectDetails.koreanair #designSystem .font-list-group {
+  gap: 0;
+}
+#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap {
+  padding: 5rem 0;
+  width: 100%;
+  max-width: 1502px;
+  align-items: center;
+}
+#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap > div:not(.category) {
+  min-width: 48rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap > div:not(.category) {
+    min-width: auto;
+  }
+}
+#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:not(:first-child) {
+  border-top: 1px solid #D9D9D9;
+}
+@media (max-width: 768px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:first-child {
+    padding-top: 0;
+  }
+}
 #projectDetails.nhlife .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/nhlife/intro_pc.png);
   background-repeat: no-repeat;
