@@ -3,6 +3,7 @@ $koica: #00246C;
 $orange: #FA902E;
 $nhbank: #0055A5;
 $yg1: #ED1C24;
+$koreanair: #118FE4;
 
 .bold-type{font-weight: bold;}
 .regular-type{font-weight: normal;}
@@ -435,7 +436,6 @@ $yg1: #ED1C24;
                 > li {
                     background: rgba($white, .8);
                     border: 1px solid $nhbank;
-                    @include flexbox(row, center, center);
                     .tit-num {
                         -webkit-text-stroke: 1px $nhbank;
                         + div {
@@ -503,7 +503,17 @@ $yg1: #ED1C24;
                 }
             }
         }
-        #designSystem {background: linear-gradient(rgba(255,152,208,0.3) 50%, rgba(194,189,243,0.2))}
+        #designSystem {
+            background: linear-gradient(rgba(255,152,208,0.3) 50%, rgba(194,189,243,0.2));
+            .flex-wrap {
+                p {
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    font-weight: 400;
+                    padding-top: 2rem;
+                }
+            }
+        }
     }
     &.kitanet{
         .project-info-bg{
@@ -582,8 +592,29 @@ $yg1: #ED1C24;
             @include tablet{@include background(sub/project/details/koreanair, intro_mb, png, no-repeat, cover, center, center);}
         }
         #overview{
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
             @include background(sub/project/details/koreanair, overview_pc, png, no-repeat, 112%, center, center);
             @include tablet{@include background(sub/project/details/koreanair, overview_mb, png, no-repeat, 100%, top, center);}
+        }
+        #keypoint {
+            background: linear-gradient(#458FFF 50%, rgba(45, 147, 216, 0.1));
+            .keypoint-list {
+                > li {
+                    background: rgba($white, .8);
+                    border: 1px solid $koreanair;
+                    .tit-num {
+                        -webkit-text-stroke: 1px $koreanair;
+                        + div {
+                            > strong{border-bottom: 1px solid $koreanair;}
+                        }
+                    }
+                }
+            }
+        }
+        #designSystem {
+            background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, .3));
         }
     }
     &.nhlife {
@@ -954,9 +985,9 @@ $yg1: #ED1C24;
                 height: 32rem;
                 border-radius: 3rem;
                 overflow: hidden;
-                padding: 2% 5%;
+                padding: 8% 5% 2%;
                 position: relative;
-                @include flexbox(row, flex-start, center);
+                @include flexbox(row, flex-start, flex-start);
                 @include tablet{
                     height: auto;
                     padding: 7.8rem 2.4rem 4rem;
