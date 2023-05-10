@@ -4955,6 +4955,18 @@ button.more-btn.on::before {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(57, 65, 165, 0.5)), to(rgba(57, 65, 165, 0.1)));
   background: linear-gradient(rgba(57, 65, 165, 0.5), rgba(57, 65, 165, 0.1));
 }
+#projectDetails.koica #designSystem .font-list-group > .flex-wrap {
+  gap: 1.6rem 6%;
+}
+@media (max-width: 768px) {
+  #projectDetails.koica #designSystem .font-list-group > .flex-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.6rem;
+  }
+}
 #projectDetails #projectInfo {
   margin: 14rem auto 0;
   padding: 17rem 0 3.6rem;
@@ -5440,6 +5452,11 @@ button.more-btn.on::before {
     gap: 2.2rem;
   }
 }
+#projectDetails #designSystem .font-list-group > li {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 #projectDetails #designSystem .font-list-group > li .bold-type {
   font-weight: bold;
 }
@@ -5447,7 +5464,49 @@ button.more-btn.on::before {
   font-weight: normal;
 }
 #projectDetails #designSystem .font-list-group > li .category {
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
   color: #00246C;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list-group > li .category {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+#projectDetails #designSystem .font-list-group > li .category > strong {
+  font-weight: bold;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #projectDetails #designSystem .font-list-group > li .category > strong {
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+  #projectDetails #designSystem .font-list-group > li .category > strong::after {
+    content: "";
+    width: 2px;
+    height: 60%;
+    background: #767676;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 #projectDetails #designSystem .font-list-group > li > div:not(.category) strong {
   font-size: 4.8rem;
@@ -5462,6 +5521,7 @@ button.more-btn.on::before {
 }
 #projectDetails #designSystem .font-list-group > li > div:not(.category) span {
   font-size: 1.8rem;
+  line-height: 1.5;
 }
 #projectDetails #designSystem .font-list-group > li > div:not(.category) span:first-child {
   margin-right: 1.4rem;
@@ -5486,7 +5546,6 @@ button.more-btn.on::before {
 }
 #projectDetails #designSystem .font-list + .flex-wrap .brand-logo {
   max-width: 664px;
-  width: 45%;
 }
 #projectDetails #designSystem .font-list + .flex-wrap .brand-logo img {
   width: 100%;

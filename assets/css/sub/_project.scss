@@ -500,7 +500,18 @@ $orange: #FA902E;
                 }
             }
         }
-        #designSystem{background: linear-gradient(rgba(#3941A5, .5), rgba(#3941A5, .1));}
+        #designSystem{
+            background: linear-gradient(rgba(#3941A5, .5), rgba(#3941A5, .1));
+            .font-list-group{
+                > .flex-wrap{
+                    gap: 1.6rem 6%;
+                    @include tablet{
+                        flex-direction: column;
+                        gap: 1.6rem;
+                    }
+                }
+            }
+        }
     }
     #projectInfo{
         margin: 14rem auto 0;
@@ -802,10 +813,37 @@ $orange: #FA902E;
                     gap: 2.2rem;
                 }
                 > li{
+                    width: 100%;
+                    flex-wrap: wrap;
                     .bold-type{font-weight: bold;}
                     .regular-type{font-weight: normal;}
                     .category{
+                        margin-top: 1.6rem;
+                        font-size: 1.8rem;
                         color: $koica;
+                        line-height: 1.5;
+                        @include tablet{
+                            margin-top: 0;
+                            @include flexbox(row, flex-start, center);
+                        }
+                        > strong{
+                            font-weight: bold;
+                            position: relative;
+                            @include tablet{
+                                padding-right: 1rem;
+                                margin-right: 1rem;
+                                &::after{
+                                    content: '';
+                                    width: 2px;
+                                    height: 60%;
+                                    background: #767676;
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
                     }
                     > div:not(.category){
                         strong{
@@ -817,6 +855,7 @@ $orange: #FA902E;
                         }
                         span{
                             font-size: 1.8rem;
+                            line-height: 1.5;
                             &:first-child{
                                 margin-right: 1.4rem;
                                 @include tablet{margin-right: 2.4rem;}
@@ -832,7 +871,7 @@ $orange: #FA902E;
                 gap: 2rem 5%;
                 .brand-logo{
                     max-width: 664px;
-                    width: 45%;
+                    // width: 45%;
                     img{width: 100%;}
                     @include tablet{width: 100%;}
                 }
