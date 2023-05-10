@@ -4955,8 +4955,17 @@ button.more-btn.on::before {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(57, 65, 165, 0.5)), to(rgba(57, 65, 165, 0.1)));
   background: linear-gradient(rgba(57, 65, 165, 0.5), rgba(57, 65, 165, 0.1));
 }
+#projectDetails.koica #designSystem .font-list-group {
+  gap: 0;
+}
 #projectDetails.koica #designSystem .font-list-group > .flex-wrap {
+  padding: 4rem 0;
+  width: 100%;
+  max-width: 1502px;
   gap: 1.6rem 6%;
+}
+#projectDetails.koica #designSystem .font-list-group > .flex-wrap:not(:first-child) {
+  border-top: 1px solid #fff;
 }
 @media (max-width: 768px) {
   #projectDetails.koica #designSystem .font-list-group > .flex-wrap {
@@ -5453,7 +5462,6 @@ button.more-btn.on::before {
   }
 }
 #projectDetails #designSystem .font-list-group > li {
-  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -5462,6 +5470,12 @@ button.more-btn.on::before {
 }
 #projectDetails #designSystem .font-list-group > li .regular-type {
   font-weight: normal;
+}
+#projectDetails #designSystem .font-list-group > li .pretendard {
+  font-family: "Pretendard";
+}
+#projectDetails #designSystem .font-list-group > li .notosans {
+  font-family: "Pretendard";
 }
 #projectDetails #designSystem .font-list-group > li .category {
   margin-top: 1.6rem;

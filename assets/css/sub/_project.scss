@@ -503,8 +503,13 @@ $orange: #FA902E;
         #designSystem{
             background: linear-gradient(rgba(#3941A5, .5), rgba(#3941A5, .1));
             .font-list-group{
+                gap: 0;
                 > .flex-wrap{
+                    padding: 4rem 0;
+                    width: 100%;
+                    max-width: 1502px;
                     gap: 1.6rem 6%;
+                    &:not(:first-child){border-top: 1px solid $white;}
                     @include tablet{
                         flex-direction: column;
                         gap: 1.6rem;
@@ -813,10 +818,11 @@ $orange: #FA902E;
                     gap: 2.2rem;
                 }
                 > li{
-                    width: 100%;
                     flex-wrap: wrap;
                     .bold-type{font-weight: bold;}
                     .regular-type{font-weight: normal;}
+                    .pretendard{font-family: $pretendard;}
+                    .notosans{font-family: $pretendard;}
                     .category{
                         margin-top: 1.6rem;
                         font-size: 1.8rem;
