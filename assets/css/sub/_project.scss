@@ -560,19 +560,40 @@ $nhbank: #0055A5;
         }
         #designSystem{
             background: linear-gradient(rgba(#3941A5, .5), rgba(#3941A5, .1));
-            .font-list-group{
-                gap: 0;
-                > .flex-wrap{
-                    padding: 4rem 0;
-                    width: 100%;
-                    max-width: 1502px;
-                    gap: 1.6rem 6%;
-                    &:not(:first-child){border-top: 1px solid $white;}
-                    @include tablet{
-                        flex-direction: column;
-                        gap: 1.6rem;
+            .font-list{
+                border-bottom: 0;
+                padding-bottom: 0;
+                &-group{
+                    gap: 0;
+                    > .flex-wrap{
+                        padding: 4rem 0;
+                        width: 100%;
+                        max-width: 1502px;
+                        align-items: center;
+                        gap: 2rem 0;
+                        > div:not(.category){
+                            min-width: 48rem;
+                            @include tablet{min-width: auto;}
+                        }
+                        &:not(:first-child){border-top: 1px solid $white;}
+                        @include tablet{
+                            &:first-child{padding-top: 0;}
+                            padding: 3rem 0;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 1.6rem;
+                        }
                     }
                 }
+            }
+            .color-list{
+                &:not(:last-child){
+                    margin-bottom: 12rem;
+                    @include tablet{margin-bottom: 6.8rem;}
+                }
+                margin-left: 0;
+                margin-right: 0;
+                img{max-width: 100%;}
             }
         }
     }
@@ -859,6 +880,12 @@ $nhbank: #0055A5;
     #designSystem{
         border-radius: 3rem;
         > .con-box{width: calc(100% - 2.8rem);}
+        .brand-logo{
+            max-width: 664px;
+            // width: 45%;
+            img{width: 100%;}
+            @include tablet{width: 100%;}
+        }
         .font-list{
             padding-bottom: 7rem;
             margin-bottom: 8rem;
@@ -881,13 +908,14 @@ $nhbank: #0055A5;
                     .regular-type{font-weight: normal;}
                     .pretendard{font-family: $pretendard;}
                     .notosans{font-family: $pretendard;}
+                    .roboto{font-family: $roboto;}
+                    .montserrat{font-family: $montserrat;}
                     .category{
-                        margin-top: 1.6rem;
+                        min-width: 16.4rem;
                         font-size: 1.8rem;
                         color: $koica;
                         line-height: 1.5;
                         @include tablet{
-                            margin-top: 0;
                             @include flexbox(row, flex-start, center);
                         }
                         > strong{
@@ -933,12 +961,6 @@ $nhbank: #0055A5;
                 align-items: center;
                 flex-wrap: wrap;
                 gap: 2rem 5%;
-                .brand-logo{
-                    max-width: 664px;
-                    // width: 45%;
-                    img{width: 100%;}
-                    @include tablet{width: 100%;}
-                }
             }
         }
         .color-list{
