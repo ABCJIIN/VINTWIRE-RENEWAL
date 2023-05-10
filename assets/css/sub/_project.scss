@@ -395,15 +395,38 @@ $orange: #FA902E;
     &.nhbank {
         .project-info-bg{
             @include background(sub/project/details/nhbank, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet {
-                @include background(sub/project/details/nhbank, intro_mb, png, no-repeat, cover, center, bottom);
-            }
+            @include tablet {@include background(sub/project/details/nhbank, intro_mb, png, no-repeat, cover, center, bottom);}
         }
         #overview{
             @include background(sub/project/details/nhbank, overview_pc, png, no-repeat, 40%, right, bottom 116px);
             @include tablet{
                 background-size: 90%;
                 background-position: right bottom 100px;
+            }
+        }
+        $colorchip : (#0055A5, #BBCBD9, #484848, #D9D9D9, #FFFFFF);
+        .color-list {
+            > li {
+                @for $i from 1 through length($colorchip) {
+                    &:nth-child(#{$i}) {
+                        background: nth($colorchip, $i);
+                    }
+                }
+            }
+        }
+        .font-list{*{font-family: 'Noto Sans', sans-serif;}}
+        #keypoint {
+            background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
+            .keypoint-list {
+                grid-template-columns: repeat(2, 1fr);
+                @include tablet_junction {
+                    grid-template-columns: 1fr;
+                }
+                > li {
+                    height: 32rem;
+                    background: rgba($white, .8);
+                    border: 1px solid #0055A5;
+                }
             }
         }
     }
