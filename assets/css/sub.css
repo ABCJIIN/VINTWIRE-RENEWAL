@@ -4244,7 +4244,7 @@ button.more-btn.on::before {
   font-family: "Noto Sans", sans-serif;
 }
 #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:last-child * {
-  font-family: "Roboto", sans-serif;
+  font-family: "AppleSDGothicNeo", sans-serif;
 }
 #projectDetails.koreanair #designSystem .color-list {
   gap: 8rem;
@@ -4252,6 +4252,10 @@ button.more-btn.on::before {
 #projectDetails.koreanair #designSystem .color-list img {
   width: 100%;
   max-width: 964px;
+}
+#projectDetails.koreanair #preview {
+  width: 100%;
+  max-width: 100%;
 }
 #projectDetails.nhlife .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/nhlife/intro_pc.png);

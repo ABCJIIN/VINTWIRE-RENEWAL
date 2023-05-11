@@ -605,6 +605,11 @@ $nhlife: #6CB5EC;
                                     text-align: center;
                                 }
                             }
+                            // .list-type01 {
+                            //     li {
+                            //         &::before {content: none;}
+                            //     }
+                            // }
                         }
                     }
                 }
@@ -689,6 +694,10 @@ $nhlife: #6CB5EC;
                     max-width: 964px;
                 }
             }
+        }
+        #preview {
+            width: 100%;
+            max-width: 100%;
         }
     }
     &.nhlife {
