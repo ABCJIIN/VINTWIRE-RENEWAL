@@ -782,38 +782,41 @@ $nhlife: #6CB5EC;
                 flex-direction: column;
                 gap: 3rem;
                 @include tablet{gap: 4rem;}
-                > .flex-wrap{
+                li{
                     gap: 5.4rem;
                     align-items: center;
                     flex-wrap: nowrap;
                     @include tablet{gap: 2.2rem;}
-                    .font-type{
-                        font-size: 1.6rem;
-                        font-weight: 500;
-                        gap: .8rem;
-                        @include flexbox(row, flex-start, center);
-                        @include tablet{font-size: 1.4rem;}
-                        span{
-                            color: $yg1;
-                            margin-right: 0;
-                        }
-                    }
-                    .flex-wrap{
-                        gap: 5.4rem;
-                        flex-wrap: wrap;
-                        @include tablet{
-                            gap: 2.2rem;
-                            flex-direction: column;
-                        }
-                        > div{
-                            min-width: 33rem;
-                            @include flexbox(column, flex-start, flex-start);
+                    .category-tit{
+                        + .flex-wrap{
+                            gap: 7rem;
                             @include tablet{
-                                min-width: auto;
+                                flex-direction: column;
+                                gap: 2.2rem;
                             }
-                            > span{
-                                font-size: 3.2rem;
-                                @include tablet{font-size: 1.6rem;}
+                            > div{
+                                min-width: 33rem;
+                                flex-direction: column;
+                                @include tablet{min-width: auto;}
+                                .font-type{
+                                    font-size: 1.6rem;
+                                    font-weight: 500;
+                                    gap: .8rem;
+                                    @include flexbox(row, flex-start, center);
+                                    @include tablet{font-size: 1.4rem;}
+                                    span{
+                                        color: $yg1;
+                                        margin-right: 0;
+                                        min-width: auto;
+                                    }
+                                    + div{
+                                        flex-direction: column;
+                                        span{
+                                            font-size: 3.2rem;
+                                            @include tablet{font-size: 1.6rem;}
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
