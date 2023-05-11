@@ -4862,6 +4862,8 @@ button.more-btn.on::before {
   }
 }
 #projectDetails.lgstory #overview {
+  max-width: 100%;
+  width: 100%;
   background-image: url(../../assets/images/sub/project/details/lgstory/overview_pc.png);
   background-repeat: no-repeat;
   background-size: contain;

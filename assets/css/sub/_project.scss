@@ -461,6 +461,8 @@ $nhlife: #6CB5EC;
             @include tablet{@include background(sub/project/details/lgstory, intro_mb, png, no-repeat, cover, center, center);}
         }
         #overview{
+            max-width: 100%;
+            width: 100%;
             @include background(sub/project/details/lgstory, overview_pc, png, no-repeat, contain, center, center);
             @include tablet{
                 @include background(sub/project/details/lgstory, overview_mb, png, no-repeat, 100%, top, center);
