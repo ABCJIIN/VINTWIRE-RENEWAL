@@ -3936,20 +3936,8 @@ button.more-btn.on::before {
   background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
 }
 #projectDetails.nhbank #keypoint .keypoint-list > li {
-  height: auto;
-  padding: 6rem 20% 8% 9.3rem;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #0055A5;
-}
-@media (max-width: 930px) {
-  #projectDetails.nhbank #keypoint .keypoint-list > li {
-    padding: 6rem 2.3rem 8%;
-  }
-}
-@media (max-width: 768px) {
-  #projectDetails.nhbank #keypoint .keypoint-list > li {
-    padding: 8.5rem 2.3rem 4rem;
-  }
 }
 #projectDetails.nhbank #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #0055A5;
@@ -4075,9 +4063,9 @@ button.more-btn.on::before {
 }
 #projectDetails.kitanet #designAll .con-box {
   width: 100%;
-  max-width: 1500px;
 }
 #projectDetails.kitanet #designAll .con-box .design-challenge {
+  max-width: 1500px;
   width: 100%;
 }
 #projectDetails.kitanet #designAll .con-box .design-challenge p {
@@ -4097,6 +4085,9 @@ button.more-btn.on::before {
 }
 #projectDetails.kitanet #designAll .con-box .design-challenge .img-wrap img {
   width: 100%;
+}
+#projectDetails.kitanet #designAll .con-box #designSystem {
+  max-width: 1500px;
 }
 #projectDetails.kitanet #preview02 {
   width: 100%;
@@ -4172,21 +4163,24 @@ button.more-btn.on::before {
 #projectDetails.koreanair #designSystem {
   background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, 0.3));
 }
-#projectDetails.koreanair #designSystem .font-list {
+#projectDetails.koreanair #designSystem .con-box {
+  margin: 0 auto;
+}
+#projectDetails.koreanair #designSystem .con-box .font-list {
   border-bottom: 0;
   padding-bottom: 0;
 }
-#projectDetails.koreanair #designSystem .font-list-group {
+#projectDetails.koreanair #designSystem .con-box .font-list-group {
   gap: 0;
 }
-#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap {
+#projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap {
   padding: 5rem 0;
   width: 100%;
   max-width: 1500px;
   align-items: center;
 }
 @media (max-width: 930px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap {
+  #projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap {
     flex-direction: column;
     align-items: flex-start;
     padding: 1.2rem 0;
@@ -4194,12 +4188,12 @@ button.more-btn.on::before {
   }
 }
 @media (max-width: 768px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap {
+  #projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap {
     padding: 1.2rem 0;
     gap: 1.2rem;
   }
 }
-#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category {
+#projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap .category {
   position: relative;
   color: #00246C;
   font-weight: 700;
@@ -4207,16 +4201,16 @@ button.more-btn.on::before {
   padding-right: 5rem;
 }
 @media (max-width: 930px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category {
+  #projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap .category {
     padding: 0 0 0.8rem;
   }
 }
 @media (max-width: 768px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category {
+  #projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap .category {
     padding: 0 0 0.8rem;
   }
 }
-#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category ::after {
+#projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap .category ::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -4227,7 +4221,7 @@ button.more-btn.on::before {
   background: #222;
 }
 @media (max-width: 930px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category ::after {
+  #projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap .category ::after {
     width: 10px;
     height: 1px;
     top: auto;
@@ -4238,32 +4232,29 @@ button.more-btn.on::before {
   }
 }
 @media (max-width: 768px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category ::after {
+  #projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap .category ::after {
     left: 50%;
     transform: translate(-100%, 0);
   }
 }
-#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap > div:not(.category) {
+#projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap > div:not(.category) {
   min-width: 50rem;
 }
 @media (max-width: 930px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap > div:not(.category):last-child {
+  #projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap > div:not(.category):last-child {
     padding-bottom: 1.2rem;
   }
 }
-#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:not(:first-child) {
+#projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap:not(:first-child) {
   border-top: 1px solid #D9D9D9;
 }
-#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:first-child * {
+#projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap:first-child * {
   font-family: "Noto Sans", sans-serif;
 }
-#projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:last-child * {
+#projectDetails.koreanair #designSystem .con-box .font-list-group > .flex-wrap:last-child * {
   font-family: "AppleSDGothicNeo", sans-serif;
 }
-#projectDetails.koreanair #designSystem .color-list {
-  gap: 8rem;
-}
-#projectDetails.koreanair #designSystem .color-list img {
+#projectDetails.koreanair #designSystem .con-box .colorchip-logo > img {
   width: 100%;
   max-width: 964px;
 }
@@ -5048,6 +5039,7 @@ button.more-btn.on::before {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  min-width: 188px;
 }
 #projectDetails #designSystem .font-list-group > li > div:not(.category) div span {
   font-size: 1.8rem;

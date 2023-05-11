@@ -435,16 +435,8 @@ $nhlife: #6CB5EC;
             background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
             .keypoint-list {
                 > li {
-                    height: auto;
-                    padding: 6rem 20% 8% 9.3rem;
                     background: rgba($white, .8);
                     border: 1px solid $nhbank;
-                    @include tablet_junction {
-                        padding: 6rem 2.3rem 8%;
-                    }
-                    @include tablet {
-                        padding: 8.5rem 2.3rem 4rem;
-                    }
                     .tit-num {
                         -webkit-text-stroke: 1px $nhbank;
                         + div {
@@ -525,8 +517,8 @@ $nhlife: #6CB5EC;
             margin: 4rem auto;
             .con-box {
                 width: 100%;
-                max-width: 1500px;
                 .design-challenge {
+                    max-width: 1500px;
                     width: 100%;
                     p {
                         font-size: 1.8rem;
@@ -544,6 +536,9 @@ $nhlife: #6CB5EC;
                             width: 100%;
                         }
                     }
+                }
+                #designSystem {
+                    max-width: 1500px;
                 }
             }
         }
@@ -602,81 +597,83 @@ $nhlife: #6CB5EC;
         }
         #designSystem {
             background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, .3));
-            .font-list {
-                border-bottom: 0;
-                padding-bottom: 0;
-                &-group {
-                    gap: 0;
-                    > .flex-wrap {
-                        padding: 5rem 0;
-                        width: 100%;
-                        max-width: 1500px;
-                        align-items: center;
-                        @include tablet_junction {
-                            flex-direction: column;
-                            align-items: flex-start;
-                            padding: 1.2rem 0;
-                            gap: 1.2rem;
-                        }
-                        @include tablet {
-                            padding: 1.2rem 0;
-                            gap: 1.2rem;
-                        }
-                        .category {
-                            position: relative;
-                            color: #00246C;
-                            font-weight: 700;
-                            min-width: auto;
-                            padding-right: 5rem;
+            .con-box {
+                margin: 0 auto;
+                .font-list {
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                    &-group {
+                        gap: 0;
+                        > .flex-wrap {
+                            padding: 5rem 0;
+                            width: 100%;
+                            max-width: 1500px;
+                            align-items: center;
                             @include tablet_junction {
-                                padding: 0 0 0.8rem;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 1.2rem 0;
+                                gap: 1.2rem;
                             }
                             @include tablet {
-                                padding: 0 0 0.8rem;
+                                padding: 1.2rem 0;
+                                gap: 1.2rem;
                             }
-                            ::after {
-                                content: '';
-                                position: absolute;
-                                top: 50%;
-                                right: -2.5rem;
-                                transform: translate(0, -50%);
-                                width: 1px;
-                                height: 10px;
-                                background: $black;
+                            .category {
+                                position: relative;
+                                color: #00246C;
+                                font-weight: 700;
+                                min-width: auto;
+                                padding-right: 5rem;
                                 @include tablet_junction {
-                                    width: 10px;
-                                    height: 1px;
-                                    top: auto;
-                                    bottom: -0.8rem;
-                                    right: auto;
-                                    left: 50%;
-                                    transform: translate(-50%, 0);
+                                    padding: 0 0 0.8rem;
                                 }
                                 @include tablet {
-                                    left: 50%;
-                                    transform: translate(-100%, 0);
+                                    padding: 0 0 0.8rem;
+                                }
+                                ::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    right: -2.5rem;
+                                    transform: translate(0, -50%);
+                                    width: 1px;
+                                    height: 10px;
+                                    background: $black;
+                                    @include tablet_junction {
+                                        width: 10px;
+                                        height: 1px;
+                                        top: auto;
+                                        bottom: -0.8rem;
+                                        right: auto;
+                                        left: 50%;
+                                        transform: translate(-50%, 0);
+                                    }
+                                    @include tablet {
+                                        left: 50%;
+                                        transform: translate(-100%, 0);
+                                    }
                                 }
                             }
-                        }
-                        > div:not(.category) {
-                            min-width: 50rem;
-                            &:last-child {
-                                @include tablet_junction {
-                                    padding-bottom: 1.2rem;
+                            > div:not(.category) {
+                                min-width: 50rem;
+                                &:last-child {
+                                    @include tablet_junction {
+                                        padding-bottom: 1.2rem;
+                                    }
                                 }
                             }
+                            &:not(:first-child){border-top: 1px solid #D9D9D9;}
+                            &:first-child {*{font-family: $notosans;};}
+                            &:last-child {*{font-family: $apple_gothicNeo;};}
                         }
-                        &:not(:first-child){border-top: 1px solid #D9D9D9;}
-                        &:first-child {*{font-family: $notosans;};}
-                        &:last-child {*{font-family: $apple_gothicNeo;};}
                     }
                 }
-            }
-            .color-list {
-                gap: 8rem;
-                img {
-                    width: 100%;
-                    max-width: 964px;
+                .colorchip-logo {
+                    > img {
+                        width: 100%;
+                        max-width: 964px;
+                    }
                 }
             }
         }
@@ -1257,6 +1254,7 @@ $nhlife: #6CB5EC;
                         }
                         div {
                             @include flexbox (row, flex-start, flex-start);
+                            min-width: 188px;
                             span{
                                 font-size: 1.8rem;
                                 line-height: 1.5;
