@@ -796,6 +796,8 @@ $nhlife: #6CB5EC;
                     .font-type{
                         font-size: 1.6rem;
                         font-weight: 500;
+                        gap: .8rem;
+                        @include flexbox(row, flex-start, center);
                         @include tablet{font-size: 1.4rem;}
                         span{
                             color: $yg1;
@@ -817,7 +819,7 @@ $nhlife: #6CB5EC;
                             }
                             > span{
                                 font-size: 3.2rem;
-                                @include tablet{font-size: 2rem;}
+                                @include tablet{font-size: 1.6rem;}
                             }
                         }
                     }
