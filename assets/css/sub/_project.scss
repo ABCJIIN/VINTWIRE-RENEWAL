@@ -299,18 +299,17 @@ $nhlife: #6CB5EC;
         }
         .tit-detail{
             font-size: 2.6rem;
-            font-weight: 600;
+            font-weight: 700;
             display: block;
             margin-bottom: 3.2rem;
             @include tablet{
                 font-size: 1.8rem;
-                margin-bottom: 4rem;
             }
         } 
         .colorchip-logo {
             @include flexbox (row, flex-start, center);
             flex-wrap: wrap;
-            gap: 2rem 5%;
+            gap: 2.4rem 5%;
         }
 
     }
@@ -783,7 +782,8 @@ $nhlife: #6CB5EC;
             .font-list-group{
                 flex-direction: column;
                 gap: 3rem;
-                @include tablet{gap: 4rem;}
+                padding-top: 5.2rem;
+                @include tablet{gap: 4rem; padding-top: 1.8rem;}
                 li{
                     gap: 5.4rem;
                     align-items: center;
@@ -860,7 +860,7 @@ $nhlife: #6CB5EC;
             }
         }
         #designSystem{
-            background: linear-gradient(rgba(#3941A5, .5), rgba(#3941A5, .1));
+            background: linear-gradient(rgba(#3941A5, .5), rgba(#3941A5, .1) 50%);
             .font-list{
                 border-bottom: 0;
                 padding-bottom: 0;
@@ -1106,8 +1106,8 @@ $nhlife: #6CB5EC;
                     &::after{
                         content: '';
                         display: inline-block;
-                        width: 1.8rem;
-                        height: 2rem;
+                        width: 1.4rem;
+                        height: 1.4rem;
                         @include background(icon, link_arrow_icon, png, no-repeat, contain, center, center);
                     }
                 }
