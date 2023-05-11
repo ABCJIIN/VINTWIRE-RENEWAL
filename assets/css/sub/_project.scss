@@ -324,7 +324,6 @@ $nhlife: #6CB5EC;
                 }
             }
         }
-        .font-list{*{font-family: $notosans;} @include tablet {*{font-family: $apple_gothicNeo;}}}
         #keypoint {
             background: linear-gradient(rgba($orange, 0.3), rgba(250, 46, 46, 0.3));
             .keypoint-list {
@@ -333,27 +332,20 @@ $nhlife: #6CB5EC;
                     grid-template-columns: 1fr;
                 }
                 > li {
-                    height: 34rem;
-                    padding: 11% 15% 2%;
+                    height: auto;
+                    padding: 6rem 2.3rem 4rem;
                     background: rgba($white, .9);
                     border: 1px solid $orange;
-                    @include flexbox(row, flex-start, flex-start);
-                    @include tablet_junction {
-                        padding: 7% 22% 2%;
-                    }
-                    @include tablet {
-                        padding: 11% 15% 2%;
-                    }
                     .tit-num {
                         -webkit-text-stroke: 1px $orange;
                         + div {
                             > strong {
                                 border-bottom: 1px solid $orange;
-                                @media (max-width: 1440px) {
-                                    font-size: 2.2rem;
-                                }
+                                // @media (max-width: 1600px) {
+                                //     font-size: 2.2rem;
+                                // }
                                 @include tablet_junction {
-                                    font-size: 2.8rem;
+                                    text-align: center;
                                 }
                                 @include tablet {
                                     font-size: 2rem;
@@ -435,12 +427,19 @@ $nhlife: #6CB5EC;
             background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
             .keypoint-list {
                 > li {
+                    height: auto;
+                    padding: 6rem 20% 8% 9.3rem;
                     background: rgba($white, .8);
                     border: 1px solid $nhbank;
+                    @include tablet_junction {
+                        padding: 6rem 2.3rem 8%;
+                    }
+                    @include tablet {
+                        padding: 8.5rem 2.3rem 4rem;
+                    }
                     .tit-num {
                         -webkit-text-stroke: 1px $nhbank;
                         + div {
-                            max-width: 624px;
                             > strong {
                                 border-bottom: 1px solid $nhbank;
                                 @include tablet_junction {
@@ -454,27 +453,35 @@ $nhlife: #6CB5EC;
         }
         #designSystem{
             background: linear-gradient(#E0EDFF, #F4F8FD);
-            .flex-wrap {
-                align-items: center;
-                justify-content: space-between;
-                gap: 5%;
-                flex-wrap: nowrap;
-                @include tablet_junction {
-                    flex-wrap: wrap;
-                    gap: 6rem;
-                }
-                .brand-logo {
-                    @include tablet_junction {
-                        margin: 0 1rem;
-                    }
-                }
-            }
-            .color-list{
-                flex-wrap: nowrap;
-                @include tablet_junction {
+            .con-box {
+                max-width: 1600px;
+                .flex-wrap {
+                    align-items: center;
+                    gap: 11rem;
                     flex-wrap: wrap;
                 }
             }
+            // .flex-wrap {
+            //     align-items: center;
+            //     justify-content: space-between;
+            //     gap: 5%;
+            //     flex-wrap: nowrap;
+            //     @include tablet_junction {
+            //         flex-wrap: wrap;
+            //         gap: 6rem;
+            //     }
+            //     .brand-logo {
+            //         @include tablet_junction {
+            //             margin: 0 1rem;
+            //         }
+            //     }
+            // }
+            // .color-list{
+            //     flex-wrap: nowrap;
+            //     @include tablet_junction {
+            //         flex-wrap: wrap;
+            //     }
+            // }
         }
     }
     &.lgstory {
@@ -556,30 +563,6 @@ $nhlife: #6CB5EC;
                         }
                     }
                 }
-                #designSystem {
-                    .font-list {
-                        .bold-type, .regular-type {
-                            strong {
-                                margin-bottom: 0;
-                                @include tablet {
-                                    margin-bottom: 1rem;
-                                }
-                            }
-                            div {
-                                @include tablet {
-                                    display: flex;
-                                }
-                            }
-                        }
-                    }
-                    .flex-wrap {
-                        .brand-logo {
-                            @include tablet {
-                                margin: 0 20%;
-                            }
-                        }
-                    }
-                }
             }
         }
         #preview02 {
@@ -603,12 +586,25 @@ $nhlife: #6CB5EC;
             background: linear-gradient(#458FFF 50%, rgba(45, 147, 216, 0.1));
             .keypoint-list {
                 > li {
+                    height: auto;
+                    padding: 6rem 20% 5rem 9.3rem;
                     background: rgba($white, .8);
                     border: 1px solid $koreanair;
+                    @include tablet_junction {
+                        padding: 6rem 2.3rem 5rem;
+                    }
+                    @include tablet {
+                        padding: 8.5rem 2.3rem 4rem;
+                    }
                     .tit-num {
                         -webkit-text-stroke: 1px $koreanair;
                         + div {
-                            > strong{border-bottom: 1px solid $koreanair;}
+                            > strong{
+                                border-bottom: 1px solid $koreanair;
+                                @include tablet_junction {
+                                    text-align: center;
+                                }
+                            }
                         }
                     }
                 }
@@ -626,12 +622,28 @@ $nhlife: #6CB5EC;
                         width: 100%;
                         max-width: 1500px;
                         align-items: center;
+                        @include tablet_junction {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 1.2rem 0;
+                            gap: 1.2rem;
+                        }
+                        @include tablet {
+                            padding: 1.2rem 0;
+                            gap: 1.2rem;
+                        }
                         .category {
                             position: relative;
                             color: #00246C;
                             font-weight: 700;
                             min-width: auto;
                             padding-right: 5rem;
+                            @include tablet_junction {
+                                padding: 0 0 0.8rem;
+                            }
+                            @include tablet {
+                                padding: 0 0 0.8rem;
+                            }
                             ::after {
                                 content: '';
                                 position: absolute;
@@ -641,31 +653,32 @@ $nhlife: #6CB5EC;
                                 width: 1px;
                                 height: 10px;
                                 background: $black;
+                                @include tablet_junction {
+                                    width: 10px;
+                                    height: 1px;
+                                    top: auto;
+                                    bottom: -0.8rem;
+                                    right: auto;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                }
+                                @include tablet {
+                                    left: 50%;
+                                    transform: translate(-100%, 0);
+                                }
                             }
                         }
                         > div:not(.category) {
                             min-width: 50rem;
-                            // @media (max-width:970px) {
-                            //     min-width: 43rem;
-                            // }
-                            // @include tablet{min-width: auto;}
-                            // strong {
-                            //     @media (max-width:970px) {
-                            //         font-size: 4rem;
-                            //     }
-                            // }
+                            &:last-child {
+                                @include tablet_junction {
+                                    padding-bottom: 1.2rem;
+                                }
+                            }
                         }
                         &:not(:first-child){border-top: 1px solid #D9D9D9;}
                         &:first-child {*{font-family: $notosans;};}
                         &:last-child {*{font-family: $apple_gothicNeo;};}
-
-                        @include tablet {
-                            &:first-child{padding-top: 0;}
-                            padding: 3rem 0;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            gap: 1.6rem;
-                        }
                     }
                 }
             }
@@ -731,6 +744,7 @@ $nhlife: #6CB5EC;
                 }
             }
         }
+        .font-list{*{font-family: $notosans;}}
         #keypoint {
             background: linear-gradient(#CEF2FF, #F2FCFF);
             .keypoint-list {
@@ -754,10 +768,6 @@ $nhlife: #6CB5EC;
         #designSystem {
             background: linear-gradient(rgba(255, 168, 0, 0.1), rgba(255, 228, 64, 0.5));
         }
-        // #contents{
-        //     margin-top: -30rem;
-        //     @include tablet{margin-top: -10rem;}
-        // }
     }
     &.yg1 {
         .project-info-bg{
@@ -1134,6 +1144,7 @@ $nhlife: #6CB5EC;
                     + div{
                         position: relative;
                         z-index: 1;
+                        width: 100%;
                         > strong{
                             font-weight: 800;
                             font-size: 2.8rem;

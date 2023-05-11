@@ -3787,14 +3787,6 @@ button.more-btn.on::before {
 #projectDetails.orange .color-list > li:nth-child(5) {
   background: #FFF1E3;
 }
-#projectDetails.orange .font-list * {
-  font-family: "Noto Sans", sans-serif;
-}
-@media (max-width: 768px) {
-  #projectDetails.orange .font-list * {
-    font-family: "Roboto", sans-serif;
-  }
-}
 #projectDetails.orange #keypoint {
   background: linear-gradient(rgba(250, 144, 46, 0.3), rgba(250, 46, 46, 0.3));
 }
@@ -3807,24 +3799,10 @@ button.more-btn.on::before {
   }
 }
 #projectDetails.orange #keypoint .keypoint-list > li {
-  height: 34rem;
-  padding: 11% 15% 2%;
+  height: auto;
+  padding: 6rem 2.3rem 4rem;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #FA902E;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-@media (max-width: 930px) {
-  #projectDetails.orange #keypoint .keypoint-list > li {
-    padding: 7% 22% 2%;
-  }
-}
-@media (max-width: 768px) {
-  #projectDetails.orange #keypoint .keypoint-list > li {
-    padding: 11% 15% 2%;
-  }
 }
 #projectDetails.orange #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #FA902E;
@@ -3832,14 +3810,9 @@ button.more-btn.on::before {
 #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
   border-bottom: 1px solid #FA902E;
 }
-@media (max-width: 1440px) {
-  #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
-    font-size: 2.2rem;
-  }
-}
 @media (max-width: 930px) {
   #projectDetails.orange #keypoint .keypoint-list > li .tit-num + div > strong {
-    font-size: 2.8rem;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -3950,14 +3923,23 @@ button.more-btn.on::before {
   background: linear-gradient(rgba(228, 240, 255, 0.5), rgba(216, 217, 255, 0.5));
 }
 #projectDetails.nhbank #keypoint .keypoint-list > li {
+  height: auto;
+  padding: 6rem 20% 8% 9.3rem;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #0055A5;
 }
+@media (max-width: 930px) {
+  #projectDetails.nhbank #keypoint .keypoint-list > li {
+    padding: 6rem 2.3rem 8%;
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails.nhbank #keypoint .keypoint-list > li {
+    padding: 8.5rem 2.3rem 4rem;
+  }
+}
 #projectDetails.nhbank #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #0055A5;
-}
-#projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div {
-  max-width: 624px;
 }
 #projectDetails.nhbank #keypoint .keypoint-list > li .tit-num + div > strong {
   border-bottom: 1px solid #0055A5;
@@ -3970,30 +3952,13 @@ button.more-btn.on::before {
 #projectDetails.nhbank #designSystem {
   background: linear-gradient(#E0EDFF, #F4F8FD);
 }
-#projectDetails.nhbank #designSystem .flex-wrap {
+#projectDetails.nhbank #designSystem .con-box {
+  max-width: 1600px;
+}
+#projectDetails.nhbank #designSystem .con-box .flex-wrap {
   align-items: center;
-  justify-content: space-between;
-  gap: 5%;
-  flex-wrap: nowrap;
-}
-@media (max-width: 930px) {
-  #projectDetails.nhbank #designSystem .flex-wrap {
-    flex-wrap: wrap;
-    gap: 6rem;
-  }
-}
-@media (max-width: 930px) {
-  #projectDetails.nhbank #designSystem .flex-wrap .brand-logo {
-    margin: 0 1rem;
-  }
-}
-#projectDetails.nhbank #designSystem .color-list {
-  flex-wrap: nowrap;
-}
-@media (max-width: 930px) {
-  #projectDetails.nhbank #designSystem .color-list {
-    flex-wrap: wrap;
-  }
+  gap: 11rem;
+  flex-wrap: wrap;
 }
 #projectDetails.lgstory .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/lgstory/intro_pc.png);
@@ -4125,24 +4090,6 @@ button.more-btn.on::before {
 #projectDetails.kitanet #designAll .con-box .design-challenge .img-wrap img {
   width: 100%;
 }
-#projectDetails.kitanet #designAll .con-box #designSystem .font-list .bold-type strong, #projectDetails.kitanet #designAll .con-box #designSystem .font-list .regular-type strong {
-  margin-bottom: 0;
-}
-@media (max-width: 768px) {
-  #projectDetails.kitanet #designAll .con-box #designSystem .font-list .bold-type strong, #projectDetails.kitanet #designAll .con-box #designSystem .font-list .regular-type strong {
-    margin-bottom: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  #projectDetails.kitanet #designAll .con-box #designSystem .font-list .bold-type div, #projectDetails.kitanet #designAll .con-box #designSystem .font-list .regular-type div {
-    display: flex;
-  }
-}
-@media (max-width: 768px) {
-  #projectDetails.kitanet #designAll .con-box #designSystem .flex-wrap .brand-logo {
-    margin: 0 20%;
-  }
-}
 #projectDetails.kitanet #preview02 {
   width: 100%;
   max-width: 100%;
@@ -4182,14 +4129,31 @@ button.more-btn.on::before {
   background: linear-gradient(#458FFF 50%, rgba(45, 147, 216, 0.1));
 }
 #projectDetails.koreanair #keypoint .keypoint-list > li {
+  height: auto;
+  padding: 6rem 20% 5rem 9.3rem;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #118FE4;
+}
+@media (max-width: 930px) {
+  #projectDetails.koreanair #keypoint .keypoint-list > li {
+    padding: 6rem 2.3rem 5rem;
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails.koreanair #keypoint .keypoint-list > li {
+    padding: 8.5rem 2.3rem 4rem;
+  }
 }
 #projectDetails.koreanair #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #118FE4;
 }
 #projectDetails.koreanair #keypoint .keypoint-list > li .tit-num + div > strong {
   border-bottom: 1px solid #118FE4;
+}
+@media (max-width: 930px) {
+  #projectDetails.koreanair #keypoint .keypoint-list > li .tit-num + div > strong {
+    text-align: center;
+  }
 }
 #projectDetails.koreanair #designSystem {
   background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, 0.3));
@@ -4207,12 +4171,36 @@ button.more-btn.on::before {
   max-width: 1500px;
   align-items: center;
 }
+@media (max-width: 930px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 0;
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap {
+    padding: 1.2rem 0;
+    gap: 1.2rem;
+  }
+}
 #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category {
   position: relative;
   color: #00246C;
   font-weight: 700;
   min-width: auto;
   padding-right: 5rem;
+}
+@media (max-width: 930px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category {
+    padding: 0 0 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category {
+    padding: 0 0 0.8rem;
+  }
 }
 #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category ::after {
   content: "";
@@ -4224,8 +4212,30 @@ button.more-btn.on::before {
   height: 10px;
   background: #222;
 }
+@media (max-width: 930px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category ::after {
+    width: 10px;
+    height: 1px;
+    top: auto;
+    bottom: -0.8rem;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media (max-width: 768px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap .category ::after {
+    left: 50%;
+    transform: translate(-100%, 0);
+  }
+}
 #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap > div:not(.category) {
   min-width: 50rem;
+}
+@media (max-width: 930px) {
+  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap > div:not(.category):last-child {
+    padding-bottom: 1.2rem;
+  }
 }
 #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:not(:first-child) {
   border-top: 1px solid #D9D9D9;
@@ -4235,17 +4245,6 @@ button.more-btn.on::before {
 }
 #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:last-child * {
   font-family: "Roboto", sans-serif;
-}
-@media (max-width: 768px) {
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap {
-    padding: 3rem 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.6rem;
-  }
-  #projectDetails.koreanair #designSystem .font-list-group > .flex-wrap:first-child {
-    padding-top: 0;
-  }
 }
 #projectDetails.koreanair #designSystem .color-list {
   gap: 8rem;
@@ -4329,6 +4328,9 @@ button.more-btn.on::before {
 }
 #projectDetails.nhlife .color-list > li:nth-child(5) {
   background: #C9CED3;
+}
+#projectDetails.nhlife .font-list * {
+  font-family: "Noto Sans", sans-serif;
 }
 #projectDetails.nhlife #keypoint {
   background: linear-gradient(#CEF2FF, #F2FCFF);
@@ -4878,6 +4880,7 @@ button.more-btn.on::before {
 #projectDetails #keypoint .keypoint-list > li .tit-num + div {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 #projectDetails #keypoint .keypoint-list > li .tit-num + div > strong {
   font-weight: 800;
