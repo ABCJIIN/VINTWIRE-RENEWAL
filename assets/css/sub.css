@@ -3764,7 +3764,7 @@ button.more-btn.on::before {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6rem 11rem;
+  gap: 2rem 5%;
 }
 #projectDetails.orange .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/orange/intro_pc.png);
@@ -4019,7 +4019,7 @@ button.more-btn.on::before {
 #projectDetails.kita #designSystem {
   background: linear-gradient(rgba(255, 152, 208, 0.3) 50%, rgba(194, 189, 243, 0.2));
 }
-#projectDetails.kita #designSystem .flex-wrap p {
+#projectDetails.kita #designSystem .colorchip-logo p {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 400;
@@ -5044,7 +5044,6 @@ button.more-btn.on::before {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  min-width: 188px;
 }
 #projectDetails #designSystem .font-list-group > li > div:not(.category) div span {
   font-size: 1.8rem;
@@ -5056,17 +5055,13 @@ button.more-btn.on::before {
 @media (max-width: 768px) {
   #projectDetails #designSystem .font-list-group > li > div:not(.category) div span:first-child {
     margin-right: 2.4rem;
+    min-width: 5.5rem;
   }
 }
 @media (max-width: 768px) {
   #projectDetails #designSystem .font-list-group > li > div:not(.category) div span {
     font-size: 1.4rem;
   }
-}
-#projectDetails #designSystem .font-list + .flex-wrap {
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem 5%;
 }
 #projectDetails #designSystem .color-list {
   display: flex;

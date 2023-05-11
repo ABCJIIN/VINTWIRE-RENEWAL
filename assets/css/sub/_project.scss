@@ -310,7 +310,7 @@ $nhlife: #6CB5EC;
         .colorchip-logo {
             @include flexbox (row, flex-start, center);
             flex-wrap: wrap;
-            gap: 6rem 11rem;
+            gap: 2rem 5%;
         }
 
     }
@@ -487,7 +487,7 @@ $nhlife: #6CB5EC;
         }
         #designSystem {
             background: linear-gradient(rgba(255,152,208,0.3) 50%, rgba(194,189,243,0.2));
-            .flex-wrap {
+            .colorchip-logo {
                 p {
                     font-size: 1.8rem;
                     line-height: 2.8rem;
@@ -1256,24 +1256,18 @@ $nhlife: #6CB5EC;
                         }
                         div {
                             @include flexbox (row, flex-start, flex-start);
-                            min-width: 188px;
                             span{
                                 font-size: 1.8rem;
                                 line-height: 1.5;
                                 &:first-child{
                                     margin-right: 1.4rem;
-                                    @include tablet{margin-right: 2.4rem;}
+                                    @include tablet{margin-right: 2.4rem; min-width: 5.5rem;}
                                 }
                                 @include tablet{font-size: 1.4rem;}
                             }
                         }
                     }
                 }
-            }
-            + .flex-wrap{
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 2rem 5%;
             }
         }
         .color-list{
