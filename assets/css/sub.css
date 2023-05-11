@@ -5853,7 +5853,7 @@ button.more-btn.on::before {
   height: 32rem;
   border-radius: 3rem;
   overflow: hidden;
-  padding: 8% 5% 2%;
+  padding: 8% 9.5% 2%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
