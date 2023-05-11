@@ -349,9 +349,6 @@ $nhlife: #6CB5EC;
                         + div {
                             > strong {
                                 border-bottom: 1px solid $orange;
-                                // @media (max-width: 1600px) {
-                                //     font-size: 2.2rem;
-                                // }
                                 @include tablet_junction {
                                     text-align: center;
                                 }
@@ -524,6 +521,9 @@ $nhlife: #6CB5EC;
                         font-size: 1.8rem;
                         font-weight: 400;
                         color: $black;
+                        @include tablet {
+                            font-size: 1.4rem;
+                        }
                     }
                     .img-wrap {
                         max-width: 1440px;
@@ -604,11 +604,12 @@ $nhlife: #6CB5EC;
                     padding-bottom: 0;
                     &-group {
                         gap: 0;
-                        > .flex-wrap {
-                            padding: 5rem 0;
+                        > .colorchip-logo {
+                            padding: 4rem 0;
                             width: 100%;
                             max-width: 1500px;
                             align-items: center;
+                            gap: 0;
                             @include tablet_junction {
                                 flex-direction: column;
                                 align-items: flex-start;
@@ -664,8 +665,12 @@ $nhlife: #6CB5EC;
                                 }
                             }
                             &:not(:first-child){border-top: 1px solid #D9D9D9;}
-                            &:first-child {*{font-family: $notosans;};}
-                            &:last-child {*{font-family: $apple_gothicNeo;};}
+                            &:first-child {
+                                div:not(.category) {*{font-family: $notosans;};}
+                            }
+                            &:last-child {
+                                div:not(.category) {*{font-family: $apple_gothicNeo;};}
+                            }
                         }
                     }
                 }
