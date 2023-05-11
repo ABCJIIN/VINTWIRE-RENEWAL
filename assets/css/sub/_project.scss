@@ -284,7 +284,7 @@ $nhlife: #6CB5EC;
         margin: 0 auto 4rem;
         // padding: 8rem 7rem;
         padding: 6% 5%; 
-        @include tablet{padding: 8rem 1.6rem;}
+        @include tablet{padding: 6rem 1.6rem;}
         &:not(#overview){
             border-radius: 4rem;
             overflow: hidden;

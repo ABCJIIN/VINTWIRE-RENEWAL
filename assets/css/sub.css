@@ -3720,7 +3720,7 @@ button.more-btn.on::before {
 }
 @media (max-width: 768px) {
   #projectDetails section {
-    padding: 8rem 1.6rem;
+    padding: 6rem 1.6rem;
   }
 }
 #projectDetails section:not(#overview) {
