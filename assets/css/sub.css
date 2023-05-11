@@ -4133,20 +4133,8 @@ button.more-btn.on::before {
   background: linear-gradient(#458FFF 50%, rgba(45, 147, 216, 0.1));
 }
 #projectDetails.koreanair #keypoint .keypoint-list > li {
-  height: auto;
-  padding: 6rem 20% 5rem 9.3rem;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #118FE4;
-}
-@media (max-width: 930px) {
-  #projectDetails.koreanair #keypoint .keypoint-list > li {
-    padding: 6rem 2.3rem 5rem;
-  }
-}
-@media (max-width: 768px) {
-  #projectDetails.koreanair #keypoint .keypoint-list > li {
-    padding: 8.5rem 2.3rem 4rem;
-  }
 }
 #projectDetails.koreanair #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #118FE4;
