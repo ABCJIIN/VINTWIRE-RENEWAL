@@ -3758,6 +3758,14 @@ button.more-btn.on::before {
     margin-bottom: 4rem;
   }
 }
+#projectDetails section .colorchip-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6rem 11rem;
+}
 #projectDetails.orange .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/orange/intro_pc.png);
   background-repeat: no-repeat;
@@ -3800,9 +3808,14 @@ button.more-btn.on::before {
 }
 #projectDetails.orange #keypoint .keypoint-list > li {
   height: auto;
-  padding: 6rem 2.3rem 4rem;
+  padding: 6rem 15% 4rem;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #FA902E;
+}
+@media (max-width: 930px) {
+  #projectDetails.orange #keypoint .keypoint-list > li {
+    padding: 6rem 2.3rem 4rem;
+  }
 }
 #projectDetails.orange #keypoint .keypoint-list > li .tit-num {
   -webkit-text-stroke: 1px #FA902E;
@@ -3954,11 +3967,6 @@ button.more-btn.on::before {
 }
 #projectDetails.nhbank #designSystem .con-box {
   max-width: 1600px;
-}
-#projectDetails.nhbank #designSystem .con-box .flex-wrap {
-  align-items: center;
-  gap: 11rem;
-  flex-wrap: wrap;
 }
 #projectDetails.lgstory .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/lgstory/intro_pc.png);
@@ -4154,6 +4162,12 @@ button.more-btn.on::before {
   #projectDetails.koreanair #keypoint .keypoint-list > li .tit-num + div > strong {
     text-align: center;
   }
+}
+#projectDetails.koreanair #keypoint .keypoint-list > li .tit-num + div .list-type01 li {
+  padding-left: 0;
+}
+#projectDetails.koreanair #keypoint .keypoint-list > li .tit-num + div .list-type01 li::before {
+  content: none;
 }
 #projectDetails.koreanair #designSystem {
   background: linear-gradient(#EEF5F6 30%, rgba(172, 200, 207, 0.3));
@@ -4354,8 +4368,20 @@ button.more-btn.on::before {
     padding: 0 1.6rem;
   }
 }
+#projectDetails.nhlife #keypoint .keypoint-list > li .tit-num + div .list-type01 li {
+  padding-left: 0;
+}
+#projectDetails.nhlife #keypoint .keypoint-list > li .tit-num + div .list-type01 li::before {
+  content: none;
+}
 #projectDetails.nhlife #designSystem {
   background: linear-gradient(rgba(255, 168, 0, 0.1), rgba(255, 228, 64, 0.5));
+}
+@media (max-width: 768px) {
+  #projectDetails.nhlife #preview {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 #projectDetails.yg1 .project-info-bg {
   background-image: url(../../assets/images/sub/project/details/yg1/intro_pc.png);
@@ -5017,20 +5043,26 @@ button.more-btn.on::before {
     font-size: 2.4rem;
   }
 }
-#projectDetails #designSystem .font-list-group > li > div:not(.category) span {
+#projectDetails #designSystem .font-list-group > li > div:not(.category) div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#projectDetails #designSystem .font-list-group > li > div:not(.category) div span {
   font-size: 1.8rem;
   line-height: 1.5;
 }
-#projectDetails #designSystem .font-list-group > li > div:not(.category) span:first-child {
+#projectDetails #designSystem .font-list-group > li > div:not(.category) div span:first-child {
   margin-right: 1.4rem;
 }
 @media (max-width: 768px) {
-  #projectDetails #designSystem .font-list-group > li > div:not(.category) span:first-child {
+  #projectDetails #designSystem .font-list-group > li > div:not(.category) div span:first-child {
     margin-right: 2.4rem;
   }
 }
 @media (max-width: 768px) {
-  #projectDetails #designSystem .font-list-group > li > div:not(.category) span {
+  #projectDetails #designSystem .font-list-group > li > div:not(.category) div span {
     font-size: 1.4rem;
   }
 }
