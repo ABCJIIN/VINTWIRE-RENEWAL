@@ -4413,6 +4413,11 @@ button.more-btn.on::before {
 #projectDetails.yg1 #designSystem .font-list-group > .flex-wrap .font-type {
   font-size: 1.6rem;
   font-weight: 500;
+  gap: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 @media (max-width: 768px) {
   #projectDetails.yg1 #designSystem .font-list-group > .flex-wrap .font-type {
@@ -4450,7 +4455,7 @@ button.more-btn.on::before {
 }
 @media (max-width: 768px) {
   #projectDetails.yg1 #designSystem .font-list-group > .flex-wrap .flex-wrap > div > span {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 #projectDetails.yg1 .color-list > li:nth-child(1) {
