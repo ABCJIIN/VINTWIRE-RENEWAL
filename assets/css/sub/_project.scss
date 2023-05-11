@@ -563,16 +563,8 @@ $nhlife: #6CB5EC;
             background: linear-gradient(#458FFF 50%, rgba(45, 147, 216, 0.1));
             .keypoint-list {
                 > li {
-                    height: auto;
-                    padding: 6rem 20% 5rem 9.3rem;
                     background: rgba($white, .8);
                     border: 1px solid $koreanair;
-                    @include tablet_junction {
-                        padding: 6rem 2.3rem 5rem;
-                    }
-                    @include tablet {
-                        padding: 8.5rem 2.3rem 4rem;
-                    }
                     .tit-num {
                         -webkit-text-stroke: 1px $koreanair;
                         + div {
