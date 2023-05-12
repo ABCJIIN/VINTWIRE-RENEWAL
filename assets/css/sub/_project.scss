@@ -500,6 +500,320 @@ $nhlife: #6CB5EC;
             @include background(sub/project/details/kitanet, intro_pc, png, no-repeat, cover, center, center);
             @include tablet{@include background(sub/project/details/kitanet, intro_mb, png, no-repeat, cover, center, center);}
         }
+        #notify {
+            background: linear-gradient(rgba(173, 206, 255, 0.6), rgba(173, 206, 255, 0.1)70%);
+            @include tablet {
+                padding: 6rem 0;
+            }
+            .con-box {
+                width: calc(100% - 2.8rem);
+                #progress {
+                    padding-bottom: 8rem;
+                    @include tablet {
+                        padding-bottom: 6rem;
+                    }
+                    ul {
+                        // max-width: 1250px;
+                        width: 100%;
+                        @include flexbox(row, flex-start, flex-start);
+                        flex-wrap: wrap;
+                        gap: 3.2rem 0;
+                        padding: 0 2rem 0 13.8rem;
+                        @include tablet_junction {
+                            padding: 0;
+                        }
+                        li {
+                            width: 41.5rem;
+                            min-height: 19rem;
+                            @include flexbox(row, flex-start, flex-start);
+                            @include tablet {
+                                min-height: auto;
+                            }
+                            .tit-num02 {
+                                font-size: 4.8rem;
+                                font-weight: 900;
+                                -webkit-text-stroke: 1px #0066FF;
+                                color: transparent;
+                            }
+                            div {
+                                padding-top: 1rem;
+                                padding-left: 1.6rem;
+                                @include tablet {
+                                    padding-left: 2.7rem;
+                                }
+                                > strong {
+                                    font-size: 3.2rem;
+                                    font-weight: 700;
+                                    color: #262626;
+                                    @include tablet {
+                                        font-size: 2.8rem;
+                                    }
+                                }
+                                p {
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    color: #262626;
+                                    line-height: 2.8rem;
+                                    padding-top: 2.4rem;
+                                    @include tablet {
+                                        font-size: 1.4rem;
+                                        line-height: 2.4rem;
+                                        padding-top: 2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #foresight {
+                    width: 100%;
+                    padding-bottom: 8rem;
+                    @include tablet {
+                        padding-bottom: 6rem;
+                    }
+                    .foresight-inner {
+                        width: 100%;
+                        @include flexbox(row, space-between, flex-end);
+                        flex-wrap: wrap;
+                        gap: 4rem 0;
+                        .title {
+                            max-width: 750px;
+                            @include flexbox(column, flex-start, flex-start);
+                            gap: 1.6rem;
+                            @include tablet {
+                                gap: 2.4rem;
+                            }
+                            div {
+                                font-size: 4rem;
+                                line-height: 4.8rem;
+                                color: $black;
+                                @include tablet {
+                                    font-size: 3.2rem;
+                                    line-height: 4rem;
+                                }
+                                strong {
+                                    font-weight: 800;
+                                }
+                                span {
+                                    font-weight: 500;
+                                }
+                            }
+                            p {
+                                font-size: 1.8rem;
+                                font-weight: 500;
+                                line-height: 3.4rem;
+                                @include tablet {
+                                    font-size: 1.4rem;
+                                    line-height: 2.4rem;
+                                }
+                            }
+                        }
+                        .text-list {
+                            ul {
+                                @include flexbox(row, flex-start, flex-start);
+                                flex-wrap: wrap;
+                                gap: 2rem;
+                                li {
+                                    width: 18.5rem;
+                                    height: 18.5rem;
+                                    border-radius: 50%;
+                                    border: 1px solid #0066FF;
+                                    background: rgba(0, 102, 255, 0.1);
+                                    color: $black;
+                                    @include flexbox(column, center, center);
+                                    gap: 0.8rem;
+                                    @include tablet {
+                                        width: 15.4rem;
+                                        height: 15.4rem;
+                                        gap: 1.1rem;
+                                    }
+                                    strong {
+                                        font-size: 2.4rem;
+                                        font-weight: 700;
+                                        @include tablet {
+                                            font-size: 2.2rem;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 1.8rem;
+                                        font-weight: 400;
+                                        @include tablet {
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #uxChallenge {
+                    padding-bottom: 8rem;
+                    @include tablet {
+                        padding-bottom: 6rem;
+                    }
+                    @include flexbox(column, flex-start, flex-start);
+                    > p {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        color: $black;
+                        @include tablet {
+                            line-height: 2.4rem;
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .analyze-list {
+                        max-width: 1365px;
+                        width: 100%;
+                        margin: 0 auto;
+                        margin-top: 3rem;
+                        border-top: 1px solid #0066FF;
+                        @include tablet {
+                            margin: 4rem 0.7rem 0;
+                            border-top: none;
+                            border-left: 1px solid #0066FF;
+                        }
+                        ul {
+                            width: 100%;
+                            @include flexbox (row, center, center);
+                            gap: 1.6rem;
+                            @include tablet {
+                                @include flexbox (column, flex-start, flex-start);
+                                gap: 4rem;
+                                padding: 0 1.4rem 0 3.8rem;
+                            }
+                            li {
+                                position: relative;
+                                @include flexbox (column, flex-end, center);
+                                width: 29%;
+                                height: 26.4rem;
+                                gap: 1.6rem;
+                                @include tablet {
+                                    width: 100%;
+                                    height: 17rem;
+                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                }
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    top: -0.8rem;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 0.8rem;
+                                    height: 0.8rem;
+                                    border-radius: 50%;
+                                    border: 4px solid #0066FF;
+                                    background: $white;
+                                    @include tablet {
+                                        top: 0;
+                                        left: -4.6rem;
+                                        transform: translate(0, 0);
+                                    }
+                                }
+                                strong {
+                                    font-size: 3rem;
+                                    font-weight: 700;
+                                    color: #0066FF;
+                                    @include tablet {
+                                        font-size: 2.6rem;
+                                    }
+                                }
+                                div {
+                                    width: 100%;
+                                    padding: 1.8rem;
+                                    height: 18rem;
+                                    border: 2px solid #ADCEFF;
+                                    border-radius: 1.2rem;
+                                    background: $white;
+                                    @include flexbox(row, center,center);
+                                    @include tablet {
+                                        @include flexbox(row, flex-start,center);
+                                        height: 12.2rem;
+                                    }
+                                    p {
+                                        text-align: center;
+                                        line-height: 2.8rem;
+                                        font-size: 1.8rem;
+                                        font-weight: 400;
+                                        max-width: 24rem;
+                                        word-break: keep-all;
+                                        @include tablet {
+                                            text-align: left;
+                                            font-size: 1.4rem;
+                                            line-height: 2.4rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #uiuxGuide {
+                    @include flexbox(column, flex-start, flex-start);
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        color: $black;
+                        @include tablet {
+                            font-size: 1.4rem;
+                            line-height: 2.4rem;
+                        }
+                    }
+                    .guide-list {
+                        width: 100%;
+                        max-width: 1225px;
+                        margin: 4rem auto 0;
+                        @include flexbox(row, center, center);
+                        gap: 6.1rem;
+                        flex-wrap: wrap;
+                        @include tablet {
+                            gap: 1.3rem;
+                            justify-content: flex-start;
+                        }
+                        li {
+                            // position: relative;
+                            width: 26rem;
+                            height: 25.5rem;
+                            padding: 2rem 1.4rem;
+                            background: $white;
+                            border: 2px solid #ADCEFF;
+                            border-radius: 1.2rem;
+                            @include tablet {
+                                width: calc(50% - 1.3rem);
+                                height: auto;
+                                min-height: 177px;
+                                padding: 2rem 1.4rem 2.8rem;
+                            }
+                            .tit-num02 {
+                                font-size: 4.8rem;
+                                font-weight: 900;
+                                -webkit-text-stroke: 1px #ADCEFF;
+                                color: transparent;
+                                @include tablet {
+                                    font-size: 3.2rem;
+                                }
+                            }
+                            p {
+                                padding-top: 3rem;
+                                text-align: center;
+                                font-size: 2.6rem;
+                                font-weight: 500;
+                                line-height: 3.2rem;
+                                word-break: keep-all;
+                                @include tablet {
+                                    font-size: 1.6rem;
+                                    line-height: 2.6rem;
+                                    padding-top: 1.5rem;
+                                    max-width: 170px;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         $colorchip :(#327BBC, #64CEBC, #DD2B2E, #F8BB9F, #F29EC8, #8CD0EB);
         .color-list{
             > li {

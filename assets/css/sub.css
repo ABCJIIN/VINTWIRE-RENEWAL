@@ -4040,6 +4040,414 @@ button.more-btn.on::before {
     background-position: center center;
   }
 }
+#projectDetails.kitanet #notify {
+  background: linear-gradient(rgba(173, 206, 255, 0.6), rgba(173, 206, 255, 0.1) 70%);
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify {
+    padding: 6rem 0;
+  }
+}
+#projectDetails.kitanet #notify .con-box {
+  width: calc(100% - 2.8rem);
+}
+#projectDetails.kitanet #notify .con-box #progress {
+  padding-bottom: 8rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #progress {
+    padding-bottom: 6rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #progress ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3.2rem 0;
+  padding: 0 2rem 0 13.8rem;
+}
+@media (max-width: 930px) {
+  #projectDetails.kitanet #notify .con-box #progress ul {
+    padding: 0;
+  }
+}
+#projectDetails.kitanet #notify .con-box #progress ul li {
+  width: 41.5rem;
+  min-height: 19rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #progress ul li {
+    min-height: auto;
+  }
+}
+#projectDetails.kitanet #notify .con-box #progress ul li .tit-num02 {
+  font-size: 4.8rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #0066FF;
+  color: transparent;
+}
+#projectDetails.kitanet #notify .con-box #progress ul li div {
+  padding-top: 1rem;
+  padding-left: 1.6rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #progress ul li div {
+    padding-left: 2.7rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #progress ul li div > strong {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #262626;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #progress ul li div > strong {
+    font-size: 2.8rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #progress ul li div p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #262626;
+  line-height: 2.8rem;
+  padding-top: 2.4rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #progress ul li div p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding-top: 2rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #foresight {
+  width: 100%;
+  padding-bottom: 8rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight {
+    padding-bottom: 6rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 4rem 0;
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title {
+    gap: 2.4rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title div {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #222;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title div {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title div strong {
+  font-weight: 800;
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title div span {
+  font-weight: 500;
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .title p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
+  width: 18.5rem;
+  height: 18.5rem;
+  border-radius: 50%;
+  border: 1px solid #0066FF;
+  background: rgba(0, 102, 255, 0.1);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
+    width: 15.4rem;
+    height: 15.4rem;
+    gap: 1.1rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li strong {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li strong {
+    font-size: 2.2rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li p {
+    font-size: 1.4rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge {
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge {
+    padding-bottom: 6rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge > p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #222;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge > p {
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list {
+  max-width: 1365px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-top: 1px solid #0066FF;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list {
+    margin: 4rem 0.7rem 0;
+    border-top: none;
+    border-left: 1px solid #0066FF;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 0 1.4rem 0 3.8rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 29%;
+  height: 26.4rem;
+  gap: 1.6rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li {
+    width: 100%;
+    height: 17rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.8rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 4px solid #0066FF;
+  background: #fff;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li::before {
+    top: 0;
+    left: -4.6rem;
+    transform: translate(0, 0);
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li strong {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0066FF;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li strong {
+    font-size: 2.6rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li div {
+  width: 100%;
+  padding: 1.8rem;
+  height: 18rem;
+  border: 2px solid #ADCEFF;
+  border-radius: 1.2rem;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 12.2rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li div p {
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  max-width: 24rem;
+  word-break: keep-all;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uxChallenge .analyze-list ul li div p {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uiuxGuide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#projectDetails.kitanet #notify .con-box #uiuxGuide p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #222;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uiuxGuide p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list {
+  width: 100%;
+  max-width: 1225px;
+  margin: 4rem auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6.1rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list {
+    gap: 1.3rem;
+    justify-content: flex-start;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list li {
+  width: 26rem;
+  height: 25.5rem;
+  padding: 2rem 1.4rem;
+  background: #fff;
+  border: 2px solid #ADCEFF;
+  border-radius: 1.2rem;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list li {
+    width: calc(50% - 1.3rem);
+    height: auto;
+    min-height: 177px;
+    padding: 2rem 1.4rem 2.8rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list li .tit-num02 {
+  font-size: 4.8rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #ADCEFF;
+  color: transparent;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list li .tit-num02 {
+    font-size: 3.2rem;
+  }
+}
+#projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list li p {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  word-break: keep-all;
+}
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #uiuxGuide .guide-list li p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    padding-top: 1.5rem;
+    max-width: 170px;
+    margin: 0 auto;
+  }
+}
 #projectDetails.kitanet .color-list > li:nth-child(1) {
   background: #327BBC;
 }
