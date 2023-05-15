@@ -4514,7 +4514,7 @@ button.more-btn.on::before {
   background: #fff;
   border: 2px solid #ADCEFF;
   border-radius: 1.2rem;
-  padding: 6.5% 5.5% 3%;
+  padding: 6.5% 4.5% 3%;
   min-height: 28rem;
   max-height: 28rem;
   z-index: -2;
