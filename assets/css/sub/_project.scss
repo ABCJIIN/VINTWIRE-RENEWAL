@@ -513,15 +513,16 @@ $nhlife: #6CB5EC;
                         padding-bottom: 6rem;
                     }
                     ul {
-                        // max-width: 1250px;
+                        max-width: 1250px;
                         width: 100%;
+                        margin: 0 auto;
                         @include flexbox(row, flex-start, flex-start);
                         flex-wrap: wrap;
                         gap: 3.2rem 0;
-                        padding: 0 2rem 0 13.8rem;
-                        @include tablet_junction {
-                            padding: 0;
-                        }
+                        // padding: 0 2rem 0 13.8rem;
+                        // @include tablet_junction {
+                        //     padding: 0;
+                        // }
                         li {
                             width: 41.5rem;
                             min-height: 19rem;
@@ -616,15 +617,8 @@ $nhlife: #6CB5EC;
                                 
                                 li {
                                     position: relative;
-                                    width: 18.5rem;
-                                    height: 18.5rem;
                                     @include tablet {
-                                        width: 15.4rem;
-                                        height: 15.4rem;
-                                    }
-                                    @include mobile {
                                         width: calc(50% - 1rem);
-                                        height: calc(50% - 1rem);
                                     }
                                     >img{width: 100%;}
                                     > div{

@@ -4060,19 +4060,15 @@ button.more-btn.on::before {
   }
 }
 #projectDetails.kitanet #notify .con-box #progress ul {
+  max-width: 1250px;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3.2rem 0;
-  padding: 0 2rem 0 13.8rem;
-}
-@media (max-width: 930px) {
-  #projectDetails.kitanet #notify .con-box #progress ul {
-    padding: 0;
-  }
 }
 #projectDetails.kitanet #notify .con-box #progress ul li {
   width: 41.5rem;
@@ -4195,19 +4191,10 @@ button.more-btn.on::before {
 }
 #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
   position: relative;
-  width: 18.5rem;
-  height: 18.5rem;
 }
 @media (max-width: 768px) {
   #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
-    width: 15.4rem;
-    height: 15.4rem;
-  }
-}
-@media (max-width: 420px) {
-  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
     width: calc(50% - 1rem);
-    height: calc(50% - 1rem);
   }
 }
 #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li > img {
