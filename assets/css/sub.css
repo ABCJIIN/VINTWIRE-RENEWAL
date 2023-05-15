@@ -4113,13 +4113,12 @@ button.more-btn.on::before {
   font-weight: 400;
   color: #262626;
   line-height: 2.8rem;
-  padding-top: 2.4rem;
+  padding-top: 1.6rem;
 }
 @media (max-width: 768px) {
   #projectDetails.kitanet #notify .con-box #progress ul li div p {
     font-size: 1.4rem;
     line-height: 2.4rem;
-    padding-top: 2rem;
   }
 }
 #projectDetails.kitanet #notify .con-box #foresight {
