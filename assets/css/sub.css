@@ -5087,20 +5087,36 @@ button.more-btn.on::before {
 }
 #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
   position: relative;
+  width: 18.5rem;
+  height: 18.5rem;
 }
-@media (max-width: 580px) {
+@media (max-width: 768px) {
+  #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
+    width: 15.4rem;
+    height: 15.4rem;
+  }
+}
+@media (max-width: 420px) {
   #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li {
     width: calc(50% - 1rem);
+    height: calc(50% - 1rem);
   }
 }
 #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li > img {
   width: 100%;
 }
 #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li > div {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li strong {
   font-size: 2.4rem;
@@ -5114,6 +5130,8 @@ button.more-btn.on::before {
 #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li p {
   font-size: 1.8rem;
   font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
 }
 @media (max-width: 768px) {
   #projectDetails.kitanet #notify .con-box #foresight .foresight-inner .text-list ul li p {
