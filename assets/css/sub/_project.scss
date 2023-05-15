@@ -866,11 +866,7 @@ $nhlife: #6CB5EC;
                             @include tablet_junction {
                                 width: 100%;
                                 min-height: auto;
-                                // padding: 5rem 2.4rem 3.5rem 4.7rem;
-                                // padding: 17% 10% 10% 15%;
-                            }
-                            @include tablet {
-                                padding: 17% 10% 10% 15%;
+                                padding: 5rem 2.4rem 3.5rem 4.7rem;
                             }
                             strong {
                                 font-size: 7.2rem;
