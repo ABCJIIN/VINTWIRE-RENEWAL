@@ -781,7 +781,7 @@ $nhlife: #6CB5EC;
                             border: 2px solid #ADCEFF;
                             border-radius: 1.2rem;
                             @include tablet {
-                                width: calc(50% - 1.3rem);
+                                width: calc(50% - 0.65rem);
                                 height: auto;
                                 min-height: 177px;
                                 padding: 2rem 1.4rem 2.8rem;
@@ -860,7 +860,7 @@ $nhlife: #6CB5EC;
                             border: 2px solid #ADCEFF;
                             border-radius: 1.2rem;
                             padding: 7.8rem 6rem 3.5rem;
-                            min-height: 280px;
+                            min-height: 28rem;
                             z-index: -2;
                             @include tablet_junction {
                                 width: 100%;
