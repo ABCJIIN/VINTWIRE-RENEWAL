@@ -320,8 +320,8 @@ $nhlife: #6CB5EC;
     }
     &.orange {
         .project-info-bg{
-            @include background(sub/project/details/orange, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/orange, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/orange, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/orange, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         $colorchip :(#16AE8A, #1A9175, #8CDAC7, #FA902E, #FFF1E3);
         .color-list{
@@ -374,8 +374,8 @@ $nhlife: #6CB5EC;
     } 
     &.hyundai-robotics {
         .project-info-bg{
-            @include background(sub/project/details/hyundai_robotics, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/hyundai_robotics, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/hyundai_robotics, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/hyundai_robotics, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         $colorchip :(#3BB88C, #000000, #ffffff, #F2F2F5);
         .color-list{
@@ -412,8 +412,8 @@ $nhlife: #6CB5EC;
     }
     &.nhbank {
         .project-info-bg{
-            @include background(sub/project/details/nhbank, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet {@include background(sub/project/details/nhbank, intro_mb, png, no-repeat, cover, center, bottom);}
+            @include background(sub/project/details/nhbank, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet {@include background(sub/project/details/nhbank, intro_mb, jpg, no-repeat, cover, center, bottom);}
         }
         #overview{
             @include background(sub/project/details/nhbank, overview_pc, png, no-repeat, 40%, right, bottom 116px);
@@ -461,8 +461,8 @@ $nhlife: #6CB5EC;
     }
     &.lgstory {
         .project-info-bg{
-            @include background(sub/project/details/lgstory, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/lgstory, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/lgstory, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/lgstory, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         #overview{
             max-width: 100%;
@@ -475,8 +475,8 @@ $nhlife: #6CB5EC;
     }
     &.kita {
         .project-info-bg{
-            @include background(sub/project/details/kita, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/kita, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/kita, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/kita, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         $colorchip :(#FF98D0, #4DB9FF, #F8BB9F, #F29EC9, #6FAFDB, #64CEBC);
         .color-list{
@@ -502,8 +502,8 @@ $nhlife: #6CB5EC;
     }
     &.kitanet{
         .project-info-bg{
-            @include background(sub/project/details/kitanet, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/kitanet, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/kitanet, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/kitanet, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         #notify {
             background: linear-gradient(rgba(173, 206, 255, 0.6), rgba(173, 206, 255, 0.1)70%);
@@ -918,8 +918,8 @@ $nhlife: #6CB5EC;
     }
     &.koreanair {
         .project-info-bg{
-            @include background(sub/project/details/koreanair, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/koreanair, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/koreanair, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/koreanair, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         #overview{
             width: 100%;
@@ -1050,8 +1050,8 @@ $nhlife: #6CB5EC;
     }
     &.nhlife {
         .project-info-bg{
-            @include background(sub/project/details/nhlife, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/nhlife, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/nhlife, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/nhlife, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         #overview{
             .con-box {
@@ -1142,8 +1142,8 @@ $nhlife: #6CB5EC;
     }
     &.yg1 {
         .project-info-bg{
-            @include background(sub/project/details/yg1, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/yg1, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/yg1, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/yg1, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         #designSystem{
             background: #FBFBFB;
@@ -1206,8 +1206,8 @@ $nhlife: #6CB5EC;
     }
     &.koica {
         .project-info-bg{
-            @include background(sub/project/details/koica, intro_pc, png, no-repeat, cover, center, center);
-            @include tablet{@include background(sub/project/details/koica, intro_mb, png, no-repeat, cover, center, center);}
+            @include background(sub/project/details/koica, intro_pc, jpg, no-repeat, cover, center, center);
+            @include tablet{@include background(sub/project/details/koica, intro_mb, jpg, no-repeat, cover, center, center);}
         }
         #overview{
             &::before {
@@ -1282,15 +1282,6 @@ $nhlife: #6CB5EC;
             width: 100%;
             height: 100%;
             text-indent: -9999em;
-            &::before{
-                content: '';
-                width: 100%;
-                height: 100%;
-                background: rgba($black, .5);
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
         }
         .project-info{
             position: relative;
