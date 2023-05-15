@@ -859,13 +859,18 @@ $nhlife: #6CB5EC;
                             background: $white;
                             border: 2px solid #ADCEFF;
                             border-radius: 1.2rem;
-                            padding: 7.8rem 6rem 3.5rem;
+                            padding: 6.5% 5.5% 3%;
                             min-height: 28rem;
+                            max-height: 28rem;
                             z-index: -2;
                             @include tablet_junction {
                                 width: 100%;
                                 min-height: auto;
-                                padding: 5rem 2.4rem 3.5rem 4.7rem;
+                                // padding: 5rem 2.4rem 3.5rem 4.7rem;
+                                // padding: 17% 10% 10% 15%;
+                            }
+                            @include tablet {
+                                padding: 17% 10% 10% 15%;
                             }
                             strong {
                                 font-size: 7.2rem;
